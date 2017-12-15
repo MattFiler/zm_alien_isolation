@@ -32,6 +32,20 @@
 /map_source/_prefabs/zm_lv426/
 /map_source/_prefabs/zm_spaceflight_terminal/
 
+# Allow GDTs
+!/archetypes/alien_isolation_archetypes.gdt
+!/model_export/alien_isolation_characters.gdt
+!/model_export/alien_isolation_flamethrower.gdt
+!/model_export/alien_isolation_models.gdt
+!/model_export/alien_isolation_models_pt2.gdt
+!/model_export/alien_isolation_models_pt3.gdt
+!/model_export/alien_isolation_models_pt4.gdt
+!/model_export/ayz_flamethrower.gdt
+!/source_data/alien_isolation_scripts.gdt
+!/texture_assets/alien_isolation_textures.gdt
+!/texture_assets/alien_isolation_textures_generic.gdt
+!/texture_assets/custom_craftdanimations.gdt
+
 # Allow all assets
 #!/sound_assets/**
 #!/zm_alien_isolation/**
