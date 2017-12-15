@@ -1,0 +1,72 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{63200FF7-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "worldspawn"
+"fsi" "default"
+"gravity" "800"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{E5DF63D4-DBE2-11E4-9056-2C27D7EF3DD2}"
+  contents nonColliding;
+ ( -11 -8 0 ) ( 16 -8 0 ) ( 16 -2 0 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -2 56 ) ( 14 -8 56 ) ( -13 -8 56 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -1 56 ) ( -13 -1 56 ) ( -13 -1 40 ) traverse 16 -16 0 -4 180 0 lightmap_gray 16384 -16384 0 -98 180 0
+ ( -14 -2 56 ) ( -14 -8 56 ) ( -14 -8 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+ ( -13 -8 56 ) ( 14 -8 56 ) ( 14 -8 40 ) traverse 16 -16 0 -4 -180 0 lightmap_gray 16384 -16384 0 -98 -180 0
+ ( 16 -8 56 ) ( 16 -2 56 ) ( 16 -2 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+}
+// brush 1
+ {
+  guid "{C005BED5-0D5A-11E5-8961-2C27D7EF3DBE}"
+  mesh
+  {
+  contents nonColliding;
+  toolFlags;
+   t7_zm_chalk_buy_kuda
+   lightmap_gray
+   2 2 0 8
+   (
+	v 16 0 46 t 889.47211 -2097.2471 -1 -7.375
+	v 16 0 62 t 889.47211 -2897.2471 -1 -8.375
+   )
+   (
+	v -14 0 46 t 139.47203 -2097.2471 0.875 -7.375
+	v -14 0 62 t 139.47203 -2897.2471 0.875 -8.375
+   )
+  }
+ }
+}
+// entity 1
+{
+guid "{63200FF8-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"origin" "0 0 56"
+"target" "auto38"
+"targetname" "weapon_upgrade"
+"zombie_weapon_upgrade" "smg_standard"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{63200FF9-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"model" "wpn_t7_smg_ap9_world"
+"origin" "-2 0 54"
+"targetname" "auto38"
+"_color" "1 0 0"
+}

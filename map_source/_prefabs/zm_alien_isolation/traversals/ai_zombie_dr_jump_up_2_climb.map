@@ -1,0 +1,67 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{D099582C-9308-11E6-8CF5-844BF54C96FC}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{44A29AFC-92FC-11E6-8CF5-844BF54C96FC}"
+ ( 94 16 0 ) ( 78 16 0 ) ( 78 -16 0 ) traverse 16 16 810 -304 0 0 lightmap_gray 16384 16384 810 -304 0 0
+ ( 82 -8 98 ) ( 82 24 98 ) ( 98 24 98 ) traverse 16 16 814 -312 0 0 lightmap_gray 16384 16384 814 -312 0 0
+ ( 78 -24 32 ) ( 94 -24 32 ) ( 94 -24 0 ) traverse 16 16 810 0 0 0 lightmap_gray 16384 16384 810 0 0 0
+ ( 56 -16 36 ) ( 56 16 36 ) ( 56 16 4 ) traverse 16 16 304 -4 0 0 lightmap_gray 16384 16384 304 -4 0 0
+ ( 94 24 32 ) ( 78 24 32 ) ( 78 24 0 ) traverse 16 16 810 0 0 0 lightmap_gray 16384 16384 810 0 0 0
+ ( 14 16 36 ) ( 14 -16 36 ) ( 14 -16 4 ) traverse 16 16 304 -4 0 0 lightmap_gray 16384 16384 304 -4 0 0
+}
+// brush 1
+{
+ guid "{72F966FF-9300-11E6-8CF5-844BF54C96FC}"
+ ( 168 16 -4 ) ( 152 16 -4 ) ( 152 -16 -4 ) traverse 16 16 884 -304 0 0 lightmap_gray 16384 16384 884 -304 0 0
+ ( 156 -8 0 ) ( 156 24 0 ) ( 172 24 0 ) traverse 16 16 888 -312 0 0 lightmap_gray 16384 16384 888 -312 0 0
+ ( 152 -24 -16 ) ( 168 -24 -16 ) ( 168 -24 -48 ) traverse 16 16 884 48 0 0 lightmap_gray 16384 16384 884 48 0 0
+ ( 56 -16 -20 ) ( 56 16 -20 ) ( 56 16 -52 ) traverse 16 16 304 52 0 0 lightmap_gray 16384 16384 304 52 0 0
+ ( 168 24 -16 ) ( 152 24 -16 ) ( 152 24 -48 ) traverse 16 16 884 48 0 0 lightmap_gray 16384 16384 884 48 0 0
+ ( -32 16 -12 ) ( -32 -16 -12 ) ( -32 -16 -44 ) traverse 16 16 304 44 0 0 lightmap_gray 16384 16384 304 44 0 0
+}
+}
+// entity 1
+{
+guid "{F9296E97-932A-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_begin"
+"animscript" "zm_jump_up_to_climb"
+"movementtype_ignore" "zombie_dog"
+"origin" "-10 0 40"
+"previewanim1" "ai_zombie_dr_jump_up_2_climb"
+"previewmdl1" "c_zom_test_t7_fb"
+"target" "auto2"
+"_color" "0.5 0.6 0.5"
+"cost_modifier" "1"
+}
+// entity 2
+{
+guid "{F9296E98-932A-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_end"
+"origin" "32 0 138"
+"targetname" "auto2"
+"_color" "0.6 0.5 0.5"
+}

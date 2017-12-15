@@ -1,0 +1,76 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{73B8E9EF-3B36-11E6-AF06-D05099251A4C}"
+"classname" "worldspawn"
+"evmax" "31"
+"evmin" "-32"
+"fogtime" "1"
+"fsi" "zm_factory"
+"lightingquality" "1000"
+"maxlightgridcolors" "32000"
+"newsun" "1"
+"skyboxmodel" "skybox_zm_factory"
+"wsi" "zm_factory"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{0AB3FFCA-79E1-4877-A678-A304E0F5979C}"
+"classname" "zbarrier_zmcore_MagicBox"
+"angles" "0 360 0"
+"barrieranimtime" "0"
+"origin" "1.25 0 14.25"
+"script_noteworthy" "chest_2_zbarrier"
+"showalternatemodel" "0"
+"showupgradedmodel" "0"
+"type" "zmcore_MagicBox"
+"zbarrierboardanim1" "o_zombie_magic_box_fake_idle_twitch_a"
+"zbarrierboardanim2" "o_zombie_magic_box_leave"
+"zbarrierboardanim3" "o_zombie_magic_box_close"
+"zbarrierboardanim4" "o_zombie_magic_box_teddy_rise"
+"zbarrierboardanim5" "o_zombie_magic_box_teddy_rise"
+"zbarrierboardmodel1" "p6_anim_zm_magic_box_fake"
+"zbarrierboardmodel2" "p6_anim_zm_magic_box"
+"zbarrierboardmodel3" "p6_anim_zm_magic_box"
+"zbarrierboardmodel4" "tag_origin"
+"zbarrierboardmodel5" "tag_origin"
+"zbarriernumboards" "5"
+"zbarriertearanim1" "o_zombie_magic_box_fake_idle_twitch_b"
+"zbarriertearanim2" "o_zombie_magic_box_arrive"
+"zbarriertearanim3" "o_zombie_magic_box_open"
+"zbarriertearanim4" "o_zombie_magic_box_weapon_rise"
+"zbarriertearanim5" "o_zombie_magic_box_weapon_dual_rise"
+}
+// entity 2
+{
+guid "{7C737760-4ED2-4308-9384-0D7E109E1ADC}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"origin" "1.25 0 14.25"
+"script_noteworthy" "chest_2"
+"targetname" "treasure_chest_use"
+"zombie_cost" "950"
+"_color" "1 0 0"
+}
+// entity 3
+{
+guid "{1AF68D83-3064-4016-8335-221C2856DB7D}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/zm/zm_giant/geo/zm_giant_magicbox_platform.map"
+"origin" "1 0 0"
+}

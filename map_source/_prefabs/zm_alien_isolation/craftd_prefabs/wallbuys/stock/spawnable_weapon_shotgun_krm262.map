@@ -1,0 +1,70 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{8F78F91B-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "worldspawn"
+"fsi" "default"
+"gravity" "800"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{35BE7914-DBE1-11E4-9056-2C27D7EF3DD2}"
+  contents nonColliding;
+ ( -11 -8 0 ) ( 16 -8 0 ) ( 16 -2 0 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -2 56 ) ( 14 -8 56 ) ( -13 -8 56 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -1 56 ) ( -13 -1 56 ) ( -13 -1 40 ) traverse 16 -16 0 -4 180 0 lightmap_gray 16384 -16384 0 -98 180 0
+ ( -19 -2 55 ) ( -19 -8 55 ) ( -19 -8 39 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+ ( -13 -8 56 ) ( 14 -8 56 ) ( 14 -8 40 ) traverse 16 -16 0 -4 -180 0 lightmap_gray 16384 -16384 0 -98 -180 0
+ ( 20 -8 56 ) ( 20 -2 56 ) ( 20 -2 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+}
+// brush 1
+ {
+  guid "{5B496D1E-0D58-11E5-8961-2C27D7EF3DBE}"
+  mesh
+  {
+  contents nonColliding;
+  toolFlags;
+   t7_zm_chalk_buy_krm
+   lightmap_gray
+   2 2 0 8
+   (
+	v 20 0 48 t 974.39606 -2209.6714 -1.25 -7.3125
+	v 20 0 66 t 974.39606 -3056.7302 -1.25 -8.4375
+   )
+   (
+	v -19 0 48 t 56.749226 -2209.6714 1.1875 -7.3125
+	v -19 0 66 t 56.749226 -3056.7302 1.1875 -8.4375
+   )
+  }
+ }
+}
+// entity 1
+{
+guid "{8F78F91C-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "script_struct"
+"model" "wpn_t7_shotgun_spartan_world"
+"origin" "-6 0 54"
+"targetname" "auto38"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{8F78F91D-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "script_struct"
+"origin" "0 0 56"
+"target" "auto38"
+"targetname" "weapon_upgrade"
+"zombie_weapon_upgrade" "shotgun_pump"
+"_color" "1 0 0"
+}

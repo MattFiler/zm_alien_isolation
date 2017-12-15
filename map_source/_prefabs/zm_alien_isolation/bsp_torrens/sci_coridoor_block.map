@@ -1,0 +1,109 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{C8BF9255-695E-11E7-83AF-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{FCCF7718-695B-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 359.997 0"
+"model" "torrens_coridoor_side_science_long"
+"modelscale" "2.5"
+"origin" "-26199.8 -13547.5 11731.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{25289D96-695C-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "torrens_coridoor_floor_large"
+"modelscale" "2.5"
+"origin" "-26244.8 -13548.3 11733"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{52AE2C39-695C-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 179.997 0"
+"model" "torrens_coridoor_side_science_long"
+"modelscale" "2.5"
+"origin" "-26289.9 -13547.5 11731.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{6546AE02-695C-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "torrens_coridoor_ceiling_long"
+"modelscale" "2.5"
+"origin" "-26244.8 -13549.3 11731.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{9867D16C-695E-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/light_sci_coridoor.map"
+}
+// entity 6
+{
+guid "{A358FA8C-695E-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/light_sci_coridoor.map"
+"origin" "0 -136 0"
+}
+// entity 7
+{
+guid "{B290C817-695E-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/light_sci_coridoor.map"
+"origin" "-52489.8 -27094.3 0"
+}
+// entity 8
+{
+guid "{B290C81A-695E-11E7-83AF-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/light_sci_coridoor.map"
+"origin" "-52489.8 -26958.3 0"
+}

@@ -1,0 +1,926 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{E9A9F531-6D63-11E7-A55D-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{8681FB2D-6D28-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_floor"
+"modelscale" "2.5"
+"origin" "-25174.3 -12843.7 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{E0CA657E-6D2C-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_middle"
+"modelscale" "2.5"
+"origin" "-25174.3 -12843.7 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{6794688F-6D2D-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 -37"
+"model" "monitor_static_values"
+"modelscale" "2.5"
+"origin" "-25203 -12872.5 11841.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{9FC88939-6D2D-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 -37"
+"model" "monitor_static_wave"
+"modelscale" "2.5"
+"origin" "-25227.5 -12848 11841.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{B0358975-6D2D-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 -37"
+"model" "monitor_static_signal"
+"modelscale" "2.5"
+"origin" "-25178.5 -12897 11841.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{C50212D1-6D2D-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "8.53774e-007 315 -37"
+"model" "monitor_static_zone"
+"modelscale" "2.5"
+"origin" "-25145.5 -12815 11841.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{C50212D4-6D2D-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "8.53774e-007 315 -37"
+"model" "monitor_static_globe2"
+"modelscale" "2.5"
+"origin" "-25121 -12839.5 11841.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{C50212D7-6D2D-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "8.53774e-007 315 -37"
+"model" "monitor_static_selector"
+"modelscale" "2.5"
+"origin" "-25170 -12790.5 11841.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{12DC355D-6D2E-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 -37"
+"model" "monitor_static_vector"
+"modelscale" "2.5"
+"origin" "-25107.8 -12910 11841.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{3C408E75-6D2E-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 -37"
+"model" "monitor_static_torrens"
+"modelscale" "2.5"
+"origin" "-25240.8 -12777.3 11841.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{BC245A9E-6D31-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 -5"
+"model" "monitor_torrens_hab"
+"modelscale" "4.5"
+"origin" "-25019 -13000.3 11816.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{C9E2081E-6D32-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 0"
+"model" "torrens_crewquarters_storagewall"
+"modelscale" "2.5"
+"origin" "-25332.6 -12923 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{4615988A-6D34-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -45 0"
+"model" "torrens_crewquarters_bed"
+"modelscale" "2.5"
+"origin" "-25377.8 -12829.5 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{E1D83885-6D34-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 0"
+"model" "torrens_crewquarters_bed_flipped"
+"modelscale" "2.5"
+"origin" "-25189.8 -12643 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{D4AA2BE0-6D3E-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -45 0"
+"model" "torrens_crewquarters_toilet"
+"modelscale" "2.5"
+"origin" "-24981.1 -12796.8 11752"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{15EE2672-6D3F-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_shower"
+"modelscale" "2.5"
+"origin" "-24981.8 -12650.3 11752"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{39606ADC-6D45-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 0"
+"model" "torrens_crewquarters_padding"
+"modelscale" "2.5"
+"origin" "-25280.2 -12636.8 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{4B17F5D5-6D45-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 0"
+"model" "torrens_crewquarters_padding"
+"modelscale" "2.5"
+"origin" "-25378.9 -12736 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{4BE9EFAB-6D48-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_filler"
+"modelscale" "2.5"
+"origin" "-25045.7 -13030.5 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{536A9CA0-6D48-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_filler"
+"modelscale" "2.5"
+"origin" "-24988.7 -12974 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{B7E9D715-6D48-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25154.4 -12706.3 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{CAEB5828-6D48-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25140.4 -12720.3 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{F8EC5D60-6D48-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25054.2 -12813 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{F8EC5D63-6D48-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25040.2 -12827 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{0138B504-6D49-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 225 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25196.8 -12974.3 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{0138B507-6D49-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 315 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25210.8 -12960.3 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{33C734DA-6D49-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 225 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25298.6 -12877 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 28
+{
+guid "{33C734DD-6D49-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 315 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25312.6 -12863 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 29
+{
+guid "{BCB2D701-6D36-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_paddedwall"
+"modelscale" "2.5"
+"origin" "-25258.3 -12997.3 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 30
+{
+guid "{7F63E63D-6D49-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 315 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25303.1 -13035.5 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 31
+{
+guid "{868C5DB5-6D49-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 225 0"
+"model" "torrens_crewquarters_filler2"
+"modelscale" "2.5"
+"origin" "-25370.8 -12967.7 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 32
+{
+guid "{89D115F6-6D4A-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/locker_block.map"
+}
+// entity 33
+{
+guid "{1F6E9A29-6D4B-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/locker_block.map"
+"origin" "-12086.4 -38024.9 0"
+}
+// entity 34
+{
+guid "{299CFC14-6D4B-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 0"
+"model" "torrens_crewquarters_filler3"
+"modelscale" "2.5"
+"origin" "-25120.9 -12711.8 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 35
+{
+guid "{4DFD4435-6D4B-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 0"
+"model" "torrens_crewquarters_filler3"
+"modelscale" "2.5"
+"origin" "-25057.4 -12648.3 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 36
+{
+guid "{3C388934-6D4C-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 44.9999 0"
+"model" "torrens_locker"
+"modelscale" "2.5"
+"origin" "-25066.8 -13051.5 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 37
+{
+guid "{3C38893A-6D4C-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 44.9999 0"
+"model" "torrens_locker_door"
+"modelscale" "2.5"
+"origin" "-25082.3 -13062.7 11796.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 38
+{
+guid "{4A4619DD-6D4C-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 44.9999 0"
+"model" "torrens_locker"
+"modelscale" "2.5"
+"origin" "-24967.6 -12953 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 39
+{
+guid "{4A4619E0-6D4C-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 44.9999 0"
+"model" "torrens_locker_door"
+"modelscale" "2.5"
+"origin" "-24982.8 -12964 11796.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 40
+{
+guid "{70942CC0-6D4C-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -45 0"
+"model" "torrens_crewquarters_bed_flipped"
+"modelscale" "2.5"
+"origin" "-25165.3 -13041.3 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 41
+{
+guid "{13BC6B0A-6D4F-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 233.2 0"
+"model" "torrens_crewquarters_filler4"
+"modelscale" "2.5"
+"origin" "-25257 -12607.2 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 42
+{
+guid "{1E1D19C3-6D4F-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 306.2 0"
+"model" "torrens_crewquarters_filler4"
+"modelscale" "2.5"
+"origin" "-25412.2 -12758.1 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 43
+{
+guid "{36047A9F-6D4F-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_filler4"
+"modelscale" "2.5"
+"origin" "-25092.9 -13081.8 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 44
+{
+guid "{54C6745D-6D4F-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 129.899 0"
+"model" "torrens_crewquarters_filler4"
+"modelscale" "2.5"
+"origin" "-24935.5 -12929.1 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 45
+{
+guid "{623E7314-6D2B-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "torrens_crewquarters_ceiling"
+"modelscale" "2.5"
+"origin" "-25174.3 -12843.7 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 46
+{
+guid "{F1D8AA5F-6D4F-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 0"
+"model" "torrens_crewquarters_paddedwall"
+"modelscale" "2.5"
+"origin" "-24987.8 -12871.3 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 47
+{
+guid "{077BF8C9-6D50-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 0"
+"model" "torrens_crewquarters_filler3"
+"modelscale" "2.5"
+"origin" "-25024.7 -12838.5 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 48
+{
+guid "{16FF81D3-6D50-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 135 0"
+"model" "torrens_crewquarters_filler3"
+"modelscale" "2.5"
+"origin" "-24947.9 -12915.3 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 49
+{
+guid "{BD846403-6D50-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -135 90"
+"model" "torrens_crewquarters_messageboard"
+"modelscale" "2.5"
+"origin" "-24994.8 -12876.3 11802.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 50
+{
+guid "{E6AC7158-6D51-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice1"
+"modelscale" "2.5"
+"origin" "-25003.3 -12862.3 11819.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 51
+{
+guid "{FC89E28D-6D51-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice2"
+"modelscale" "2.5"
+"origin" "-24994.5 -12871 11819.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 52
+{
+guid "{095BA03E-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice10"
+"modelscale" "2.5"
+"origin" "-24985.8 -12879.8 11819.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 53
+{
+guid "{16AD7CD2-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice4"
+"modelscale" "2.5"
+"origin" "-24977 -12888.5 11819.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 54
+{
+guid "{2B5290FB-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice5"
+"modelscale" "2.5"
+"origin" "-25003.3 -12862.3 11805.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 55
+{
+guid "{2B5290FE-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice6"
+"modelscale" "2.5"
+"origin" "-24994.5 -12871 11805.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 56
+{
+guid "{2B529101-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice7"
+"modelscale" "2.5"
+"origin" "-24985.8 -12879.8 11805.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 57
+{
+guid "{2B529104-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice8"
+"modelscale" "2.5"
+"origin" "-24977 -12888.5 11805.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 58
+{
+guid "{3DAE0528-6D52-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 -45 90"
+"model" "torrens_crewquarters_messageboard_invoice9"
+"modelscale" "2.5"
+"origin" "-24985.8 -12879.8 11790.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 59
+{
+guid "{D9E95A99-6D55-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
+}
+// entity 60
+{
+guid "{D9E95AAD-6D55-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
+"origin" "-100.25 -99.25 0"
+}
+// entity 61
+{
+guid "{85975185-6D56-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 219.8 0"
+"model" "torrens_crewquarters_filler4"
+"modelscale" "2.5"
+"origin" "-25044.4 -12633.4 11731.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 62
+{
+guid "{DE2CAEDB-6D2E-11E7-A55C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 45 0"
+"model" "noodlebar_wall_filler_tv"
+"modelscale" "2.5"
+"origin" "-25017.8 -13001.5 11732.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 63
+{
+guid "{96FBF262-6D63-11E7-A55D-14DDA9E204AF}"
+"classname" "reflection_probe"
+"angles" "0 -45 0"
+"ao_power" "8"
+"ao_range" "25"
+"ao_strength_double_sided" "0"
+"brightnessAdjust" "3"
+"name" "probe_007"
+"origin" "-25174.6 -12843.8 11802.3"
+"resolution" "8x"
+"size_max" "228.177 313.156 81"
+"size_min" "234.073 231.844 50"
+"smooth_post_process" "1"
+"volumetric" "1"
+"adaptive_quality_boost" "Off"
+"ao_strength" "1"
+"blend_maxs" "3 3 3"
+"blend_mins" "3 3 3"
+"box" "1"
+"client_server" "ClientSide"
+"debugColor" "1 1 1"
+"grid_density" "0"
+"high_detail" "1"
+"in_play_space" "1"
+"inpaint_occluded_rays" "1"
+"placement_offset" "72"
+}
+// entity 64
+{
+guid "{E173090D-6D63-11E7-A55D-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
+"origin" "-12374.3 -37986.7 0"
+}
+// entity 65
+{
+guid "{E1730910-6D63-11E7-A55D-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
+"origin" "-12402.5 -37958.2 0"
+}
+// entity 66
+{
+guid "{E9A9F53A-6D63-11E7-A55D-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 179.997 0"
+"model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
+"origin" "-50073.8 -25649 0"
+}
+// entity 67
+{
+guid "{E9A9F53D-6D63-11E7-A55D-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 179.997 0"
+"model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
+"origin" "-50045.3 -25620.8 0"
+}

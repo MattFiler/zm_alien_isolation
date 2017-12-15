@@ -1,0 +1,215 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{EB972BF9-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{F23EB14E-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-1228.5 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{F23EB151-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-941.25 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{F23EB154-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_damaged2"
+"modelscale" "2"
+"origin" "-652.75 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{F23EB157-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-2092.75 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{F23EB15A-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_damaged1"
+"modelscale" "2"
+"origin" "-1805 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{F23EB15D-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-1517 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{F23EB160-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-365 455.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{F23EB179-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-1228.5 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{F23EB17C-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_damaged2"
+"modelscale" "2"
+"origin" "-1515.75 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{F23EB17F-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-1804.25 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{F23EB182-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_damaged1"
+"modelscale" "2"
+"origin" "-363.25 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{F23EB185-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-650.5 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{F23EB188-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_damaged1"
+"modelscale" "2"
+"origin" "-939 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{F23EB18B-D77B-11E6-9C6A-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "adverts_screen_normal"
+"modelscale" "2"
+"origin" "-2092 88.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

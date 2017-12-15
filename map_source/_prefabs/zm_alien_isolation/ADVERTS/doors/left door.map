@@ -1,0 +1,190 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{95518B83-F1F7-11E6-A515-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{F78CD3CC-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 180.197 0"
+"model" "airport_door_side2"
+"modelscale" "2"
+"origin" "-92.3388 60.7214 -18"
+"targetname" "adverts_left_buyable_door_side1"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 2
+{
+guid "{F78CD3CF-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 180.197 0"
+"model" "airport_door_side1"
+"modelscale" "2"
+"origin" "-92.3388 60.7214 -18"
+"targetname" "adverts_left_buyable_door_side2"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 3
+{
+guid "{F78CD3D2-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 150.197 0"
+"origin" "-21.1033 57.3269 -17"
+"targetname" "adverts_left_buyable_door_side1_move"
+"_color" "1 0 0"
+}
+// entity 4
+{
+guid "{F78CD3D5-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 150.197 0"
+"origin" "-162.751 57.5016 -17"
+"targetname" "adverts_left_buyable_door_side2_move"
+"_color" "1 0 0"
+}
+// entity 5
+{
+guid "{F78CD3D8-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 150.197 0"
+"origin" "11.5837 61.0769 39"
+"targetname" "adverts_left_buyable_clip_side1_move"
+"_color" "1 0 0"
+}
+// entity 6
+{
+guid "{F78CD3DB-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 150.197 0"
+"origin" "-193.323 59.4551 39"
+"targetname" "adverts_left_buyable_clip_side2_move"
+"_color" "1 0 0"
+}
+// entity 7
+{
+guid "{F78CD3DE-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "trigger_use"
+"ayz_doordef" "adverts_left_door"
+"script_flag" "enter_adverts_zone"
+"targetname" "zombie_door_adverts_left"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{F78CD3DD-DF10-11E6-9C7D-14DDA9E204AF}"
+ ( -106 29.75 2.5 ) ( -73.75 30.5 2.5 ) ( -74.5 62.5 2.5 ) trigger 64 64 -301.73688 1340.3691 -179 0 lightmap_gray 16384.188 16384.07 -301.73279 1340.3723 -179 0
+ ( -76.25 63.5 72.25 ) ( -75.5 31.5 72.25 ) ( -107.75 30.75 72.25 ) trigger 64 64 -300.01892 1341.3937 -179 0 lightmap_gray 16384.188 16384.086 -300.01575 1341.3978 -179 0
+ ( -68.75 85.25 44.25 ) ( -100.75 84.5 44.25 ) ( -100.75 84.5 28.25 ) trigger 64.095604 -64 -307.0509 28.25 -180 0 lightmap_gray 16408.594 -16384 -307.05304 28.25 180 0
+ ( -172 61.75 44.25 ) ( -171.5 29.75 44.25 ) ( -171.5 29.75 28.25 ) trigger 64.096626 -64 -1340.2688 28.25 -180 0 lightmap_gray 16408.736 -16384 -1340.2688 28.25 -180 0
+ ( -105.25 29.5 44.25 ) ( -73.25 30.25 44.25 ) ( -73.25 30.25 28.25 ) trigger 64.095543 -64 -302.40088 28.25 -180 0 lightmap_gray 16408.578 -16384 -302.40192 28.25 180 0
+ ( -14.5 27.25 44.25 ) ( -15.25 59.5 44.25 ) ( -15.25 59.5 28.25 ) trigger 64.096626 -64 -1337.8672 28.25 -180 0 lightmap_gray 16408.736 -16384 -1337.8672 28.25 -180 0
+}
+}
+// entity 8
+{
+guid "{F78CD3E1-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"DYNAMICPATH" "1"
+"targetname" "adverts_left_buyable_door_side1_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+"spawnflags" "1"
+// brush 0
+{
+ guid "{F78CD3E0-DF10-11E6-9C7D-14DDA9E204AF}"
+ ( -222.25 24.75 -0.75 ) ( -38.25 24.25 -0.75 ) ( -38 88.25 -0.75 ) clip 64 64 -109.53041 411.90234 179.79694 0 lightmap_gray 16383.994 16383.918 -109.53042 411.90845 179.79694 0
+ ( -4 87 78 ) ( -4.5 23 78 ) ( -188.25 23.75 78 ) clip 64 64 -159.48796 410.79669 179.79698 0 lightmap_gray 16384 16384.027 -143.48796 410.80023 179.79698 0
+ ( -28.5 66.25 178 ) ( -212.75 66.75 178 ) ( -212.75 66.75 146 ) clip 64.018105 -64 -119.21426 -2 180 0 lightmap_gray 16388.635 -16384 -119.21426 26 180 0
+ ( -87.25 85.5 175 ) ( -87.25 21.5 175 ) ( -87.25 21.5 143 ) clip 64.110466 -64 -409.9566 -9 180 0 lightmap_gray 16412.279 -16384 -409.95697 23 -180 0
+ ( -201 55.75 182 ) ( -17 55.25 182 ) ( -17 55.25 150 ) clip 64.01815 -64 -130.90155 -2 180 0 lightmap_gray 16388.645 -16384 -130.90181 30 180 0
+ ( -6.75 23.75 194 ) ( -6.75 88 194 ) ( -6.75 88 162 ) clip 64.038864 -64 -411.91528 18 180 0 lightmap_gray 16393.949 -16384 -411.91528 42 180 0
+}
+}
+// entity 9
+{
+guid "{F78CD3E4-DF10-11E6-9C7D-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"DYNAMICPATH" "1"
+"targetname" "adverts_left_buyable_door_side2_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+"spawnflags" "1"
+// brush 0
+{
+ guid "{F78CD3E3-DF10-11E6-9C7D-14DDA9E204AF}"
+ ( -222 25 -0.75 ) ( -38 24.25 -0.75 ) ( -37.5 88.25 -0.75 ) clip 64 64 -109.87151 411.99588 179.79698 0 lightmap_gray 16384 16383.918 -109.87145 412.00198 179.79698 0
+ ( -3.75 87 78 ) ( -4 23 78 ) ( -187.75 23.75 78 ) clip 64 64 -159.82867 410.89047 179.79692 0 lightmap_gray 16384 16384.012 -143.82867 410.8942 179.79692 0
+ ( -28.25 66.25 178 ) ( -212.25 67 178 ) ( -212.25 67 146 ) clip 64.01812 -64 -119.55547 -2 180 0 lightmap_gray 16388.639 -16384 -119.55547 26 180 0
+ ( -175.25 86.5 175 ) ( -175.25 22.5 175 ) ( -175.25 22.5 143 ) clip 64.110466 -64 -411.01071 -9 -180 0 lightmap_gray 16412.279 -16384 -411.01202 23 180 0
+ ( -200.75 56 182 ) ( -16.75 55.25 182 ) ( -16.75 55.25 150 ) clip 64.018166 -64 -131.2428 -2 180 0 lightmap_gray 16388.646 -16384 -131.24307 30 180 0
+ ( -87.75 34.75 194 ) ( -87.75 99 194 ) ( -87.75 99 162 ) clip 64.038834 -64 -422.88391 18 180 0 lightmap_gray 16393.941 -16384 -422.88391 42 180 0
+}
+}
+// entity 10
+{
+guid "{95518B8A-F1F7-11E6-A515-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 150.197 0"
+"origin" "25.0837 57.0769 39"
+"targetname" "adverts_door_left_42"
+"_color" "1 0 0"
+}
+// entity 11
+{
+guid "{F3A30BFB-37BB-11E7-A535-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 180.197 0"
+"model" "ayz_new_door_lights"
+"modelscale" "2"
+"origin" "-92.5 61 -10.75"
+"targetname" "left_door_flasher"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}

@@ -1,0 +1,91 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{7A13FFEF-ADBC-11E6-9C4B-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{846BEED7-ADB4-11E6-9C4B-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{613BDC99-ADB4-11E6-9C4B-14DDA9E204AF}"
+ ( 268.5 -982 24.75 ) ( 265 -979.75 24.75 ) ( 250.25 -1005 24.75 ) elevator_backlit_light 32 32 0 0 0 0 lightmap_gray 16385.098 16384.063 516.67908 -229.82178 -30.598608 -9.7335127e-005
+ ( 255.5 -988.25 63.5 ) ( 270.5 -963 63.5 ) ( 273.75 -965 63.5 ) elevator_backlit_light 32 32 0 0 0 0 lightmap_gray 16384.729 16384.084 512.70569 -247.02501 -30.600735 -7.5132426e-005
+ ( 255 -998.25 -3.25 ) ( 258.5 -1000.5 -3.25 ) ( 258.5 -1000.5 -3.5 ) elevator_backlit_light 32 32 0 0 0 0 lightmap_gray 14102.938 16384 74.024261 3.5 0 0
+ ( 253.5 -1008.5 0.25 ) ( 268.5 -983.5 0.25 ) ( 268.5 -983.5 0 ) elevator_backlit_light 32 32 0 0 0 0 lightmap_gray 14102.381 16384 -175.80344 0 0 0
+ ( 268.5 -983.5 0.25 ) ( 265 -981.25 0.25 ) ( 265 -981.25 0 ) elevator_backlit_light 32 32 0 0 0 0 lightmap_gray 14102.5 16384 84.080833 0 0 0
+ ( 265 -981.25 0.25 ) ( 250.25 -1006.5 0.25 ) ( 250.25 -1006.5 0 ) elevator_backlit_light 32 32 0 0 0 0 lightmap_gray 14102.426 16384 -173.76424 0 0 0
+}
+}
+// entity 2
+{
+guid "{3687EACF-ADB5-11E6-9C4B-14DDA9E204AF}"
+"classname" "light"
+"ENABLE_FALLOFF" "0"
+"PRIMARY_NOSHADOWMAP" "0"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.8332 0.8587 0.9882"
+"angles" "89.9967 0.427299 27.1256"
+"animmode" "loop"
+"animscale" "1"
+"bulbRadius" "0.00999999977648258"
+"def" "cookie_flicker02"
+"def_scroll" "0.5 0.5"
+"def_tile" "0 0"
+"dirSpan" "100 100 100"
+"falloffdistance" "7"
+"far_edge" "0.400000005960464"
+"fov_outer" "49"
+"name" "endgame_light_001"
+"near_edge" "0.4"
+"origin" "285.48 -1002.03 44.055"
+"ortho_effect" "0.200000002980232"
+"penumbraRadius" "3"
+"radius" "100"
+"roundness" "0.0999999985098839"
+"spec_comp" "1"
+"stops" "14.9999999910593"
+"superellipse" "0.24 0.56 0.72 1"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "0.75"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "4"
+}

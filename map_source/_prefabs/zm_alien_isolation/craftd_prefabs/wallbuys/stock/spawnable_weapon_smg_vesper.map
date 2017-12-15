@@ -1,0 +1,82 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{846AD281-5C83-49A7-9BF4-5D8B4B20EF05}"
+"classname" "worldspawn"
+"_color" "0.5 0.5 0.7"
+"ambient" "0.1"
+"bouncefraction" "0.3"
+"contrastgain" "0.35"
+"diffusefraction" "0.15"
+"suncolor" "0.64 0.85 1"
+"sundiffusecolor" "0.25 0.55 0.8"
+"sundirection" "-150 17 0"
+"sunisprimarylight" "1"
+"sunlight" "0.75"
+"fsi" "default"
+"gravity" "800"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{8BC3B5E7-DBDE-11E4-9056-2C27D7EF3DD2}"
+  contents nonColliding;
+ ( -11 -8 0 ) ( 16 -8 0 ) ( 16 -2 0 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -2 56 ) ( 14 -8 56 ) ( -13 -8 56 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -1 56 ) ( -13 -1 56 ) ( -13 -1 40 ) traverse 16 -16 0 -4 180 0 lightmap_gray 16384 -16384 0 -98 180 0
+ ( -14 -2 56 ) ( -14 -8 56 ) ( -14 -8 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+ ( -13 -8 56 ) ( 14 -8 56 ) ( 14 -8 40 ) traverse 16 -16 0 -4 -180 0 lightmap_gray 16384 -16384 0 -98 -180 0
+ ( 16 -8 56 ) ( 16 -2 56 ) ( 16 -2 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+}
+// brush 1
+ {
+  guid "{DED2610D-0D58-11E5-8961-2C27D7EF3DBE}"
+  mesh
+  {
+  contents nonColliding;
+  toolFlags;
+   t7_zm_chalk_buy_cqw
+   lightmap_gray
+   2 2 0 8
+   (
+	v 16 0 50 t 896.00043 -141.31204 -1 -7.4375
+	v 16 0 64 t 919.55237 -994.30353 -1 -8.3125
+   )
+   (
+	v -14 0 50 t 119.80806 -132.09602 0.875 -7.4375
+	v -14 0 64 t 143.36006 -985.08783 0.875 -8.3125
+   )
+  }
+ }
+}
+// entity 1
+{
+guid "{834D841B-8A81-4BFF-A4D5-9CD060E9C1D1}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"origin" "0 0 56"
+"target" "auto37"
+"targetname" "weapon_upgrade"
+"zombie_weapon_upgrade" "smg_fastfire"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{CEAAC437-1B6B-4FA4-A721-DE860003D64F}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"model" "wpn_t7_smg_cqw_world"
+"origin" "0 0 54"
+"targetname" "auto37"
+"_color" "1 0 0"
+}

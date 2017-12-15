@@ -1,0 +1,1577 @@
+iwmap 4
+// entity 0
+{
+guid "{0239911A-C790-11E6-9C63-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+// entity 33
+// entity 34
+// entity 35
+// entity 36
+// entity 37
+// entity 38
+// entity 39
+// entity 40
+// entity 41
+// entity 42
+// entity 43
+// entity 44
+// entity 45
+// entity 46
+// entity 47
+// entity 48
+// entity 49
+// entity 50
+// entity 51
+// entity 52
+// entity 53
+// entity 54
+// entity 55
+// entity 56
+// entity 57
+// entity 58
+// entity 59
+// entity 60
+// entity 61
+// entity 62
+// entity 63
+// entity 64
+// entity 65
+// entity 66
+// entity 67
+// entity 68
+// entity 69
+// entity 70
+// entity 71
+// entity 72
+// entity 73
+// entity 74
+// entity 75
+// entity 76
+// entity 77
+// entity 78
+// entity 79
+// entity 80
+// entity 81
+// entity 82
+// entity 83
+// entity 84
+// entity 85
+// entity 86
+// entity 87
+// entity 88
+// entity 89
+// entity 90
+// entity 91
+// entity 92
+// entity 93
+// entity 94
+// entity 95
+// entity 96
+// entity 97
+// entity 98
+// entity 99
+// entity 100
+// entity 101
+// entity 102
+// entity 103
+// entity 104
+// entity 105
+// entity 106
+// entity 107
+// entity 108
+// entity 109
+// entity 110
+// entity 111
+// entity 112
+// entity 113
+// entity 114
+// entity 115
+// entity 116
+// entity 117
+// entity 118
+// entity 119
+// entity 120
+// entity 121
+// entity 122
+// entity 123
+// entity 124
+// entity 125
+// entity 126
+// entity 127
+// entity 128
+// entity 129
+// entity 130
+// entity 131
+// entity 132
+// entity 133
+// entity 134
+// entity 135
+// entity 136
+// entity 137
+// entity 138
+// entity 139
+// entity 140
+// entity 141
+// entity 142
+// entity 143
+// entity 144
+// entity 145
+// entity 146
+// entity 147
+// entity 148
+// entity 149
+// entity 150
+// entity 151
+// entity 152
+// entity 153
+// entity 154
+// entity 155
+// entity 156
+// entity 157
+// entity 158
+// entity 159
+// entity 160
+// entity 161
+// entity 162
+// entity 163
+// entity 164
+// entity 165
+// entity 166
+// entity 167
+// entity 168
+// entity 169
+// entity 170
+// entity 171
+// entity 172
+// entity 173
+// entity 174
+// entity 175
+// entity 176
+// entity 177
+// entity 178
+// entity 179
+// entity 180
+// entity 181
+// entity 182
+// entity 183
+// entity 184
+// entity 185
+// entity 186
+// entity 187
+// entity 188
+// entity 189
+// entity 190
+// entity 191
+// entity 192
+// entity 193
+// entity 194
+// entity 195
+// entity 196
+// entity 197
+// entity 198
+// entity 199
+// entity 200
+// entity 201
+// entity 202
+// entity 203
+// entity 204
+// entity 205
+// entity 206
+// entity 207
+// entity 208
+// entity 209
+// entity 210
+// entity 211
+// entity 212
+// entity 213
+// entity 214
+// entity 215
+// entity 216
+// entity 217
+// entity 218
+// entity 219
+// entity 220
+// entity 221
+// entity 222
+// entity 223
+// entity 224
+// entity 225
+// entity 226
+// entity 227
+// entity 228
+// entity 229
+// entity 230
+// entity 231
+// entity 232
+// entity 233
+// entity 234
+// entity 235
+// entity 236
+// entity 237
+// entity 238
+// entity 239
+// entity 240
+// entity 241
+// entity 242
+// entity 243
+// entity 244
+// entity 245
+// entity 246
+// entity 247
+// entity 248
+// entity 249
+// entity 250
+// entity 251
+// entity 252
+// entity 253
+// entity 254
+// entity 255
+// entity 256
+// entity 257
+// entity 258
+// entity 259
+// entity 260
+// entity 261
+// entity 262
+// entity 263
+// entity 264
+// entity 265
+// entity 266
+// entity 267
+// entity 268
+// entity 269
+// entity 270
+// entity 271
+// entity 272
+// entity 273
+// entity 274
+// entity 275
+// entity 276
+// entity 277
+// entity 278
+// entity 279
+// entity 280
+// entity 281
+// entity 282
+// entity 283
+// entity 284
+// entity 285
+// entity 286
+// entity 287
+// entity 288
+// entity 289
+// entity 290
+// entity 291
+// entity 292
+// entity 293
+// entity 294
+// entity 295
+// entity 296
+// entity 297
+// entity 298
+// entity 299
+// entity 300
+// entity 301
+// entity 302
+// entity 303
+// entity 304
+// entity 305
+// entity 306
+// entity 307
+// entity 308
+// entity 309
+// entity 310
+// entity 311
+// entity 312
+// entity 313
+// entity 314
+// entity 315
+// entity 316
+// entity 317
+// entity 318
+// entity 319
+// entity 320
+// entity 321
+// entity 322
+// entity 323
+// entity 324
+// entity 325
+// entity 326
+// entity 327
+// entity 328
+// entity 329
+// entity 330
+// entity 331
+// entity 332
+// entity 333
+// entity 334
+// entity 335
+// entity 336
+// entity 337
+// entity 338
+// entity 339
+// entity 340
+// entity 341
+// entity 342
+// entity 343
+// entity 344
+// entity 345
+// entity 346
+// entity 347
+// entity 348
+// entity 349
+// entity 350
+// entity 351
+// entity 352
+// entity 353
+// entity 354
+// entity 355
+// entity 356
+// entity 357
+// entity 358
+// entity 359
+// entity 360
+// entity 361
+// entity 362
+// entity 363
+// entity 364
+// entity 365
+// entity 366
+// entity 367
+// entity 368
+// entity 369
+// entity 370
+// entity 371
+// entity 372
+// entity 373
+// entity 374
+// entity 375
+// entity 376
+// entity 377
+// entity 378
+// entity 379
+// entity 380
+// entity 381
+// entity 382
+// entity 383
+// entity 384
+// entity 385
+// entity 386
+// entity 387
+// entity 388
+// entity 389
+// entity 390
+// entity 391
+// entity 392
+// entity 393
+// entity 394
+// entity 395
+// entity 396
+// entity 397
+// entity 398
+// entity 399
+// entity 400
+// entity 401
+// entity 402
+// entity 403
+// entity 404
+// entity 405
+// entity 406
+// entity 407
+// entity 408
+// entity 409
+// entity 410
+// entity 411
+// entity 412
+// entity 413
+// entity 414
+// entity 415
+// entity 416
+// entity 417
+// entity 418
+// entity 419
+// entity 420
+// entity 421
+// entity 422
+// entity 423
+// entity 424
+// entity 425
+// entity 426
+// entity 427
+// entity 428
+// entity 429
+// entity 430
+// entity 431
+// entity 432
+// entity 433
+// entity 434
+// entity 435
+// entity 436
+// entity 437
+// entity 438
+// entity 439
+// entity 440
+// entity 441
+// entity 442
+// entity 443
+// entity 444
+// entity 445
+// entity 446
+// entity 447
+// entity 448
+// entity 449
+// entity 450
+// entity 451
+// entity 452
+// entity 453
+// entity 454
+// entity 455
+// entity 456
+// entity 457
+// entity 458
+// entity 459
+// entity 460
+// entity 461
+// entity 462
+// entity 463
+// entity 464
+// entity 465
+// entity 466
+// entity 467
+// entity 468
+// entity 469
+// entity 470
+// entity 471
+// entity 472
+// entity 473
+// entity 474
+// entity 475
+// entity 476
+// entity 477
+// entity 478
+// entity 479
+// entity 480
+// entity 481
+// entity 482
+// entity 483
+// entity 484
+// entity 485
+// entity 486
+// entity 487
+// entity 488
+// entity 489
+// entity 490
+// entity 491
+// entity 492
+// entity 493
+// entity 494
+// entity 495
+// entity 496
+// entity 497
+// entity 498
+// entity 499
+// entity 500
+// entity 501
+// entity 502
+// entity 503
+// entity 504
+// entity 505
+// entity 506
+// entity 507
+// entity 508
+// entity 509
+// entity 510
+// entity 511
+// entity 512
+// entity 513
+// entity 514
+// entity 515
+// entity 516
+// entity 517
+// entity 518
+// entity 519
+// entity 520
+// entity 521
+// entity 522
+// entity 523
+// entity 524
+// entity 525
+// entity 526
+// entity 527
+// entity 528
+// entity 529
+// entity 530
+// entity 531
+// entity 532
+// entity 533
+// entity 534
+// entity 535
+{
+guid "{F222C3A7-A51A-11E6-9C49-14DDA9E204AF}"
+"classname" "reflection_probe"
+"angles" "0 329.698 0"
+"ao_power" "2"
+"ao_range" "16"
+"ao_strength_double_sided" "1"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"exploderFade" "1"
+"name" "endgame_eng_probe"
+"origin" "91 -1067.5 40.25"
+"radius" "2048"
+"resolution" "8x"
+"size_max" "99.195 503.201 45"
+"size_min" "103.055 164.299 35.25"
+"volumetric" "1"
+}
+// entity 536
+// entity 537
+// entity 538
+// entity 539
+// entity 540
+// entity 541
+// entity 542
+// entity 543
+// entity 544
+// entity 545
+// entity 546
+// entity 547
+// entity 548
+// entity 549
+// entity 550
+// entity 551
+// entity 552
+// entity 553
+// entity 554
+// entity 555
+// entity 556
+// entity 557
+// entity 558
+// entity 559
+// entity 560
+// entity 561
+// entity 562
+// entity 563
+// entity 564
+// entity 565
+// entity 566
+// entity 567
+// entity 568
+// entity 569
+// entity 570
+// entity 571
+// entity 572
+// entity 573
+// entity 574
+// entity 575
+// entity 576
+// entity 577
+// entity 578
+// entity 579
+// entity 580
+// entity 581
+// entity 582
+// entity 583
+// entity 584
+// entity 585
+// entity 586
+// entity 587
+// entity 588
+// entity 589
+// entity 590
+// entity 591
+// entity 592
+// entity 593
+// entity 594
+// entity 595
+// entity 596
+// entity 597
+// entity 598
+// entity 599
+// entity 600
+// entity 601
+// entity 602
+// entity 603
+// entity 604
+// entity 605
+// entity 606
+// entity 607
+// entity 608
+// entity 609
+// entity 610
+// entity 611
+// entity 612
+// entity 613
+// entity 614
+// entity 615
+// entity 616
+// entity 617
+// entity 618
+// entity 619
+// entity 620
+// entity 621
+// entity 622
+// entity 623
+// entity 624
+// entity 625
+// entity 626
+// entity 627
+// entity 628
+// entity 629
+// entity 630
+// entity 631
+// entity 632
+// entity 633
+// entity 634
+// entity 635
+// entity 636
+// entity 637
+// entity 638
+// entity 639
+// entity 640
+// entity 641
+// entity 642
+// entity 643
+// entity 644
+// entity 645
+// entity 646
+// entity 647
+// entity 648
+// entity 649
+// entity 650
+// entity 651
+// entity 652
+// entity 653
+// entity 654
+// entity 655
+// entity 656
+// entity 657
+// entity 658
+// entity 659
+// entity 660
+// entity 661
+// entity 662
+// entity 663
+// entity 664
+// entity 665
+// entity 666
+// entity 667
+// entity 668
+// entity 669
+// entity 670
+// entity 671
+// entity 672
+// entity 673
+// entity 674
+// entity 675
+// entity 676
+// entity 677
+// entity 678
+// entity 679
+// entity 680
+// entity 681
+// entity 682
+// entity 683
+// entity 684
+// entity 685
+// entity 686
+// entity 687
+// entity 688
+// entity 689
+// entity 690
+// entity 691
+// entity 692
+// entity 693
+// entity 694
+// entity 695
+// entity 696
+// entity 697
+// entity 698
+// entity 699
+// entity 700
+// entity 701
+// entity 702
+// entity 703
+// entity 704
+// entity 705
+// entity 706
+// entity 707
+// entity 708
+// entity 709
+// entity 710
+// entity 711
+// entity 712
+// entity 713
+// entity 714
+// entity 715
+// entity 716
+// entity 717
+// entity 718
+// entity 719
+// entity 720
+// entity 721
+// entity 722
+// entity 723
+// entity 724
+// entity 725
+// entity 726
+// entity 727
+// entity 728
+// entity 729
+// entity 730
+// entity 731
+// entity 732
+// entity 733
+// entity 734
+// entity 735
+// entity 736
+// entity 737
+// entity 738
+// entity 739
+// entity 740
+// entity 741
+// entity 742
+// entity 743
+// entity 744
+// entity 745
+// entity 746
+// entity 747
+// entity 748
+// entity 749
+// entity 750
+// entity 751
+// entity 752
+// entity 753
+// entity 754
+// entity 755
+// entity 756
+// entity 757
+// entity 758
+// entity 759
+// entity 760
+// entity 761
+// entity 762
+// entity 763
+// entity 764
+// entity 765
+// entity 766
+// entity 767
+// entity 768
+// entity 769
+// entity 770
+// entity 771
+// entity 772
+// entity 773
+// entity 774
+// entity 775
+// entity 776
+// entity 777
+// entity 778
+// entity 779
+// entity 780
+// entity 781
+// entity 782
+// entity 783
+// entity 784
+// entity 785
+// entity 786
+// entity 787
+// entity 788
+// entity 789
+// entity 790
+// entity 791
+// entity 792
+// entity 793
+// entity 794
+// entity 795
+// entity 796
+// entity 797
+// entity 798
+// entity 799
+// entity 800
+// entity 801
+// entity 802
+// entity 803
+// entity 804
+// entity 805
+// entity 806
+// entity 807
+// entity 808
+// entity 809
+// entity 810
+// entity 811
+// entity 812
+// entity 813
+// entity 814
+// entity 815
+// entity 816
+// entity 817
+// entity 818
+// entity 819
+// entity 820
+// entity 821
+// entity 822
+// entity 823
+// entity 824
+// entity 825
+// entity 826
+// entity 827
+// entity 828
+// entity 829
+// entity 830
+// entity 831
+// entity 832
+// entity 833
+// entity 834
+// entity 835
+// entity 836
+// entity 837
+// entity 838
+// entity 839
+// entity 840
+// entity 841
+// entity 842
+// entity 843
+// entity 844
+// entity 845
+// entity 846
+// entity 847
+// entity 848
+// entity 849
+// entity 850
+// entity 851
+// entity 852
+// entity 853
+// entity 854
+// entity 855
+// entity 856
+// entity 857
+// entity 858
+// entity 859
+// entity 860
+// entity 861
+// entity 862
+// entity 863
+// entity 864
+// entity 865
+// entity 866
+// entity 867
+// entity 868
+// entity 869
+// entity 870
+// entity 871
+// entity 872
+// entity 873
+// entity 874
+// entity 875
+// entity 876
+// entity 877
+// entity 878
+// entity 879
+// entity 880
+// entity 881
+// entity 882
+// entity 883
+// entity 884
+// entity 885
+// entity 886
+// entity 887
+// entity 888
+// entity 889
+// entity 890
+// entity 891
+// entity 892
+// entity 893
+// entity 894
+// entity 895
+// entity 896
+// entity 897
+// entity 898
+// entity 899
+// entity 900
+// entity 901
+// entity 902
+// entity 903
+// entity 904
+// entity 905
+// entity 906
+// entity 907
+// entity 908
+// entity 909
+// entity 910
+// entity 911
+// entity 912
+// entity 913
+// entity 914
+// entity 915
+// entity 916
+// entity 917
+// entity 918
+// entity 919
+// entity 920
+// entity 921
+// entity 922
+// entity 923
+// entity 924
+// entity 925
+// entity 926
+// entity 927
+// entity 928
+// entity 929
+// entity 930
+// entity 931
+// entity 932
+// entity 933
+// entity 934
+// entity 935
+// entity 936
+// entity 937
+// entity 938
+// entity 939
+// entity 940
+// entity 941
+// entity 942
+// entity 943
+// entity 944
+// entity 945
+// entity 946
+// entity 947
+// entity 948
+// entity 949
+// entity 950
+// entity 951
+// entity 952
+// entity 953
+// entity 954
+// entity 955
+// entity 956
+// entity 957
+// entity 958
+// entity 959
+// entity 960
+// entity 961
+// entity 962
+// entity 963
+// entity 964
+// entity 965
+// entity 966
+// entity 967
+// entity 968
+// entity 969
+// entity 970
+// entity 971
+// entity 972
+// entity 973
+// entity 974
+// entity 975
+// entity 976
+// entity 977
+// entity 978
+// entity 979
+// entity 980
+// entity 981
+// entity 982
+// entity 983
+// entity 984
+// entity 985
+// entity 986
+// entity 987
+// entity 988
+// entity 989
+// entity 990
+// entity 991
+// entity 992
+// entity 993
+// entity 994
+// entity 995
+// entity 996
+// entity 997
+// entity 998
+// entity 999
+// entity 1000
+// entity 1001
+// entity 1002
+// entity 1003
+// entity 1004
+// entity 1005
+// entity 1006
+// entity 1007
+// entity 1008
+// entity 1009
+// entity 1010
+// entity 1011
+// entity 1012
+// entity 1013
+// entity 1014
+// entity 1015
+// entity 1016
+// entity 1017
+// entity 1018
+// entity 1019
+// entity 1020
+// entity 1021
+// entity 1022
+// entity 1023
+// entity 1024
+// entity 1025
+// entity 1026
+// entity 1027
+// entity 1028
+// entity 1029
+// entity 1030
+// entity 1031
+// entity 1032
+// entity 1033
+// entity 1034
+// entity 1035
+// entity 1036
+// entity 1037
+{
+guid "{1FD8779D-4627-4EC2-8089-D58793A6217A}"
+"classname" "reflection_probe"
+"ao_power" "8"
+"ao_range" "38"
+"ao_strength_double_sided" "1"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"exploderFade" "1"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend11" "3"
+"faceBlend12" "3"
+"faceBlend13" "3"
+"faceBlend14" "3"
+"faceBlend15" "3"
+"faceBlend16" "3"
+"faceBlend17" "3"
+"faceBlend18" "3"
+"faceBlend19" "3"
+"faceBlend2" "3"
+"faceBlend20" "3"
+"faceBlend21" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -1250"
+"facePlane1" "0 1 0 -1122"
+"facePlane10" "0.496139 0.868243 0 -939.749"
+"facePlane11" "0.470588 -0.882353 0 -866.883"
+"facePlane12" "0.484061 -0.875034 0 -862.458"
+"facePlane13" "0.899814 0.436274 0 -934.457"
+"facePlane14" "0.907311 0.420461 0 -948.189"
+"facePlane15" "0.927242 0.374463 0 -1028.71"
+"facePlane16" "0.485527 -0.874222 -0 -866.979"
+"facePlane17" "1 0 0 -667.5"
+"facePlane18" "-0.595559 -0 -0.803312 -184.848"
+"facePlane19" "-0.61168 -0 -0.791106 -165.051"
+"facePlane2" "0 0 1 -221.75"
+"facePlane20" "-0 0 1 -138.75"
+"facePlane21" "0.0181788 -0 -0.999835 -416.831"
+"facePlane3" "-1 -0 -0 -250"
+"facePlane4" "-0 -1 -0 -955"
+"facePlane5" "-0 -0 -1 -435.25"
+"facePlane6" "-0.912509 -0.409056 -0 -347.839"
+"facePlane7" "-0.989661 -0.143429 -0 -233.736"
+"facePlane8" "-0.986394 0.164399 0 -245.119"
+"facePlane9" "-0.931243 0.364399 0 -352.88"
+"name" "mainarea_probe"
+"origin" "557 319 139.75"
+"radius" "2048"
+"resolution" "8x"
+"size_max" "250 955 435.25"
+"size_min" "1250 1122 221.75"
+"volumetric" "1"
+}
+// entity 1038
+{
+guid "{BD6C1868-C767-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"adapt_better" "1"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend11" "3"
+"faceBlend12" "3"
+"faceBlend13" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -262"
+"facePlane1" "0 1 0 -328.25"
+"facePlane10" "0.65294 0.75741 0 -275.619"
+"facePlane11" "0.535824 -0.844329 0 -339.4"
+"facePlane12" "0.539054 -0.842271 0 -334.247"
+"facePlane13" "0.929807 0.368048 0 -148.353"
+"facePlane2" "0 0 1 -72"
+"facePlane3" "-1 -0 -0 -235.75"
+"facePlane4" "-0 -1 -0 -436"
+"facePlane5" "-0 -0 -1 -72"
+"facePlane6" "-0.915644 -0.40199 -0 -116.002"
+"facePlane7" "-0.961524 -0.274721 -0 -85.8847"
+"facePlane8" "-0.998053 -0.0623783 -0 -97.7468"
+"facePlane9" "-0.894427 0.447214 0 -268.888"
+"name" "topleft_probe"
+"origin" "-64.25 570.25 270.5"
+"resolution" "8x"
+"size_max" "235.75 436 72"
+"size_min" "262 280.75 72"
+}
+// entity 1039
+{
+guid "{0531F04C-C768-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"adapt_better" "1"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend11" "3"
+"faceBlend12" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -257.75"
+"facePlane1" "0 1 0 -438.75"
+"facePlane10" "-0.956934 0.290306 -0 -98.0454"
+"facePlane11" "-0.999315 -0.0370117 -0 -140.403"
+"facePlane12" "-0.948683 -0.316228 -0 -303.578"
+"facePlane2" "0 0 1 -72"
+"facePlane3" "-1 -0 -0 -243.75"
+"facePlane4" "-0 -1 -0 -386.25"
+"facePlane5" "-0 -0 -1 -72"
+"facePlane6" "0.496139 0.868243 0 -261"
+"facePlane7" "0.922731 -0.385445 0 -139.934"
+"facePlane8" "0.925547 -0.378633 0 -131.27"
+"facePlane9" "-0.919145 0.393919 -0 -105.407"
+"name" "topright_probe"
+"origin" "-99.25 -92.25 270.75"
+"resolution" "8x"
+"size_max" "243.75 321.5 72"
+"size_min" "257.75 438.75 72"
+}
+// entity 1040
+{
+guid "{5214229B-C768-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"adapt_better" "1"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"facePlane0" "1 0 0 -208.75"
+"facePlane1" "0 1 0 -213.75"
+"facePlane2" "0 0 1 -89.5"
+"facePlane3" "-1 -0 -0 -225.25"
+"facePlane4" "-0 -1 -0 -206.5"
+"facePlane5" "-0 -0 -1 -82.5"
+"facePlane6" "-0.707107 -0.707107 -0 -247.664"
+"facePlane7" "-0.707107 0.707107 -0 -248.902"
+"name" "noodlebar_top_probe"
+"origin" "175.75 275.5 243.25"
+"resolution" "8x"
+"size_max" "225.25 206.5 115.75"
+"size_min" "208.75 213.75 89.5"
+}
+// entity 1041
+{
+guid "{9B21E30F-C768-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"facePlane0" "1 0 0 -163.5"
+"facePlane1" "0 1 0 -143.25"
+"facePlane2" "0 0 1 -53"
+"facePlane3" "-1 -0 -0 -230.75"
+"facePlane4" "-0 -1 -0 -120"
+"facePlane5" "-0 -0 -1 -76"
+"facePlane6" "-0.952578 0.304296 0 -182.627"
+"name" "gameroom_probe"
+"origin" "-457 -122.25 53"
+"resolution" "8x"
+"size_max" "230.75 120 91"
+"size_min" "163.5 143.25 53"
+}
+// entity 1042
+{
+guid "{FBF15BD4-C768-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"facePlane0" "1 0 0 -133.25"
+"facePlane1" "0 1 0 -195"
+"facePlane2" "0 0 1 -34.75"
+"facePlane3" "-1 -0 -0 -222.5"
+"facePlane4" "-0 -1 -0 -208.25"
+"facePlane5" "-0 -0 -1 -73.25"
+"facePlane6" "-0.707107 -0.707107 -0 -244.128"
+"facePlane7" "-0.707107 0.707107 -0 -238.296"
+"name" "noodlebar_probe"
+"origin" "176 268.25 38"
+"resolution" "8x"
+"size_max" "225.25 213.5 115.75"
+"size_min" "208.75 206.75 89.5"
+}
+// entity 1043
+{
+guid "{AFA387FE-A51A-11E6-9C49-14DDA9E204AF}"
+"classname" "reflection_probe"
+"angles" "0 30.2989 0"
+"ao_power" "2"
+"ao_range" "16"
+"ao_strength_double_sided" "1"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"exploderFade" "1"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"facePlane0" "1 0 0 -204.75"
+"facePlane1" "0 1 0 -503.25"
+"facePlane2" "0 0 1 -82.25"
+"facePlane3" "-1 -0 -0 -203.5"
+"facePlane4" "-0 -1 -0 -498.5"
+"facePlane5" "-0 -0 -1 -67"
+"name" "spawn_probe"
+"origin" "73 1659.75 65"
+"radius" "2048"
+"resolution" "8x"
+"size_max" "203.5 498.5 67"
+"size_min" "204.75 503.25 82.25"
+"volumetric" "1"
+}
+// entity 1044
+{
+guid "{9BA7A2C3-C769-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend11" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -193.25"
+"facePlane1" "0 1 0 -161"
+"facePlane10" "-0.970143 0.242536 0 -174.989"
+"facePlane11" "0.477092 0.878853 0 -95.2928"
+"facePlane2" "0 0 1 -72"
+"facePlane3" "-1 -0 -0 -193.25"
+"facePlane4" "-0 -1 -0 -147.5"
+"facePlane5" "-0 -0 -1 -49"
+"facePlane6" "0.865982 -0.500074 -0 -151.535"
+"facePlane7" "-0.485643 -0.874157 -0 -98.3184"
+"facePlane8" "-0.505179 -0.863015 -0 -97.9153"
+"facePlane9" "-0.887754 0.460317 0 -157.905"
+"name" "endgame_hab_probe"
+"origin" "260.75 -768.25 72"
+"resolution" "8x"
+"size_max" "193.25 147.5 49"
+"size_min" "193.25 161 72"
+}
+// entity 1045
+{
+guid "{2DFB8B78-C76F-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend11" "3"
+"faceBlend12" "3"
+"faceBlend13" "3"
+"faceBlend14" "3"
+"faceBlend15" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -122.5"
+"facePlane1" "0 1 0 -167"
+"facePlane10" "0.485643 -0.874157 -0 -50.9925"
+"facePlane11" "0.894427 -0.447214 0 -71.2188"
+"facePlane12" "0.843661 0.536875 0 -117.921"
+"facePlane13" "0.560213 0.828349 0 -121.956"
+"facePlane14" "-1 -0 -0 -125"
+"facePlane15" "-0.478852 0.877896 0 -130.687"
+"facePlane2" "0 0 1 -53.25"
+"facePlane3" "-1 -0 -0 -146.75"
+"facePlane4" "-0 -1 -0 -89.5"
+"facePlane5" "-0 -0 -1 -90.75"
+"facePlane6" "-0 -1 -0 -84.25"
+"facePlane7" "-0.873481 -0.486858 -0 -121.851"
+"facePlane8" "-0 -1 -0 -75.5"
+"facePlane9" "-0 -1 -0 -64"
+"name" "cctvroom_probe"
+"origin" "-256 1041.75 53.25"
+"resolution" "8x"
+"size_max" "146.75 89.5 90.75"
+"size_min" "122.5 167 53.25"
+}
+// entity 1046
+{
+guid "{C7542C42-C768-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"facePlane0" "1 0 0 -188.25"
+"facePlane1" "0 1 0 -129"
+"facePlane2" "0 0 1 -43"
+"facePlane3" "-1 -0 -0 -217.75"
+"facePlane4" "-0 -1 -0 -127.25"
+"facePlane5" "-0 -0 -1 -85.75"
+"facePlane6" "-0.957211 -0.289389 -0 -140.782"
+"name" "perkroom_probe"
+"origin" "-427.75 655.25 43"
+"resolution" "8x"
+"size_max" "217.75 127.25 101"
+"size_min" "188.25 129 43"
+}
+// entity 1047
+{
+guid "{0E2959B4-C779-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"angles" "0 29.7986 0"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -239.853"
+"facePlane1" "0 1 0 -357.684"
+"facePlane10" "-0.867777 0.496952 0.00111607 -82.3236"
+"facePlane2" "0 0 1 -72"
+"facePlane3" "-1 -0 -0 -166.658"
+"facePlane4" "-0 -1 -0 -225.218"
+"facePlane5" "-0 -0 -1 -79.5"
+"facePlane6" "0.998181 -0.0602903 -0 -183.315"
+"facePlane7" "0.993642 -0.112589 -0 -178.12"
+"facePlane8" "0.496953 0.867778 0 -204.75"
+"facePlane9" "-0.474891 0.271957 -0.83697 -48.1741"
+"name" "bottomleft_probe"
+"origin" "-67 702.5 72"
+"resolution" "8x"
+"size_max" "166.658 225.218 72"
+"size_min" "-22.6581 -81.2183 72"
+}
+// entity 1048
+{
+guid "{84E6E68D-C767-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend10" "3"
+"faceBlend11" "3"
+"faceBlend12" "3"
+"faceBlend13" "3"
+"faceBlend14" "3"
+"faceBlend15" "3"
+"faceBlend16" "3"
+"faceBlend17" "3"
+"faceBlend18" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -249.5"
+"facePlane1" "0 1 0 -397"
+"facePlane10" "-0.616308 -0 -0.787505 -126.24"
+"facePlane11" "-0.519947 -0 -0.854199 -127.052"
+"facePlane12" "-0.388057 -0 -0.921635 -122.396"
+"facePlane13" "-0.527363 -0 -0.84964 -120.334"
+"facePlane14" "-0.358979 -0 -0.933346 -116.166"
+"facePlane15" "-0.141421 -0 -0.98995 -80.9991"
+"facePlane16" "-0.4741 -0 -0.880471 -142.467"
+"facePlane17" "-0.544988 -0 -0.838444 -123.325"
+"facePlane18" "-0.933346 0.358979 0 -61.17"
+"facePlane2" "0 0 1 -72"
+"facePlane3" "-1 -0 -0 -244.5"
+"facePlane4" "-0 -1 -0 -352"
+"facePlane5" "-0 -0 -1 -87"
+"facePlane6" "0.497762 0.867313 0 -180.179"
+"facePlane7" "0.909972 -0.414671 0 -125.533"
+"facePlane8" "0 -1 0 -217.5"
+"facePlane9" "-0.984707 0.174217 0 -108.274"
+"name" "bottomright_probe"
+"origin" "-125.25 -171.25 72"
+"resolution" "8x"
+"size_max" "244.5 352 72"
+"size_min" "249.5 397 72"
+}
+// entity 1049
+// entity 1050
+{
+guid "{415D1050-C768-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"adapt_better" "1"
+"ao_strength_double_sided" "0.200000002980232"
+"box" "0"
+"brightnessAdjust" "-5"
+"evcomp" "-5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"facePlane0" "1 0 0 -395.75"
+"facePlane1" "0 1 0 -165.25"
+"facePlane2" "0 0 1 -72"
+"facePlane3" "-1 -0 -0 -82.5"
+"facePlane4" "-0 -1 -0 -165.5"
+"facePlane5" "-0 -0 -1 -72"
+"name" "topcoridoor_probe"
+"origin" "-272.75 272.25 270"
+"override" "1"
+"resolution" "8x"
+"size_max" "235.75 139.5 72"
+"size_min" "395.75 130.75 72"
+"smooth_post_process" "1"
+}
+// entity 1051
+{
+guid "{1974602D-C782-11E6-9C63-14DDA9E204AF}"
+"classname" "reflection_probe"
+"adapt_better" "1"
+"ao_strength_double_sided" "0.200000002980232"
+"name" "topmiddle_probe"
+"origin" "-103.5 262.5 270.5"
+"resolution" "8x"
+"size_max" "68 157 72"
+"size_min" "84.75 139.75 72"
+"smooth_post_process" "1"
+}

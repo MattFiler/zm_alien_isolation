@@ -1,0 +1,326 @@
+iwmap 4
+// entity 0
+{
+guid "{59A512F3-C6A1-11E6-9C62-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+{
+guid "{7FF6E94F-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90.5 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-404 583.25 0"
+}
+// entity 5
+{
+guid "{7FF6E952-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90.5 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-405 711 0"
+}
+// entity 6
+{
+guid "{7FF6E955-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90.5 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-501 582.25 0"
+}
+// entity 7
+{
+guid "{7FF6E958-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90.5 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-502 710 0"
+}
+// entity 8
+{
+guid "{7FF6E95B-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90.5 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-595.25 581.25 0"
+}
+// entity 9
+{
+guid "{7FF6E95E-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90.5 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-596.25 709 0"
+}
+// entity 10
+// entity 11
+{
+guid "{7FF6E964-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "gameroom_wall_generator"
+"modelscale" "2"
+"origin" "-404 518.5 0"
+}
+// entity 12
+// entity 13
+{
+guid "{7FF6E96A-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-595 517.5 0"
+}
+// entity 14
+{
+guid "{7FF6E96D-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-452 517.5 0"
+}
+// entity 15
+{
+guid "{7FF6E970-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-499 517.5 0"
+}
+// entity 16
+{
+guid "{7FF6E973-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-547 517.5 0"
+}
+// entity 17
+{
+guid "{7FF6E976-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-405 770.5 0"
+}
+// entity 18
+// entity 19
+{
+guid "{7FF6E97C-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-501 770.5 0"
+}
+// entity 20
+{
+guid "{7FF6E97F-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-453 770.5 0"
+}
+// entity 21
+{
+guid "{7FF6E982-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-597 770.5 0"
+}
+// entity 22
+{
+guid "{7FF6E985-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-549 770.5 0"
+}
+// entity 23
+{
+guid "{7FF6E988-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/temp_prefab6.map"
+"origin" "-26 776.4 0"
+}
+// entity 24
+// entity 25
+{
+guid "{7FF6E98E-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "gameroom_wall_filler_angle"
+"modelscale" "2"
+"origin" "-643 768.5 0"
+}
+// entity 26
+{
+guid "{7FF6E991-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-645 722.5 0"
+}
+// entity 27
+{
+guid "{7FF6E994-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "gameroom_wall_filler_angle"
+"modelscale" "2"
+"origin" "-641 519.5 0"
+}
+// entity 28
+{
+guid "{7FF6E997-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-644 566.5 0"
+}
+// entity 29
+{
+guid "{7FF6E99A-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-643 613.5 0"
+}
+// entity 30
+{
+guid "{7FF6E99D-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-643 675.5 0"
+}
+// entity 31
+{
+guid "{7FF6E9A0-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "gameroom_wall_small"
+"modelscale" "2"
+"origin" "-644 644.5 0"
+}
+// entity 32
+// entity 33
+{
+guid "{7FF6E9A6-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 0 -45.0007"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-399 749.633 112.721"
+}
+// entity 34
+{
+guid "{7FF6E9A9-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 0 -45.0007"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-495 749.633 112.721"
+}
+// entity 35
+{
+guid "{7FF6E9AC-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 0 -45.0007"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-591 749.633 112.721"
+}
+// entity 36
+{
+guid "{7FF6E9AF-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 90 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-624 728.633 112.721"
+}
+// entity 37
+{
+guid "{7FF6E9B2-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 90 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-623 650.633 112.721"
+}
+// entity 38
+{
+guid "{7FF6E9B5-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 90 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-623 572.633 112.721"
+}
+// entity 39
+{
+guid "{7FF6E9B8-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 -180 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-601 538.633 112.721"
+}
+// entity 40
+{
+guid "{7FF6E9BB-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 -180 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-506 538.633 112.721"
+}
+// entity 41
+{
+guid "{7FF6E9BE-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 -180 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-412 538.633 112.721"
+}
+// entity 42
+{
+guid "{7FF6E9C1-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "script_model"
+"model" "generator_handle"
+"modelscale" "2"
+"origin" "-416.5 511.5 42.25"
+"targetname" "generator_handle_effect"
+}
+// entity 43
+{
+guid "{7FF6E9C4-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "generator_wall"
+"modelscale" "2"
+"origin" "-403.75 504.5 -7.75"
+}
+// entity 44
+{
+guid "{7FF6E9C7-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "generator_handle_holder"
+"modelscale" "2"
+"origin" "-414.9 509.5 -7.75"
+}
+// entity 45

@@ -1,0 +1,144 @@
+iwmap 4
+// entity 0
+{
+guid "{2D164DC4-8FAE-11E6-9C42-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+// brush 0
+{
+ guid "{F661596D-5F74-4822-850B-1C5DAA7EC38C}"
+ ( 341 444 120 ) ( -427 444 120 ) ( -427 444 -8 ) script_wall 128 128 198.5 -24.5 0 0 lightmap_gray 32768 32768 6421 122 0 0
+ ( 77 436 248 ) ( 77 436 120 ) ( -291 436 120 ) script_wall 128 128 198.5 -24.5 0 0 lightmap_gray 32768 32768 6421 122 0 0
+ ( -235 1052 0 ) ( -235 -508 0 ) ( -175 -508 0 ) script_wall 128 128 198.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6421 -90 0
+ ( -13 -508 35 ) ( -13 1052 35 ) ( 47 -508 35 ) script_wall 128 128 198.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6421 -90 0
+ ( 32 442 31 ) ( 32 438 31 ) ( 32 442 63 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 180 0
+ ( -32 437 32 ) ( -32 439 32 ) ( -32 439 64 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 180 0
+}
+// brush 1
+{
+ guid "{262F3034-6217-442F-ADB6-4EB2084B6194}"
+ ( 56 444 104 ) ( 56 444 0 ) ( 64 436 0 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 32768 6780 122 0 0
+ ( 56 444 0 ) ( 56 444 104 ) ( 32 444 104 ) script_wall 128 128 202.5 -24.5 0 0 lightmap_gray 32768 32768 6425 122 0 0
+ ( 64 436 104 ) ( 64 436 0 ) ( 32 436 0 ) script_wall 128 128 202.5 -24.5 0 0 lightmap_gray 32768 32768 6425 122 0 0
+ ( -231 1052 0 ) ( -231 -508 0 ) ( -171 -508 0 ) script_wall 128 128 202.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6425 -90 0
+ ( 32 438 32 ) ( 32 442 32 ) ( 32 442 64 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 -180 0
+ ( -171.5 -508 106 ) ( -231.5 -508 106 ) ( -231.5 1052 106 ) script_wall 128 128 202.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6425 -90 0
+}
+// brush 2
+{
+ guid "{B4E1FE4A-F608-4B25-B57D-C0C435DCCB11}"
+ ( 56 444 104 ) ( 56 444 120 ) ( -56 444 120 ) script_wall 128 128 202.5 -24.5 0 0 lightmap_gray 32768 32768 6425 122 0 0
+ ( -167 436 100 ) ( -167 436 172 ) ( 81 436 172 ) script_wall 128 128 202.5 -24.5 0 0 lightmap_gray 32768 32768 6425 122 0 0
+ ( -230 -508 106 ) ( -170 -508 106 ) ( -230 1052 106 ) script_wall 128 128 202.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6425 -90 0
+ ( 56 444 120 ) ( 56 444 104 ) ( 64 436 104 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 180 0
+ ( -56 444 104 ) ( -56 444 120 ) ( -64 436 120 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 -180 0
+ ( 32 436 128 ) ( 33.5 436 128 ) ( 32 404 128 ) script_wall 128 128 202.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6425 -90 0
+}
+// brush 3
+{
+ guid "{58119D00-310A-4A82-83A6-CD3526F92982}"
+ ( 351 444 120 ) ( -417 444 120 ) ( -417 444 -8 ) script_wall 128 128 206.5 -24.5 0 0 lightmap_gray 32768 32768 6429 122 0 0
+ ( -64 436 0 ) ( -64 436 104 ) ( -28 436 104 ) script_wall 128 128 206.5 -24.5 0 0 lightmap_gray 32768 32768 6429 122 0 0
+ ( -227 1052 0 ) ( -227 -508 0 ) ( -167 -508 0 ) script_wall 128 128 206.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6429 -90 0
+ ( -64 436 104 ) ( -64 436 0 ) ( -56 444 0 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 180 0
+ ( -32 439 38 ) ( -32 437 38 ) ( -32 439 70 ) script_wall 128 128 591.5 -24.5 0 0 lightmap_gray 32768 -32768 -8272 -122 180 0
+ ( -167 -508 106 ) ( -227 -508 106 ) ( -227 1052 106 ) script_wall 128 128 206.5 -591.5 0 0 lightmap_gray 32768 32768 -8272 -6429 -90 0
+}
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+{
+guid "{4783CF96-A6ED-4C6E-92F8-1B6D7659D9C7}"
+"classname" "misc_prefab"
+"angles" "0 2.50448e-006 0"
+"model" "_prefabs/zm/zm_core/barricade_reciever_wood.map"
+"origin" "0 432 0"
+"script_string" "receiver_set_entry_a"
+}
+// entity 5
+// entity 6
+{
+guid "{2F82472E-EBE5-4F8C-9F23-D3087878D053}"
+"classname" "script_struct"
+"angles" "0 270 0"
+"origin" "0 576 0"
+"script_noteworthy" "riser_location"
+"script_string" "receiver_set_entry_a"
+"targetname" "start_zone_spawners"
+}
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+// entity 33
+// entity 34
+// entity 35
+// entity 36
+// entity 37
+// entity 38
+// entity 39
+// entity 40
+// entity 41
+// entity 42
+// entity 43
+// entity 44
+// entity 45
+// entity 46
+// entity 47
+// entity 48
+// entity 49
+// entity 50
+// entity 51
+// entity 52
+// entity 53
+// entity 54
+// entity 55
+// entity 56
+// entity 57
+// entity 58
+// entity 59
+// entity 60
+// entity 61
+// entity 62
+// entity 63
+// entity 64
+// entity 65
+// entity 66
+// entity 67
+// entity 68
+// entity 69
+// entity 70
+// entity 71
+// entity 72
+// entity 73
+// entity 74
+// entity 75
+// entity 76

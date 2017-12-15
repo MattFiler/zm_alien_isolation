@@ -1,0 +1,73 @@
+iwmap 4
+// entity 0
+{
+guid "{5D0F9E51-871F-11E6-9C40-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+// entity 33
+{
+guid "{1DFD711E-857D-11E6-9C3F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -30 0"
+"model" "wall_model"
+"modelscale" "2"
+"origin" "-296 -283 0"
+}
+// entity 34
+// entity 35
+// entity 36
+{
+guid "{E37CA195-8587-11E6-9C3F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "wall_model_flipped"
+"modelscale" "2"
+"origin" "-295 830 -1"
+}
+// entity 37
+// entity 38
+// entity 39
+// entity 40
+// entity 41
+// entity 42
+// entity 43
+// entity 44
+// entity 45
+// entity 46

@@ -1,0 +1,601 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{AF39EDCF-2E82-11E7-A532-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{6BF4754B-2E7F-11E7-A532-14DDA9E204AF}"
+ ( 40659.5 -8547 -16624.5 ) ( 35444 -8547 -16624.5 ) ( 35444 -9087 -16624.5 ) caulk_shadow 16 16 29 0 0 0 lightmap_gray 16384 16384 29 0 0 0
+ ( 35400.5 -9087 -11615.5 ) ( 35400.5 -8547 -11615.5 ) ( 40616 -8547 -11615.5 ) caulk_shadow 16 16 -14.5 0 0 0 lightmap_gray 16384 16384 -14.5 0 0 0
+ ( 35415 -9087 -11877.5 ) ( 40630.5 -9087 -11877.5 ) ( 40630.5 -9087 -16115 ) caulk_shadow 16 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 40645 -9087 -12125 ) ( 40645 -8547 -12125 ) ( 40645 -8547 -16362.5 ) caulk_shadow 16 16 0 247.5 0 0 lightmap_gray 16384 16384 0 247.5 0 0
+ ( 40770 -8994 -11877.5 ) ( 35554.5 -8994 -11877.5 ) ( 35554.5 -8994 -16115 ) caulk_shadow 16 16 0 0 0 0 lightmap_gray 16384 16384 102.5 0 0 0
+ ( 35415 -8547 -11877.5 ) ( 35415 -9087 -11877.5 ) ( 35415 -9087 -16115 ) caulk_shadow 16 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ guid "{746DE3A6-2E7F-11E7-A532-14DDA9E204AF}"
+ ( 40648.5 -8544.5 -16624.5 ) ( 35433 -8544.5 -16624.5 ) ( 35433 -9084.5 -16624.5 ) caulk_shadow 16 16 18 -2.5 0 0 lightmap_gray 16384 16384 18 -2.5 0 0
+ ( 35389.5 -9084.5 -11615.5 ) ( 35389.5 -8544.5 -11615.5 ) ( 40605 -8544.5 -11615.5 ) caulk_shadow 16 16 -25.5 -2.5 0 0 lightmap_gray 16384 16384 -25.5 -2.5 0 0
+ ( 42453 -12130 -16115 ) ( 42453 -12130 -11877.5 ) ( 40624.5 -8994 -11877.5 ) caulk_shadow 13.70234 16 -43789.395 0 0 0 lightmap_gray 14031.005 16384 -43789.355 0 0 0
+ ( 40531 -9042 -11877.5 ) ( 40531 -9042 -16115 ) ( 40624.5 -8994 -16115 ) caulk_shadow 20.453125 -16 -29010.49 0 180 0 lightmap_gray 20943.043 -16384 -29008.938 0 180 0
+ ( 40531 -9042 -16115 ) ( 40531 -9042 -11877.5 ) ( 42379.5 -12176.5 -11877.5 ) caulk_shadow 9.7768593 16 -33817.563 0 0 0 lightmap_gray 10011.753 16384 -33754.879 0 0 0
+ ( 42806.5 -12391.5 -11877.5 ) ( 42806.5 -12391.5 -16115 ) ( 42733 -12438 -16115 ) caulk_shadow 22.565784 -16 -30048.342 0 180 0 lightmap_gray 23107.328 -16384 -30048.238 0 180 0
+}
+}
+// entity 1
+{
+guid "{EAB67D0B-2900-11E7-A52E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 90 0"
+"model" "tow_external_walls_1155"
+"modelscale" "2.5"
+"origin" "37201.6 -9905.8 -13982"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{C4DEF0D2-2E69-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "tow_external_walls_1133"
+"modelscale" "2.5"
+"origin" "36100.6 -10969.5 -15351.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{236A41E4-2E6A-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 90 180"
+"model" "tow_external_walls_1267"
+"modelscale" "2.5"
+"origin" "36164.1 -11427.5 -12900.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{57408302-2E6A-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 90 0"
+"model" "tow_external_walls_1150"
+"modelscale" "2.5"
+"origin" "36024.6 -10129 -14022.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{257B0FA7-2E6B-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 90"
+"model" "tow_external_walls_1210"
+"modelscale" "2.5"
+"origin" "38551.6 -10772.8 -12365"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{530D64FB-2E6B-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "-90 151 90"
+"model" "tow_external_walls_1280"
+"modelscale" "2.5"
+"origin" "38249.6 -11434.3 -16001"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{730511FE-2E6B-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "-90 180 0"
+"model" "tow_external_walls_1174"
+"modelscale" "2.5"
+"origin" "38062.6 -9906.3 -13645.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{9C47A373-2E6B-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_external_walls_1145"
+"modelscale" "2.5"
+"origin" "38063.1 -9687.3 -14762"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{CF6C96CD-2E6B-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "-90 180 0"
+"model" "tow_external_walls_1171"
+"modelscale" "2.5"
+"origin" "38064.6 -9737.3 -15579.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{3A242252-2E6C-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 180 0"
+"model" "tow_external_walls_1137"
+"modelscale" "2.5"
+"origin" "39220.6 -9794.3 -14460.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{729627E0-2E6C-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 240 0"
+"model" "tow_external_walls_1202"
+"modelscale" "2.5"
+"origin" "38018.1 -9905.76 -13429"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{C3006537-2E6C-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 180"
+"model" "tow_external_walls_1206"
+"modelscale" "2.5"
+"origin" "36365.1 -9879.8 -13252.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{EB29458F-2E6C-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 180"
+"model" "tow_external_walls_1119"
+"modelscale" "2.5"
+"origin" "36503.1 -9799.3 -13548.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{278B62D1-2E6D-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36064.6 -9777.3 -13746"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{74B2B690-2E6D-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 0 180"
+"model" "tow_external_walls_1239"
+"modelscale" "2.5"
+"origin" "36512.6 -9951.8 -14063.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{949008D6-2E6D-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 0 180"
+"model" "tow_external_walls_1123"
+"modelscale" "2.5"
+"origin" "36513.1 -9818.8 -14557.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{028C0CC1-2E6E-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 60 180"
+"model" "tow_external_walls_1253"
+"modelscale" "2.5"
+"origin" "36069.6 -9874.3 -14474.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{DE2E57BC-2E6E-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 212 0"
+"model" "tow_external_walls_1285"
+"modelscale" "2.5"
+"origin" "41631.1 -12051.3 -14460.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{86486C83-2E6F-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "-90 241 0"
+"model" "tow_external_walls_1277"
+"modelscale" "2.5"
+"origin" "37940.1 -9829.26 -12873.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{53947B02-2E6F-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "270 240 0"
+"model" "tow_external_walls_1272"
+"modelscale" "2.5"
+"origin" "40365.1 -11088.8 -12892"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{4E4E43A2-2E70-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_external_walls_1195"
+"modelscale" "2.5"
+"origin" "37532.1 -11225.8 -12785"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{6FC69B23-2E70-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_external_walls_1301"
+"modelscale" "2.5"
+"origin" "37532.6 -11224.3 -12785"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{3B1A3802-2E71-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "tow_external_walls_1113"
+"modelscale" "2.5"
+"origin" "36095.1 -10073.5 -14398.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{825D7337-2E6E-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 120 0"
+"model" "tow_external_walls_1190"
+"modelscale" "2.5"
+"origin" "40400.1 -10834.8 -14460.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{04C8E915-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "35944.6 -9777.3 -15203"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{04C8E923-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36247.6 -9777.3 -15203.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{0BB29E57-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36549.1 -9777.3 -15204"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 28
+{
+guid "{0BB29E62-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36852.1 -9777.3 -15204.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 29
+{
+guid "{0BB29E6D-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "37153.1 -9777.3 -15205"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 30
+{
+guid "{0BB29E78-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "37454.6 -9777.3 -15205.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 31
+{
+guid "{1B3DE6D7-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36245.6 -9777.3 -15910.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 32
+{
+guid "{1B3DE6DA-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36549.6 -9777.3 -15911"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 33
+{
+guid "{1B3DE6DD-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "36852.6 -9777.3 -15911.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 34
+{
+guid "{1B3DE6E0-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "37153.6 -9777.3 -15912"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 35
+{
+guid "{1B3DE6E3-2E79-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 0 180"
+"model" "tow_external_walls_1224"
+"modelscale" "2.5"
+"origin" "37455.1 -9777.3 -15912.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 36
+{
+guid "{446294B1-2E7A-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 90"
+"model" "tow_external_large_decal"
+"modelscale" "3"
+"origin" "37307.5 -9805 -15156"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 37
+{
+guid "{FB6697C8-2E81-11E7-A532-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "tow_external_catwalk_top"
+"modelscale" "2.5"
+"origin" "37254.6 -10165.8 -13800"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 38
+{
+guid "{AF39EDD6-2E82-11E7-A532-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 180 0"
+"model" "tow_external_dockingarm"
+"modelscale" "2.5"
+"origin" "37933.6 -8775.81 -13425.5"
+"targetname" "towplat_dockingclamp"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 39
+{
+guid "{55C09632-30DC-11E7-A533-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "37933.6 -13862.8 -13425.5"
+"targetname" "dockingclamp_finalmove"
+"_color" "1 0 0"
+}
+// entity 40
+{
+guid "{D9FAC8D3-2E69-11E7-A531-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "180 90 90"
+"model" "tow_external_walls_1128"
+"modelscale" "2.5"
+"origin" "35239.4 -12282 -14400.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

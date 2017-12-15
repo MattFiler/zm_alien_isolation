@@ -1,0 +1,468 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{400C4766-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{9E927414-2758-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 -90"
+"model" "tow_airlock_door_outer"
+"modelscale" "2.20000004768372"
+"origin" "34395.6 -11276.8 -14259.7"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{400C476F-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "tow_airlock_door"
+"modelscale" "2.20000004768372"
+"origin" "34389.1 -11276.8 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{400C4772-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_floor"
+"modelscale" "2.20000004768372"
+"origin" "34017.6 -11319.8 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{400C4775-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_spawn_wall_door"
+"modelscale" "2.20000004768372"
+"origin" "34016.3 -10998.3 -14196.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{400C4778-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_airlock_door_front_border"
+"modelscale" "2.20000004768372"
+"origin" "34109.6 -11275.8 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{400C477B-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_wall_filler"
+"modelscale" "2.20000004768372"
+"origin" "34109.4 -11337.3 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{400C477E-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_wall_filler"
+"modelscale" "2.20000004768372"
+"origin" "34109.3 -11353.8 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{400C4781-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_wall_filler"
+"modelscale" "2.20000004768372"
+"origin" "34109.4 -11396.5 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{400C4784-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_wall_filler"
+"modelscale" "2.20000004768372"
+"origin" "34109.4 -11413.8 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{400C4787-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -90 0"
+"model" "tow_airlock_door_front_inner"
+"modelscale" "2.20000004768372"
+"origin" "34132.4 -11275.8 -14258.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{400C478A-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -90 0"
+"model" "tow_airlock_floor"
+"modelscale" "2.20000004768372"
+"origin" "34266.3 -11275.5 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{400C478D-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -90 0"
+"model" "tow_airlock_ceiling"
+"modelscale" "2.20000004768372"
+"origin" "34266.6 -11275.8 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{400C4790-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_ceiling"
+"modelscale" "2.20000004768372"
+"origin" "34018.1 -11357.3 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{400C4793-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_wall"
+"modelscale" "2.20000004768372"
+"origin" "34107.3 -11091 -14257.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{400C4796-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_spawn_wall"
+"modelscale" "2.20000004768372"
+"origin" "33925.6 -11321.8 -14257.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{400C4799-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_wall_door_inner"
+"modelscale" "2.20000004768372"
+"origin" "34017.4 -11429.8 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{400C479C-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_wall_door"
+"modelscale" "2.20000004768372"
+"origin" "34017.1 -11435.5 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{400C479F-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_wall_door_wide"
+"modelscale" "2.20000004768372"
+"origin" "34016.8 -11423.5 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{400C47A2-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_ceiling"
+"modelscale" "2.20000004768372"
+"origin" "34018.4 -11268 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{400C47A5-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_ceiling"
+"modelscale" "2.20000004768372"
+"origin" "34018.1 -11143.8 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{400C47A8-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_ceiling"
+"modelscale" "2.20000004768372"
+"origin" "34018.4 -11054.5 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{400C47AB-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tech_door_side1"
+"modelscale" "2.20000004768372"
+"origin" "34016.5 -10995.3 -14259"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{400C47AE-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tech_door_side2"
+"modelscale" "2.20000004768372"
+"origin" "34016.5 -10995.3 -14259"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{400C47B1-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_spawn_elevator_door"
+"modelscale" "2.20000004768372"
+"origin" "33916.1 -11092.3 -14196.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{400C47B4-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "elevator"
+"modelscale" "2.20000004768372"
+"origin" "33844 -11095 -14256.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{400C47B7-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "elevator_door"
+"modelscale" "2.20000004768372"
+"origin" "33777 -11095 -14257.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{400C47BA-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_wall_filler"
+"modelscale" "2.20000004768372"
+"origin" "34109.6 -11205.8 -14257.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 28
+{
+guid "{400C47BD-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_bulkhead"
+"modelscale" "2.20000004768372"
+"origin" "34017 -11218.5 -14258.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 29
+{
+guid "{400C47C0-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_bulkhead"
+"modelscale" "2.20000004768372"
+"origin" "34017.3 -11192.8 -14258.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 30
+{
+guid "{400C47C3-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_floor"
+"modelscale" "2.20000004768372"
+"origin" "34017.6 -11094.5 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 31
+{
+guid "{400C47C6-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "tow_spawn_wall_filler"
+"modelscale" "2.20000004768372"
+"origin" "33927.6 -11206 -14257.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 32
+{
+guid "{400C47C9-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_floor_filler_wide"
+"modelscale" "2.20000004768372"
+"origin" "34017.6 -11205.5 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 33
+{
+guid "{400C47CC-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "tow_spawn_ceiling_filler_wide"
+"modelscale" "2.20000004768372"
+"origin" "34017.6 -11205.8 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

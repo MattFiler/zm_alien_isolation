@@ -1,0 +1,71 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{8F8824BA-0D57-11E5-8961-2C27D7EF3DBE}"
+"classname" "worldspawn"
+"fsi" "default"
+"gravity" "800"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{79356EB2-DBE0-11E4-9056-2C27D7EF3DD2}"
+  contents nonColliding;
+ ( -11 -8 0 ) ( 16 -8 0 ) ( 16 -2 0 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -2 56 ) ( 14 -8 56 ) ( -13 -8 56 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -1 56 ) ( -13 -1 56 ) ( -13 -1 40 ) traverse 16 -16 0 -4 180 0 lightmap_gray 16384 -16384 0 -98 180 0
+ ( -14 -2 56 ) ( -14 -8 56 ) ( -14 -8 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+ ( -13 -8 56 ) ( 14 -8 56 ) ( 14 -8 40 ) traverse 16 -16 0 -4 -180 0 lightmap_gray 16384 -16384 0 -98 -180 0
+ ( 16 -8 56 ) ( 16 -2 56 ) ( 16 -2 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+}
+// brush 1
+ {
+  guid "{8F8824C2-0D57-11E5-8961-2C27D7EF3DBE}"
+  mesh
+  {
+  contents nonColliding;
+  toolFlags;
+   t7_zm_chalk_buy_triton
+   lightmap_gray
+   2 2 0 8
+   (
+	v 7.9999781 9.5367432e-007 50.5 t -97.735474 -4264.0571 -0.49999955 -7.5
+	v 7.9999781 9.5367432e-007 62.5 t -94.66349 -5069.2627 -0.49999955 -8.25
+   )
+   (
+	v -5.9999866 0 50.5 t -925.35333 -4269.1772 0.37499949 -7.5
+	v -5.9999866 0 62.5 t -922.28125 -5074.3828 0.37499949 -8.25
+   )
+  }
+ }
+}
+// entity 1
+{
+guid "{A84C5FFB-D447-11E4-AE02-2C27D7EF3DD2}"
+"classname" "script_struct"
+"origin" "0 0 56"
+"target" "auto38"
+"targetname" "weapon_upgrade"
+"zombie_weapon_upgrade" "pistol_burst"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{A84C5FFE-D447-11E4-AE02-2C27D7EF3DD2}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"model" "wpn_t7_pistol_triton_world"
+"origin" "-3 0 55"
+"targetname" "auto38"
+"_color" "1 0 0"
+}

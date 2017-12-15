@@ -1,0 +1,231 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{FE967487-A20A-11E6-9C49-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{E8EB26BD-9D46-11E6-9C48-14DDA9E204AF}"
+ ( -342.25 852 78.5 ) ( -326.25 824.25 78.5 ) ( 333.75 1205.5 78.5 ) clip 64 64 893.00244 279.66504 120 0 lightmap_gray 16383.865 16384 893.00238 279.66504 120 0
+ ( 361.75 1205.5 117.25 ) ( -298.25 824.25 117.25 ) ( -314.25 852 117.25 ) clip 64 64 879.00244 303.91504 120 0 lightmap_gray 16383.865 16384 879.0025 303.91504 120 0
+ ( 412 1242.25 426.75 ) ( 396.25 1270 426.75 ) ( 396.25 1270 -35.25 ) clip 55.639286 64 1256.125 60.25 0 0 lightmap_gray 14243.803 16384 1256.129 60.25 0 0
+ ( 325.75 1251.5 426.75 ) ( -334.25 870.5 426.75 ) ( -334.25 870.5 -35.25 ) clip 55.420963 -64 204.17755 -60.25 180 0 lightmap_gray 14188.029 -16384 204.19035 -60.25 180 0
+ ( 258.75 1137 426.75 ) ( 274.75 1109.25 426.75 ) ( 274.75 1109.25 -35.25 ) clip 55.639038 64 1123.1663 60.25 0 0 lightmap_gray 14243.693 16384 1123.1448 60.25 0 0
+ ( -306.25 849.75 426.75 ) ( 353.75 1231 426.75 ) ( 353.75 1231 -35.25 ) clip 55.420975 -64 176.35948 -60.25 180 0 lightmap_gray 14188.044 -16384 176.375 -60.25 180 0
+}
+// brush 1
+{
+ guid "{27D07D0F-9D47-11E6-9C48-14DDA9E204AF}"
+ ( 247 1180.5 0.25 ) ( 231.25 1208 0.25 ) ( 226.5 1193.75 -1.75 ) clip 63.922337 25.137794 187.72679 589.30603 119.87901 -0.35140216 lightmap_gray 16363.985 6435.3706 187.72957 589.31036 119.87897 -0.35140643
+ ( 345.5 1205.25 80.25 ) ( -314.5 824 80.25 ) ( -330.5 851.75 80.25 ) clip 64 64 886.91095 289.71649 120 0 lightmap_gray 16383.865 16384 886.91089 289.71649 120 0
+ ( 231.25 1208 0.25 ) ( 247 1180.5 0.25 ) ( 267 1180.5 80.25 ) clip 55.639286 62.439026 1207.125 57.067074 0 0 lightmap_gray 14243.803 15984.391 1207.1283 57.067074 0 0
+ ( 326.25 1251.25 426.5 ) ( -333.75 870.25 426.5 ) ( -333.75 870.25 -35.5 ) clip 55.420963 -64 203.67755 -60.5 180 0 lightmap_gray 14188.029 -16384 203.69035 -60.5 180 0
+ ( 259.25 1136.75 426.5 ) ( 275.25 1109 426.5 ) ( 275.25 1109 -35.5 ) clip 55.639038 64 1122.9163 60.5 0 0 lightmap_gray 14243.693 16384 1122.8947 60.5 0 0
+ ( -305.75 849.5 426.5 ) ( 354.25 1230.75 426.5 ) ( 354.25 1230.75 -35.5 ) clip 55.420975 -64 175.85948 -60.5 180 0 lightmap_gray 14188.044 -16384 175.875 -60.5 180 0
+}
+// brush 2
+{
+ guid "{08657AD5-9D47-11E6-9C48-14DDA9E204AF}"
+ ( 389.5 1274 -3.5 ) ( 405.25 1246.5 -3.5 ) ( 402.75 1258.75 -1.5 ) clip 63.892826 10.152336 -2089.3572 864.67249 119.83231 -0.4862259 lightmap_gray 16356.406 2599 -2089.3518 864.67261 119.83231 -0.48622954
+ ( 345.25 1205.25 80.5 ) ( -314.75 824 80.5 ) ( -330.75 851.75 80.5 ) clip 64 64 887.03595 289.5 120 0 lightmap_gray 16383.865 16384 887.03589 289.5 120 0
+ ( 412.25 1242 426.75 ) ( 396.5 1269.75 426.75 ) ( 396.5 1269.75 -35.25 ) clip 55.639286 64 1255.875 60.25 0 0 lightmap_gray 14243.803 16384 1255.8788 60.25 0 0
+ ( 326 1251.25 426.75 ) ( -334 870.25 426.75 ) ( -334 870.25 -35.25 ) clip 55.420963 -64 203.92755 -60.25 180 0 lightmap_gray 14188.029 -16384 203.94035 -60.25 180 0
+ ( 405.25 1246.5 -3.5 ) ( 389.5 1274 -3.5 ) ( 365.5 1274 80.5 ) clip 55.639038 65.560974 1174.1675 63.682926 0 0 lightmap_gray 14243.693 16783.609 1174.1383 63.682926 0 0
+ ( -306 849.5 426.75 ) ( 354 1230.75 426.75 ) ( 354 1230.75 -35.25 ) clip 55.420975 -64 176.10948 -60.25 180 0 lightmap_gray 14188.044 -16384 176.125 -60.25 180 0
+}
+}
+// entity 1
+{
+guid "{79B227A2-8982-11E6-9C40-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 30 0"
+"model" "airport_door_side2"
+"modelscale" "2"
+"origin" "319 1223 -18"
+"targetname" "spawn_room_buyable_door_side1"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 2
+{
+guid "{608F61F1-9D47-11E6-9C48-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 30 0"
+"model" "airport_door_side1"
+"modelscale" "2"
+"origin" "319 1223 -18"
+"targetname" "spawn_room_buyable_door_side2"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 3
+{
+guid "{29753666-9D48-11E6-9C48-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "255.499 1190.54 -17"
+"targetname" "spawn_room_buyable_door_side1_move"
+"_color" "1 0 0"
+}
+// entity 4
+{
+guid "{62AC375E-9D48-11E6-9C48-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "378.499 1260.79 -17"
+"targetname" "spawn_room_buyable_door_side2_move"
+"_color" "1 0 0"
+}
+// entity 5
+{
+guid "{2A1C1372-9D53-11E6-9C48-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 29.9965 0"
+"model" "spawnroom_door_surround"
+"modelscale" "2"
+"origin" "317.657 1225.62 -1"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{1B574933-A1EA-11E6-9C49-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "228.999 1171.04 39"
+"targetname" "spawn_room_buyable_clip_side1_move"
+"_color" "1 0 0"
+}
+// entity 7
+{
+guid "{1B574936-A1EA-11E6-9C49-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "405.999 1274.29 39"
+"targetname" "spawn_room_buyable_clip_side2_move"
+"_color" "1 0 0"
+}
+// entity 8
+{
+guid "{9F352D01-A1F0-11E6-9C49-14DDA9E204AF}"
+"classname" "trigger_use"
+"ayz_doordef" "spawnroom_door"
+"script_flag" "enter_main_zone"
+"targetname" "zombie_door_custom"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{9F352D00-A1F0-11E6-9C49-14DDA9E204AF}"
+ ( 315.5 1256.75 2.5 ) ( 288 1240.25 2.5 ) ( 304.5 1212.75 2.5 ) trigger 64 64 507.2619 390.90213 30.800215 0 lightmap_gray 16384.199 16384.066 507.26608 390.9053 30.800228 0
+ ( 306.5 1212.75 72.25 ) ( 290 1240.25 72.25 ) ( 317.5 1256.75 72.25 ) trigger 64 64 508.97989 391.92627 30.800215 0 lightmap_gray 16384.199 16384.066 508.98318 391.92944 30.800228 0
+ ( 307.75 1216.5 44.25 ) ( 335.25 1233 44.25 ) ( 335.25 1233 28.25 ) trigger 54.972744 64 -14.623862 -28.25 0 0 lightmap_gray 14073.125 16384 -14.625 -28.25 0 0
+ ( 388.75 1262 44.25 ) ( 372.25 1289.5 44.25 ) ( 372.25 1289.5 28.25 ) trigger 54.973621 64 165.26813 -28.25 0 0 lightmap_gray 14073.247 16384 165.26813 -28.25 0 0
+ ( 314.75 1256.75 44.25 ) ( 287.25 1240.25 44.25 ) ( 287.25 1240.25 28.25 ) trigger 54.972744 64 -35.008503 -28.25 0 0 lightmap_gray 14073.125 16384 -35.008999 -28.25 0 0
+ ( 235 1213.5 44.25 ) ( 251.5 1186 44.25 ) ( 251.5 1186 28.25 ) trigger 54.973621 64 89.383003 -28.25 0 0 lightmap_gray 14073.247 16384 89.383003 -28.25 0 0
+}
+}
+// entity 9
+{
+guid "{730D4CE1-A209-11E6-9C49-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "spawn_room_buyable_door_side1_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{730D4CE0-A209-11E6-9C49-14DDA9E204AF}"
+ ( 414 1319 -0.75 ) ( 254 1228 -0.75 ) ( 285.5 1172.25 -0.75 ) clip 64 64 679.375 -554.31744 29.599945 0 lightmap_gray 16383.992 16383.906 679.375 -554.31122 29.599945 0
+ ( 255.5 1156.5 78 ) ( 224 1212.25 78 ) ( 383.75 1303 78 ) clip 64 64 629.41785 -555.42242 29.599966 0 lightmap_gray 16384 16384.023 645.41785 -555.41882 29.599966 0
+ ( 266.5 1186.75 178 ) ( 426.5 1277.75 178 ) ( 426.5 1277.75 146 ) clip 55.64764 64 137.8904 2 0 0 lightmap_gray 14245.796 16384 137.8904 -26 0 0
+ ( 327 1199.25 175 ) ( 295.25 1254.75 175 ) ( 295.25 1254.75 143 ) clip 55.648067 64 917.44025 9 0 0 lightmap_gray 14245.905 16384 917.43994 -23 0 0
+ ( 411 1281.5 182 ) ( 251 1190.5 182 ) ( 251 1190.5 150 ) clip 55.647682 64 122.30244 2 0 0 lightmap_gray 14245.804 16384 122.30222 -30 0 0
+ ( 226.5 1212.75 194 ) ( 258.25 1157 194 ) ( 258.25 1157 162 ) clip 55.647461 64 875.34167 -18 0 0 lightmap_gray 14245.75 16384 875.34167 -42 0 0
+}
+}
+// entity 10
+{
+guid "{CAA20917-A209-11E6-9C49-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "spawn_room_buyable_door_side2_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{CAA20916-A209-11E6-9C49-14DDA9E204AF}"
+ ( 413.75 1318.75 -0.75 ) ( 253.75 1227.75 -0.75 ) ( 285.25 1172 -0.75 ) clip 64 64 679.03412 -554.22357 29.599945 0 lightmap_gray 16383.992 16383.906 679.03412 -554.21735 29.599945 0
+ ( 255.25 1156.25 78 ) ( 223.75 1212 78 ) ( 383.5 1302.75 78 ) clip 64 64 629.07697 -555.32855 29.599966 0 lightmap_gray 16384 16384.023 645.07697 -555.32495 29.599966 0
+ ( 266.25 1186.5 178 ) ( 426.25 1277.5 178 ) ( 426.25 1277.5 146 ) clip 55.64764 64 137.6404 2 0 0 lightmap_gray 14245.796 16384 137.6404 -26 0 0
+ ( 403.75 1242 175 ) ( 372 1297.5 175 ) ( 372 1297.5 143 ) clip 55.648067 64 960.18707 9 0 0 lightmap_gray 14245.905 16384 960.18677 -23 0 0
+ ( 410.75 1281.25 182 ) ( 250.75 1190.25 182 ) ( 250.75 1190.25 150 ) clip 55.647682 64 122.05244 2 0 0 lightmap_gray 14245.804 16384 122.05222 -30 0 0
+ ( 302.25 1243.5 194 ) ( 334 1187.75 194 ) ( 334 1187.75 162 ) clip 55.647461 64 906.08942 -18 0 0 lightmap_gray 14245.75 16384 906.08942 -42 0 0
+}
+}
+// entity 11
+{
+guid "{B51C456F-37BA-11E7-A535-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 30 0"
+"model" "ayz_new_door_lights"
+"modelscale" "2"
+"origin" "319 1223.25 -10.75"
+"targetname" "spawndoor_flasher"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 12
+{
+guid "{D68D2F3C-4189-11E7-A543-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 27.3987 0"
+"model" "tow_floor_vent_filler"
+"modelscale" "1.50999998860061"
+"origin" "323 1238.25 -3.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

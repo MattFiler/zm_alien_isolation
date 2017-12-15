@@ -1,0 +1,72 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{80B32989-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "worldspawn"
+"fsi" "default"
+"gravity" "800"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{65460988-DBE1-11E4-9056-2C27D7EF3DD2}"
+  contents nonColliding;
+ ( -11 -8 0 ) ( 16 -8 0 ) ( 16 -2 0 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -2 56 ) ( 14 -8 56 ) ( -13 -8 56 ) traverse 16 16 0 -9 180 0 lightmap_gray 16384 16384 0 -9 180 0
+ ( 14 -1 56 ) ( -13 -1 56 ) ( -13 -1 40 ) traverse 16 -16 0 -4 180 0 lightmap_gray 16384 -16384 0 -98 180 0
+ ( -14 -2 56 ) ( -14 -8 56 ) ( -14 -8 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+ ( -13 -8 56 ) ( 14 -8 56 ) ( 14 -8 40 ) traverse 16 -16 0 -4 -180 0 lightmap_gray 16384 -16384 0 -98 -180 0
+ ( 16 -8 56 ) ( 16 -2 56 ) ( 16 -2 40 ) traverse 16 -16 9 -4 180 0 lightmap_gray 16384 -16384 9 -98 180 0
+}
+// brush 1
+ {
+  guid "{82841318-0D53-11E5-8961-2C27D7EF3DBE}"
+  mesh
+  {
+  contents nonColliding;
+  toolFlags;
+   t7_zm_chalk_buy_vmp
+   lightmap_gray
+   2 2 0 8
+   (
+	v 24 0 40 t 1032.1921 147.45601 -1 -6.125
+	v 24 0 64 t 1032.1921 -876.54382 -1 -9.625
+   )
+   (
+	v -22 0 40 t 8.1920071 147.45601 0.875 -6.125
+	v -22 0 64 t 8.1920071 -876.54382 0.875 -9.625
+   )
+  }
+ }
+}
+// entity 1
+{
+guid "{80B3298A-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"origin" "0 0 56"
+"target" "auto38"
+"targetname" "weapon_upgrade"
+"zombie_weapon_upgrade" "smg_versatile"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{80B3298B-0D63-11E5-8961-2C27D7EF3DBE}"
+"classname" "script_struct"
+"angles" "0 360 0"
+"model" "wpn_t7_smg_vmp_world"
+"origin" "-2 0 54"
+"targetname" "auto38"
+"_color" "1 0 0"
+}

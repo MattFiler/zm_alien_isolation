@@ -1,0 +1,70 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{544B656B-2119-11E5-8B2C-D89D67F43706}"
+"classname" "worldspawn"
+"_color" "0.5 0.5 0.7"
+"ambient" "0.1"
+"bouncefraction" "0.3"
+"contrastgain" "0.35"
+"diffusefraction" "0.15"
+"suncolor" "0.64 0.85 1"
+"sundiffusecolor" "0.25 0.55 0.8"
+"sundirection" "-150 17 0"
+"sunisprimarylight" "1"
+"sunlight" "0.75"
+"fsi" "default"
+"gravity" "800"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+ {
+  guid "{6EF0661E-210C-11E5-8B2C-D89D67F43706}"
+  mesh
+  {
+  contents nonColliding;
+  toolFlags;
+   t7_zm_chalk_buy_trip_mine
+   lightmap_gray
+   2 2 0 8
+   (
+	v -3.9436674 0.25 44.1856 t 0 -0 -0.5 -7.375
+	v -3.9436674 0.25 62.438416 t 0 -1024 -0.5 -8.375
+   )
+   (
+	v 3.5563354 0.25 44.1856 t 1024 -0 0.5 -7.375
+	v 3.5563354 0.25 62.438416 t 1024 -1024 0.5 -8.375
+   )
+  }
+ }
+}
+// entity 1
+{
+guid "{544B656D-2119-11E5-8B2C-D89D67F43706}"
+"classname" "script_struct"
+"angles" "0 180 0"
+"model" "wpn_t7_spider_mine_world"
+"origin" "0 0 48.5"
+"targetname" "auto37"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{544B656C-2119-11E5-8B2C-D89D67F43706}"
+"classname" "script_struct"
+"origin" "0 0 53"
+"target" "auto37"
+"targetname" "claymore_purchase"
+"zombie_weapon_upgrade" "bouncingbetty"
+"_color" "1 0 0"
+}

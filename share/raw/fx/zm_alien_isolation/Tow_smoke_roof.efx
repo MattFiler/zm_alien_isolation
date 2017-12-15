@@ -1,0 +1,1211 @@
+iwfx 3
+
+	editorFlags;
+	efFlags efUseBoundingBox efLocalBoundingBox efPortalledBoundingBox;
+	efPriority 50;
+	efBoundingBoxMin -50 -80 -40;
+	efBoundingBoxMax 80 80 100;
+	occlusionQueryDepthBias 0;
+	occlusionQueryFadeIn 0;
+	occlusionQueryFadeOut 0;
+	occlusionQueryScaleRange 1 0;
+	normalsShape 0;
+	normalsShapeOffset 0 0 0;
+	normalsShapeRadius 0;
+	normalsShapeLength 0;
+	normalsShapeAngles 0 0 0;
+	normalsShapeVisualizationColor 0 0 0 0;
+	efCompletion 0;
+	lodDefault0 0 0;
+	lodDefault1 0 0;
+	lodDefault2 0 0;
+	lodDefault3 0 0;
+{
+	name "fire_with_mask";
+	editorFlags looping useRandSize0 useRandRotDelta;
+	flags spawnRelative spawnFrustumCull spawnOffsetNone runRelToSpawn;
+	extraFlags;
+	spawnRange 0 3000;
+	fadeInRange 2500 500;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 100;
+	spawnLooping 357 0;
+	spawnLoopingSpawnCount 1 0;
+	spawnOneShot 3 0;
+	spawnDelayMsec 0 0;
+	lifeSpanMsec 994 5;
+	spawnOrgX 0 30;
+	spawnOrgY -50 100;
+	spawnOrgZ 10 0;
+	spawnOffsetRadius 2 1;
+	spawnOffsetHeight 0 0;
+	spawnOffsetCylindricalAxis 0;
+	spawnAnglePitch 0 0;
+	spawnAngleYaw 0 0;
+	spawnAngleRoll 0 0;
+	angleVelPitch 0 0;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot -120 240;
+	rotationAxis 0 0 0 1;
+	gravity 0 0;
+	elasticity 1 0;
+	windinfluence 0;
+	atlasBehavior startFixed playOverLife loopOnlyNTimes;
+	atlasIndex 0;
+	atlasFps 21;
+	atlasLoopCount 0;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	atlasIndexRange 0;
+	velGraph0X 0
+	{
+		{
+			0 0.5
+			0.223352 0.290827
+			0.463252 0.166131
+			1 0.109158
+		}
+		{
+			0 0.147553
+			0.103009 0.125418
+			0.293089 0.0949159
+			1 0.007177
+		}
+	};
+	velGraph0Y 0
+	{
+		{
+			0 0.5
+			0.174419 0.279904
+			0.47093 0.12201
+			1 0
+		}
+		{
+			0 -0.5
+			0.186047 -0.284689
+			0.5 -0.160287
+			1 0
+		}
+	};
+	velGraph0Z 0
+	{
+		{
+			0 0.26555
+			0.319767 0.12201
+			1 0
+		}
+		{
+			0 -0.241627
+			0.363372 -0.0933014
+			1 0
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 -0.5
+		}
+		{
+			0 -0.5
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	rotGraph 0
+	{
+		{
+			0 -0.143068
+			1 -0.5
+		}
+		{
+			0 0.166602
+			1 0.5
+		}
+	};
+	sizeGraph0 105
+	{
+		{
+			0 1
+			0.513854 1
+			1 1
+		}
+		{
+			0 0.712674
+			1 0.698934
+		}
+	};
+	sizeGraph1 40
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 0.796078
+			1 0.783965
+		}
+	};
+	scaleGraph 1
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	childSizeScaleGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 1 1 1
+			1 1 1 1
+		}
+		{
+			0 1 0.416972 0.283231
+			1 1 0.416972 0.283231
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 0
+			0.198293 1
+			0.617857 1
+			0.765256 0.957672
+			1 0
+		}
+		{
+			0 1
+			0.30814 0.875598
+			0.799419 0.138756
+			1 0
+		}
+	};
+	lightIntensityGraph 0
+	{
+		{
+			0 0.16
+			1 0.16
+		}
+		{
+			0 0.16
+			1 0.16
+		}
+	};
+	lightRadiusGraph 100
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	lightFovGraph 90
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	inheritParentMovementGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorLocalPosition 0 0 0;
+	lightingFrac 0;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	displacement 1;
+	emission "";
+	emitDist 1 0;
+	emitDistVariance 0 0;
+	emitDensity 1 0;
+	emitSizeForDensity 1;
+	attachment "";
+	attachmentDensity 1 0;
+	attachmentSizeForDensity 1;
+	trailSplitDist 0;
+	trailScrollTime 0;
+	trailRepeatDist 0;
+	trailFadeInDist 0;
+	trailFadeOutDist 0;
+	alphafadetimemsec 0;
+	maxwind_mag 0;
+	maxwind_life 0;
+	maxwind_interval 1;
+	elemSpawnSound
+	{
+	};
+	elemFollowSound
+	{
+	};
+	cloudDensity 1024 0;
+	spotLightFovInnerFraction 0.5;
+	spotLightStartRadius 36;
+	spotLightEndRadius 196;
+	alphaDissolve 1;
+	zFeather 20;
+	falloffBeginAngle 65;
+	falloffEndAngle 85;
+	lfSourceDir 1 0 0;
+	lfSourceSize 15;
+	billboardPivot 0 0;
+	levelOfDetail 0;
+	billboardSprite
+	{
+		"gfx_smk_billow_whisp_anim_lit"
+	};
+}
+{
+	name "fire_bottom_flick";
+	editorFlags looping useRandSize0 useRandRotDelta useRandVel0;
+	flags spawnRelative spawnFrustumCull spawnOffsetNone runRelToSpawn;
+	extraFlags;
+	spawnRange 0 3000;
+	fadeInRange 2500 500;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 100;
+	spawnLooping 642 0;
+	spawnLoopingSpawnCount 1 0;
+	spawnOneShot 3 0;
+	spawnDelayMsec 0 0;
+	lifeSpanMsec 714 500;
+	spawnOrgX 0 30;
+	spawnOrgY -50 75;
+	spawnOrgZ 0 0;
+	spawnOffsetRadius 2.16 3.24;
+	spawnOffsetHeight 0 0;
+	spawnOffsetCylindricalAxis 0;
+	spawnAnglePitch 0 0;
+	spawnAngleYaw 0 0;
+	spawnAngleRoll 0 0;
+	angleVelPitch 0 0;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot -100 200;
+	rotationAxis 0 0 0 1;
+	gravity 0 0;
+	elasticity 1 0;
+	windinfluence 0;
+	atlasBehavior startFixed playOverLife loopOnlyNTimes;
+	atlasIndex 0;
+	atlasFps 38;
+	atlasLoopCount 0;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	atlasIndexRange 64;
+	velGraph0X 63
+	{
+		{
+			0 -0.182278
+			1 -0.285818
+		}
+		{
+			0 -0.0940871
+			1 -0.206035
+		}
+	};
+	velGraph0Y 282.03
+	{
+		{
+			0 0.241777
+			0.173184 0.206464
+			0.47093 0.12201
+			1 0
+		}
+		{
+			0 0.300729
+			0.229277 0.222282
+			0.545701 0.121626
+			1 0.0213212
+		}
+	};
+	velGraph0Z 100
+	{
+		{
+			0 0.173075
+			0.325943 0.399185
+			1 0
+		}
+		{
+			0 0.383732
+			0.424469 0.400771
+			1 0
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 -0.5
+		}
+		{
+			0 -0.5
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	rotGraph 50
+	{
+		{
+			0 -0.143068
+			1 -0.5
+		}
+		{
+			0 0.228153
+			1 0.5
+		}
+	};
+	sizeGraph0 90
+	{
+		{
+			0 0.783565
+			0.345019 0.849441
+			1 0.895763
+		}
+		{
+			0 0.563021
+			0.210647 0.666165
+			0.491696 0.757264
+			0.712332 0.798254
+			1 0.824167
+		}
+	};
+	sizeGraph1 0
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	scaleGraph 1
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	childSizeScaleGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 1 1 1
+			1 1 1 1
+		}
+		{
+			0 1 0.416972 0.283231
+			1 1 0.416972 0.283231
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 0
+			0.115291 1
+			0.92056 1
+			1 0
+		}
+		{
+			0 1
+			0.30814 0.875598
+			0.799419 0.138756
+			1 0
+		}
+	};
+	lightIntensityGraph 0
+	{
+		{
+			0 0.16
+			1 0.16
+		}
+		{
+			0 0.16
+			1 0.16
+		}
+	};
+	lightRadiusGraph 100
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	lightFovGraph 90
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	inheritParentMovementGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorLocalPosition 0 0 0;
+	lightingFrac 0;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	displacement 1;
+	emission "";
+	emitDist 1 0;
+	emitDistVariance 0 0;
+	emitDensity 1 0;
+	emitSizeForDensity 1;
+	attachment "";
+	attachmentDensity 1 0;
+	attachmentSizeForDensity 1;
+	trailSplitDist 0;
+	trailScrollTime 0;
+	trailRepeatDist 0;
+	trailFadeInDist 0;
+	trailFadeOutDist 0;
+	alphafadetimemsec 0;
+	maxwind_mag 0;
+	maxwind_life 0;
+	maxwind_interval 1;
+	elemSpawnSound
+	{
+	};
+	elemFollowSound
+	{
+	};
+	cloudDensity 1024 0;
+	spotLightFovInnerFraction 0.5;
+	spotLightStartRadius 36;
+	spotLightEndRadius 196;
+	alphaDissolve 1;
+	zFeather 20;
+	falloffBeginAngle 65;
+	falloffEndAngle 85;
+	lfSourceDir 1 0 0;
+	lfSourceSize 15;
+	billboardPivot 0 0;
+	levelOfDetail 0;
+	billboardSprite
+	{
+		"gfx_smk_billow_whisp_anim_lit"
+	};
+}
+{
+	name "fire_bottom";
+	editorFlags looping useRandSize0 useRandRotDelta useRandVel0;
+	flags spawnRelative spawnFrustumCull spawnOffsetNone runRelToSpawn;
+	extraFlags;
+	spawnRange 0 3000;
+	fadeInRange 2500 500;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 200;
+	spawnLooping 285 0;
+	spawnLoopingSpawnCount 1 0;
+	spawnOneShot 3 0;
+	spawnDelayMsec 0 0;
+	lifeSpanMsec 902 270;
+	spawnOrgX 0 30;
+	spawnOrgY -50 75;
+	spawnOrgZ 0 0;
+	spawnOffsetRadius 2.16 3.24;
+	spawnOffsetHeight 0 0;
+	spawnOffsetCylindricalAxis 0;
+	spawnAnglePitch 0 0;
+	spawnAngleYaw 0 0;
+	spawnAngleRoll 0 0;
+	angleVelPitch 0 0;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot -90 180;
+	rotationAxis 0 0 0 1;
+	gravity 0 0;
+	elasticity 1 0;
+	windinfluence 0;
+	atlasBehavior startFixed playOverLife loopOnlyNTimes;
+	atlasIndex 0;
+	atlasFps 38;
+	atlasLoopCount 0;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	atlasIndexRange 64;
+	velGraph0X 0
+	{
+		{
+			0 0.5
+			1 0.368032
+		}
+		{
+			0 0.147553
+			0.103009 0.125418
+			0.293089 0.0949159
+			1 0.007177
+		}
+	};
+	velGraph0Y 282.03
+	{
+		{
+			0 0.398132
+			0.174419 0.279904
+			0.47093 0.12201
+			1 0
+		}
+		{
+			0 0.433394
+			0.228042 0.267293
+			0.545701 0.121626
+			1 0.0213212
+		}
+	};
+	velGraph0Z 100
+	{
+		{
+			0 0.26555
+			0.319767 0.12201
+			1 0
+		}
+		{
+			0 0.383732
+			0.38865 0.13781
+			1 0
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 -0.5
+		}
+		{
+			0 -0.5
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	rotGraph 50
+	{
+		{
+			0 -0.143068
+			1 -0.5
+		}
+		{
+			0 0.228153
+			1 0.5
+		}
+	};
+	sizeGraph0 105
+	{
+		{
+			0 0.783565
+			0.34996 0.892083
+			1 1
+		}
+		{
+			0 0.563021
+			0.210647 0.666165
+			0.502812 0.785692
+			0.73333 0.83142
+			1 0.862071
+		}
+	};
+	sizeGraph1 0
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	scaleGraph 1
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	childSizeScaleGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 1 1 1
+			1 1 1 1
+		}
+		{
+			0 1 0.416972 0.283231
+			1 1 0.416972 0.283231
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 0
+			0.115291 1
+			0.440961 1
+			0.751256 0.845265
+			0.879725 0.4041
+			1 0
+		}
+		{
+			0 1
+			0.30814 0.875598
+			0.799419 0.138756
+			1 0
+		}
+	};
+	lightIntensityGraph 0
+	{
+		{
+			0 0.16
+			1 0.16
+		}
+		{
+			0 0.16
+			1 0.16
+		}
+	};
+	lightRadiusGraph 100
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	lightFovGraph 90
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	inheritParentMovementGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorLocalPosition 0 0 0;
+	lightingFrac 0;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	displacement 1;
+	emission "";
+	emitDist 1 0;
+	emitDistVariance 0 0;
+	emitDensity 1 0;
+	emitSizeForDensity 1;
+	attachment "";
+	attachmentDensity 1 0;
+	attachmentSizeForDensity 1;
+	trailSplitDist 0;
+	trailScrollTime 0;
+	trailRepeatDist 0;
+	trailFadeInDist 0;
+	trailFadeOutDist 0;
+	alphafadetimemsec 0;
+	maxwind_mag 0;
+	maxwind_life 0;
+	maxwind_interval 1;
+	elemSpawnSound
+	{
+	};
+	elemFollowSound
+	{
+	};
+	cloudDensity 1024 0;
+	spotLightFovInnerFraction 0.5;
+	spotLightStartRadius 36;
+	spotLightEndRadius 196;
+	alphaDissolve 1;
+	zFeather 20;
+	falloffBeginAngle 65;
+	falloffEndAngle 85;
+	lfSourceDir 1 0 0;
+	lfSourceSize 15;
+	billboardPivot 0 0;
+	levelOfDetail 0;
+	billboardSprite
+	{
+		"gfx_smk_billow_whisp_anim_lit"
+	};
+}
+{
+	name "fire_main";
+	editorFlags looping;
+	flags spawnRelative spawnFrustumCull spawnOffsetNone runRelToSpawn nonUniformScale useBillboardPivot;
+	extraFlags;
+	spawnRange 0 3000;
+	fadeInRange 2500 500;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 100;
+	spawnLooping 571 0;
+	spawnLoopingSpawnCount 1 0;
+	spawnOneShot 1 0;
+	spawnDelayMsec 0 0;
+	lifeSpanMsec 1428 285;
+	spawnOrgX 0 0;
+	spawnOrgY -50 100;
+	spawnOrgZ 0 0;
+	spawnOffsetRadius 0 0;
+	spawnOffsetHeight 0 0;
+	spawnOffsetCylindricalAxis 0;
+	spawnAnglePitch 0 0;
+	spawnAngleYaw 0 0;
+	spawnAngleRoll 0 0;
+	angleVelPitch 0 0;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot 0 0;
+	rotationAxis 0 0 0 1;
+	gravity -2.1 0;
+	elasticity 0 0;
+	windinfluence 0;
+	atlasBehavior startFixed playOverLife loopOnlyNTimes;
+	atlasIndex 0;
+	atlasFps 0;
+	atlasLoopCount 0;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	atlasIndexRange 0;
+	velGraph0X 15
+	{
+		{
+			0 0.5
+			1 0.5
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph0Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph0Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	rotGraph 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	sizeGraph0 70
+	{
+		{
+			0 0.501122
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	sizeGraph1 120
+	{
+		{
+			0 0.489052
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	scaleGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	childSizeScaleGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 1 1 1
+			1 1 1 1
+		}
+		{
+			0 1 0.416972 0.283231
+			1 1 0.416972 0.283231
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 0.0335508
+			0.107379 0.749987
+			0.166713 1
+			0.28901 1
+			0.656841 1
+			0.807439 0.712255
+			1 0
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	lightIntensityGraph 0
+	{
+		{
+			0 0.16
+			1 0.16
+		}
+		{
+			0 0.16
+			1 0.16
+		}
+	};
+	lightRadiusGraph 0
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	lightFovGraph 0
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	inheritParentMovementGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorGraph 1
+	{
+		{
+			0 1
+			1 1
+		}
+		{
+			0 1
+			1 1
+		}
+	};
+	attractorLocalPosition 0 0 0;
+	lightingFrac 0;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	displacement 0;
+	emission "";
+	emitDist 1 0;
+	emitDistVariance 0 0;
+	emitDensity 1 0;
+	emitSizeForDensity 1;
+	attachment "";
+	attachmentDensity 1 0;
+	attachmentSizeForDensity 1;
+	trailSplitDist 100;
+	trailScrollTime 0;
+	trailRepeatDist 100;
+	trailFadeInDist 0;
+	trailFadeOutDist 0;
+	alphafadetimemsec 0;
+	maxwind_mag 0;
+	maxwind_life 0;
+	maxwind_interval 0;
+	elemSpawnSound
+	{
+	};
+	elemFollowSound
+	{
+	};
+	cloudDensity 0 0;
+	spotLightFovInnerFraction 0;
+	spotLightStartRadius 0;
+	spotLightEndRadius 0;
+	alphaDissolve 1;
+	zFeather 20;
+	falloffBeginAngle 65;
+	falloffEndAngle 85;
+	lfSourceDir 1 0 0;
+	lfSourceSize 15;
+	billboardPivot 0 -0.2;
+	levelOfDetail 0;
+	line
+	{
+		"gfx_smk_billow_whisp_anim_lit"
+	};
+}

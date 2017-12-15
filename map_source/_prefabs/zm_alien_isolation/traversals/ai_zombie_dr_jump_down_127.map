@@ -1,0 +1,66 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{03CD4E8D-932C-11E6-8CF5-844BF54C96FC}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{44A29AFC-92FC-11E6-8CF5-844BF54C96FC}"
+ ( 64 16 0 ) ( 48 16 0 ) ( 48 -16 0 ) traverse 16 16 780 -304 0 0 lightmap_gray 16384 16384 780 -304 0 0
+ ( 50 -8 127 ) ( 50 24 127 ) ( 66 24 127 ) traverse 16 16 782 -312 0 0 lightmap_gray 16384 16384 782 -312 0 0
+ ( 48 -24 32 ) ( 64 -24 32 ) ( 64 -24 0 ) traverse 16 16 780 0 0 0 lightmap_gray 16384 16384 780 0 0 0
+ ( 19 -16 30 ) ( 19 16 30 ) ( 19 16 -2 ) traverse 16 16 304 2 0 0 lightmap_gray 16384 16384 304 2 0 0
+ ( 64 24 32 ) ( 48 24 32 ) ( 48 24 0 ) traverse 16 16 780 0 0 0 lightmap_gray 16384 16384 780 0 0 0
+ ( -16 16 36 ) ( -16 -16 36 ) ( -16 -16 4 ) traverse 16 16 304 -4 0 0 lightmap_gray 16384 16384 304 -4 0 0
+}
+// brush 1
+{
+ guid "{175FAC26-9302-11E6-8CF5-844BF54C96FC}"
+ ( 64 16 -4 ) ( 48 16 -4 ) ( 48 -16 -4 ) traverse 16 16 780 -304 0 0 lightmap_gray 16384 16384 780 -304 0 0
+ ( 48 -8 0 ) ( 48 24 0 ) ( 64 24 0 ) traverse 16 16 784 -312 0 0 lightmap_gray 16384 16384 784 -312 0 0
+ ( 48 -24 28 ) ( 64 -24 28 ) ( 64 -24 -4 ) traverse 16 16 780 4 0 0 lightmap_gray 16384 16384 780 4 0 0
+ ( 100 -20 24 ) ( 100 12 24 ) ( 100 12 -8 ) traverse 16 16 300 8 0 0 lightmap_gray 16384 16384 300 8 0 0
+ ( 64 24 28 ) ( 48 24 28 ) ( 48 24 -4 ) traverse 16 16 780 4 0 0 lightmap_gray 16384 16384 780 4 0 0
+ ( -16 16 32 ) ( -16 -16 32 ) ( -16 -16 0 ) traverse 16 16 304 0 0 0 lightmap_gray 16384 16384 304 0 0 0
+}
+}
+// entity 1
+{
+guid "{03CD4E8E-932C-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_end"
+"origin" "76 0 40"
+"targetname" "auto2"
+"_color" "0.6 0.5 0.5"
+}
+// entity 2
+{
+guid "{03CD4E8F-932C-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_begin"
+"animscript" "zm_jump_down_127"
+"origin" "0 0 167"
+"previewanim1" "ai_zombie_dr_jump_down_127"
+"previewmdl1" "c_zom_test_t7_fb"
+"target" "auto2"
+"_color" "0.5 0.6 0.5"
+"cost_modifier" "1"
+}

@@ -1,0 +1,376 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{838FC6D3-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{EE00A572-D106-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_monitor_racks"
+"modelscale" "2"
+"origin" "-3445.75 273 224"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{33DEAD0C-D107-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_monitor_racks"
+"modelscale" "2"
+"origin" "-3349.75 273 224"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{33DEAD1A-D107-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_monitor_racks"
+"modelscale" "2"
+"origin" "-3253.75 273 224"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{3A6D9E31-D107-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_monitor_racks"
+"modelscale" "2"
+"origin" "-3157.75 273 224"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{4108BDA2-D107-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_monitor_racks"
+"modelscale" "2"
+"origin" "-3061.75 273 224"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{8E4AE86F-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3157.75 295.25 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{8E4AE872-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 -16.601"
+"model" "monitor_50cm_evac"
+"modelscale" "2"
+"origin" "-3157.75 308.182 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{8E4AE881-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3253.75 295.25 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{8E4AE884-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 -16.601"
+"model" "monitor_50cm_evac"
+"modelscale" "2"
+"origin" "-3253.75 308.182 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{8E4AE893-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3349.75 295.25 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{8E4AE896-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 -16.601"
+"model" "monitor_50cm"
+"modelscale" "2"
+"origin" "-3349.75 308.182 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{8E4AE8A5-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3445.75 295.25 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{8E4AE8A8-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 -16.601"
+"model" "monitor_50cm_blank"
+"modelscale" "2"
+"origin" "-3445.75 308.182 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{8E4AE8B7-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3445.75 249.5 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{8E4AE8BA-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 -16.601"
+"model" "monitor_50cm_evac"
+"modelscale" "2"
+"origin" "-3445.75 236.568 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{8E4AE8C9-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3349.75 249.5 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{8E4AE8CC-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 -16.601"
+"model" "monitor_50cm_blank"
+"modelscale" "2"
+"origin" "-3349.75 236.568 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{8E4AE8DB-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3253.75 249.5 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{8E4AE8DE-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 -16.601"
+"model" "monitor_50cm_offline"
+"modelscale" "2"
+"origin" "-3253.75 236.568 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{8E4AE8ED-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3157.75 249.5 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{8E4AE8F0-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 -16.601"
+"model" "monitor_50cm_offline"
+"modelscale" "2"
+"origin" "-3157.75 236.568 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{8E4AE8FF-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3061.75 295.25 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{8E4AE902-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 -16.601"
+"model" "monitor_50cm_offline"
+"modelscale" "2"
+"origin" "-3061.75 308.182 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{8E4AE911-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_monitor"
+"modelscale" "2"
+"origin" "-3061.75 249.5 197.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{8E4AE914-D8D6-11E6-9C6B-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 -16.601"
+"model" "monitor_50cm_offline"
+"modelscale" "2"
+"origin" "-3061.75 236.568 194.031"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

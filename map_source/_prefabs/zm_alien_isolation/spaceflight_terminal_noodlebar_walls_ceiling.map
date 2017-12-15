@@ -1,0 +1,306 @@
+iwmap 4
+// entity 0
+{
+guid "{DD426BE2-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+// entity 33
+// entity 34
+// entity 35
+// entity 36
+// entity 37
+// entity 38
+// entity 39
+// entity 40
+// entity 41
+// entity 42
+// entity 43
+// entity 44
+// entity 45
+// entity 46
+// entity 47
+// entity 48
+// entity 49
+// entity 50
+// entity 51
+// entity 52
+// entity 53
+// entity 54
+// entity 55
+// entity 56
+// entity 57
+// entity 58
+// entity 59
+// entity 60
+// entity 61
+// entity 62
+// entity 63
+// entity 64
+// entity 65
+// entity 66
+// entity 67
+// entity 68
+// entity 69
+// entity 70
+// entity 71
+// entity 72
+// entity 73
+// entity 74
+// entity 75
+// entity 76
+// entity 77
+// entity 78
+// entity 79
+// entity 80
+// entity 81
+// entity 82
+// entity 83
+// entity 84
+// entity 85
+// entity 86
+// entity 87
+// entity 88
+// entity 89
+// entity 90
+// entity 91
+// entity 92
+// entity 93
+// entity 94
+// entity 95
+// entity 96
+// entity 97
+// entity 98
+// entity 99
+// entity 100
+// entity 101
+// entity 102
+// entity 103
+// entity 104
+{
+guid "{9FBE327F-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "noodlebar_roof"
+"modelscale" "2"
+"origin" "222 272 111"
+}
+// entity 105
+{
+guid "{9FBE3282-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 178 0"
+"model" "noodlebar_corner"
+"modelscale" "2"
+"origin" "314 58 -16"
+}
+// entity 106
+{
+guid "{9FBE3285-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 225 0"
+"model" "noodlebar_corner"
+"modelscale" "2"
+"origin" "406 146 -16"
+}
+// entity 107
+{
+guid "{9FBE3288-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_door_surround"
+"modelscale" "2"
+"origin" "268 51 2"
+}
+// entity 108
+{
+guid "{9FBE328B-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_filler"
+"modelscale" "2"
+"origin" "222 71 -16"
+}
+// entity 109
+{
+guid "{9FBE328E-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_wall_exterior"
+"modelscale" "2"
+"origin" "62 73 -16"
+}
+// entity 110
+{
+guid "{9FBE3291-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "noodlebar_blinds_holder"
+"modelscale" "2"
+"origin" "394 199 -16"
+}
+// entity 111
+{
+guid "{9FBE3294-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 267.5 0"
+"model" "noodlebar_corner"
+"modelscale" "2"
+"origin" "406.558 395.875 -16"
+}
+// entity 112
+{
+guid "{9FBE3297-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 313.5 0"
+"model" "noodlebar_corner"
+"modelscale" "2"
+"origin" "315.106 485 -16"
+}
+// entity 113
+{
+guid "{9FBE329A-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "noodlebar_wall_exterior"
+"modelscale" "2"
+"origin" "392 273 -16"
+}
+// entity 114
+{
+guid "{9FBE329D-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_wall_exterior"
+"modelscale" "2"
+"origin" "60 473 -16"
+}
+// entity 115
+{
+guid "{9FBE32A0-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_filler"
+"modelscale" "2"
+"origin" "196 473 -16"
+}
+// entity 116
+{
+guid "{9FBE32A3-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -44 0"
+"model" "noodlebar_blinds_holder2"
+"modelscale" "2"
+"origin" "352 432 -16"
+}
+// entity 117
+{
+guid "{9FBE32A6-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 224 0"
+"model" "noodlebar_blinds_holder2"
+"modelscale" "2"
+"origin" "354 114 -16"
+}
+// entity 118
+{
+guid "{9FBE32A9-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_blinds_holder2"
+"modelscale" "2"
+"origin" "156 72 -16"
+}
+// entity 119
+{
+guid "{9FBE32AC-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "noodlebar_blinds_holder"
+"modelscale" "2"
+"origin" "393.5 347 -16"
+}
+// entity 120
+{
+guid "{9FBE32AF-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_blinds_holder2"
+"modelscale" "2"
+"origin" "262 473 -16"
+}
+// entity 121
+{
+guid "{9FBE32B2-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_blinds_holder"
+"modelscale" "2"
+"origin" "144 473 -16"
+}
+// entity 122
+{
+guid "{9FBE32B5-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_wall_interior"
+"modelscale" "2"
+"origin" "66 71 -16"
+}
+// entity 123
+{
+guid "{9FBE32B8-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_wall_interior"
+"modelscale" "2"
+"origin" "62 474 -16"
+}
+// entity 124
+{
+guid "{9FBE32BB-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "noodlebar_wall_interior"
+"modelscale" "2"
+"origin" "395 275 -16"
+}
+// entity 125
+{
+guid "{A6F7ABE8-8C8D-11E6-9C41-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_door_surround"
+"modelscale" "2"
+"origin" "270 63 2"
+}

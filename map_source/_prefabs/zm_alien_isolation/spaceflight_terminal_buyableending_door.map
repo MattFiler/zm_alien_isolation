@@ -1,0 +1,221 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{077C9B95-37B5-11E7-A535-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{C5D328A6-A20B-11E6-9C49-14DDA9E204AF}"
+ ( 241.25 -641.5 -3.5 ) ( 257 -614 -3.5 ) ( 247.75 -622.25 -1.5 ) clip 63.892788 10.152514 2030.2754 -637.84119 -120.16765 -0.48622784 lightmap_gray 16356.395 2599.0457 2030.2666 -637.84106 -120.16766 -0.48623151
+ ( 322.75 -645.5 80.5 ) ( 983 -1026.25 80.5 ) ( 967 -1054 80.5 ) clip 64 64 413.375 -1214.4047 -120 0 lightmap_gray 16383.889 16384 413.375 -1214.4047 -120 0
+ ( 257.5 -605.75 426.75 ) ( 241.25 -633.25 426.75 ) ( 241.25 -633.25 -35.25 ) clip 55.167892 -64 619.48859 -60.25 -180 0 lightmap_gray 14123.125 -16384 619.49225 -60.25 -180 0
+ ( 292.75 -685 426.75 ) ( 952.5 -1066.25 426.75 ) ( 952.5 -1066.25 -35.25 ) clip 55.417244 64 822.52771 60.25 0 0 lightmap_gray 14187.077 16384 822.54047 60.25 0 0
+ ( 257 -614 -3.5 ) ( 241.25 -641.5 -3.5 ) ( 253.25 -662.25 80.5 ) clip 55.41626 -65.560974 542.86639 -63.682926 180 0.29273233 lightmap_gray 14186.664 -16783.609 542.83734 -63.682926 180 0.29273024
+ ( 956.5 -1031.5 426.75 ) ( 296.5 -650.5 426.75 ) ( 296.5 -650.5 -35.25 ) clip 55.435436 64 826.63702 60.25 0 0 lightmap_gray 14191.744 16384 826.65259 60.25 0 0
+}
+// brush 1
+{
+ guid "{C5D328A7-A20B-11E6-9C49-14DDA9E204AF}"
+ ( 393.5 -718 0.25 ) ( 377.5 -745.5 0.25 ) ( 392.25 -742.5 -1.75 ) clip 63.922298 25.137955 1053.8416 -913.59625 -120.12093 -0.35140362 lightmap_gray 16363.972 6435.4131 1053.8279 -913.59155 -120.12099 -0.35140797
+ ( 322.75 -645.25 80.25 ) ( 983 -1026 80.25 ) ( 966.75 -1053.75 80.25 ) clip 64 64 413.25 -1214.189 -120 0 lightmap_gray 16383.859 16384 413.25 -1214.189 -120 0
+ ( 377.5 -745.5 0.25 ) ( 393.5 -718 0.25 ) ( 383.5 -700.75 80.25 ) clip 55.416508 -62.439026 744.66437 -57.067074 180 -0.24394238 lightmap_gray 14186.772 -15984.391 744.6676 -57.067074 180 -0.24393989
+ ( 292.5 -684.75 426.5 ) ( 952.5 -1066 426.5 ) ( 952.5 -1066 -35.5 ) clip 55.417244 64 822.40271 60.5 0 0 lightmap_gray 14187.077 16384 822.41547 60.5 0 0
+ ( 425.25 -685.5 426.5 ) ( 441.25 -658 426.5 ) ( 441.25 -658 -35.5 ) clip 55.601715 -64 671.78351 -60.5 180 0 lightmap_gray 14234.139 -16384 671.7619 -60.5 180 0
+ ( 956.5 -1031.25 426.5 ) ( 296.25 -650.25 426.5 ) ( 296.25 -650.25 -35.5 ) clip 55.435436 64 826.51202 60.5 0 0 lightmap_gray 14191.744 16384 826.52759 60.5 0 0
+}
+// brush 2
+{
+ guid "{C5D328A8-A20B-11E6-9C49-14DDA9E204AF}"
+ ( 972.5 -1064.25 78.5 ) ( 988.5 -1036.5 78.5 ) ( 328.5 -655.5 78.5 ) clip 64 64 419.34201 -1224.2405 -120 0 lightmap_gray 16383.861 16384 419.34177 -1224.2405 -120 0
+ ( 314.5 -631.25 117.25 ) ( 974.5 -1012.25 117.25 ) ( 958.5 -1040 117.25 ) clip 64 64 405.34061 -1199.9896 -120 0 lightmap_gray 16383.889 16384 405.34198 -1199.9896 -120 0
+ ( 257.5 -606 426.75 ) ( 241.25 -633.5 426.75 ) ( 241.25 -633.5 -35.25 ) clip 55.167892 -64 619.83008 -60.25 180 0 lightmap_gray 14123.125 -16384 619.83398 -60.25 180 0
+ ( 292.5 -685.5 426.75 ) ( 952.5 -1066.5 426.75 ) ( 952.5 -1066.5 -35.25 ) clip 55.417244 64 822.43616 60.25 0 0 lightmap_gray 14187.077 16384 822.44891 60.25 0 0
+ ( 425.25 -686.25 426.75 ) ( 441.25 -658.5 426.75 ) ( 441.25 -658.5 -35.25 ) clip 55.601772 -64 672.34149 -60.25 180 0 lightmap_gray 14234.153 -16384 672.32001 -60.25 180 0
+ ( 956.5 -1031.75 426.75 ) ( 296.25 -651 426.75 ) ( 296.25 -651 -35.25 ) clip 55.435436 64 826.54553 60.25 0 0 lightmap_gray 14191.744 16384 826.56104 60.25 0 0
+}
+}
+// entity 1
+{
+guid "{C5D328AB-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 150 0"
+"model" "airport_door_side2"
+"modelscale" "2"
+"origin" "320.601 -676.988 -18"
+"targetname" "endgame_buyable_door_side1"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 2
+{
+guid "{C5D328AE-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 150 0"
+"model" "airport_door_side1"
+"modelscale" "2"
+"origin" "320.601 -676.988 -18"
+"targetname" "endgame_buyable_door_side2"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 3
+{
+guid "{C5D328B1-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 120 0"
+"origin" "380.463 -715.751 -17"
+"targetname" "endgame_buyable_door_side1_move"
+"_color" "1 0 0"
+}
+// entity 4
+{
+guid "{C5D328B4-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 120 0"
+"origin" "258.124 -644.355 -17"
+"targetname" "endgame_buyable_door_side2_move"
+"_color" "1 0 0"
+}
+// entity 5
+{
+guid "{C5D328B7-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 149.996 0"
+"model" "top_coridoor_door"
+"modelscale" "2"
+"origin" "320.452 -677.47 -1"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{C5D328BA-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 120 0"
+"origin" "403.022 -733.326 39"
+"targetname" "endgame_buyable_clip_side1_move"
+"_color" "1 0 0"
+}
+// entity 7
+{
+guid "{C5D328BD-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_struct"
+"angles" "0 120 0"
+"origin" "229.871 -636.419 39"
+"targetname" "endgame_buyable_clip_side2_move"
+"_color" "1 0 0"
+}
+// entity 8
+{
+guid "{C5D328C0-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "trigger_use"
+"ayz_doordef" "endgame_door"
+"script_flag" "enter_end_zone"
+"targetname" "zombie_door_custom"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{C5D328BF-A20B-11E6-9C49-14DDA9E204AF}"
+ ( 293 -697 2.5 ) ( 321.25 -712.5 2.5 ) ( 336.75 -684.5 2.5 ) trigger 64 64 -1003.1111 843.51184 150.80026 0 lightmap_gray 16384.205 16384.064 -1003.1068 843.51501 150.80026 0
+ ( 335.75 -682.75 72.25 ) ( 320.25 -710.75 72.25 ) ( 292 -695.25 72.25 ) trigger 64 64 -1001.3933 844.53601 150.80023 0 lightmap_gray 16384.205 16384.053 -1001.39 844.53851 150.80025 0
+ ( 358.25 -648 44.25 ) ( 330.25 -632.5 44.25 ) ( 330.25 -632.5 28.25 ) trigger 56.051067 -64 -687.05298 28.25 180 0 lightmap_gray 14349.178 -16384 -687.05182 28.25 180 0
+ ( 252 -636 44.25 ) ( 236.5 -664 44.25 ) ( 236.5 -664 28.25 ) trigger 56.051903 -64 -482.16098 28.25 180 0 lightmap_gray 14349.287 -16384 -482.16098 28.25 180 0
+ ( 307.5 -682.5 44.25 ) ( 335.5 -698 44.25 ) ( 335.5 -698 28.25 ) trigger 56.051067 -64 -664.117 28.25 180 0 lightmap_gray 14349.178 -16384 -664.11536 28.25 180 0
+ ( 370.75 -745 44.25 ) ( 386.5 -717 44.25 ) ( 386.5 -717 28.25 ) trigger 56.051964 -64 -401.18317 28.25 180 0 lightmap_gray 14349.303 -16384 -401.18317 28.25 180 0
+}
+}
+// entity 9
+{
+guid "{C5D328C3-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "endgame_buyable_door_side1_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{C5D328C2-A20B-11E6-9C49-14DDA9E204AF}"
+ ( 190 -642.75 -0.75 ) ( 348.75 -735.75 -0.75 ) ( 381.25 -680.5 -0.75 ) clip 64 64 -821.18579 -70.168053 149.59995 0 lightmap_gray 16384 16383.9 -821.18579 -70.161598 149.59995 0
+ ( 410 -698.75 78 ) ( 377.5 -754 78 ) ( 219 -661 78 ) clip 64 64 -871.14294 -71.273941 149.59998 0 lightmap_gray 16384 16384.016 -855.14294 -71.270065 149.59998 0
+ ( 378.25 -704.25 178 ) ( 219.5 -611.25 178 ) ( 219.5 -611.25 146 ) clip 55.233189 -64 -505.89606 -2 180 0 lightmap_gray 14139.696 -16384 -505.89606 26 180 0
+ ( 337.25 -658.25 175 ) ( 305 -713.5 175 ) ( 305 -713.5 143 ) clip 55.3937 -64 377.66321 -9 180 0 lightmap_gray 14180.787 -16384 377.66287 23 -180 0
+ ( 224 -626.5 182 ) ( 382.75 -719.75 182 ) ( 382.75 -719.75 150 ) clip 55.233231 -64 -510.48584 -2 180 0 lightmap_gray 14139.704 -16384 -510.48605 30 180 0
+ ( 375.75 -752 194 ) ( 408.25 -696.5 194 ) ( 408.25 -696.5 162 ) clip 55.269466 -64 416.85388 18 180 0 lightmap_gray 14148.983 -16384 416.85388 42 180 0
+}
+}
+// entity 10
+{
+guid "{C5D328C6-A20B-11E6-9C49-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "endgame_buyable_door_side2_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{C5D328C5-A20B-11E6-9C49-14DDA9E204AF}"
+ ( 190.25 -642.75 -0.75 ) ( 349 -735.75 -0.75 ) ( 381.75 -680.75 -0.75 ) clip 64 64 -821.52606 -70.074844 149.59998 0 lightmap_gray 16383.986 16383.906 -821.52631 -70.068588 149.59998 0
+ ( 410.25 -698.75 78 ) ( 377.75 -754 78 ) ( 219.25 -661 78 ) clip 64 64 -871.4837 -71.180008 149.59998 0 lightmap_gray 16384 16384.02 -855.4837 -71.176201 149.59998 0
+ ( 378.5 -704.5 178 ) ( 219.75 -611.25 178 ) ( 219.75 -611.25 146 ) clip 55.233189 -64 -506.23773 -2 -180 0 lightmap_gray 14139.696 -16384 -506.23773 26 -180 0
+ ( 261.75 -613 175 ) ( 229.5 -668.25 175 ) ( 229.5 -668.25 143 ) clip 55.3937 -64 332.5676 -9 180 0 lightmap_gray 14180.787 -16384 332.56726 23 180 0
+ ( 224.25 -626.75 182 ) ( 383 -719.75 182 ) ( 383 -719.75 150 ) clip 55.233185 -64 -510.82727 -2 180 0 lightmap_gray 14139.692 -16384 -510.82736 30 -180 0
+ ( 311.25 -701.75 194 ) ( 343.75 -646.25 194 ) ( 343.75 -646.25 162 ) clip 55.269466 -64 366.625 18 180 0 lightmap_gray 14148.983 -16384 366.625 42 180 0
+}
+}
+// entity 11
+{
+guid "{077C9B9C-37B5-11E7-A535-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 -30 0"
+"model" "ayz_new_door_lights"
+"modelscale" "2"
+"origin" "318.851 -676.238 -10.75"
+"targetname" "endgame_door_flasher"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}

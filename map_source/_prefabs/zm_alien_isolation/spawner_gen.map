@@ -1,0 +1,60 @@
+iwmap 4
+// entity 0
+{
+guid "{DD0884A9-D9D2-11E6-9C6C-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+{
+guid "{668B935B-ED8E-4085-A76F-09F35D36F259}"
+"classname" "actor_spawner_zm_factory_zombie"
+"ALERTONSPAWN" "0"
+"MAKEROOM" "1"
+"SCRIPT_FORCESPAWN" "1"
+"angles" "0 270 0"
+"coop_count" "9999 0 0 0"
+"count" "9999"
+"export" "1"
+"origin" "96 659 208"
+"script_disable_bleeder" "1"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_spawner"
+"spawnflags" "19"
+}
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+// entity 33

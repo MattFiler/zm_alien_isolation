@@ -1,0 +1,49 @@
+>class,zm_mod_level
+>group,modtools
+
+xmodel,skybox_default_day
+material,luts_t7_default
+	
+// BSP
+col_map,maps/zm/zm_alien_isolation.d3dbsp
+gfx_map,maps/zm/zm_alien_isolation.d3dbsp
+
+// Audio
+sound,zm_alien_isolation
+
+scriptparsetree,scripts/zm/zm_alien_isolation.gsc
+scriptparsetree,scripts/zm/zm_alien_isolation.csc
+
+// Vision
+rawfile,vision/zm_alien_isolation.vision
+
+//Buyable Ending Script (from UGX)
+scriptparsetree,scripts/zm/ugxmods_buyable_ending.gsc
+
+//Updated Wall Weapon Costs - THIS WILL RESET EVERY MOD TOOLS UPDATE
+stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
+
+//FLAMER
+//weaponfull,alien_flamer
+//weaponfull,m2_flamethrower_zombie_bo3
+//weaponfull,m2_flamethrower_zombie_bo3_up
+
+//Cached FX
+fx,zm_alien_isolation/TowPlatform_WarningLight
+fx,zm_alien_isolation/Elevator_Light
+fx,zm_alien_isolation/TowPlatform_FlashingEvac
+
+//Cached models
+xmodel,ayz_new_door_lights_open
+xmodel,monitor_50cm_gameroom
+xmodel,monitor_static_trace
+xmodel,monitor_static_trace_orange
+xmodel,monitor_static_trace_red
+xmodel,monitor_50cm_airlock_state01
+xmodel,monitor_50cm_airlock_state02
+xmodel,monitor_50cm_airlock_state03
+xmodel,monitor_torrens_signin_dempsey
+xmodel,monitor_torrens_signin_nikolai
+xmodel,monitor_torrens_signin_richtofen
+xmodel,monitor_torrens_signin_takeo
+xmodel,monitor_torrens_signin

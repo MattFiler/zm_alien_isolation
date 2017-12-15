@@ -1,0 +1,48 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{DD4FEC17-956F-11E6-9C45-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{808795A0-956F-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/lights/front_window_lights.map"
+}
+// entity 2
+{
+guid "{AB505F32-9643-11E6-9C46-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "15.6012 187.799 -180"
+"model" "_prefabs/zm_alien_isolation/lights/main_light.map"
+"origin" "786.493 452.327 150.823"
+}
+// entity 3
+{
+guid "{AB505F35-9643-11E6-9C46-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "15.6012 187.799 -180"
+"model" "_prefabs/zm_alien_isolation/lights/main_light.map"
+"origin" "763.493 619.327 152.3"
+}

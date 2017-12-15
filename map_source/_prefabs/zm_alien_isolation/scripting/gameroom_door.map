@@ -1,0 +1,87 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{DB07EB4D-9947-11E6-9C47-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{DB07EB56-9947-11E6-9C47-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "360 68.999 -90"
+"model" "shopping_door_blind"
+"modelscale" "2"
+"origin" "-265.687 -122.346 -4"
+"script_vector" "0 0 80"
+"targetname" "gameroom_door"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 2
+{
+guid "{DB07EB59-9947-11E6-9C47-14DDA9E204AF}"
+"classname" "trigger_use"
+"script_noteworthy" "magic_door"
+"targetname" "zombie_door"
+"zombie_cost" "1500"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{DB07EB58-9947-11E6-9C47-14DDA9E204AF}"
+ ( -273.68701 -132.09601 -4 ) ( -262.43701 -136.34601 -4 ) ( -258.18701 -125.096 -4 ) trigger 64 64 196.19537 -209.43341 159 0 lightmap_gray 16384 16384.01 196.19537 -209.43353 159 0
+ ( -276.93701 -118.096 100 ) ( -281.18701 -129.34601 100 ) ( -292.43701 -124.846 100 ) trigger 64 64 216.19531 -209.43353 159 0 lightmap_gray 16384 16384.01 216.19531 -209.43365 159 0
+ ( -207.68701 -16.096001 44 ) ( -218.93701 -11.846001 44 ) ( -218.93701 -11.846001 -4 ) trigger 59.748756 -64 207.7437 -4 180 0 lightmap_gray 15295.682 -16384 207.7437 -4 180 0
+ ( -321.68701 -156.59601 44 ) ( -325.93701 -167.84601 44 ) ( -325.93701 -167.84601 -4 ) trigger 59.748737 -64 156.55649 -4 180 0 lightmap_gray 15295.677 -16384 156.55649 -4 180 0
+ ( -316.18701 -231.59601 44 ) ( -304.93701 -235.84601 44 ) ( -304.93701 -235.84601 -4 ) trigger 59.748737 -64 304.95883 -4 180 0 lightmap_gray 15295.677 -16384 304.95883 -4 180 0
+ ( -232.68701 -147.84601 44 ) ( -228.43701 -136.59601 44 ) ( -228.43701 -136.59601 -4 ) trigger 59.748745 -64 136.68138 -4 -180 0 lightmap_gray 15295.679 -16384 136.68138 -4 -180 0
+}
+}
+// entity 3
+{
+guid "{DB07EB5C-9947-11E6-9C47-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"script_vector" "0 0 80"
+"targetname" "gameroom_door"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{DB07EB5B-9947-11E6-9C47-14DDA9E204AF}"
+ ( -290.93701 -176.84601 -4 ) ( -283.43701 -179.84601 -4 ) ( -240.43701 -67.846001 -4 ) clip 64 64 204.19533 -209.43353 159 0 lightmap_gray 16384 16384 204.19533 -209.43353 159 0
+ ( -243.43701 -75.346001 100 ) ( -286.43701 -187.34601 100 ) ( -293.68701 -184.34601 100 ) clip 64 64 204.19533 -217.43353 159 0 lightmap_gray 16384 16384 204.19533 -217.43353 159 0
+ ( -218.93701 -11.846001 44 ) ( -226.43701 -8.8460007 44 ) ( -226.43701 -8.8460007 -4 ) clip 59.748718 -64 222.68088 -4 180 0 lightmap_gray 15295.672 -16384 222.68088 -4 180 0
+ ( -247.93701 -64.846001 44 ) ( -290.93701 -176.84601 44 ) ( -290.93701 -176.84601 -4 ) clip 59.748753 -64 120.91248 -4 180 0 lightmap_gray 15295.681 -16384 120.91248 -4 180 0
+ ( -312.43701 -232.84601 40 ) ( -304.93701 -235.84601 40 ) ( -304.93701 -235.84601 -8 ) clip 59.748718 -64 308.69312 -8 180 0 lightmap_gray 15295.672 -16384 308.69312 -8 180 0
+ ( -283.43701 -179.84601 44 ) ( -240.43701 -67.846001 44 ) ( -240.43701 -67.846001 -4 ) clip 59.748753 -64 123.77955 -4 180 0 lightmap_gray 15295.681 -16384 123.77955 -4 180 0
+}
+}

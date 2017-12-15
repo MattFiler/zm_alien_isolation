@@ -1,0 +1,379 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{E44329C5-F227-11E6-A515-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{0F38F2B6-D0F9-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_wall_side_b"
+"modelscale" "2"
+"origin" "-3511 -78.75 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{64EE0B29-D0F9-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_wall_side_a"
+"modelscale" "2"
+"origin" "-2902.75 -78.75 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{EB346205-D100-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides"
+"modelscale" "2"
+"origin" "-2991 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{6876CA94-D101-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/temp_prefab35.map"
+"origin" "0 -64 0"
+}
+// entity 5
+{
+guid "{E52CBD3D-D101-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-3045.75 2760.25 0"
+}
+// entity 6
+{
+guid "{4514A98F-D102-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-2963 12.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{68F70793-D102-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-3082.5 12.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{ACE4FE73-D102-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides"
+"modelscale" "2"
+"origin" "-3102.5 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{302E084D-D103-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-3330.75 12.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{302E0850-D103-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-3450.25 12.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{55EFD8C1-D103-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-3368 -3109.5 0"
+}
+// entity 12
+{
+guid "{99FF51F1-D103-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides_carousel"
+"modelscale" "2"
+"origin" "-3366.75 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{D81CE034-D103-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-2919 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{14F32037-D104-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3494.25 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{7512120C-D104-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3239.25 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{7F6E8368-D104-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3206.75 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{8615DB3A-D104-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3174.25 -207 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{8151331C-D10A-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "collection_carousel"
+"modelscale" "2"
+"origin" "-3366.8 -191.5 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{D9E53FAF-D10A-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "collection_carousel_end"
+"modelscale" "2"
+"origin" "-3366.5 -64 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{0D640F3E-D10B-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "collection_side_door"
+"modelscale" "2.40000009536743"
+"origin" "-3206.75 -207.5 60.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{3FDC8A25-D10B-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "door"
+"modelscale" "2.34999990463257"
+"origin" "-3206.5 -213.75 42.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{68F09D5B-D10B-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "collection_wall_small"
+"modelscale" "2"
+"origin" "-3142.5 -205.5 45.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{A46AD9F7-D10B-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "collection_wall_small"
+"modelscale" "2"
+"origin" "-3270.75 -205.5 45.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{C6D44E4F-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3306.75 -228 79"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{D5FBC0DD-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3335.5 -228.25 79"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{E44329CE-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3397.75 -228.25 79"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{E44329D1-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3426.5 -228.5 79"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

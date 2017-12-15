@@ -1,0 +1,391 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{3C69A041-4212-11E7-A544-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{0262E2FF-2791-11E7-A52D-14DDA9E204AF}"
+ ( 33751.75 -11140 -14247 ) ( 33740.75 -11140 -14247 ) ( 33740.75 -11155.5 -14247 ) clip 64 64 -152 -34 0 0 lightmap_gray 16384 16384 -152 -34 0 0
+ ( 33740.75 -11155.5 -14158.5 ) ( 33740.75 -11140 -14158.5 ) ( 33751.75 -11140 -14158.5 ) clip 64 64 -152 -34 0 0 lightmap_gray 16384 16384 -152 -34 0 0
+ ( 33739.75 -11160.75 -14158.5 ) ( 33750.75 -11160.75 -14158.5 ) ( 33750.75 -11160.75 -14247 ) clip 64 64 -153 0 0 0 lightmap_gray 16384 16384 -153 0 0 0
+ ( 33762.5 -11155.5 -14158.5 ) ( 33762.5 -11140 -14158.5 ) ( 33762.5 -11140 -14247 ) clip 64 64 34 0 0 0 lightmap_gray 16384 16384 34 0 0 0
+ ( 33751.75 -11140 -14158.5 ) ( 33740.75 -11140 -14158.5 ) ( 33740.75 -11140 -14247 ) clip 64 64 -152 0 0 0 lightmap_gray 16384 16384 -152 0 0 0
+ ( 33744.75 -11141.25 -14158.5 ) ( 33744.75 -11156.75 -14158.5 ) ( 33744.75 -11156.75 -14247 ) clip 64 64 32.75 0 0 0 lightmap_gray 16384 16384 32.75 0 0 0
+}
+// brush 1
+{
+ guid "{BC067050-2790-11E7-A52D-14DDA9E204AF}"
+ ( 33890.5 -11159.25 -14247 ) ( 33758.75 -11159.25 -14247 ) ( 33758.75 -11177.75 -14247 ) clip 64 64 -15 -33.5 0 0 lightmap_gray 16384 16384 -15 -33.5 0 0
+ ( 33758.75 -11177.75 -14158.5 ) ( 33758.75 -11159.25 -14158.5 ) ( 33890.5 -11159.25 -14158.5 ) clip 64 64 -15 -33.5 0 0 lightmap_gray 16384 16384 -15 -33.5 0 0
+ ( 33759.75 -11166 -14158.5 ) ( 33891.5 -11166 -14158.5 ) ( 33891.5 -11166 -14247 ) clip 64 64 -14 0 0 0 lightmap_gray 16384 16384 -14 0 0 0
+ ( 33893.5 -11177.5 -14158.5 ) ( 33893.5 -11159 -14158.5 ) ( 33893.5 -11159 -14247 ) clip 64 64 33.75 0 0 0 lightmap_gray 16384 16384 33.75 0 0 0
+ ( 33890.5 -11159.25 -14158.5 ) ( 33758.75 -11159.25 -14158.5 ) ( 33758.75 -11159.25 -14247 ) clip 64 64 -15 0 0 0 lightmap_gray 16384 16384 -15 0 0 0
+ ( 33752.25 -11160.25 -14158.5 ) ( 33752.25 -11178.75 -14158.5 ) ( 33752.25 -11178.75 -14247 ) clip 64 64 32.5 0 0 0 lightmap_gray 16384 16384 32.5 0 0 0
+}
+// brush 2
+{
+ guid "{F59A3D6E-2790-11E7-A52D-14DDA9E204AF}"
+ ( 33752 -10995.75 -14247 ) ( 33741 -10995.75 -14247 ) ( 33741 -11011.25 -14247 ) clip 64 64 -151.75 -178.25 0 0 lightmap_gray 16384 16384 -151.75 -178.25 0 0
+ ( 33741 -11011.25 -14158.5 ) ( 33741 -10995.75 -14158.5 ) ( 33752 -10995.75 -14158.5 ) clip 64 64 -151.75 -178.25 0 0 lightmap_gray 16384 16384 -151.75 -178.25 0 0
+ ( 33740 -11016.5 -14158.5 ) ( 33751 -11016.5 -14158.5 ) ( 33751 -11016.5 -14247 ) clip 64 64 -152.75 0 0 0 lightmap_gray 16384 16384 -152.75 0 0 0
+ ( 33762.75 -11011.25 -14158.5 ) ( 33762.75 -10995.75 -14158.5 ) ( 33762.75 -10995.75 -14247 ) clip 64 64 178.25 0 0 0 lightmap_gray 16384 16384 178.25 0 0 0
+ ( 33752 -10995.75 -14158.5 ) ( 33741 -10995.75 -14158.5 ) ( 33741 -10995.75 -14247 ) clip 64 64 -151.75 0 0 0 lightmap_gray 16384 16384 -151.75 0 0 0
+ ( 33745 -10997 -14158.5 ) ( 33745 -11012.5 -14158.5 ) ( 33745 -11012.5 -14247 ) clip 64 64 177 0 0 0 lightmap_gray 16384 16384 177 0 0 0
+}
+// brush 3
+{
+ guid "{D96D94B6-2790-11E7-A52D-14DDA9E204AF}"
+ ( 33887.75 -10994.5 -14247 ) ( 33876.75 -10994.5 -14247 ) ( 33876.75 -11010 -14247 ) clip 64 64 -16 -179.5 0 0 lightmap_gray 16384 16384 -16 -179.5 0 0
+ ( 33876.75 -11010 -14158.5 ) ( 33876.75 -10994.5 -14158.5 ) ( 33887.75 -10994.5 -14158.5 ) clip 64 64 -16 -179.5 0 0 lightmap_gray 16384 16384 -16 -179.5 0 0
+ ( 33875.75 -11015.25 -14158.5 ) ( 33886.75 -11015.25 -14158.5 ) ( 33886.75 -11015.25 -14247 ) clip 64 64 -17 0 0 0 lightmap_gray 16384 16384 -17 0 0 0
+ ( 33898.5 -11010 -14158.5 ) ( 33898.5 -10994.5 -14158.5 ) ( 33898.5 -10994.5 -14247 ) clip 64 64 179.5 0 0 0 lightmap_gray 16384 16384 179.5 0 0 0
+ ( 33887.75 -10994.5 -14158.5 ) ( 33876.75 -10994.5 -14158.5 ) ( 33876.75 -10994.5 -14247 ) clip 64 64 -16 0 0 0 lightmap_gray 16384 16384 -16 0 0 0
+ ( 33880.75 -10995.75 -14158.5 ) ( 33880.75 -11011.25 -14158.5 ) ( 33880.75 -11011.25 -14247 ) clip 64 64 178.25 0 0 0 lightmap_gray 16384 16384 178.25 0 0 0
+}
+// brush 4
+{
+ guid "{CBB37062-2790-11E7-A52D-14DDA9E204AF}"
+ ( 33887.75 -11139.25 -14247 ) ( 33876.75 -11139.25 -14247 ) ( 33876.75 -11154.75 -14247 ) clip 64 64 -16 -34.75 0 0 lightmap_gray 16384 16384 -16 -34.75 0 0
+ ( 33876.75 -11154.75 -14158.5 ) ( 33876.75 -11139.25 -14158.5 ) ( 33887.75 -11139.25 -14158.5 ) clip 64 64 -16 -34.75 0 0 lightmap_gray 16384 16384 -16 -34.75 0 0
+ ( 33875.5 -11159.5 -14158.5 ) ( 33886.5 -11159.5 -14158.5 ) ( 33886.5 -11159.5 -14247 ) clip 64 64 -17.25 0 0 0 lightmap_gray 16384 16384 -17.25 0 0 0
+ ( 33898.5 -11154.75 -14158.5 ) ( 33898.5 -11139.25 -14158.5 ) ( 33898.5 -11139.25 -14247 ) clip 64 64 34.75 0 0 0 lightmap_gray 16384 16384 34.75 0 0 0
+ ( 33889.25 -11139.5 -14158.5 ) ( 33878.25 -11139.5 -14158.5 ) ( 33878.25 -11139.5 -14247 ) clip 64 64 -14.5 0 0 0 lightmap_gray 16384 16384 -14.5 0 0 0
+ ( 33880.75 -11140.25 -14158.5 ) ( 33880.75 -11155.75 -14158.5 ) ( 33880.75 -11155.75 -14247 ) clip 64 64 33.75 0 0 0 lightmap_gray 16384 16384 33.75 0 0 0
+}
+// brush 5
+{
+ guid "{1754C493-2791-11E7-A52D-14DDA9E204AF}"
+ ( 33881 -10994.5 -14157.75 ) ( 33751 -10994.5 -14157.75 ) ( 33751 -11139.75 -14157.75 ) clip 64 64 -24.5 -54.5 0 0 lightmap_gray 16384 16384 -24.5 -54.5 0 0
+ ( 33748.5 -11139.75 -14153.5 ) ( 33748.5 -10994.5 -14153.5 ) ( 33878.5 -10994.5 -14153.5 ) clip 64 64 -28.75 -54.5 0 0 lightmap_gray 16384 16384 -28.75 -54.5 0 0
+ ( 33768 -11175.25 -14158.5 ) ( 33898 -11175.25 -14158.5 ) ( 33898 -11175.25 -14247 ) clip 64 64 -9.25 0 0 0 lightmap_gray 16384 16384 -9.25 0 0 0
+ ( 33898 -11175.25 -14158.5 ) ( 33898 -11030 -14158.5 ) ( 33898 -11030 -14247 ) clip 64 64 19 0 0 0 lightmap_gray 16384 16384 19 0 0 0
+ ( 33876.75 -10994.5 -14158.5 ) ( 33746.75 -10994.5 -14158.5 ) ( 33746.75 -10994.5 -14247 ) clip 64 64 -30.5 0 0 0 lightmap_gray 16384 16384 -30.5 0 0 0
+ ( 33746.75 -10994.5 -14158.5 ) ( 33746.75 -11139.75 -14158.5 ) ( 33746.75 -11139.75 -14247 ) clip 64 64 54.5 0 0 0 lightmap_gray 16384 16384 54.5 0 0 0
+}
+// brush 6
+{
+ guid "{B077A712-2790-11E7-A52D-14DDA9E204AF}"
+ ( 33746.25 -11008.25 -14247 ) ( 33739 -11008.25 -14247 ) ( 33739 -11172.5 -14247 ) clip 64 64 -31.5 -30.25 0 0 lightmap_gray 16384 16384 -31.5 -30.25 0 0
+ ( 33739 -11172.5 -14158.5 ) ( 33739 -11008.25 -14158.5 ) ( 33746.25 -11008.25 -14158.5 ) clip 64 64 -31.5 -30.25 0 0 lightmap_gray 16384 16384 -31.5 -30.25 0 0
+ ( 33739.25 -11180.25 -14158.5 ) ( 33746.5 -11180.25 -14158.5 ) ( 33746.5 -11180.25 -14247 ) clip 64 64 -31.25 0 0 0 lightmap_gray 16384 16384 -31.25 0 0 0
+ ( 33746.25 -11172.5 -14158.5 ) ( 33746.25 -11008.25 -14158.5 ) ( 33746.25 -11008.25 -14247 ) clip 64 64 30.25 0 0 0 lightmap_gray 16384 16384 30.25 0 0 0
+ ( 33748.5 -10994.5 -14158.5 ) ( 33741.25 -10994.5 -14158.5 ) ( 33741.25 -10994.5 -14247 ) clip 64 64 -29.25 0 0 0 lightmap_gray 16384 16384 -29.25 0 0 0
+ ( 33739 -11008.25 -14158.5 ) ( 33739 -11172.5 -14158.5 ) ( 33739 -11172.5 -14247 ) clip 64 64 30.25 0 0 0 lightmap_gray 16384 16384 30.25 0 0 0
+}
+// brush 7
+{
+ guid "{83855362-2790-11E7-A52D-14DDA9E204AF}"
+ ( 33878.25 -10979.25 -14247 ) ( 33725.5 -10979.25 -14247 ) ( 33725.5 -11012.75 -14247 ) clip 64 64 -25.5 -50.5 0 0 lightmap_gray 16384 16384 -25.5 -50.5 0 0
+ ( 33732.75 -11012.75 -14158.5 ) ( 33732.75 -10979.25 -14158.5 ) ( 33885.5 -10979.25 -14158.5 ) clip 64 64 -25.5 -50.5 0 0 lightmap_gray 16384 16384 -18.25 -50.5 0 0
+ ( 33744.25 -11001 -14231 ) ( 33897 -11001 -14231 ) ( 33897 -11001 -14247 ) clip 64 64 -25.5 0 0 0 lightmap_gray 16384 16384 -6.75 0 0 0
+ ( 33888.75 -11012 -14231 ) ( 33888.75 -10978.5 -14231 ) ( 33888.75 -10978.5 -14247 ) clip 64 64 51.25 0 0 0 lightmap_gray 16384 16384 51.25 0 0 0
+ ( 33886.75 -10996.25 -14231 ) ( 33734 -10996.25 -14231 ) ( 33734 -10996.25 -14247 ) clip 64 64 -17 0 0 0 lightmap_gray 16384 16384 -17 0 0 0
+ ( 33739.75 -10979.5 -14231 ) ( 33739.75 -11013 -14231 ) ( 33739.75 -11013 -14247 ) clip 64 64 50.25 0 0 0 lightmap_gray 16384 16384 50.25 0 0 0
+}
+}
+// entity 1
+{
+guid "{C1E2884C-2765-11E7-A52C-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33799.6 -11111.3 -14239"
+"targetname" "ayz_elevator_destination_1"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{D8243664-276C-11E7-A52D-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "tpf_clip_side1"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{C9C895BC-276C-11E7-A52D-14DDA9E204AF}"
+ ( 33980.75 -10985.25 -14275.5 ) ( 33892.5 -10985.25 -14275.5 ) ( 33892.5 -10998 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 169.75 173.75 0 0
+ ( 33894.5 -10998 -14103.25 ) ( 33894.5 -10985.25 -14103.25 ) ( 33982.75 -10985.25 -14103.25 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 171.75 173.75 0 0
+ ( 33818.25 -11166.25 -14196.75 ) ( 33906.5 -11166.25 -14196.75 ) ( 33906.5 -11166.25 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 95.5 0 0 0
+ ( 33907.75 -11157.25 -14103.25 ) ( 33907.75 -11144.5 -14103.25 ) ( 33907.75 -11144.5 -14182 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 -333 -93.5 0 0
+ ( 33979.75 -11073.75 -14196.75 ) ( 33891.5 -11073.75 -14196.75 ) ( 33891.5 -11073.75 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 168.75 0 0 0
+ ( 33892.5 -10985.25 -14196.75 ) ( 33892.5 -10998 -14196.75 ) ( 33892.5 -10998 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 -173.75 0 0 0
+}
+}
+// entity 3
+{
+guid "{E74A7344-278E-11E7-A52D-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33799.6 -11046.3 -14239"
+"targetname" "ayz_elevator_destination_2"
+"_color" "1 0 0"
+}
+// entity 4
+{
+guid "{E74A734F-278E-11E7-A52D-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33844.4 -11045.5 -14239"
+"targetname" "ayz_elevator_destination_4"
+"_color" "1 0 0"
+}
+// entity 5
+{
+guid "{E74A735A-278E-11E7-A52D-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33842.9 -11110.8 -14239"
+"targetname" "ayz_elevator_destination_3"
+"_color" "1 0 0"
+}
+// entity 6
+{
+guid "{6689472F-2810-11E7-A52D-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "elevator"
+"modelscale" "2.5"
+"origin" "33821.5 -11078 -14258"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{66894732-2810-11E7-A52D-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "elevator_door"
+"modelscale" "2.5"
+"origin" "33753.3 -11078.3 -14259.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{810EF4A9-2813-11E7-A52D-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 90 0"
+"model" "elevator_door_side2"
+"modelscale" "2.5"
+"origin" "33897.3 -11078 -14259"
+"targetname" "tpf_elevator_sidetwo"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 9
+{
+guid "{810EF4AC-2813-11E7-A52D-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33897.3 -11019.8 -14259"
+"targetname" "tpf_elevator_sideone_struct"
+"_color" "1 0 0"
+}
+// entity 10
+{
+guid "{810EF4AF-2813-11E7-A52D-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33897.3 -11131.5 -14259"
+"targetname" "tpf_elevator_sidetwo_struct"
+"_color" "1 0 0"
+}
+// entity 11
+{
+guid "{810EF4B2-2813-11E7-A52D-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 90 0"
+"model" "elevator_door_side1"
+"modelscale" "2.5"
+"origin" "33897.3 -11078 -14259"
+"targetname" "tpf_elevator_sideone"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 12
+{
+guid "{B8B4C6AD-38AA-11E7-A539-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "elevator_light_animated_stage1"
+"modelscale" "2.5"
+"origin" "33760 -11142.3 -14220.1"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{D9091313-38AD-11E7-A539-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "elevator_light_animated_stage1"
+"modelscale" "2.5"
+"origin" "33883 -11142.5 -14220.1"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{350820B2-38AE-11E7-A539-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "elevator_light_animated_stage1"
+"modelscale" "2.5"
+"origin" "33883.3 -11013.5 -14220.1"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{D7463C1D-38AF-11E7-A539-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "elevator_light_animated_stage1"
+"modelscale" "2.5"
+"origin" "33760.3 -11013.8 -14220.1"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{51128C70-38B0-11E7-A539-14DDA9E204AF}"
+"classname" "script_struct"
+"_color" "0 1 0.1882"
+"origin" "33760 -11143 -14185"
+"targetname" "elevator_fx3"
+}
+// entity 17
+{
+guid "{6C723617-38B0-11E7-A539-14DDA9E204AF}"
+"classname" "script_struct"
+"_color" "0 1 0.1882"
+"origin" "33759.6 -11012.3 -14185"
+"targetname" "elevator_fx2"
+}
+// entity 18
+{
+guid "{81789C30-38B0-11E7-A539-14DDA9E204AF}"
+"classname" "script_struct"
+"_color" "0 1 0.1882"
+"origin" "33883.8 -11012.8 -14185"
+"targetname" "elevator_fx1"
+}
+// entity 19
+{
+guid "{8996D2EA-38B0-11E7-A539-14DDA9E204AF}"
+"classname" "script_struct"
+"_color" "0 1 0.1882"
+"origin" "33883.5 -11143.5 -14185"
+"targetname" "elevator_fx4"
+}
+// entity 20
+{
+guid "{703B24E0-420E-11E7-A544-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33900 -10984.5 -14189.5"
+"targetname" "tpf_clip_side2_moveto"
+"_color" "1 0 0"
+}
+// entity 21
+{
+guid "{72A9EB86-420F-11E7-A544-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "tpf_clip_side2"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{CFCF2A1A-419B-11E7-A543-14DDA9E204AF}"
+ ( 33977.75 -10902.75 -14275.5 ) ( 33889.5 -10902.75 -14275.5 ) ( 33889.5 -10915.5 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 166.75 91.25 0 0
+ ( 33891.5 -10915.5 -14103.25 ) ( 33891.5 -10902.75 -14103.25 ) ( 33979.75 -10902.75 -14103.25 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 168.75 91.25 0 0
+ ( 33814.75 -11084.75 -14196.75 ) ( 33903 -11084.75 -14196.75 ) ( 33903 -11084.75 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 92 0 0 0
+ ( 33907.75 -11074.75 -14103.25 ) ( 33907.75 -11062 -14103.25 ) ( 33907.75 -11062 -14182 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 -250.5 -93.5 0 0
+ ( 33976.5 -10995.5 -14196.75 ) ( 33888.25 -10995.5 -14196.75 ) ( 33888.25 -10995.5 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 165.5 0 0 0
+ ( 33892.5 -10903.5 -14196.75 ) ( 33892.5 -10916.25 -14196.75 ) ( 33892.5 -10916.25 -14275.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 -92 0 0 0
+}
+}
+// entity 22
+{
+guid "{3C69A048-4212-11E7-A544-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "33900 -11171.5 -14189.5"
+"targetname" "tpf_clip_side1_moveto"
+"_color" "1 0 0"
+}
+// entity 23
+{
+guid "{F54A9EF4-4D1A-11E7-A551-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "perkroom_poster2"
+"modelscale" "1.20000004768372"
+"origin" "33840.9 -11179.8 -14193"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{F54A9EF7-4D1A-11E7-A551-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "poster_smile"
+"modelscale" "1.20000004768372"
+"origin" "33803.5 -11179.7 -14193"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

@@ -1,0 +1,508 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{64D2709E-F227-11E6-A515-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{FFC7EB19-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_wall_side_b"
+"modelscale" "2"
+"origin" "-2902.5 624.25 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{FFC7EB1C-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_wall_side_a"
+"modelscale" "2"
+"origin" "-3510.75 624.25 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{FFC7EB25-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-3367.75 -2214.75 0"
+}
+// entity 4
+{
+guid "{FFC7EB28-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-3450 532.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{FFC7EB2B-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-3330.5 532.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{FFC7EB31-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-3081.75 532.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{FFC7EB34-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_floor2"
+"modelscale" "2"
+"origin" "-2962.25 532.75 55.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{FFC7EB37-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-3045.5 3655 0"
+}
+// entity 9
+{
+guid "{FFC7EB43-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-2917.75 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{FFC7EB46-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3206.25 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{FFC7EB52-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_side_door"
+"modelscale" "2.40000009536743"
+"origin" "-3206 753 60.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{FFC7EB55-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "door"
+"modelscale" "2.34999990463257"
+"origin" "-3206.25 759.25 42.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{08230046-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_wall_corner"
+"modelscale" "2"
+"origin" "-3510.75 752.5 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{0823005B-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/temp_prefab31.map"
+"origin" "-6412.75 641 -0.3"
+}
+// entity 15
+{
+guid "{0823005E-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_wall_corner"
+"modelscale" "2"
+"origin" "-2902.5 752.5 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{762D3CCF-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides_carousel"
+"modelscale" "2"
+"origin" "-3366 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{762D3CD2-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3238.75 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{762D3CD5-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_carousel"
+"modelscale" "2"
+"origin" "-3365.95 737 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{762D3CD8-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_carousel_end"
+"modelscale" "2"
+"origin" "-3366.25 609.5 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{762D3CDB-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_wall_small"
+"modelscale" "2"
+"origin" "-3270.5 751 45.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{762D3CDE-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-6413.5 609.5 0"
+}
+// entity 22
+{
+guid "{762D3CE1-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_floor_sideconveyors"
+"modelscale" "2"
+"origin" "-3478.25 752.25 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{FFC7EB49-D10C-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3494.75 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{BCD16B33-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides"
+"modelscale" "2"
+"origin" "-3101.5 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{BCD16B36-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides"
+"modelscale" "2"
+"origin" "-2990 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{BCD16B39-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_ceiling_sides_small"
+"modelscale" "2"
+"origin" "-3173.75 752.5 142"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{BCD16B3C-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_wall_small"
+"modelscale" "2"
+"origin" "-3141.75 751 45.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 28
+{
+guid "{BCD16B3F-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-5869.75 609.5 0"
+}
+// entity 29
+{
+guid "{BCD16B42-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 180 0"
+"model" "_prefabs/temp_prefab34.map"
+"origin" "-5981 609.5 0"
+}
+// entity 30
+{
+guid "{BCD16B45-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_baggage_carousel"
+"modelscale" "2"
+"origin" "-3101.75 751.75 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 31
+{
+guid "{BCD16B48-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_floor_sideconveyors"
+"modelscale" "2"
+"origin" "-2933.75 752.25 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 32
+{
+guid "{BCD16B4B-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "collection_floor_sideconveyors"
+"modelscale" "2"
+"origin" "-3045.75 752.25 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 33
+{
+guid "{BCD16B4E-D10D-11E6-9C67-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "collection_baggage_carousel"
+"modelscale" "2"
+"origin" "-2990.1 751.75 47.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 34
+{
+guid "{3AD358F5-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3425.75 768.5 80.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 35
+{
+guid "{5286A57C-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3396.75 768.25 80.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 36
+{
+guid "{64D270A7-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3334.75 768.25 80.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 37
+{
+guid "{64D270AA-F227-11E6-A515-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "collection_carousel_teeth"
+"modelscale" "2"
+"origin" "-3305.75 768 80.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

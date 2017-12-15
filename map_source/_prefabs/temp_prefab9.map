@@ -1,0 +1,433 @@
+iwmap 4
+// entity 0
+{
+guid "{045A2581-9488-11E6-9C45-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+// entity 33
+// entity 34
+// entity 35
+// entity 36
+// entity 37
+// entity 38
+// entity 39
+// entity 40
+// entity 41
+// entity 42
+// entity 43
+// entity 44
+// entity 45
+// entity 46
+// entity 47
+// entity 48
+// entity 49
+// entity 50
+// entity 51
+// entity 52
+// entity 53
+// entity 54
+// entity 55
+// entity 56
+// entity 57
+// entity 58
+// entity 59
+// entity 60
+// entity 61
+// entity 62
+// entity 63
+// entity 64
+// entity 65
+// entity 66
+// entity 67
+// entity 68
+// entity 69
+// entity 70
+// entity 71
+// entity 72
+// entity 73
+// entity 74
+// entity 75
+// entity 76
+// entity 77
+// entity 78
+// entity 79
+// entity 80
+// entity 81
+// entity 82
+// entity 83
+// entity 84
+// entity 85
+// entity 86
+// entity 87
+// entity 88
+// entity 89
+// entity 90
+// entity 91
+// entity 92
+// entity 93
+// entity 94
+// entity 95
+// entity 96
+// entity 97
+// entity 98
+// entity 99
+// entity 100
+// entity 101
+// entity 102
+// entity 103
+// entity 104
+// entity 105
+// entity 106
+// entity 107
+// entity 108
+// entity 109
+// entity 110
+// entity 111
+// entity 112
+// entity 113
+// entity 114
+// entity 115
+// entity 116
+// entity 117
+// entity 118
+// entity 119
+// entity 120
+// entity 121
+// entity 122
+// entity 123
+// entity 124
+// entity 125
+// entity 126
+// entity 127
+// entity 128
+// entity 129
+// entity 130
+// entity 131
+// entity 132
+// entity 133
+// entity 134
+// entity 135
+// entity 136
+// entity 137
+// entity 138
+// entity 139
+// entity 140
+// entity 141
+// entity 142
+// entity 143
+// entity 144
+// entity 145
+// entity 146
+// entity 147
+// entity 148
+// entity 149
+// entity 150
+// entity 151
+// entity 152
+// entity 153
+// entity 154
+// entity 155
+// entity 156
+// entity 157
+// entity 158
+// entity 159
+// entity 160
+// entity 161
+// entity 162
+// entity 163
+// entity 164
+// entity 165
+// entity 166
+// entity 167
+// entity 168
+// entity 169
+// entity 170
+// entity 171
+// entity 172
+// entity 173
+// entity 174
+// entity 175
+// entity 176
+// entity 177
+// entity 178
+// entity 179
+// entity 180
+// entity 181
+// entity 182
+// entity 183
+// entity 184
+// entity 185
+// entity 186
+// entity 187
+// entity 188
+// entity 189
+// entity 190
+// entity 191
+// entity 192
+// entity 193
+// entity 194
+// entity 195
+// entity 196
+// entity 197
+// entity 198
+// entity 199
+// entity 200
+// entity 201
+// entity 202
+// entity 203
+// entity 204
+// entity 205
+// entity 206
+// entity 207
+// entity 208
+// entity 209
+// entity 210
+// entity 211
+// entity 212
+// entity 213
+// entity 214
+// entity 215
+// entity 216
+// entity 217
+// entity 218
+// entity 219
+// entity 220
+// entity 221
+// entity 222
+// entity 223
+// entity 224
+// entity 225
+// entity 226
+// entity 227
+// entity 228
+// entity 229
+// entity 230
+// entity 231
+// entity 232
+// entity 233
+// entity 234
+// entity 235
+// entity 236
+// entity 237
+// entity 238
+// entity 239
+// entity 240
+// entity 241
+// entity 242
+// entity 243
+// entity 244
+// entity 245
+// entity 246
+// entity 247
+// entity 248
+// entity 249
+// entity 250
+// entity 251
+// entity 252
+// entity 253
+// entity 254
+// entity 255
+// entity 256
+// entity 257
+// entity 258
+// entity 259
+// entity 260
+// entity 261
+// entity 262
+// entity 263
+// entity 264
+// entity 265
+// entity 266
+// entity 267
+// entity 268
+// entity 269
+// entity 270
+// entity 271
+// entity 272
+// entity 273
+// entity 274
+// entity 275
+// entity 276
+// entity 277
+// entity 278
+// entity 279
+// entity 280
+// entity 281
+// entity 282
+// entity 283
+// entity 284
+// entity 285
+// entity 286
+// entity 287
+// entity 288
+// entity 289
+// entity 290
+// entity 291
+// entity 292
+// entity 293
+// entity 294
+// entity 295
+// entity 296
+// entity 297
+// entity 298
+// entity 299
+// entity 300
+// entity 301
+// entity 302
+// entity 303
+// entity 304
+// entity 305
+// entity 306
+// entity 307
+// entity 308
+// entity 309
+// entity 310
+// entity 311
+// entity 312
+// entity 313
+// entity 314
+// entity 315
+// entity 316
+// entity 317
+// entity 318
+// entity 319
+// entity 320
+// entity 321
+// entity 322
+// entity 323
+// entity 324
+// entity 325
+// entity 326
+// entity 327
+// entity 328
+// entity 329
+// entity 330
+// entity 331
+// entity 332
+// entity 333
+// entity 334
+// entity 335
+// entity 336
+// entity 337
+// entity 338
+// entity 339
+// entity 340
+// entity 341
+// entity 342
+// entity 343
+// entity 344
+// entity 345
+// entity 346
+// entity 347
+// entity 348
+// entity 349
+// entity 350
+// entity 351
+// entity 352
+// entity 353
+// entity 354
+// entity 355
+// entity 356
+// entity 357
+// entity 358
+// entity 359
+// entity 360
+// entity 361
+// entity 362
+// entity 363
+{
+guid "{55F42BB4-9486-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2"
+"origin" "-333 410 198"
+}
+// entity 364
+{
+guid "{77343F76-9486-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2"
+"origin" "-493 410 198"
+}
+// entity 365
+{
+guid "{77343F73-9486-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "top_coridoor_wall"
+"modelscale" "2"
+"origin" "-413 410 198"
+}
+// entity 366
+{
+guid "{1206A6A9-9486-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "top_coridoor_wall"
+"modelscale" "2"
+"origin" "-253 410 198"
+}
+// entity 367
+// entity 368
+{
+guid "{84693815-9486-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "top_coridoor_wall"
+"modelscale" "2"
+"origin" "-573 410 198"
+}
+// entity 369
+{
+guid "{84693812-9486-11E6-9C45-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2"
+"origin" "-653 410 198"
+}
+// entity 370
+// entity 371
+// entity 372
+// entity 373
+// entity 374

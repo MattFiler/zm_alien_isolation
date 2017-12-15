@@ -1,0 +1,136 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{D2A9C5C6-B293-11E6-9C4F-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{D3F739AE-B292-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_barinner_top_corner"
+"modelscale" "2"
+"origin" "254.25 245.5 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{DAF36ED0-B292-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "noodlebar_barinner_top_corner"
+"modelscale" "2"
+"origin" "230.25 333.75 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{E2866699-B292-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_barinner_top_corner"
+"modelscale" "2"
+"origin" "142.5 309.75 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{E28666A7-B292-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "noodlebar_barinner_top_corner"
+"modelscale" "2"
+"origin" "166.25 221.5 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{EA9D98BF-B292-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 270 0"
+"model" "noodlebar_barinner_top_streight"
+"modelscale" "2"
+"origin" "198.25 333.75 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{12E11FEA-B293-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "noodlebar_barinner_top_streight"
+"modelscale" "2"
+"origin" "198 221.5 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{1F53B3FF-B293-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "noodlebar_barinner_top_streight"
+"modelscale" "2"
+"origin" "142.25 277.75 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{26F419E7-B293-11E6-9C4F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "noodlebar_barinner_top_streight"
+"modelscale" "2"
+"origin" "254.25 277.5 60.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

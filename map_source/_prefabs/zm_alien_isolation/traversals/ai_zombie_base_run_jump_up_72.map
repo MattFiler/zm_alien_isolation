@@ -1,0 +1,66 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{ED8E5846-9301-11E6-8CF5-844BF54C96FC}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{44A29AFC-92FC-11E6-8CF5-844BF54C96FC}"
+ ( 140 16 0 ) ( 124 16 0 ) ( 124 -16 0 ) traverse 16 16 856 -304 0 0 lightmap_gray 16384 16384 856 -304 0 0
+ ( 132 -8 72 ) ( 132 24 72 ) ( 148 24 72 ) traverse 16 16 864 -312 0 0 lightmap_gray 16384 16384 864 -312 0 0
+ ( 124 -24 32 ) ( 140 -24 32 ) ( 140 -24 0 ) traverse 16 16 856 0 0 0 lightmap_gray 16384 16384 856 0 0 0
+ ( 124 -16 32 ) ( 124 16 32 ) ( 124 16 0 ) traverse 16 16 304 0 0 0 lightmap_gray 16384 16384 304 0 0 0
+ ( 140 24 32 ) ( 124 24 32 ) ( 124 24 0 ) traverse 16 16 856 0 0 0 lightmap_gray 16384 16384 856 0 0 0
+ ( 60 16 36 ) ( 60 -16 36 ) ( 60 -16 4 ) traverse 16 16 304 -4 0 0 lightmap_gray 16384 16384 304 -4 0 0
+}
+// brush 1
+{
+ guid "{72F966FF-9300-11E6-8CF5-844BF54C96FC}"
+ ( 168 24 -4 ) ( 152 24 -4 ) ( 152 -8 -4 ) traverse 16 16 884 -312 0 0 lightmap_gray 16384 16384 884 -312 0 0
+ ( 156 -8 0 ) ( 156 24 0 ) ( 172 24 0 ) traverse 16 16 888 -312 0 0 lightmap_gray 16384 16384 888 -312 0 0
+ ( 152 -24 -16 ) ( 168 -24 -16 ) ( 168 -24 -48 ) traverse 16 16 884 48 0 0 lightmap_gray 16384 16384 884 48 0 0
+ ( 124 -16 -16 ) ( 124 16 -16 ) ( 124 16 -48 ) traverse 16 16 304 48 0 0 lightmap_gray 16384 16384 304 48 0 0
+ ( 168 24 -16 ) ( 152 24 -16 ) ( 152 24 -48 ) traverse 16 16 884 48 0 0 lightmap_gray 16384 16384 884 48 0 0
+ ( -32 16 -12 ) ( -32 -16 -12 ) ( -32 -16 -44 ) traverse 16 16 304 44 0 0 lightmap_gray 16384 16384 304 44 0 0
+}
+}
+// entity 1
+{
+guid "{ED8E5847-9301-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_begin"
+"animscript" "zm_base_jump_up_72"
+"origin" "-10 0 40"
+"previewanim1" "ai_zombie_base_run_jump_up_72"
+"previewmdl1" "c_zom_test_t7_fb"
+"target" "auto2"
+"_color" "0.5 0.6 0.5"
+"cost_modifier" "1"
+}
+// entity 2
+{
+guid "{ED8E5848-9301-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_end"
+"origin" "100 0 112"
+"targetname" "auto2"
+"_color" "0.6 0.5 0.5"
+}

@@ -1,0 +1,57 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{65CFEC77-852D-11E6-AC1B-8627B2EFA3C1}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_night"
+"wsi" "default_night"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{CC742322-CE73-4AD4-9BEF-068C663827D8}"
+"classname" "script_struct"
+"script_noteworthy" "dog_location"
+"targetname" "start_zone_spawners"
+"_color" "1 0 0"
+}
+// entity 2
+{
+guid "{B2EF04B7-60AE-11E6-A78C-902B345D50BC}"
+"classname" "actor_spawner_zm_factory_zombie_dog"
+"ALERTONSPAWN" "0"
+"MAKEROOM" "1"
+"angles" "0 90 0"
+"export" "3"
+"origin" "64.6 13.1 -0.100006"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"targetname" "special_dog_spawner"
+"SPAWNER" "1"
+"_color" "1 0.25 0"
+"count" "1"
+"engageMaxDist" "768"
+"engageMinDist" "256"
+"model" "zombie_wolf"
+"script_dropammo" "1"
+"sm_active_count_max" "3"
+"sm_active_count_min" "3"
+"spawnflags" "3"
+}

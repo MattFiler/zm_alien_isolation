@@ -1,0 +1,534 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{2E0F5C90-C6A5-11E6-9C62-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{7FF6E94C-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 113 0"
+"model" "perkroom_door"
+"modelscale" "2"
+"origin" "-360.75 654 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 2
+{
+guid "{7FF6E967-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 89.9996 0"
+"model" "gameroom_wall_filler_angle"
+"modelscale" "2"
+"origin" "-319 793.75 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3
+{
+guid "{7FF6E98B-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 337.298 0"
+"model" "gameroom_wall_filler_angle"
+"modelscale" "2"
+"origin" "-322 544.5 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 4
+{
+guid "{8D4F9AFD-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 68.2 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-433.717 634.179 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 5
+{
+guid "{8D4F9B00-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 68.2 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-386.167 752.754 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 6
+{
+guid "{8D4F9B03-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 68.2 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-523.842 670.061 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 7
+{
+guid "{8D4F9B06-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 68.2 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-476.292 788.636 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 8
+{
+guid "{8D4F9B09-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 68.2 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-611.422 704.899 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 9
+{
+guid "{8D4F9B0C-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 68.2 0"
+"model" "gameroom_floor"
+"modelscale" "2"
+"origin" "-563.872 823.474 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 10
+{
+guid "{8D4F9B0F-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 337.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-458.287 574.271 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 11
+{
+guid "{8D4F9B12-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 337.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-635.381 645.822 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 12
+{
+guid "{8D4F9B15-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 67.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-503.076 591.56 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 13
+{
+guid "{8D4F9B18-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 337.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-546.561 609.395 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 14
+{
+guid "{8D4F9B1B-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 67.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-590.971 627.608 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 15
+{
+guid "{8D4F9B1E-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 157.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-363.589 807.804 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 16
+{
+guid "{8D4F9B21-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 157.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-452.409 844.232 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 17
+{
+guid "{8D4F9B24-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 247.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-407.999 826.018 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 18
+{
+guid "{8D4F9B2A-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 247.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-496.819 862.445 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 19
+{
+guid "{8D4F9B2D-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 337.7 0"
+"model" "_prefabs/temp_prefab6.map"
+"origin" "-8.6959 668.699 0"
+}
+// entity 20
+{
+guid "{8D4F9B30-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 157.7 0"
+"model" "gameroom_wall_filler_angle"
+"modelscale" "2"
+"origin" "-584.548 895.764 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{8D4F9B33-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 247.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-601.853 853.213 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{8D4F9B36-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 247.7 0"
+"model" "gameroom_wall_filler_angle"
+"modelscale" "2"
+"origin" "-677.932 664.878 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{8D4F9B39-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 247.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-660.123 708.501 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{8D4F9B3C-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 337.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-641.364 751.606 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{8D4F9B3F-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 337.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-617.837 808.969 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{8D4F9B42-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 247.7 0"
+"model" "gameroom_wall_small"
+"modelscale" "2"
+"origin" "-630.526 780.667 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{8D4F9B45-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 337.7 -45.0007"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-365.956 786.221 112.721"
+}
+// entity 28
+{
+guid "{8D4F9B48-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 337.7 -45.0007"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-454.776 822.648 112.721"
+}
+// entity 29
+{
+guid "{8D4F9B4E-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "1.70755e-006 67.7 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-580.097 850.919 112.721"
+}
+// entity 30
+{
+guid "{8D4F9B51-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "1.70755e-006 67.7 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-608.769 778.373 112.721"
+}
+// entity 31
+{
+guid "{8D4F9B54-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "1.70755e-006 67.7 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-638.367 706.207 112.721"
+}
+// entity 32
+{
+guid "{8D4F9B57-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 157.7 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-630.164 666.652 112.721"
+}
+// entity 33
+{
+guid "{8D4F9B5A-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 157.7 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-545.019 631.603 112.721"
+}
+// entity 34
+{
+guid "{8D4F9B5D-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 157.7 -45.001"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-458.049 595.934 112.721"
+}
+// entity 35
+{
+guid "{A7628A6C-C6A0-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 112.7 0"
+"model" "perkroom_door_inner"
+"modelscale" "2"
+"origin" "-314.75 676.3 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 36
+{
+guid "{87A2381A-C6A3-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 67.7 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-414.826 555.06 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 37
+{
+guid "{BA170FCC-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0.5 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-369.219 548.3 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 38
+{
+guid "{8D4F9B27-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 157.7 0"
+"model" "gameroom_wall"
+"modelscale" "2"
+"origin" "-541.229 880.659 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 39
+{
+guid "{8D4F9B4B-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 337.7 -45.0007"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-540.846 858.076 112.721"
+}
+// entity 40
+{
+guid "{B404997C-C6A2-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "360 180.5 -34.9"
+"model" "_prefabs/zm_alien_isolation/lights/gameroom_lights.map"
+"origin" "-374.138 572.266 108.478"
+}
+// entity 41
+{
+guid "{2E0F5C97-C6A5-11E6-9C62-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 359.799 0"
+"model" "gameroom_wall_filler"
+"modelscale" "2"
+"origin" "-408.723 545.564 0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

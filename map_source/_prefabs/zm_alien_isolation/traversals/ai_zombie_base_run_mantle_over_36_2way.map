@@ -1,0 +1,72 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{BB1DB8B0-9404-11E6-8CF5-844BF54C96FC}"
+"classname" "worldspawn"
+"lightingquality" "1024"
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"lutmaterial" "luts_t7_default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+// brush 0
+{
+ guid "{44A29AFC-92FC-11E6-8CF5-844BF54C96FC}"
+ ( 156 16 0 ) ( 140 16 0 ) ( 140 -16 0 ) traverse 16 16 872 -304 0 0 lightmap_gray 16384 16384 872 -304 0 0
+ ( 120 -8 36 ) ( 120 24 36 ) ( 136 24 36 ) traverse 16 16 852 -312 0 0 lightmap_gray 16384 16384 852 -312 0 0
+ ( 108 -24 32 ) ( 124 -24 32 ) ( 124 -24 0 ) traverse 16 16 840 0 0 0 lightmap_gray 16384 16384 840 0 0 0
+ ( 60 -16 32 ) ( 60 16 32 ) ( 60 16 0 ) traverse 16 16 304 0 0 0 lightmap_gray 16384 16384 304 0 0 0
+ ( 124 24 32 ) ( 108 24 32 ) ( 108 24 0 ) traverse 16 16 840 0 0 0 lightmap_gray 16384 16384 840 0 0 0
+ ( 52 16 36 ) ( 52 -16 36 ) ( 52 -16 4 ) traverse 16 16 304 -4 0 0 lightmap_gray 16384 16384 304 -4 0 0
+}
+// brush 1
+{
+ guid "{72F966FF-9300-11E6-8CF5-844BF54C96FC}"
+ ( 178 20 -4 ) ( 162 20 -4 ) ( 162 -12 -4 ) traverse 16 16 894 -308 0 0 lightmap_gray 16384 16384 894 -308 0 0
+ ( 198 -10 0 ) ( 198 22 0 ) ( 214 22 0 ) traverse 16 16 930 -310 0 0 lightmap_gray 16384 16384 930 -310 0 0
+ ( 160 -24 -16 ) ( 176 -24 -16 ) ( 176 -24 -48 ) traverse 16 16 892 48 0 0 lightmap_gray 16384 16384 892 48 0 0
+ ( 136 -16 -12 ) ( 136 16 -12 ) ( 136 16 -44 ) traverse 16 16 304 44 0 0 lightmap_gray 16384 16384 304 44 0 0
+ ( 176 24 -14 ) ( 160 24 -14 ) ( 160 24 -46 ) traverse 16 16 892 46 0 0 lightmap_gray 16384 16384 892 46 0 0
+ ( -24 16 -12 ) ( -24 -16 -12 ) ( -24 -16 -44 ) traverse 16 16 304 44 0 0 lightmap_gray 16384 16384 304 44 0 0
+}
+}
+// entity 1
+{
+guid "{56FE487C-9306-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_begin"
+"animscript" "zm_base_mantle_over_36"
+"origin" "0 0 40"
+"previewanim1" "ai_zombie_base_dog_run_jump_256"
+"previewmdl1" "zombie_wolf"
+"target" "auto2"
+"targetname" "auto3"
+"_color" "0.5 0.6 0.5"
+"cost_modifier" "1"
+}
+// entity 2
+{
+guid "{56FE487D-9306-11E6-8CF5-844BF54C96FC}"
+"classname" "node_negotiation_end"
+"angles" "0 180 0"
+"animscript" "zm_base_mantle_over_36"
+"origin" "112 0 40"
+"previewanim1" "ai_zombie_base_dog_run_jump_256"
+"previewmdl1" "zombie_wolf"
+"target" "auto3"
+"targetname" "auto2"
+"_color" "0.6 0.5 0.5"
+}
