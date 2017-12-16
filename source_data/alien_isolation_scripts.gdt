@@ -107,7 +107,7 @@
 		"lensFlareYawOffset" "0.0"
 		"penumbra_inches" "1.5"
 		"pitch" "158.76"
-		"skyboxmodel" "skybox_default_black"
+		"skyboxmodel" "torrens_skybox"
 		"spec_comp" "0.0"
 		"stops" "10.4"
 		"sunCookieAngle" "0"

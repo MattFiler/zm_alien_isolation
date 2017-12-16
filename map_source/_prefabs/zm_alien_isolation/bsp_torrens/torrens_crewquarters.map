@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{E9A9F531-6D63-11E7-A55D-14DDA9E204AF}"
+guid "{8FFC104D-E1E4-11E7-A56A-0015833D0A57}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -865,42 +865,13 @@ guid "{DE2CAEDB-6D2E-11E7-A55C-14DDA9E204AF}"
 }
 // entity 63
 {
-guid "{96FBF262-6D63-11E7-A55D-14DDA9E204AF}"
-"classname" "reflection_probe"
-"angles" "0 -45 0"
-"ao_power" "8"
-"ao_range" "25"
-"ao_strength_double_sided" "0"
-"brightnessAdjust" "3"
-"name" "probe_007"
-"origin" "-25174.6 -12843.8 11802.3"
-"resolution" "8x"
-"size_max" "228.177 313.156 81"
-"size_min" "234.073 231.844 50"
-"smooth_post_process" "1"
-"volumetric" "1"
-"adaptive_quality_boost" "Off"
-"ao_strength" "1"
-"blend_maxs" "3 3 3"
-"blend_mins" "3 3 3"
-"box" "1"
-"client_server" "ClientSide"
-"debugColor" "1 1 1"
-"grid_density" "0"
-"high_detail" "1"
-"in_play_space" "1"
-"inpaint_occluded_rays" "1"
-"placement_offset" "72"
-}
-// entity 64
-{
 guid "{E173090D-6D63-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_prefab"
 "angles" "0 270 0"
 "model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
 "origin" "-12374.3 -37986.7 0"
 }
-// entity 65
+// entity 64
 {
 guid "{E1730910-6D63-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -908,7 +879,7 @@ guid "{E1730910-6D63-11E7-A55D-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
 "origin" "-12402.5 -37958.2 0"
 }
-// entity 66
+// entity 65
 {
 guid "{E9A9F53A-6D63-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -916,7 +887,7 @@ guid "{E9A9F53A-6D63-11E7-A55D-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/lights/light_strip.map"
 "origin" "-50073.8 -25649 0"
 }
-// entity 67
+// entity 66
 {
 guid "{E9A9F53D-6D63-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_prefab"
