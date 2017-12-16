@@ -17,6 +17,12 @@ scriptparsetree,scripts/zm/zm_alien_isolation.csc
 // Vision
 rawfile,vision/zm_alien_isolation.vision
 
+//UI
+rawfile,ui/uieditor/menus/hud/t7hud_zm_alien_isolation.lua
+ttf,fonts/isolation.ttf
+ttf,fonts/jixellation.ttf
+ttf,fonts/nostromo.ttf
+
 //Buyable Ending Script (from UGX)
 scriptparsetree,scripts/zm/ugxmods_buyable_ending.gsc
 

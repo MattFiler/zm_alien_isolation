@@ -41,11 +41,17 @@
 //Usermap
 #using scripts\zm\zm_usermap;
 
+//Precache UI
+
 function main()
 {
 	zm_usermap::main();
 
 	include_weapons();
+	
+	//Load new UI
+	callback::on_localclient_connect(&on_local_client_connect);
+    LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
 	
 	//Wait for client to load
 	//util::waitforclient( 0 );
@@ -57,6 +63,12 @@ function main()
 function include_weapons()
 {
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
+}
+
+function on_local_client_connect( localClientNum )
+{
+    hud = CreateLUIMenu(localClientNum, "T7Hud_zm_alien_isolation");
+    OpenLUIMenu(localClientNum, hud);
 }
 
 

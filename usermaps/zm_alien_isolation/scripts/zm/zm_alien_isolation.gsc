@@ -90,6 +90,9 @@
 #precache("model", "monitor_torrens_signin_takeo"); //sign in monitor 4
 #precache("model", "monitor_torrens_signin"); //sign in monitor default
 
+//Precache UI
+#precache("lui_menu", "T7Hud_zm_alien_isolation");
+
 //Precache FX
 #precache("fx", "zm_alien_isolation/TowPlatform_WarningLight"); //Our warning light to spin
 #precache("fx", "zm_alien_isolation/Elevator_Light"); //Elevator lights
@@ -111,7 +114,7 @@ function main()
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
 	//Torrens intro
-	thread torrens_intro_sequence();
+	thread torrens_intro_sequence(true); //Set param to true to skip cutscenes
 	
 	//Light states and animations/sounds for spawn
 	thread isolation_spawn_scripts(); 
@@ -2191,7 +2194,7 @@ function give_perks_and_ammo() {
 
 
 //Torrens spawn script
-function torrens_intro_sequence() {
+function torrens_intro_sequence(should_skip_cutscenes) {
 	//Get all dynamic clips in spawn
 	spawnClip1 = getEnt("torrens_spawn_clip_1", "targetname");
 	spawnClip2 = getEnt("torrens_spawn_clip_2", "targetname");
@@ -2204,201 +2207,202 @@ function torrens_intro_sequence() {
 	spawnClip3 NotSolid();
 	spawnClip4 NotSolid();
 
-	//Handle control lock
-	thread spawn_control_lock_override();
+	if (!should_skip_cutscenes) {
+		//Handle control lock
+		thread spawn_control_lock_override();
 
-	//Disable start-of-game fade-in
-	level flag::wait_till("all_players_connected");
-	wait(4.999);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	
-	
-	//Stop zombies spawning
-	SetDvar("ai_disableSpawn", "1");
-	
-	//Take stuff you'd normally get on spawn
-	level.start_weapon = level.weaponNone;
-	allPlayersTakeGuns = GetPlayers();
-	foreach (playerTakeGuns in allPlayersTakeGuns) {
-		starting_pistol = GetWeapon("pistol_standard");
-		if(playerTakeGuns HasWeapon(starting_pistol))
-		{
-			playerTakeGuns TakeWeapon(starting_pistol);	
+		//Disable start-of-game fade-in
+		level flag::wait_till("all_players_connected");
+		wait(4.999);
+		lui::screen_fade_out(0);
+		wait(0.001);
+		lui::screen_fade_out(0);
+		wait(0.001);
+		lui::screen_fade_out(0);
+		wait(0.001);
+		lui::screen_fade_out(0);
+		wait(0.001);
+		lui::screen_fade_out(0);
+		wait(0.001);
+		lui::screen_fade_out(0);
+		
+		
+		//Stop zombies spawning
+		SetDvar("ai_disableSpawn", "1");
+		
+		//Take stuff you'd normally get on spawn
+		level.start_weapon = level.weaponNone;
+		allPlayersTakeGuns = GetPlayers();
+		foreach (playerTakeGuns in allPlayersTakeGuns) {
+			starting_pistol = GetWeapon("pistol_standard");
+			if(playerTakeGuns HasWeapon(starting_pistol))
+			{
+				playerTakeGuns TakeWeapon(starting_pistol);	
+			}
+			
+			lethal_grenade = playerTakeGuns zm_utility::get_player_lethal_grenade();
+			if(playerTakeGuns HasWeapon(lethal_grenade))
+			{
+				playerTakeGuns TakeWeapon(lethal_grenade);	
+			}
+			
+			playerTakeGuns SetPlayerCollision(false); //Remove player collision
+			
+			//playerTakeGuns SetClientUIVisibilityFlag("weapon_hud_visible", 0);
 		}
 		
-		lethal_grenade = playerTakeGuns zm_utility::get_player_lethal_grenade();
-		if(playerTakeGuns HasWeapon(lethal_grenade))
-		{
-			playerTakeGuns TakeWeapon(lethal_grenade);	
+		//Setup login screens
+		setup_login_screens_torrens();
+
+		
+		//Pre-define cutscene info
+		intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
+
+		//Prime our cutscene
+		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
+
+		//Wait a little then play the cutscene
+		wait(2);
+		play_sound_locally("zm_alien_isolation__cs_torrensintro");
+		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
+
+		//Wait for cutscene to end and continue
+		wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
+		
+		
+		//Force players to look UP
+		allPlayersOnTorrens = GetPlayers();
+		foreach (torrensPlayer in allPlayersOnTorrens) {
+			torrensPlayer FreezeControls(false);
+			torrensPlayer SetStance("prone");
+			torrensPlayer FreezeControls(true);
+			
+			bedLocation = 0;
+			if (torrensPlayer.characterIndex == 0) {
+				bedLocation = level.dempseybedlocation;
+			}
+			if (torrensPlayer.characterIndex == 1) {
+				bedLocation = level.nikolaibedlocation;
+			}
+			if (torrensPlayer.characterIndex == 2) {
+				bedLocation = level.richtofenbedlocation;
+			}
+			if (torrensPlayer.characterIndex == 3) {
+				bedLocation = level.takeobedlocation;
+			}
+			
+			//these bedLocation vals will need to be modified if spawns are moved
+			playerAngle = (0,0,0);
+			playerLocation = (0,0,0);
+			if (bedLocation == 2) {
+				playerAngle = (-45, 90, 0);
+				playerLocation = (-26101.1, -12731.1, 11778);
+			}
+			if (bedLocation == 3) {
+				playerAngle = (-45, 45, 0);
+				playerLocation = (-26067.2, -12742.8, 11778);
+			}
+			if (bedLocation == 4) {
+				playerAngle = (-45, -45, 0);
+				playerLocation = (-26066.9, -12810.7, 11778);
+			}
+			if (bedLocation == 5) {
+				playerAngle = (-45, -90, 0);
+				playerLocation = (-26101.1, -12822, 11778);
+			}
+			
+			torrensPlayer setorigin(playerLocation);
+			torrensPlayer SetPlayerAngles(playerAngle);
+			
+			//torrensPlayer setClientUIVisibilityFlag("hud_visible", 0);
+			//torrensPlayer setClientUIVisibilityFlag("weapon_hud_visible", 0);
 		}
 		
-		playerTakeGuns SetPlayerCollision(false); //Remove player collision
 		
-		//playerTakeGuns SetClientUIVisibilityFlag("weapon_hud_visible", 0);
+		//Start SFX
+		play_sound_locally("zm_alien_isolation__cs_wakeup");
+		
+		//Wake em up! (this will all need to be retimed ideally)
+		lui::screen_fade_out(0);
+		wait(4);
+		lui::screen_fade_in(1);
+		wait(1);
+		lui::screen_fade_out(1);
+		wait(3);
+		lui::screen_fade_in(1);
+		wait(1);
+		thread open_cryro_beds();
+		wait(6);
+		lui::screen_fade_out(1);
+		play_sound_locally("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
+		wait(4);
+		
+		//Get out of the pod
+		allPlayersOnTorrensTwo = GetPlayers();
+		foreach (torrensPlayerTwo in allPlayersOnTorrensTwo) {
+			bedLocation = 0;
+			if (torrensPlayerTwo.characterIndex == 0) {
+				bedLocation = level.dempseybedlocation;
+			}
+			if (torrensPlayerTwo.characterIndex == 1) {
+				bedLocation = level.nikolaibedlocation;
+			}
+			if (torrensPlayerTwo.characterIndex == 2) {
+				bedLocation = level.richtofenbedlocation;
+			}
+			if (torrensPlayerTwo.characterIndex == 3) {
+				bedLocation = level.takeobedlocation;
+			}
+			
+			//these bedLocation vals will need to be modified if spawns are moved
+			playerAngle = (0,0,0);
+			playerLocation = (0,0,0);
+			if (bedLocation == 2) {
+				playerAngle = (-45, 90, 0);
+				playerLocation = (-26101.1, -12731.1, 11778);
+			}
+			if (bedLocation == 3) {
+				playerAngle = (-45, 45, 0);
+				playerLocation = (-26067.2, -12742.8, 11778);
+			}
+			if (bedLocation == 4) {
+				playerAngle = (-45, -45, 0);
+				playerLocation = (-26066.9, -12810.7, 11778);
+			}
+			if (bedLocation == 5) {
+				playerAngle = (-45, -90, 0);
+				playerLocation = (-26101.1, -12822, 11778);
+			}
+			
+			torrensPlayerTwo SetPlayerAngles(playerAngle);
+			torrensPlayerTwo setorigin(playerLocation);
+			torrensPlayerTwo SetStance("stand");
+		}
+		
+		//Make clips solid
+		spawnClip1 Solid();
+		spawnClip2 Solid();
+		spawnClip3 Solid();
+		spawnClip4 Solid();
+		
+		wait(4);
+		
+		allPlayersOnTorrensThree = GetPlayers();
+		foreach (torrensPlayerThree in allPlayersOnTorrensThree) {
+			torrensPlayerThree FreezeControls(false);
+			torrensPlayerThree AllowSprint(false);
+			torrensPlayerThree AllowJump(false);
+			torrensPlayerThree AllowMelee(false);
+			//torrensPlayerThree setClientUIVisibilityFlag("hud_visible", 1);
+			//torrensPlayerThree setClientUIVisibilityFlag("weapon_hud_visible", 1);
+		}
+		
+		//Set the jump height and no running?
+		//SetJumpHeight
+		
+		//Fade back in
+		lui::screen_fade_in(1);
 	}
-	
-	//Setup login screens
-	setup_login_screens_torrens();
-
-	
-	//Pre-define cutscene info
-	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
-
-	//Prime our cutscene
-	level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
-
-	//Wait a little then play the cutscene
-	wait(2);
-	play_sound_locally("zm_alien_isolation__cs_torrensintro");
-	level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
-
-	//Wait for cutscene to end and continue
-	wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
-	
-	
-	//Force players to look UP
-	allPlayersOnTorrens = GetPlayers();
-	foreach (torrensPlayer in allPlayersOnTorrens) {
-		torrensPlayer FreezeControls(false);
-		torrensPlayer SetStance("prone");
-		torrensPlayer FreezeControls(true);
-		
-		bedLocation = 0;
-		if (torrensPlayer.characterIndex == 0) {
-			bedLocation = level.dempseybedlocation;
-		}
-		if (torrensPlayer.characterIndex == 1) {
-			bedLocation = level.nikolaibedlocation;
-		}
-		if (torrensPlayer.characterIndex == 2) {
-			bedLocation = level.richtofenbedlocation;
-		}
-		if (torrensPlayer.characterIndex == 3) {
-			bedLocation = level.takeobedlocation;
-		}
-		
-		//these bedLocation vals will need to be modified if spawns are moved
-		playerAngle = (0,0,0);
-		playerLocation = (0,0,0);
-		if (bedLocation == 2) {
-			playerAngle = (-45, 90, 0);
-			playerLocation = (-26101.1, -12731.1, 11778);
-		}
-		if (bedLocation == 3) {
-			playerAngle = (-45, 45, 0);
-			playerLocation = (-26067.2, -12742.8, 11778);
-		}
-		if (bedLocation == 4) {
-			playerAngle = (-45, -45, 0);
-			playerLocation = (-26066.9, -12810.7, 11778);
-		}
-		if (bedLocation == 5) {
-			playerAngle = (-45, -90, 0);
-			playerLocation = (-26101.1, -12822, 11778);
-		}
-		
-		torrensPlayer setorigin(playerLocation);
-		torrensPlayer SetPlayerAngles(playerAngle);
-		
-		//torrensPlayer setClientUIVisibilityFlag("hud_visible", 0);
-		//torrensPlayer setClientUIVisibilityFlag("weapon_hud_visible", 0);
-	}
-	
-	
-	//Start SFX
-	play_sound_locally("zm_alien_isolation__cs_wakeup");
-	
-	//Wake em up! (this will all need to be retimed ideally)
-	lui::screen_fade_out(0);
-	wait(4);
-	lui::screen_fade_in(1);
-	wait(1);
-	lui::screen_fade_out(1);
-	wait(3);
-	lui::screen_fade_in(1);
-	wait(1);
-	thread open_cryro_beds();
-	wait(6);
-	lui::screen_fade_out(1);
-	play_sound_locally("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
-	wait(4);
-	
-	//Get out of the pod
-	allPlayersOnTorrensTwo = GetPlayers();
-	foreach (torrensPlayerTwo in allPlayersOnTorrensTwo) {
-		bedLocation = 0;
-		if (torrensPlayerTwo.characterIndex == 0) {
-			bedLocation = level.dempseybedlocation;
-		}
-		if (torrensPlayerTwo.characterIndex == 1) {
-			bedLocation = level.nikolaibedlocation;
-		}
-		if (torrensPlayerTwo.characterIndex == 2) {
-			bedLocation = level.richtofenbedlocation;
-		}
-		if (torrensPlayerTwo.characterIndex == 3) {
-			bedLocation = level.takeobedlocation;
-		}
-		
-		//these bedLocation vals will need to be modified if spawns are moved
-		playerAngle = (0,0,0);
-		playerLocation = (0,0,0);
-		if (bedLocation == 2) {
-			playerAngle = (-45, 90, 0);
-			playerLocation = (-26101.1, -12731.1, 11778);
-		}
-		if (bedLocation == 3) {
-			playerAngle = (-45, 45, 0);
-			playerLocation = (-26067.2, -12742.8, 11778);
-		}
-		if (bedLocation == 4) {
-			playerAngle = (-45, -45, 0);
-			playerLocation = (-26066.9, -12810.7, 11778);
-		}
-		if (bedLocation == 5) {
-			playerAngle = (-45, -90, 0);
-			playerLocation = (-26101.1, -12822, 11778);
-		}
-		
-		torrensPlayerTwo SetPlayerAngles(playerAngle);
-		torrensPlayerTwo setorigin(playerLocation);
-		torrensPlayerTwo SetStance("stand");
-	}
-	
-	//Make clips solid
-	spawnClip1 Solid();
-	spawnClip2 Solid();
-	spawnClip3 Solid();
-	spawnClip4 Solid();
-	
-	wait(4);
-	
-	allPlayersOnTorrensThree = GetPlayers();
-	foreach (torrensPlayerThree in allPlayersOnTorrensThree) {
-		torrensPlayerThree FreezeControls(false);
-		torrensPlayerThree AllowSprint(false);
-		torrensPlayerThree AllowJump(false);
-		torrensPlayerThree AllowMelee(false);
-		//torrensPlayerThree setClientUIVisibilityFlag("hud_visible", 1);
-		//torrensPlayerThree setClientUIVisibilityFlag("weapon_hud_visible", 1);
-	}
-	
-	//Set the jump height and no running?
-	//SetJumpHeight
-	
-	//Fade back in
-	lui::screen_fade_in(1);
-	
 	
 	//Update objective
 	show_new_objective("Sign in to the Torrens.");
