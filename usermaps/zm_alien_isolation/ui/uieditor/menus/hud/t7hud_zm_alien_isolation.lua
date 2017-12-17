@@ -35,18 +35,97 @@ function LUI.createMenu.T7Hud_zm_alien_isolation(InstanceRef)
     HudRef:setLeftRight(true, true, 0, 0)
     HudRef:setTopBottom(true, true, 0, 0)
     HudRef:playSound("menu_open", InstanceRef)
-	HudRef:setTTF("fonts/isolation.ttf")
     
     HudRef.buttonModel = Engine.CreateModel(Engine.GetModelForController(InstanceRef), "T7Hud_zm_alien_isolation.buttonPrompts")
     HudRef.anyChildUsesUpdateState = true
-    
-    local PerksWidget = CoD.ZMPerksContainerFactory.new(HudRef, InstanceRef)
+    	
+		
+		
+		
+		
+	-- ##
+	-- ## ALIEN: ISOLATION STYLE HUD
+	-- ##
+
+	-- ## WEAPON HUD - CURRENT CLIP AMMO COUNT
+	local textClip = CoD.TextWithBg.new(HudRef, InstanceRef)
+	textClip:setLeftRight(true, false, 50.000000, 90.000000) --50px from left, 40px width
+	textClip:setTopBottom(false, true, -70.000000, -90.000000) --70px from bottom, 20px height
+	textClip.Text:setText("...")
+	textClip.Text:setTTF("fonts/jixellation.ttf")
+	textClip.Text:setRGB(0, 0, 0)    
+	textClip.Text:setScale(0.8) -- 80% scale
+	textClip.Bg:setRGB(0.9, 0.9, 0.9) -- Almost white
+	textClip.Bg:setAlpha(0.3) -- 30% transparent
+
+	local function updateClipVal(ModelRef)
+		local ammoval = Engine.GetModelValue(ModelRef)
+		textClip.Text:setText(Engine.Localize(ammoval)) -- Update text
+	end
+
+	HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "ammoInClip", updateClipVal) -- Grab clip ammo
+	HudRef:addElement(textClip)
+	HudRef.ammoInClipCount = textClip
+
+	
+	-- ## WEAPON HUD - AMMO COUNT
+	local textStock = CoD.TextWithBg.new(HudRef, InstanceRef)
+	textStock:setLeftRight(true, false, 90.000000, 130.000000) --90px from left, 40px width
+	textStock:setTopBottom(false, true, -70.000000, -90.000000) --70px from bottom, 20px height
+	textStock.Text:setText("...")
+	textStock.Text:setTTF("fonts/jixellation.ttf")
+	textStock.Text:setScale(0.8) -- 80% scale
+	textStock.Bg:setRGB(0.1, 0.1, 0.1) -- Almost black
+	textStock.Bg:setAlpha(0.45) -- 30% transparent
+
+	local function updateStockVal(ModelRef)
+		local stockval = Engine.GetModelValue(ModelRef)
+		textStock.Text:setText(Engine.Localize(stockval)) -- Update text
+	end
+
+	HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "ammoStock", updateStockVal) -- Grab stock ammo
+	HudRef:addElement(textStock)
+	HudRef.ammoInStockCount = textStock
+
+	
+	-- ## WEAPON HUD - WEAPON NAME
+	local textWeapon = CoD.TextWithBg.new(HudRef, InstanceRef)
+	textWeapon:setLeftRight(true, false, 130.000000, 280.000000) --130px from left, 150px width
+	textWeapon:setTopBottom(false, true, -70.000000, -90.000000) --70px from bottom, 20px height
+	textWeapon.Text:setText("...")
+	textWeapon.Text:setTTF("fonts/jixellation.ttf")
+	textWeapon.Text:setLeftRight(true, false, 15.000000, 0.000000) --15px from left (text inside container)
+	textWeapon.Text:setScale(0.8) -- 80% scale
+	textWeapon.Bg:setRGB(0.1, 0.1, 0.1) -- Almost black
+	textWeapon.Bg:setAlpha(0.25) -- 25% transparent
+
+	local function updateNameVal(ModelRef)
+		local nameval = Engine.GetModelValue(ModelRef)
+		textWeapon.Text:setText(Engine.Localize(nameval)) -- Update text
+	end
+
+	HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "weaponName", updateNameVal) -- Grab weapon name
+	HudRef:addElement(textWeapon)
+	HudRef.weaponName = textWeapon
+	
+	
+	
+	
+	
+	-- ##
+	-- ## PREMADE HUD
+	-- ##
+	
+    -- ## PREMADE PERK UI
+	local PerksWidget = CoD.ZMPerksContainerFactory.new(HudRef, InstanceRef)
     PerksWidget:setLeftRight(false, true, -130.000000, -281.000000)
     PerksWidget:setTopBottom(false, true, -62.000000, -26.000000)
     
     HudRef:addElement(PerksWidget)
     HudRef.ZMPerksContainerFactory = PerksWidget
+	
     
+    -- ## PREMADE ROUND COUNTER UI
     local RoundCounter = CoD.ZmRndContainer.new(HudRef, InstanceRef)
     RoundCounter:setLeftRight(false, true, 32.000000, -192.000000)      -- AnchorLeft, AnchorRight, Left, Right
     RoundCounter:setTopBottom(false, true, -174.000000, 18.000000)   -- AnchorTop, AnchorBottom, Top, Bottom
@@ -54,7 +133,9 @@ function LUI.createMenu.T7Hud_zm_alien_isolation(InstanceRef)
     
     HudRef:addElement(RoundCounter)
     HudRef.Rounds = RoundCounter
-    
+	
+	
+    -- ## PREMADE WEAPON UI
     --local AmmoWidget = CoD.ZmAmmoContainerFactory.new(HudRef, InstanceRef)
     --AmmoWidget:setLeftRight(false, true, -427.000000, 3.000000)
     --AmmoWidget:setTopBottom(false, true, -232.000000, 0.000000)
@@ -62,84 +143,16 @@ function LUI.createMenu.T7Hud_zm_alien_isolation(InstanceRef)
     --HudRef:addElement(AmmoWidget)
     --HudRef.Ammo = AmmoWidget
 	
-
-
 	
-	-- ##
-	-- ## ALIEN: ISOLATION STYLE WEAPON HUD
-	-- ##
-	
-	-- ## CURRENT CLIP AMMO COUNT
-	local textClip = CoD.TextWithBg.new(HudRef, InstanceRef)
-	textClip:setLeftRight(true, false, 50.000000, 90.000000) --50px from left, 40px width
-    textClip:setTopBottom(false, true, -70.000000, -90.000000) --70px from bottom, 20px height
-	textClip.Text:setText("...")
-	textClip.Text:setTTF("fonts/jixellation.ttf")
-	textClip.Text:setRGB(0, 0, 0)    
-	textClip.Text:setScale(0.8) -- 80% scale
-	textClip.Bg:setRGB(0.9, 0.9, 0.9) -- Almost white
-	textClip.Bg:setAlpha(0.3) -- 30% transparent
-	
-	local function updateClipVal(ModelRef)
-        local ammoval = Engine.GetModelValue(ModelRef)
-        textClip.Text:setText(Engine.Localize(ammoval)) -- Update text
-    end
-	
-    HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "ammoInClip", updateClipVal) -- Grab clip ammo
-	HudRef:addElement(textClip)
-    HudRef.ammoInClipCount = textClip
-	
-	
-	-- ## AMMO COUNT
-	local textStock = CoD.TextWithBg.new(HudRef, InstanceRef)
-	textStock:setLeftRight(true, false, 90.000000, 130.000000) --90px from left, 40px width
-    textStock:setTopBottom(false, true, -70.000000, -90.000000) --70px from bottom, 20px height
-	textStock.Text:setText("...")
-	textStock.Text:setTTF("fonts/jixellation.ttf")
-	textStock.Text:setScale(0.8) -- 80% scale
-	textStock.Bg:setRGB(0.1, 0.1, 0.1) -- Almost black
-	textStock.Bg:setAlpha(0.45) -- 30% transparent
-	
-	local function updateStockVal(ModelRef)
-        local stockval = Engine.GetModelValue(ModelRef)
-        textStock.Text:setText(Engine.Localize(stockval)) -- Update text
-    end
-	
-    HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "ammoStock", updateStockVal) -- Grab stock ammo
-	HudRef:addElement(textStock)
-    HudRef.ammoInStockCount = textStock
-	
-	
-	-- ## WEAPON NAME
-	local textWeapon = CoD.TextWithBg.new(HudRef, InstanceRef)
-	textWeapon:setLeftRight(true, false, 130.000000, 280.000000) --130px from left, 150px width
-    textWeapon:setTopBottom(false, true, -70.000000, -90.000000) --70px from bottom, 20px height
-	textWeapon.Text:setText("...")
-	textWeapon.Text:setTTF("fonts/jixellation.ttf")
-	textWeapon.Text:setLeftRight(true, false, 15.000000, 0.000000) --15px from left (text inside container)
-	textWeapon.Text:setScale(0.8) -- 80% scale
-	textWeapon.Bg:setRGB(0.1, 0.1, 0.1) -- Almost black
-	textWeapon.Bg:setAlpha(0.25) -- 25% transparent
-	
-	local function updateNameVal(ModelRef)
-        local nameval = Engine.GetModelValue(ModelRef)
-        textWeapon.Text:setText(Engine.Localize(nameval)) -- Update text
-    end
-	
-    HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "weaponName", updateNameVal) -- Grab weapon name
-	HudRef:addElement(textWeapon)
-    HudRef.weaponName = textWeapon
-	
-	
-	
-	
-	
-	
-    
+    -- ## PREMADE SCORE UI
     local ScoreWidget = CoD.ZMScr.new(HudRef, InstanceRef)
     ScoreWidget:setLeftRight(false, true, -30.000000, -164.000000)
     ScoreWidget:setTopBottom(false, true, -256.000000, -128.000000)
     ScoreWidget:setYRot(30.000000)
+	
+	
+	
+	
     
     local function HudStartScore(Unk1, Unk2, Unk3)
         if IsModelValueTrue(InstanceRef, "hudItems.playerSpawned") and
