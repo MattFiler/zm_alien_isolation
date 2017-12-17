@@ -75,6 +75,11 @@
 #define		AYZ_CUTSCENE_ID_02						"zm_alien_isolation_cs02" //Transition - Torrens to Sevastopol
 #define		AYZ_CUTSCENE_ID_03						"zm_alien_isolation_cs03" //Endgame
 
+#define 	OBJECTIVE__NULL 						0
+#define 	OBJECTIVE__SIGN_IN 						1
+#define 	OBJECTIVE__EXPLORE_TORRENS 				2
+
+
 //Precache models
 #precache("model", "ayz_new_door_lights_open"); //door lights when door is open
 #precache("model", "monitor_50cm_gameroom"); //gameroom monitor turned on
@@ -92,6 +97,8 @@
 
 //Precache UI
 #precache("lui_menu", "T7Hud_zm_alien_isolation");
+#precache("lui_menu", "popup_zm_alien_isolation");
+#precache("lui_menu_data", "AlienIsolationObjectivePopup");
 
 //Precache FX
 #precache("fx", "zm_alien_isolation/TowPlatform_WarningLight"); //Our warning light to spin
@@ -308,14 +315,14 @@ function spaceflight_terminal_objectives() {
 	//Wait for intro lockdown to finish and then show objective a bit later
 	self waittill("ayz_lockdown_completed");
 	wait(5);
-	show_new_objective("Restore power to the Spaceflight Terminal.");
+	thread show_new_objective("Restore power to the Spaceflight Terminal.");
 	
 	//Wait for power to be restored, play verlaine's message, then show objective.
 	level flag::wait_till("power_on");
 	wait(15);
 	play_sound_locally("zm_alien_isolation__verlainebroadcast");
 	wait(10.5);
-	show_new_objective("Get to the Tow Platform and escape on the Torrens.");
+	thread show_new_objective("Get to the Tow Platform and escape on the Torrens.");
 	
 	//Keycard objective is handled in another function (look below).
 }
@@ -342,7 +349,7 @@ function keycard_objective() {
 				if (player IsTouching(keycardZone) == true) {
 					//Someone's in the keycard zone
 					wait(1.5);
-					show_new_objective("Find a keycard to open the door."); //show objective
+					thread show_new_objective("Find a keycard to open the door."); //show objective
 					touched = true;
 					break; 
 				}
@@ -649,9 +656,18 @@ function stop_round_start_music() {
 
 //Show new objective
 function show_new_objective(objectiveText) {
+	//play_sound_locally("zm_alien_isolation__objective_updated");
+	//iprintlnbold("OBJECTIVE UPDATED:");
+	//iprintlnbold(objectiveText);
+	
+	
 	play_sound_locally("zm_alien_isolation__objective_updated");
-	iprintlnbold("OBJECTIVE UPDATED:");
-	iprintlnbold(objectiveText);
+	foreach	(player in level.players) {		
+		dialog = player OpenLUIMenu("popup_zm_alien_isolation");
+		player SetLUIMenuData(dialog, "AlienIsolationObjectivePopup", objectiveText);
+		wait(5);
+		player CloseLUIMenu(dialog);
+	}
 }
 
 
@@ -1570,7 +1586,7 @@ function ayz_tow_platform_challenge(skipTerminals) {
 		
 		
 		//We're ready to start the docking clamp! ... Show objective and enable trigger.
-		show_new_objective("Activate the first Docking Clamp terminal.");
+		thread show_new_objective("Activate the first Docking Clamp terminal.");
 		
 		//Set our trigger properties
 		dockingClampTrigger1 setHintString("Press ^3[{+activate}]^7 to activate Docking Clamp Terminal One");
@@ -1610,7 +1626,7 @@ function ayz_tow_platform_challenge(skipTerminals) {
 			
 			
 		//We're ready to start the SECOND docking clamp! ... Show objective and enable trigger.
-		show_new_objective("Activate the second Docking Clamp terminal.");
+		thread show_new_objective("Activate the second Docking Clamp terminal.");
 		
 		//Set our trigger properties
 		dockingClampTrigger2 setHintString("Press ^3[{+activate}]^7 to activate Docking Clamp Terminal Two");
@@ -1658,7 +1674,7 @@ function ayz_tow_platform_challenge(skipTerminals) {
 	
 	
 	//We're ready to pressurise the airlock. Show the objective.
-	show_new_objective("Pressurise the airlock.");
+	thread show_new_objective("Pressurise the airlock.");
 	
 	//Set our trigger properties
 	airlockPressureTrigger setHintString("Press ^3[{+activate}]^7 to Pressurise the Airlock");
@@ -1700,7 +1716,7 @@ function ayz_tow_platform_challenge(skipTerminals) {
 	wait(5);
 	
 	//Show objective in the middle of this... (have updated wait time on each side)
-	show_new_objective("Survive while the airlock pressurises.");
+	thread show_new_objective("Survive while the airlock pressurises.");
 	
 	wait(5);
 	
@@ -1776,7 +1792,7 @@ function ayz_tow_platform_challenge(skipTerminals) {
 	
 	
 	//We're ready to leave! Show the objective and play music.
-	show_new_objective("Everybody get to the airlock!");
+	thread show_new_objective("Everybody get to the airlock!");
 	play_sound_locally("zm_alien_isolation__final_action_ost");
 	
 	
@@ -2405,7 +2421,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	lui::screen_fade_in(1);
 	
 	//Update objective
-	show_new_objective("Sign in to the Torrens.");
+	thread show_new_objective("Sign in to the Torrens.");
 	
 	//Handle all doors on the Torrens (doortype 1 = small, doortype 2 = medium, 3 = medbay)
 	level.currentlyOpenDoors = array();
@@ -2429,7 +2445,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	wait(1);
 	
 	//Update objective
-	show_new_objective("Explore the Torrens.");
+	thread show_new_objective("Explore the Torrens.");
 	
 	//Give perks and ammo if debug is enabled
 	if (should_skip_cutscenes) {
@@ -2459,7 +2475,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	//Push players towards the bridge
 	//Play verlaine's message to get to the bridge
 	//Wait a bit
-	show_new_objective("Collect your briefing documents.");
+	thread show_new_objective("Collect your briefing documents.");
 	//Open bridge door
 	
 	//Wait for debug trigger to be pushed
@@ -2908,6 +2924,7 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 		wait 0.1;
 	}
 }
+
 
 
 

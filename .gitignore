@@ -15,7 +15,7 @@
 !/share/raw/sound/aliases/zm_alien_isolation.csv
 !/share/raw/vision/zm_alien_isolation.vision
 !/share/raw/gamedata/weapons/zm/zm_levelcommon_weapons.csv
-!/usermaps/zm_alien_isolation/ui/uieditor/menus/hud/t7hud_zm_alien_isolation.lua
+!/usermaps/zm_alien_isolation/ui/uieditor/menus/hud/**
 !/usermaps/zm_alien_isolation/fonts/**
 !/usermaps/zm_alien_isolation/scripts/**
 !/usermaps/zm_alien_isolation/zone/workshop.json

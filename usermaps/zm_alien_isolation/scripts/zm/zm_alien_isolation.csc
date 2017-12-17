@@ -5,6 +5,8 @@
 #using scripts\shared\exploder_shared;
 #using scripts\shared\scene_shared;
 #using scripts\shared\util_shared;
+#using scripts\shared\flag_shared;
+#using scripts\shared\flagsys_shared;
 
 #insert scripts\shared\shared.gsh;
 #insert scripts\shared\version.gsh;
@@ -41,53 +43,29 @@
 //Usermap
 #using scripts\zm\zm_usermap;
 
+
 function main()
 {
 	zm_usermap::main();
 
-	include_weapons();
+	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
 	
 	//Load new UI
 	callback::on_localclient_connect(&on_local_client_connect);
 	LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
+	LuiLoad("ui.uieditor.menus.hud.popup_zm_alien_isolation");
 	
 	//Wait for client to load
 	//util::waitforclient( 0 );
-	
-	//Location based ambient sounds for the level - gameroom machines are handled in GSC
-	//thread ambient_sounds(); 
 }
 
-function include_weapons()
-{
-	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
-}
 
-function on_local_client_connect( localClientNum )
+//Load UI on connect & handle objectives
+function on_local_client_connect(localClientNum)
 {
 	hud = CreateLUIMenu(localClientNum, "T7Hud_zm_alien_isolation");
 	OpenLUIMenu(localClientNum, hud);
-}
-
-
-//Play all ambient sounds in the level
-function ambient_sounds() {
-	//CCTV Room
-	play_ambient_sound_at_point("ambientsound_cctvroom", "zm_alien_isolation_ambient_cctvroom");
 	
-	//Endgame Elevator 
-	play_ambient_sound_at_point("ambientsound_endgame", "zm_alien_isolation_ambience_lift");
-	
-	//Baggage Reclaim End Door 
-	play_ambient_sound_at_point("ambientsound_baggagereclaim", "zm_alien_isolation_ambience_workshop");
-	
-	//Noodlebar 
-	play_ambient_sound_at_point("ambientsound_noodlebar", "zm_alien_isolation_ambience_prison");
-	
-	//Spawn 
-	play_ambient_sound_at_point("ambientsound_spawnroom", "zm_alien_isolation_ambience_mediumroom");
-}
-function play_ambient_sound_at_point(locationToGet, soundToPlay) {
-	areaToPlaySound = struct::get(locationToGet, "targetname");
-	SoundLoopEmitter(soundToPlay, areaToPlaySound.origin);
+	hud2 = CreateLUIMenu(localClientNum, "popup_zm_alien_isolation");
+	OpenLUIMenu(localClientNum, hud2);
 }

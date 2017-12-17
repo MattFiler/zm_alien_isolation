@@ -107,54 +107,54 @@ function LUI.createMenu.T7Hud_zm_alien_isolation(InstanceRef)
 	HudRef:subscribeToGlobalModel(HudRef, "CurrentWeapon", "weaponName", updateNameVal) -- Grab weapon name
 	HudRef:addElement(textWeapon)
 	HudRef.weaponName = textWeapon
-	
-	
-	
-	
-	
+    	
+		
+		
+		
+		
 	-- ##
 	-- ## PREMADE HUD
 	-- ##
-	
-    -- ## PREMADE PERK UI
+
+	-- ## PREMADE PERK UI
 	local PerksWidget = CoD.ZMPerksContainerFactory.new(HudRef, InstanceRef)
-    PerksWidget:setLeftRight(false, true, -130.000000, -281.000000)
-    PerksWidget:setTopBottom(false, true, -62.000000, -26.000000)
-    
-    HudRef:addElement(PerksWidget)
-    HudRef.ZMPerksContainerFactory = PerksWidget
-	
-    
-    -- ## PREMADE ROUND COUNTER UI
-    local RoundCounter = CoD.ZmRndContainer.new(HudRef, InstanceRef)
-    RoundCounter:setLeftRight(false, true, 32.000000, -192.000000)      -- AnchorLeft, AnchorRight, Left, Right
-    RoundCounter:setTopBottom(false, true, -174.000000, 18.000000)   -- AnchorTop, AnchorBottom, Top, Bottom
-    RoundCounter:setScale(0.8)  -- Scale (Of 1.0)
-    
-    HudRef:addElement(RoundCounter)
-    HudRef.Rounds = RoundCounter
-	
-	
-    -- ## PREMADE WEAPON UI
-    --local AmmoWidget = CoD.ZmAmmoContainerFactory.new(HudRef, InstanceRef)
-    --AmmoWidget:setLeftRight(false, true, -427.000000, 3.000000)
-    --AmmoWidget:setTopBottom(false, true, -232.000000, 0.000000)
-    
-    --HudRef:addElement(AmmoWidget)
-    --HudRef.Ammo = AmmoWidget
-	
-	
-    -- ## PREMADE SCORE UI
-    local ScoreWidget = CoD.ZMScr.new(HudRef, InstanceRef)
-    ScoreWidget:setLeftRight(false, true, -30.000000, -164.000000)
-    ScoreWidget:setTopBottom(false, true, -256.000000, -128.000000)
-    ScoreWidget:setYRot(30.000000)
-	
-	
+	PerksWidget:setLeftRight(false, true, -130.000000, -281.000000)
+	PerksWidget:setTopBottom(false, true, -62.000000, -26.000000)
+
+	HudRef:addElement(PerksWidget)
+	HudRef.ZMPerksContainerFactory = PerksWidget
+
+
+	-- ## PREMADE ROUND COUNTER UI
+	local RoundCounter = CoD.ZmRndContainer.new(HudRef, InstanceRef)
+	RoundCounter:setLeftRight(false, true, 32.000000, -192.000000)      -- AnchorLeft, AnchorRight, Left, Right
+	RoundCounter:setTopBottom(false, true, -174.000000, 18.000000)   -- AnchorTop, AnchorBottom, Top, Bottom
+	RoundCounter:setScale(0.8)  -- Scale (Of 1.0)
+
+	HudRef:addElement(RoundCounter)
+	HudRef.Rounds = RoundCounter
+
+
+	-- ## PREMADE WEAPON UI
+	--local AmmoWidget = CoD.ZmAmmoContainerFactory.new(HudRef, InstanceRef)
+	--AmmoWidget:setLeftRight(false, true, -427.000000, 3.000000)
+	--AmmoWidget:setTopBottom(false, true, -232.000000, 0.000000)
+
+	--HudRef:addElement(AmmoWidget)
+	--HudRef.Ammo = AmmoWidget
+
+
+	-- ## PREMADE SCORE UI
+	local ScoreWidget = CoD.ZMScr.new(HudRef, InstanceRef)
+	ScoreWidget:setLeftRight(false, true, -30.000000, -164.000000)
+	ScoreWidget:setTopBottom(false, true, -256.000000, -128.000000)
+	ScoreWidget:setYRot(30.000000)
 	
 	
-    
-    local function HudStartScore(Unk1, Unk2, Unk3)
+	
+		
+		
+	local function HudStartScore(Unk1, Unk2, Unk3)
         if IsModelValueTrue(InstanceRef, "hudItems.playerSpawned") and
         Engine.IsVisibilityBitSet(InstanceRef, Enum.UIVisibilityBit.BIT_HUD_VISIBLE) and
         Engine.IsVisibilityBitSet(InstanceRef, Enum.UIVisibilityBit.BIT_WEAPON_HUD_VISIBLE) and not
@@ -641,6 +641,8 @@ function LUI.createMenu.T7Hud_zm_alien_isolation(InstanceRef)
 		SenderObj.ammoInClipCount:close()
 		SenderObj.ammoInStockCount:close()
 		SenderObj.weaponName:close()
+		--SenderObj.AlienObjectivePopup:close()
+		--SenderObj.AlienObjectivePopupHeader:close()
         
         Engine.GetModel(Engine.GetModelForController(InstanceRef), "T7Hud_zm_alien_isolation.buttonPrompts")
         Engine.UnsubscribeAndFreeModel()
