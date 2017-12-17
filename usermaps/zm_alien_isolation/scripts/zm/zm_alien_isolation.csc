@@ -41,8 +41,6 @@
 //Usermap
 #using scripts\zm\zm_usermap;
 
-//Precache UI
-
 function main()
 {
 	zm_usermap::main();
@@ -51,7 +49,7 @@ function main()
 	
 	//Load new UI
 	callback::on_localclient_connect(&on_local_client_connect);
-    LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
+	LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
 	
 	//Wait for client to load
 	//util::waitforclient( 0 );
@@ -67,8 +65,8 @@ function include_weapons()
 
 function on_local_client_connect( localClientNum )
 {
-    hud = CreateLUIMenu(localClientNum, "T7Hud_zm_alien_isolation");
-    OpenLUIMenu(localClientNum, hud);
+	hud = CreateLUIMenu(localClientNum, "T7Hud_zm_alien_isolation");
+	OpenLUIMenu(localClientNum, hud);
 }
 
 
