@@ -66,10 +66,10 @@ function LUI.createMenu.popup_zm_alien_isolation(InstanceRef)
     
 	local function updateObjectiveText(ModelRef)
 		local objectiveText = Engine.GetModelValue(ModelRef)
-		AYZ_ObjectivePopup.Text:setText(Engine.Localize(objectiveText)) -- Update text
+		AYZ_ObjectivePopup.Text:setText(objectiveText) -- Update text
 	end
-    
-    AYZ_ObjectivePopup:subscribeToModel(Engine.GetModel(Engine.GetModelForController(InstanceRef), "AlienIsolationObjectivePopup"), updateObjectiveText)
+	
+    HudRef:subscribeToModel(Engine.GetModel(Engine.GetModelForController(InstanceRef), "AlienIsolationObjectivePopup"), updateObjectiveText)
     
 	HudRef:addElement(AYZ_ObjectivePopup_Header)
     HudRef.AlienObjectivePopupHeader = AYZ_ObjectivePopup_Header

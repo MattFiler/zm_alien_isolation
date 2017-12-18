@@ -75,10 +75,6 @@
 #define		AYZ_CUTSCENE_ID_02						"zm_alien_isolation_cs02" //Transition - Torrens to Sevastopol
 #define		AYZ_CUTSCENE_ID_03						"zm_alien_isolation_cs03" //Endgame
 
-#define 	OBJECTIVE__NULL 						0
-#define 	OBJECTIVE__SIGN_IN 						1
-#define 	OBJECTIVE__EXPLORE_TORRENS 				2
-
 
 //Precache models
 #precache("model", "ayz_new_door_lights_open"); //door lights when door is open
@@ -97,8 +93,8 @@
 
 //Precache UI
 #precache("lui_menu", "T7Hud_zm_alien_isolation");
-#precache("lui_menu", "popup_zm_alien_isolation");
-#precache("lui_menu_data", "AlienIsolationObjectivePopup");
+//#precache("lui_menu", "popup_zm_alien_isolation");
+#precache("lui_menu_data", "T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup");
 
 //Precache FX
 #precache("fx", "zm_alien_isolation/TowPlatform_WarningLight"); //Our warning light to spin
@@ -661,12 +657,15 @@ function show_new_objective(objectiveText) {
 	//iprintlnbold(objectiveText);
 	
 	
+	
+	
 	play_sound_locally("zm_alien_isolation__objective_updated");
 	foreach	(player in level.players) {		
-		dialog = player OpenLUIMenu("popup_zm_alien_isolation");
-		player SetLUIMenuData(dialog, "AlienIsolationObjectivePopup", objectiveText);
-		wait(5);
-		player CloseLUIMenu(dialog);
+		//dialog = player OpenLUIMenu("popup_zm_alien_isolation");
+		player SetControllerUIModelValue("T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup", RandomIntRange(6,21));
+		iprintlnbold(player GetControllerUIModelValue("T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup"));
+		//wait(5);
+		//player CloseLUIMenu(dialog);
 	}
 }
 
