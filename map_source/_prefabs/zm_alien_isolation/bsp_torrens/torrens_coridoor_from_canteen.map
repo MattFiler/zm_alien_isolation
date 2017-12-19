@@ -74,35 +74,6 @@ guid "{312DA755-68C6-11E7-83AF-14DDA9E204AF}"
 }
 // entity 7
 {
-guid "{0BD0066F-68C7-11E7-83AF-14DDA9E204AF}"
-"classname" "reflection_probe"
-"ao_power" "8"
-"ao_range" "25"
-"ao_strength_double_sided" "0.700000007450581"
-"brightnessAdjust" "4"
-"evcomp" "0.5"
-"name" "probe_002"
-"origin" "-25844.8 -13365.3 11802.5"
-"resolution" "8x"
-"size_max" "216.25 56.5 81"
-"size_min" "175.75 52.75 49.5"
-"smooth_post_process" "1"
-"volumetric" "1"
-"adaptive_quality_boost" "Off"
-"ao_strength" "1"
-"blend_maxs" "3 3 3"
-"blend_mins" "3 3 3"
-"box" "1"
-"client_server" "ClientSide"
-"debugColor" "1 1 1"
-"grid_density" "0"
-"high_detail" "1"
-"in_play_space" "1"
-"inpaint_occluded_rays" "1"
-"placement_offset" "72"
-}
-// entity 8
-{
 guid "{1E4B9961-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
 "angles" "0 89.9979 0"
@@ -115,7 +86,7 @@ guid "{1E4B9961-68C8-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 9
+// entity 8
 {
 guid "{1E4B9967-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -129,7 +100,7 @@ guid "{1E4B9967-68C8-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 10
+// entity 9
 {
 guid "{1E4B996A-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -143,7 +114,7 @@ guid "{1E4B996A-68C8-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 11
+// entity 10
 {
 guid "{1E4B9970-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -151,7 +122,7 @@ guid "{1E4B9970-68C8-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "-344.895 -587.061 0"
 }
-// entity 12
+// entity 11
 {
 guid "{1E4B9973-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -159,7 +130,7 @@ guid "{1E4B9973-68C8-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_side.map"
 "origin" "-344.895 -587.061 0"
 }
-// entity 13
+// entity 12
 {
 guid "{27FBA16E-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -173,7 +144,7 @@ guid "{27FBA16E-68C8-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 14
+// entity 13
 {
 guid "{27FBA171-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -181,7 +152,7 @@ guid "{27FBA171-68C8-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_high.map"
 "origin" "-51706.6 -26141.9 0"
 }
-// entity 15
+// entity 14
 {
 guid "{27FBA174-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -189,36 +160,7 @@ guid "{27FBA174-68C8-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_high.map"
 "origin" "-51706.6 -26196.9 0"
 }
-// entity 16
-{
-guid "{79419BFB-68CA-11E7-83AF-14DDA9E204AF}"
-"classname" "reflection_probe"
-"ao_power" "8"
-"ao_range" "25"
-"ao_strength_double_sided" "0.700000007450581"
-"brightnessAdjust" "4"
-"evcomp" "0.5"
-"name" "probe_003"
-"origin" "-26198.1 -13365.3 11802.5"
-"resolution" "8x"
-"size_max" "177.5 56.5 81"
-"size_min" "179.5 56.5 49.5"
-"smooth_post_process" "1"
-"volumetric" "1"
-"adaptive_quality_boost" "Off"
-"ao_strength" "1"
-"blend_maxs" "3 3 3"
-"blend_mins" "3 3 3"
-"box" "1"
-"client_server" "ClientSide"
-"debugColor" "1 1 1"
-"grid_density" "0"
-"high_detail" "1"
-"in_play_space" "1"
-"inpaint_occluded_rays" "1"
-"placement_offset" "72"
-}
-// entity 17
+// entity 15
 {
 guid "{C88E79E9-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -232,7 +174,7 @@ guid "{C88E79E9-68CA-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 18
+// entity 16
 {
 guid "{B59EF45A-68CD-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -246,7 +188,7 @@ guid "{B59EF45A-68CD-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 19
+// entity 17
 {
 guid "{DFC5FFDF-68CD-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -260,7 +202,7 @@ guid "{DFC5FFDF-68CD-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 20
+// entity 18
 {
 guid "{227C9A23-6948-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -274,7 +216,7 @@ guid "{227C9A23-6948-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 21
+// entity 19
 {
 guid "{6A565646-6948-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -288,7 +230,7 @@ guid "{6A565646-6948-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 22
+// entity 20
 {
 guid "{663385DA-68C6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -302,7 +244,7 @@ guid "{663385DA-68C6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 23
+// entity 21
 {
 guid "{663385CE-68C6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -316,7 +258,7 @@ guid "{663385CE-68C6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 24
+// entity 22
 {
 guid "{663385D1-68C6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -330,7 +272,7 @@ guid "{663385D1-68C6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 25
+// entity 23
 {
 guid "{663385CB-68C6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -344,7 +286,7 @@ guid "{663385CB-68C6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 26
+// entity 24
 {
 guid "{663385D4-68C6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -358,7 +300,7 @@ guid "{663385D4-68C6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 27
+// entity 25
 {
 guid "{C88E79E6-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -372,7 +314,7 @@ guid "{C88E79E6-68CA-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 28
+// entity 26
 {
 guid "{C88E79F8-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -380,7 +322,7 @@ guid "{C88E79F8-68CA-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_side.map"
 "origin" "24.1017 -681.811 0"
 }
-// entity 29
+// entity 27
 {
 guid "{C88E79EF-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -388,7 +330,7 @@ guid "{C88E79EF-68CA-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "-51677.8 -26140.5 -0.0498047"
 }
-// entity 30
+// entity 28
 {
 guid "{663385D7-68C6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -402,7 +344,7 @@ guid "{663385D7-68C6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 31
+// entity 29
 {
 guid "{27FBA159-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -410,7 +352,7 @@ guid "{27FBA159-68C8-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_high.map"
 "origin" "-87.1016 -26142.9 23666.5"
 }
-// entity 32
+// entity 30
 {
 guid "{27FBA156-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -418,7 +360,7 @@ guid "{27FBA156-68C8-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_high.map"
 "origin" "-87.1016 -26197.9 23666.5"
 }
-// entity 33
+// entity 31
 {
 guid "{27FBA14D-68C8-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -432,7 +374,7 @@ guid "{27FBA14D-68C8-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 34
+// entity 32
 {
 guid "{C88E79EC-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -446,7 +388,7 @@ guid "{C88E79EC-68CA-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 35
+// entity 33
 {
 guid "{67279A56-68CB-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -460,7 +402,7 @@ guid "{67279A56-68CB-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 36
+// entity 34
 {
 guid "{C88E79F2-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -468,7 +410,7 @@ guid "{C88E79F2-68CA-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "24.105 -587.311 0"
 }
-// entity 37
+// entity 35
 {
 guid "{C88E79E3-68CA-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -482,7 +424,7 @@ guid "{C88E79E3-68CA-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 38
+// entity 36
 {
 guid "{C7803793-68CC-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -496,7 +438,7 @@ guid "{C7803793-68CC-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 39
+// entity 37
 {
 guid "{0FD6DBD1-68CD-11E7-83AF-14DDA9E204AF}"
 "classname" "fx"
@@ -510,7 +452,7 @@ guid "{0FD6DBD1-68CD-11E7-83AF-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 40
+// entity 38
 {
 guid "{DFA1EAAD-68C5-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -518,7 +460,7 @@ guid "{DFA1EAAD-68C5-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_bulkhead_block.map"
 "origin" "-51566.9 -26141.4 0"
 }
-// entity 41
+// entity 39
 {
 guid "{DFA1EAB0-68C5-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -526,7 +468,7 @@ guid "{DFA1EAB0-68C5-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_block_no_bulkhead.map"
 "origin" "133.855 -587.061 0"
 }
-// entity 42
+// entity 40
 {
 guid "{9E2EEE9C-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -540,7 +482,7 @@ guid "{9E2EEE9C-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 43
+// entity 41
 {
 guid "{9E2EEEA5-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -554,7 +496,7 @@ guid "{9E2EEEA5-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 44
+// entity 42
 {
 guid "{9E2EEEA2-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -568,7 +510,7 @@ guid "{9E2EEEA2-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 45
+// entity 43
 {
 guid "{9E2EEE96-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -582,7 +524,7 @@ guid "{9E2EEE96-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 46
+// entity 44
 {
 guid "{9E2EEE9F-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -596,7 +538,7 @@ guid "{9E2EEE9F-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 47
+// entity 45
 {
 guid "{9E2EEE99-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -610,7 +552,7 @@ guid "{9E2EEE99-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 48
+// entity 46
 {
 guid "{F0685815-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -624,7 +566,7 @@ guid "{F0685815-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 49
+// entity 47
 {
 guid "{8AC2654D-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -638,7 +580,7 @@ guid "{8AC2654D-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 50
+// entity 48
 {
 guid "{7770F7A7-68CE-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -652,7 +594,7 @@ guid "{7770F7A7-68CE-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 51
+// entity 49
 {
 guid "{CF73301C-6950-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -666,7 +608,7 @@ guid "{CF73301C-6950-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 52
+// entity 50
 {
 guid "{F77AF6D8-6962-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -679,7 +621,7 @@ guid "{F77AF6D8-6962-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 53
+// entity 51
 {
 guid "{20983FFA-6963-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
