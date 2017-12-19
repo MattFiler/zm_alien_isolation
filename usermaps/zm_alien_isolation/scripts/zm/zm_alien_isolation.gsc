@@ -117,7 +117,7 @@ function main()
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
 	//Torrens intro
-	thread torrens_intro_sequence(false); //Set param to true to skip cutscenes (false otherwise)
+	thread torrens_intro_sequence(true); //Set param to true to skip cutscenes (false otherwise)
 	
 	//Light states and animations/sounds for spawn
 	thread isolation_spawn_scripts(); 
@@ -2267,7 +2267,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	}
 	
 	//Setup login screens
-	setup_login_screens_torrens();
+	setup_login_screens_torrens();	
 
 	//Pre-define cutscene info
 	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
@@ -2432,6 +2432,9 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	thread primeTorrensAutomaticDoor("bridge", 1); //Door to the bridge
 	thread primeTorrensAutomaticDoor("medbaycoridoor", 2); //Door to coridoor to medbay from junction
 	thread primeTorrensAutomaticDoor("medbay", 3); //Door to medbay
+	
+	//DEBUG ONLY
+	thread DEBUG_TORRENS_LIGHT();
 	
 	//Wait for ALL players to "sign in"
 	self waittill("torrens_all_players_signedin");
@@ -2830,6 +2833,63 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	
 	//Start zombie spawning
 	SetDvar("ai_disableSpawn", "0");
+}
+
+
+//DEBUG ONLY - REMOVE WHEN TESTED
+//DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY - TODO: REMOVE!
+function DEBUG_TORRENS_LIGHT() {
+	lightzone = getEnt("torrens_debuglighttrigger", "targetname"); //grab our trigger zone
+	lightzone NotSolid();
+	hidden = false;
+	
+	while(1) {
+		players = GetPlayers();
+		player_in_zone = false;
+		
+		foreach (player in players) {
+			if (player IsTouching(lightzone) == true) {
+				player_in_zone = true;
+			} else {
+				continue;
+			}
+		}
+		
+		//I really can't be fucked to rebuild all the lighting - using server-side lights that already exist in TPF.
+		
+		if (player_in_zone == true) {
+			wait(0.1);
+			if (hidden == false) {
+				hidden = true;
+				//TESTLIGHT_TORRENS_1 = getEnt("TESTLIGHT_TORRENS_1", "targetname");
+				//TESTLIGHT_TORRENS_2 = getEnt("TESTLIGHT_TORRENS_2", "targetname");
+				//TESTLIGHT_TORRENS_1 hide();
+				//TESTLIGHT_TORRENS_2 hide();
+				iprintlnbold("DEBUGONLY: entered zone");
+				for (i=0; i < 28; i++) {
+					iprintlnbold("DEBUGONLY: HIDING LIGHT " + i);
+					test_ent = getEnt("tow_warning_light_bulb_" + i, "targetname");
+					test_ent.origin = (0,0,0); //This is how it will work - Grab origin of model, assign to array, set to 0, then when the light is needed, pull from array and move to the original origin.
+				}
+				wait(5);
+			} else {
+				hidden = false;
+				//TESTLIGHT_TORRENS_1 = getEnt("TESTLIGHT_TORRENS_1", "targetname");
+				//TESTLIGHT_TORRENS_2 = getEnt("TESTLIGHT_TORRENS_2", "targetname");
+				//TESTLIGHT_TORRENS_1 show();
+				//TESTLIGHT_TORRENS_2 show();
+				iprintlnbold("DEBUGONLY: entered zone");
+				for (i=0; i < 28; i++) {
+					iprintlnbold("DEBUGONLY: SHOWING LIGHT " + i);
+					test_ent = getEnt("tow_warning_light_bulb_" + i, "targetname");
+					test_ent show();
+				}
+				wait(5);
+			}
+		}
+		
+		wait(0.1);
+	}
 }
 
 
