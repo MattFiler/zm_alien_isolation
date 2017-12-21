@@ -251,9 +251,22 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	thread show_new_objective("Explore the Torrens.");
 	
 	//Wait for player to approach the locked door and update objective
+	trigger_reroute_power = getEnt("trigger_reroute_power_torrens", "targetname");
+	trigger_reroute_power SetHintString(""); //Set hint string of power reroute first
+	trigger_reroute_power setCursorHint("HINT_NOICON");
 	thread torrens_broken_door();
-	self waittill("torrens_brokendoor_notified");
-	thread show_new_objective("Reroute power to open the door."); //TODO: what if player has already done this?
+	level waittill("torrens_brokendoor_notified");
+	thread show_new_objective("Reroute power to open the door.");
+	
+	//Wait for player to fix the door
+	trigger_reroute_power SetHintString("Hold ^3[{+activate}]^7 to reroute power"); //Update hint string
+	trigger_reroute_power waittill("trigger", player);
+	access_rewire = getEnt("torrens_access_rewire", "targetname");
+	access_rewire RotateTo((0,-145,180), 1, 0.5, 0.5);
+	access_rewire PlaySound("zm_alien_isolation__tow_monitor_changed"); //sfx
+	level notify("torrens_brokendoor_fixed");
+	wait(1.5);
+	thread show_new_objective("Explore the Torrens.");
 	
 	//Give perks and ammo if debug is enabled
 	if (should_skip_cutscenes) {
@@ -309,9 +322,6 @@ function torrens_broken_door() {
 	brokendoorZone = getEnt("torrens_brokendoor_zone", "targetname");
 	brokendoorZone NotSolid();
 	while(1) {
-		if(level flag::get("torrens_brokendoor_notified")) {
-			break;
-		}
 		all_players_aboard_torrens = GetPlayers();
 		player_by_door = false;
 		foreach (a_torrens_player in all_players_aboard_torrens) {
@@ -322,7 +332,7 @@ function torrens_broken_door() {
 			}
 		}
 		if (player_by_door == true) {
-			self notify("torrens_brokendoor_notified");
+			level notify("torrens_brokendoor_notified");
 			break;
 		}
 		wait 0.1;
@@ -740,9 +750,18 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 	
 	if (doorID == "bridge") {
 		doorEntity = getEnt("torrens_door_bridge", "targetname");
-		doorEntity SetHintString(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED);
+		doorEntity SetHintString(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED); //TODO: FIX THIS
 		doorEntity setCursorHint("HINT_NOICON");
 		self waittill("torrens_enable_bridge_door");
+		doorEntity SetHintString("");
+		//TODO: swap door lights here
+	}
+	
+	if (doorID == "spawntoairlockjunction") {
+		doorEntity = getEnt("torrens_door_spawntoairlockjunction", "targetname");
+		doorEntity SetHintString("Low power"); //TODO: FIX THIS
+		doorEntity setCursorHint("HINT_NOICON");
+		level waittill("torrens_brokendoor_fixed");
 		doorEntity SetHintString("");
 		//TODO: swap door lights here
 	}

@@ -6,7 +6,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{48496116-E519-11E7-A56A-0015833D0A57}"
+guid "{B364AD24-E684-11E7-A56C-0015833D0A57}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -54036,4 +54036,53 @@ guid "{4849611D-E519-11E7-A56A-0015833D0A57}"
 "lightingstate3" "1"
 "lightingstate4" "1"
 "static" "1"
+}
+// entity 3049
+{
+guid "{700E8AC5-E676-11E7-A56C-0015833D0A57}"
+"classname" "trigger_use"
+"targetname" "trigger_reroute_power_torrens"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{700E8AC4-E676-11E7-A56C-0015833D0A57}"
+ ( -25262.25 -12972.5 11753.5 ) ( -25284.75 -12995.25 11753.5 ) ( -25262 -13017.75 11753.5 ) trigger 64.001869 64.033607 -1725.7137 -21893.234 45.5 -0.00038652451 lightmap_gray 16384.479 16393.217 -1725.6829 -21893.295 45.5 -0.00038661313
+ ( -25253.25 -13017.75 11850.75 ) ( -25276 -12995.25 11850.75 ) ( -25253.5 -12972.5 11850.75 ) trigger 64.001869 64.033607 -1719.5825 -21887.039 45.5 -0.00038652451 lightmap_gray 16384.479 16393.217 -1719.5519 -21886.941 45.5 -0.00038661313
+ ( -25228 -13037 11824.5 ) ( -25205.25 -13014.25 11824.5 ) ( -25205.25 -13014.25 11808.5 ) trigger 44.918087 64 4692.3018 0 0 0 lightmap_gray 11499.03 16384 4692.2983 0 0 0
+ ( -25222.5 -12992.5 11824.5 ) ( -25245.25 -12970 11824.5 ) ( -25245.25 -12970 11808.5 ) trigger 45.417843 -64 34444.121 0 180 0 lightmap_gray 11626.967 -16384 34444.121 0 180 0
+ ( -25255.75 -12972.5 11824.5 ) ( -25278.25 -12995.25 11824.5 ) ( -25278.25 -12995.25 11808.5 ) trigger 45.410141 64 4928.1826 0 0 0 lightmap_gray 11624.996 16384 4928.1836 0 0 0
+ ( -25298 -13018 11824.5 ) ( -25275 -13040.25 11824.5 ) ( -25275 -13040.25 11808.5 ) trigger 45.891933 -64 34592.801 0 -180 0 lightmap_gray 11748.334 -16384 34592.805 0 -180 0
+}
+}
+// entity 3050
+{
+guid "{80914AED-E684-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "180 -135 90"
+"model" "access_rewire"
+"modelscale" "2.5"
+"origin" "-25262.5 -12993.3 11813"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3051
+{
+guid "{B364AD2B-E684-11E7-A56C-0015833D0A57}"
+"classname" "script_model"
+"angles" "0 -45 180"
+"model" "access_rewire_front"
+"modelscale" "2.5"
+"origin" "-25266.8 -12994.5 11813"
+"targetname" "torrens_access_rewire"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
 }
