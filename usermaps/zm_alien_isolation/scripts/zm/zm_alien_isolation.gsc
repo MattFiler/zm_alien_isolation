@@ -2,8 +2,6 @@
 //////  ALIEN ISOLATION ZOMBIES  //////
 //////     SERVER-SIDE SCRIPT    //////
 ///////////////////////////////////////
-//////        The Torrens        //////
-///////////////////////////////////////
 
 //Core scripts & resources
 #using scripts\codescripts\struct;
@@ -101,9 +99,9 @@
 #precache("model", "monitor_torrens_signin"); 											//sign in monitor default
 
 //Precache UI
-#precache("lui_menu", "T7Hud_zm_alien_isolation");
+//#precache("lui_menu", "T7Hud_zm_alien_isolation");
 //#precache("lui_menu", "popup_zm_alien_isolation");
-#precache("lui_menu_data", "T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup");
+//#precache("lui_menu_data", "T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup");
 
 //Precache FX
 #precache("fx", "zm_alien_isolation/TowPlatform_WarningLight"); //Our warning light to spin
@@ -180,7 +178,7 @@ function main()
 	//DEBUG: Skip right to the tow platform (don't enable on ship)
 	//thread ayz_tow_platform_challenge(true); //set param to true to skip to airlock section
 	
-	//DEBUG: Set round number
+	//DEBUG: Set round number - depreciated
 	//thread dbgSetRoundNum(20);
 	
 	//DEBUG: Set loads of points for testing (don't enable on ship)
@@ -280,21 +278,19 @@ function stop_round_start_music() {
 
 //Show new objective
 function show_new_objective(objectiveText) {
-	//play_sound_locally("zm_alien_isolation__objective_updated");
-	//iprintlnbold("OBJECTIVE UPDATED:");
-	//iprintlnbold(objectiveText);
-	
-	
-	
-	
 	play_sound_locally("zm_alien_isolation__objective_updated");
-	foreach	(player in level.players) {		
-		//dialog = player OpenLUIMenu("popup_zm_alien_isolation");
-		player SetControllerUIModelValue("T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup", RandomIntRange(6,21));
-		iprintlnbold(player GetControllerUIModelValue("T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup"));
-		//wait(5);
-		//player CloseLUIMenu(dialog);
-	}
+	iprintlnbold("OBJECTIVE UPDATED:");
+	iprintlnbold(objectiveText);
+	
+	//TODO, fix up new UI and use the popup here.
+	//play_sound_locally("zm_alien_isolation__objective_updated");
+	//foreach	(player in level.players) {		
+	//	//dialog = player OpenLUIMenu("popup_zm_alien_isolation");
+	//	player SetControllerUIModelValue("T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup", RandomIntRange(6,21));
+	//	iprintlnbold(player GetControllerUIModelValue("T7Hud_zm_alien_isolation.AlienIsolationObjectivePopup"));
+	//	//wait(5);
+	//	//player CloseLUIMenu(dialog);
+	//}
 }
 
 

@@ -43902,7 +43902,7 @@ guid "{A0D6930E-51C5-11E7-A553-14DDA9E204AF}"
 {
 guid "{F7478D96-51CD-11E7-A553-14DDA9E204AF}"
 "classname" "trigger_use"
-"targetname" "TorrensDebugTrigger"
+"targetname" "trigger_torrens_transition_to_sevastopol"
 "_color" "0.3 0.5 0.8"
 "cursorhint" "HINT_ACTIVATE"
 // brush 0
@@ -53916,7 +53916,7 @@ guid "{EEAD3817-E4F5-11E7-A56A-0015833D0A57}"
 {
 guid "{B070D536-E4F6-11E7-A56A-0015833D0A57}"
 "classname" "script_brushmodel"
-"targetname" "torrens_debuglighttrigger"
+"targetname" "torrens_brokendoor_zone"
 "_color" "0 0.5 0.8"
 "lightingstate1" "1"
 "lightingstate2" "1"
@@ -53928,10 +53928,10 @@ guid "{B070D536-E4F6-11E7-A56A-0015833D0A57}"
  guid "{95D1883B-E4F6-11E7-A56A-0015833D0A57}"
  ( -25438.75 -13286.25 11779.25 ) ( -25582 -13286.25 11779.25 ) ( -25582 -13444.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
  ( -25582 -13444.25 11810.5 ) ( -25582 -13286.25 11810.5 ) ( -25438.75 -13286.25 11810.5 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
- ( -25582 -13444.25 11810.5 ) ( -25438.75 -13444.25 11810.5 ) ( -25438.75 -13444.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 31.5 0 0
- ( -25438.75 -13444.25 11810.5 ) ( -25438.75 -13286.25 11810.5 ) ( -25438.75 -13286.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 31.5 0 0
- ( -25438.75 -13286.25 11810.5 ) ( -25582 -13286.25 11810.5 ) ( -25582 -13286.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 31.5 0 0
- ( -25582 -13286.25 11810.5 ) ( -25582 -13444.25 11810.5 ) ( -25582 -13444.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 31.5 0 0
+ ( -25570.5 -13217.75 11810.5 ) ( -25427.25 -13217.75 11810.5 ) ( -25427.25 -13217.75 11779.25 ) torrens_doortrigger 64 64 11.5 0 0 0 lightmap_gray 16384 16384 11.5 31.5 0 0
+ ( -25451.5 -13446.75 11810.5 ) ( -25451.5 -13288.75 11810.5 ) ( -25451.5 -13288.75 11779.25 ) torrens_doortrigger 64 64 -2.5 0 0 0 lightmap_gray 16384 16384 -2.5 31.5 0 0
+ ( -25422.75 -13140.25 11810.5 ) ( -25566 -13140.25 11810.5 ) ( -25566 -13140.25 11779.25 ) torrens_doortrigger 64 64 16 0 0 0 lightmap_gray 16384 16384 16 31.5 0 0
+ ( -25577 -13286.25 11810.5 ) ( -25577 -13444.25 11810.5 ) ( -25577 -13444.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 31.5 0 0
 }
 }
 // entity 3045
@@ -54030,7 +54030,7 @@ guid "{4849611D-E519-11E7-A56A-0015833D0A57}"
 "angles" "0 90 0"
 "model" "torrens_canteen_fillerwall"
 "modelscale" "2.5"
-"origin" "-26549.7 -13286.3 11731.5"
+"origin" "-26546.7 -13284.3 11731.5"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"

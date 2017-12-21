@@ -71,22 +71,6 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	
 	//Setup login screens
 	setup_login_screens_torrens();	
-
-	//Pre-define cutscene info
-	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
-
-	//Wait a little then play the cutscene
-	if (!should_skip_cutscenes) {
-		//Prime our cutscene
-		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
-		
-		wait(2);
-		play_sound_locally("zm_alien_isolation__cs_torrensintro");
-		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
-
-		//Wait for cutscene to end and continue
-		wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
-	}
 	
 	//Force players to look UP
 	allPlayersOnTorrens = GetPlayers();
@@ -134,6 +118,22 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 		
 		//torrensPlayer setClientUIVisibilityFlag("hud_visible", 0);
 		//torrensPlayer setClientUIVisibilityFlag("weapon_hud_visible", 0);
+	}
+
+	//Pre-define cutscene info
+	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
+
+	//Wait a little then play the cutscene
+	if (!should_skip_cutscenes) {
+		//Prime our cutscene
+		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
+		
+		wait(2);
+		play_sound_locally("zm_alien_isolation__cs_torrensintro");
+		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
+
+		//Wait for cutscene to end and continue
+		wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
 	}
 	
 	if (!should_skip_cutscenes) {
@@ -206,6 +206,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 		wait(4);
 	}
 	
+	//Disallow sprint, jump and melee for Torrens
 	allPlayersOnTorrensThree = GetPlayers();
 	foreach (torrensPlayerThree in allPlayersOnTorrensThree) {
 		torrensPlayerThree FreezeControls(false);
@@ -215,9 +216,6 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 		//torrensPlayerThree setClientUIVisibilityFlag("hud_visible", 1);
 		//torrensPlayerThree setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
-	
-	//Set the jump height and no running?
-	//SetJumpHeight
 	
 	//Fade back in
 	lui::screen_fade_in(1);
@@ -237,7 +235,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	thread primeTorrensAutomaticDoor("medbay", 3); //Door to medbay
 	
 	//DEBUG ONLY
-	thread DEBUG_TORRENS_LIGHT();
+	//thread DEBUG_TORRENS_LIGHT();
 	
 	//Wait for ALL players to "sign in"
 	self waittill("torrens_all_players_signedin");
@@ -251,6 +249,11 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	
 	//Update objective
 	thread show_new_objective("Explore the Torrens.");
+	
+	//Wait for player to approach the locked door and update objective
+	thread torrens_broken_door();
+	self waittill("torrens_brokendoor_notified");
+	thread show_new_objective("Reroute power to open the door."); //TODO: what if player has already done this?
 	
 	//Give perks and ammo if debug is enabled
 	if (should_skip_cutscenes) {
@@ -277,20 +280,52 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	}
 	wait(3);
 	
-	//Push players towards the bridge
-	//Play verlaine's message to get to the bridge
-	//Wait a bit
-	thread show_new_objective("Collect your briefing documents.");
-	//Open bridge door
+	//Push players towards the bridge (play verlaine broadcast)
+	play_sound_locally("zm_alien_isolation__torrens_get_to_bridge");
 	
-	//Wait for debug trigger to be pushed
-	DEBUG_TRIGGER_TORRENS = getEnt("TorrensDebugTrigger", "targetname");
-	DEBUG_TRIGGER_TORRENS SetHintString("TRIGGER TORRENS TRANSMISSION");
-	DEBUG_TRIGGER_TORRENS waittill("trigger", player);
+	//Wait a bit and update objective
+	wait(5);
+	thread show_new_objective("Collect your weapons.");
+	
+	//Open bridge door
+	self notify("torrens_enable_bridge_door");
+	
+	//Wait for transition trigger to be pushed
+	trigger_transition_to_sevastopol = getEnt("trigger_torrens_transition_to_sevastopol", "targetname");
+	trigger_transition_to_sevastopol SetHintString("Hold ^3[{+activate}]^7 to pick up weapon");
+	trigger_transition_to_sevastopol setCursorHint("HINT_NOICON");
+	trigger_transition_to_sevastopol waittill("trigger", player);
+	//WAIT FOR ALL PLAYERS TO DO THIS (TODO)
 	if (should_skip_cutscenes) {
 		TRANSITION_Torrens_to_SpaceflightTerminal(false);
 	} else {
 		TRANSITION_Torrens_to_SpaceflightTerminal(true);
+	}
+}
+
+
+//handle broken door on Torrens
+function torrens_broken_door() {
+	brokendoorZone = getEnt("torrens_brokendoor_zone", "targetname");
+	brokendoorZone NotSolid();
+	while(1) {
+		if(level flag::get("torrens_brokendoor_notified")) {
+			break;
+		}
+		all_players_aboard_torrens = GetPlayers();
+		player_by_door = false;
+		foreach (a_torrens_player in all_players_aboard_torrens) {
+			if (a_torrens_player IsTouching(brokendoorZone) == true) {
+				player_by_door = true;
+			} else {
+				continue;
+			}
+		}
+		if (player_by_door == true) {
+			self notify("torrens_brokendoor_notified");
+			break;
+		}
+		wait 0.1;
 	}
 }
 
@@ -702,6 +737,15 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 	
 	doorTriggerZone = getEnt("torrens_doortrigger_" + doorID, "targetname"); //grab our trigger zone
 	doorTriggerZone NotSolid();
+	
+	if (doorID == "bridge") {
+		doorEntity = getEnt("torrens_door_bridge", "targetname");
+		doorEntity SetHintString(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED);
+		doorEntity setCursorHint("HINT_NOICON");
+		self waittill("torrens_enable_bridge_door");
+		doorEntity SetHintString("");
+		//TODO: swap door lights here
+	}
 	
 	while(1) {
 		all_players_aboard_torrens = GetPlayers();
