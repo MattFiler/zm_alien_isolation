@@ -1,8 +1,10 @@
 >class,zm_mod_level
 >group,modtools
 
+//World
 xmodel,skybox_default_day
 material,luts_t7_default
+material,luts_ayz
 	
 // BSP
 col_map,maps/zm/zm_alien_isolation.d3dbsp
@@ -11,8 +13,12 @@ gfx_map,maps/zm/zm_alien_isolation.d3dbsp
 // Audio
 sound,zm_alien_isolation
 
-scriptparsetree,scripts/zm/zm_alien_isolation.gsc
-scriptparsetree,scripts/zm/zm_alien_isolation.csc
+//Scripts
+scriptparsetree,scripts/zm/zm_alien_isolation.gsc	//Shared (serverside)
+scriptparsetree,scripts/zm/zm_alien_isolation.csc	//Shared (clientside)
+scriptparsetree,scripts/zm/bsp_torrens.gsc			//The Torrens (serverside)
+scriptparsetree,scripts/zm/eng_towplatform.gsc		//Tow Platform (serverside)
+scriptparsetree,scripts/zm/hab_airport.gsc			//Spaceflight Terminal (serverside)
 
 // Vision
 rawfile,vision/zm_alien_isolation.vision
@@ -24,11 +30,8 @@ ttf,fonts/isolation.ttf
 ttf,fonts/jixellation.ttf
 ttf,fonts/nostromo.ttf
 
-//Buyable Ending Script (from UGX)
-scriptparsetree,scripts/zm/ugxmods_buyable_ending.gsc
-
-//Updated Wall Weapon Costs - THIS WILL RESET EVERY MOD TOOLS UPDATE
-stringtable,gamedata/weapons/zm/zm_levelcommon_weapons.csv
+//Updated Wall Weapon Costs
+stringtable,gamedata/weapons/zm/zm_alien_isolation.csv
 
 //FLAMER
 //weaponfull,alien_flamer
