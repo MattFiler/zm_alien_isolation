@@ -48,6 +48,9 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	//Stop zombies spawning
 	SetDvar("ai_disableSpawn", "1");
 	
+	//Start script to handle coridoor light effects
+	thread coridoorLightHandler();
+	
 	//Take stuff you'd normally get on spawn
 	level.start_weapon = level.weaponNone;
 	allPlayersTakeGuns = GetPlayers();
@@ -223,22 +226,22 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	//Update objective
 	thread show_new_objective("Sign in to the Torrens.");
 	
-	//Handle all doors on the Torrens (doortype 1 = small, doortype 2 = medium, 3 = medbay)
-	level.currentlyOpenDoors = array();
-	thread primeTorrensAutomaticDoor("crewcoridoor", 1); //Door to coridoor to crew quarters
-	thread primeTorrensAutomaticDoor("crewroom", 2); //Door to crew quarters
-	thread primeTorrensAutomaticDoor("spawntoairlockjunction", 2); //Door to airlock junction from spawn
-	thread primeTorrensAutomaticDoor("canteencoridoor", 1); //Door to coridoor to canteen
-	thread primeTorrensAutomaticDoor("canteen", 1); //Door to canteen
-	thread primeTorrensAutomaticDoor("bridge", 1); //Door to the bridge
-	thread primeTorrensAutomaticDoor("medbaycoridoor", 2); //Door to coridoor to medbay from junction
-	thread primeTorrensAutomaticDoor("medbay", 3); //Door to medbay
-	
 	//DEBUG ONLY
 	//thread DEBUG_TORRENS_LIGHT();
 	
 	//Wait for ALL players to "sign in"
 	self waittill("torrens_all_players_signedin");
+	
+	//Handle all doors on the Torrens (doortype 1 = small, doortype 2 = medium, 3 = medbay)
+	level.currentlyOpenDoors = array();
+	thread primeTorrensAutomaticDoor("crewcoridoor", 1); //Door to coridoor to crew quarters
+	thread primeTorrensAutomaticDoor("crewroom", 2); //Door to crew quarters
+	thread primeTorrensAutomaticDoor("spawntoairlockjunction", 2); //Door to airlock junction from spawn
+	//thread primeTorrensAutomaticDoor("canteencoridoor", 1); //Door to coridoor to canteen
+	thread primeTorrensAutomaticDoor("canteen", 1); //Door to canteen
+	thread primeTorrensAutomaticDoor("bridge", 1); //Door to the bridge
+	thread primeTorrensAutomaticDoor("medbaycoridoor", 2); //Door to coridoor to medbay from junction
+	thread primeTorrensAutomaticDoor("medbay", 3); //Door to medbay
 	
 	//Open spawnroom door
 	wait(1);
@@ -847,5 +850,143 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 		}
 		
 		wait 0.1;
+	}
+}
+
+
+//Coridoor Light Script
+function coridoorLightHandler() {	
+	//Get all HAB lights (zone 1)
+	level.habLightOrigins = array();
+	level.habLightRotations = array();
+	for (i=1;i<7;i++) {
+		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_LONG_"+i, "targetname");
+		ArrayInsert(level.habLightOrigins, habLight.origin, level.habLightOrigins.size); 
+		ArrayInsert(level.habLightRotations, habLight.angles, level.habLightRotations.size); 
+		habLight.origin = (-26428 , -13031 , 11752.5);
+	}
+	
+	//Get all SCI lights (zone 2+3 - zone 2 up to 6)
+	level.sciLightTopOrigins = array();
+	level.sciLightTopRotations = array();
+	level.sciLightBottomOrigins = array();
+	level.sciLightBottomRotations = array();
+	for (i=1;i<15;i++) {
+		sciLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
+		ArrayInsert(level.sciLightTopOrigins, sciLight.origin, level.sciLightTopOrigins.size); 
+		ArrayInsert(level.sciLightTopRotations, sciLight.angles, level.sciLightTopRotations.size); 
+		sciLight.origin = (-26428 , -13031 , 11752.5);
+		
+		sciLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
+		ArrayInsert(level.sciLightBottomOrigins, sciLight2.origin, level.sciLightBottomOrigins.size); 
+		ArrayInsert(level.sciLightBottomRotations, sciLight2.angles, level.sciLightBottomRotations.size); 
+		sciLight2.origin = (-26428 , -13031 , 11752.5);
+	}
+	
+	
+	//Light zone 2 - coridoor from junction past medbay
+	lightTriggerTwo = getEnt("torrens_lightzone_2", "targetname");
+	lightTriggerTwo SetHintString("");
+	lightTriggerTwo setCursorHint("HINT_NOICON");
+	lightTriggerTwo NotSolid();
+	
+	//Light zone 3 - coridoor from past medbay to coridoor to canteen
+	lightTriggerThree = getEnt("torrens_lightzone_3", "targetname"); 
+	lightTriggerThree SetHintString("");
+	lightTriggerThree setCursorHint("HINT_NOICON");
+	lightTriggerThree NotSolid();
+	
+	
+	//Instead of waiting for players to enter light zone 1, just wait for the spawn door to open
+	self waittill("torrens_all_players_signedin");
+	
+	//Move lights to new location (light zone 1)
+	for (i=1;i<7;i++) {
+		if (i == 3 ||
+			i == 4 ||
+			i == 5) {
+			wait (0.5); //delay between light groups
+		}
+		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_LONG_"+i, "targetname");
+		habLight.origin = level.habLightOrigins[i];
+		habLight.angles = level.habLightRotations[i];
+		
+		iprintlnbold("DEBUG: MOVED HAB LIGHT " + i);
+	}
+	
+	
+	//Wait for player to enter light zone 2
+	while(1) {
+		all_players_aboard_torrens = GetPlayers();
+		in_light_trigger_two = false;
+		foreach (a_torrens_player in all_players_aboard_torrens) {
+			if (a_torrens_player IsTouching(lightTriggerTwo) == true) {
+				in_light_trigger_two = true;
+				break;
+			} else {
+				continue;
+			}
+		}
+		if (in_light_trigger_two) {
+			break;
+		}
+		wait(0.1);
+	}	
+	
+	//Move lights to new location (light zone 2)
+	for (i=1;i<7;i++) {
+		if (i == 5 ||
+			i == 6) {
+			wait (0.5); //delay between light groups
+		}
+		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
+		habLight.origin = level.sciLightTopOrigins[i];
+		habLight.angles = level.sciLightTopRotations[i];
+		
+		habLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
+		habLight2.origin = level.sciLightBottomOrigins[i];
+		habLight2.angles = level.sciLightBottomRotations[i];
+		
+		iprintlnbold("DEBUG: MOVED SCI LIGHT " + i);
+	}
+	
+	
+	//Wait for player to enter light zone 3
+	while(1) {
+		all_players_aboard_torrens = GetPlayers();
+		in_light_trigger_three = false;
+		foreach (a_torrens_player in all_players_aboard_torrens) {
+			if (a_torrens_player IsTouching(lightTriggerThree) == true) {
+				in_light_trigger_three = true;
+				break;
+			} else {
+				continue;
+			}
+		}
+		if (in_light_trigger_three) {
+			break;
+		}
+		wait(0.1);
+	}
+	
+	//Move lights to new location (light zone 3)
+	for (i=7;i<15;i++) {
+		if (i == 9 ||
+			i == 11||
+			i == 13) {
+			wait (1); //delay between light groups
+		}
+		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
+		habLight.origin = level.sciLightTopOrigins[i];
+		habLight.angles = level.sciLightTopRotations[i];
+		habLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
+		habLight2.origin = level.sciLightBottomOrigins[i];
+		habLight2.angles = level.sciLightBottomRotations[i];
+		
+		iprintlnbold("DEBUG: MOVED SCI LIGHT " + i);
+		iprintlnbold("DEBUG: ANGLE " + habLight2.angles);
+		iprintlnbold("DEBUG: ANGLE " + level.sciLightBottomRotations[i]);
+		iprintlnbold("DEBUG: ORIGIN " + habLight2.origin);
+		iprintlnbold("DEBUG: ORIGIN " + level.sciLightBottomOrigins[i]);
 	}
 }

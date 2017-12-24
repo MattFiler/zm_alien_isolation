@@ -97,12 +97,6 @@ guid "{07231B42-6894-11E7-83AF-14DDA9E204AF}"
 }
 // entity 5
 {
-guid "{54662993-689B-11E7-83AF-14DDA9E204AF}"
-"classname" "misc_prefab"
-"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_block_no_bulkhead.map"
-}
-// entity 6
-{
 guid "{07B3DB37-689C-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
 "angles" "8.58307e-005 225 8.58307e-005"
@@ -115,7 +109,7 @@ guid "{07B3DB37-689C-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 7
+// entity 6
 {
 guid "{07B3DB3A-689C-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -129,7 +123,7 @@ guid "{07B3DB3A-689C-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 8
+// entity 7
 {
 guid "{07B3DB3D-689C-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -143,7 +137,7 @@ guid "{07B3DB3D-689C-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 9
+// entity 8
 {
 guid "{07B3DB40-689C-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -151,15 +145,7 @@ guid "{07B3DB40-689C-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "-52988.1 -3612.76 -0.0149662"
 }
-// entity 10
-{
-guid "{07B3DB49-689C-11E7-83AF-14DDA9E204AF}"
-"classname" "misc_prefab"
-"angles" "360 315 8.58307e-005"
-"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_side.map"
-"origin" "1573.53 -22167.8 0.223357"
-}
-// entity 11
+// entity 9
 {
 guid "{07B3DB43-689C-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -167,7 +153,7 @@ guid "{07B3DB43-689C-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "1626.11 -22076.3 0.223633"
 }
-// entity 12
+// entity 10
 {
 guid "{07B3DB34-689C-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -181,7 +167,7 @@ guid "{07B3DB34-689C-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 13
+// entity 11
 {
 guid "{43468160-689D-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -189,21 +175,13 @@ guid "{43468160-689D-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "-52910.1 -3690.51 -0.0149662"
 }
-// entity 14
-{
-guid "{43468163-689D-11E7-83AF-14DDA9E204AF}"
-"classname" "misc_prefab"
-"angles" "360 315 8.58307e-005"
-"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_side.map"
-"origin" "1651.28 -22245.3 0.223357"
-}
-// entity 15
+// entity 12
 {
 guid "{56DD47C5-689F-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_bulkhead_block.map"
 }
-// entity 16
+// entity 13
 {
 guid "{56DD47DF-689F-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -211,7 +189,7 @@ guid "{56DD47DF-689F-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_bulkhead_block.map"
 "origin" "-52992.4 -3603.58 0"
 }
-// entity 17
+// entity 14
 {
 guid "{94F98DFD-689F-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -219,7 +197,7 @@ guid "{94F98DFD-689F-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_bulkhead_block.map"
 "origin" "-52822.6 -3773.33 0"
 }
-// entity 18
+// entity 15
 {
 guid "{122633DE-68A0-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -233,7 +211,7 @@ guid "{122633DE-68A0-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 19
+// entity 16
 {
 guid "{122633E1-68A0-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -247,7 +225,7 @@ guid "{122633E1-68A0-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 20
+// entity 17
 {
 guid "{122633E4-68A0-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -261,7 +239,7 @@ guid "{122633E4-68A0-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 21
+// entity 18
 {
 guid "{122633E7-68A0-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -269,15 +247,7 @@ guid "{122633E7-68A0-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_bulkhead_block.map"
 "origin" "-38294 12739.8 0"
 }
-// entity 22
-{
-guid "{609F17CE-68A1-11E7-83AF-14DDA9E204AF}"
-"classname" "misc_prefab"
-"angles" "0 270 0"
-"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_block_no_bulkhead.map"
-"origin" "-12739.5 -38960.8 0"
-}
-// entity 23
+// entity 19
 {
 guid "{F215109C-68A1-11E7-83AF-14DDA9E204AF}"
 "classname" "reflection_probe"
@@ -306,7 +276,7 @@ guid "{F215109C-68A1-11E7-83AF-14DDA9E204AF}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 24
+// entity 20
 {
 guid "{1A4A39C8-68A2-11E7-83AF-14DDA9E204AF}"
 "classname" "reflection_probe"
@@ -357,7 +327,7 @@ guid "{1A4A39C8-68A2-11E7-83AF-14DDA9E204AF}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 25
+// entity 21
 {
 guid "{A71DA617-68A3-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -371,7 +341,7 @@ guid "{A71DA617-68A3-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 26
+// entity 22
 {
 guid "{CB52E761-68A3-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -379,7 +349,7 @@ guid "{CB52E761-68A3-11E7-83AF-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
 "origin" "1742.11 -22192.3 0.223633"
 }
-// entity 27
+// entity 23
 {
 guid "{42B2507B-68A6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -393,7 +363,7 @@ guid "{42B2507B-68A6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 28
+// entity 24
 {
 guid "{953BF46A-68A6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -407,7 +377,7 @@ guid "{953BF46A-68A6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 29
+// entity 25
 {
 guid "{F14F7732-68A6-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -421,7 +391,7 @@ guid "{F14F7732-68A6-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 30
+// entity 26
 {
 guid "{EB03F3AE-68A7-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -435,7 +405,7 @@ guid "{EB03F3AE-68A7-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 31
+// entity 27
 {
 guid "{18FC211A-68AF-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -449,7 +419,7 @@ guid "{18FC211A-68AF-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 32
+// entity 28
 {
 guid "{509F8B32-68AF-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -462,7 +432,7 @@ guid "{509F8B32-68AF-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 33
+// entity 29
 {
 guid "{B62F2D47-68AF-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -476,7 +446,7 @@ guid "{B62F2D47-68AF-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 34
+// entity 30
 {
 guid "{CFB2CA6F-68AF-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -490,7 +460,7 @@ guid "{CFB2CA6F-68AF-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 35
+// entity 31
 {
 guid "{46310BAE-68B0-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -504,7 +474,7 @@ guid "{46310BAE-68B0-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 36
+// entity 32
 {
 guid "{D180A214-68B0-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -518,7 +488,7 @@ guid "{D180A214-68B0-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 37
+// entity 33
 {
 guid "{EC820A64-6949-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -532,7 +502,7 @@ guid "{EC820A64-6949-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 38
+// entity 34
 {
 guid "{39AA137F-694A-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -546,7 +516,7 @@ guid "{39AA137F-694A-11E7-83AF-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 39
+// entity 35
 {
 guid "{80314856-694A-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
@@ -559,4 +529,462 @@ guid "{80314856-694A-11E7-83AF-14DDA9E204AF}"
 "lightingstate3" "1"
 "lightingstate4" "1"
 "static" "1"
+}
+// entity 36
+{
+guid "{40D3810A-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "torrens_coridoor_side"
+"modelscale" "2.5"
+"origin" "-25850.3 -12732.5 11731.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 37
+{
+guid "{40D3810D-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 -90 0"
+"model" "torrens_coridoor_side"
+"modelscale" "2.5"
+"origin" "-25850.3 -12822.5 11731.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 38
+{
+guid "{40D38110-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "torrens_coridoor_floor"
+"modelscale" "2.5"
+"origin" "-25849.5 -12777.5 11733.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 39
+{
+guid "{40D38113-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "torrens_coridoor_ceiling"
+"modelscale" "2.5"
+"origin" "-25849.5 -12777.5 11731.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 40
+{
+guid "{40D38116-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_prefab"
+"angles" "360 180 2.36444e-005"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
+"origin" "-51701 -25555 -0.0498047"
+}
+// entity 41
+{
+guid "{40D38119-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
+}
+// entity 42
+{
+guid "{40D3813A-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 0 180"
+"model" "torrens_coridoor_light"
+"modelscale" "2.5"
+"origin" "-25850.3 -12824.8 11813.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 43
+{
+guid "{40D3813D-E729-11E7-A56C-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9098 0.9055 0.7707"
+"client_server" "ServerSide"
+"cut_on" "6"
+"falloffdistance" "3"
+"far_edge" "0"
+"fov_outer" "78"
+"name" "light_004"
+"origin" "-25850.3 -12824.8 11839"
+"ortho_effect" "1"
+"radius" "52"
+"roundness" "0"
+"scriptable" "1"
+"stops" "19.6000000029802"
+"superellipse" "0.05 0.13 0.94 1"
+"targetName" "TORRENS_CORIDOOR_LIGHT_LONG_2"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "124"
+}
+// entity 44
+{
+guid "{40D3814C-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 0 180"
+"model" "torrens_coridoor_light"
+"modelscale" "2.5"
+"origin" "-25850.3 -12730.3 11813.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 45
+{
+guid "{40D3814F-E729-11E7-A56C-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9098 0.9055 0.7707"
+"client_server" "ServerSide"
+"cut_on" "6"
+"falloffdistance" "3"
+"far_edge" "0"
+"fov_outer" "78"
+"name" "light_004"
+"origin" "-25850.3 -12730.3 11839"
+"ortho_effect" "1"
+"radius" "52"
+"roundness" "0"
+"scriptable" "1"
+"stops" "19.6000000029802"
+"superellipse" "0.05 0.13 0.94 1"
+"targetName" "TORRENS_CORIDOOR_LIGHT_LONG_1"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "124"
+}
+// entity 46
+{
+guid "{4844610E-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 315 -180"
+"model" "torrens_coridoor_light"
+"modelscale" "2.5"
+"origin" "-25629.3 -12968.1 11814"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 47
+{
+guid "{48446111-E729-11E7-A56C-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9098 0.9055 0.7707"
+"angles" "0 315 8.58307e-005"
+"client_server" "ServerSide"
+"cut_on" "6"
+"falloffdistance" "3"
+"far_edge" "0"
+"fov_outer" "78"
+"name" "light_004"
+"origin" "-25629.3 -12968.1 11839.2"
+"ortho_effect" "1"
+"radius" "52"
+"roundness" "0"
+"scriptable" "1"
+"stops" "19.6000000029802"
+"superellipse" "0.05 0.13 0.94 1"
+"targetName" "TORRENS_CORIDOOR_LIGHT_LONG_4"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "124"
+}
+// entity 48
+{
+guid "{48446120-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 315 -180"
+"model" "torrens_coridoor_light"
+"modelscale" "2.5"
+"origin" "-25707.1 -12890.6 11814"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 49
+{
+guid "{48446123-E729-11E7-A56C-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9098 0.9055 0.7707"
+"angles" "0 315 8.58307e-005"
+"client_server" "ServerSide"
+"cut_on" "6"
+"falloffdistance" "3"
+"far_edge" "0"
+"fov_outer" "78"
+"name" "light_004"
+"origin" "-25707.1 -12890.6 11839.2"
+"ortho_effect" "1"
+"radius" "52"
+"roundness" "0"
+"scriptable" "1"
+"stops" "19.6000000029802"
+"superellipse" "0.05 0.13 0.94 1"
+"targetName" "TORRENS_CORIDOOR_LIGHT_LONG_3"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "124"
+}
+// entity 50
+{
+guid "{48446132-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 360 0"
+"model" "torrens_coridoor_side"
+"modelscale" "2.5"
+"origin" "-25472 -13110.5 11731.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 51
+{
+guid "{48446135-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 180 0"
+"model" "torrens_coridoor_side"
+"modelscale" "2.5"
+"origin" "-25562 -13110.5 11731.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 52
+{
+guid "{48446138-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 360 0"
+"model" "torrens_coridoor_floor"
+"modelscale" "2.5"
+"origin" "-25517 -13111.3 11733.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 53
+{
+guid "{4844613B-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 360 0"
+"model" "torrens_coridoor_ceiling"
+"modelscale" "2.5"
+"origin" "-25517 -13111.3 11731.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 54
+{
+guid "{4844613E-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_prefab"
+"angles" "0 90 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
+"origin" "-38294.5 12740.2 -0.0498047"
+}
+// entity 55
+{
+guid "{48446141-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_prefab"
+"angles" "0 270 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/coridoor_light_low.map"
+"origin" "-12739.5 -38960.8 0"
+}
+// entity 56
+{
+guid "{4E70A790-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 270 -180"
+"model" "torrens_coridoor_light"
+"modelscale" "2.5"
+"origin" "-25469.8 -13110.5 11813.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 57
+{
+guid "{4E70A793-E729-11E7-A56C-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9098 0.9055 0.7707"
+"angles" "0 270 0"
+"client_server" "ServerSide"
+"cut_on" "6"
+"falloffdistance" "3"
+"far_edge" "0"
+"fov_outer" "78"
+"name" "light_004"
+"origin" "-25469.8 -13110.5 11839"
+"ortho_effect" "1"
+"radius" "52"
+"roundness" "0"
+"scriptable" "1"
+"stops" "19.6000000029802"
+"superellipse" "0.05 0.13 0.94 1"
+"targetName" "TORRENS_CORIDOOR_LIGHT_LONG_6"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "124"
+}
+// entity 58
+{
+guid "{4E70A7A2-E729-11E7-A56C-0015833D0A57}"
+"classname" "misc_model"
+"angles" "0 270 -180"
+"model" "torrens_coridoor_light"
+"modelscale" "2.5"
+"origin" "-25564.3 -13110.5 11813.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 59
+{
+guid "{4E70A7A5-E729-11E7-A56C-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.9098 0.9055 0.7707"
+"angles" "0 270 0"
+"client_server" "ServerSide"
+"cut_on" "6"
+"falloffdistance" "3"
+"far_edge" "0"
+"fov_outer" "78"
+"name" "light_004"
+"origin" "-25564.3 -13110.5 11839"
+"ortho_effect" "1"
+"radius" "52"
+"roundness" "0"
+"scriptable" "1"
+"stops" "19.6000000029802"
+"superellipse" "0.05 0.13 0.94 1"
+"targetName" "TORRENS_CORIDOOR_LIGHT_LONG_5"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "124"
 }

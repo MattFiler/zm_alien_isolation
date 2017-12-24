@@ -65,16 +65,27 @@ function LUI.createMenu.popup_zm_alien_isolation(InstanceRef)
 	AYZ_ObjectivePopup.Text:setRGB(1, 1, 1) -- White
     
 	local function updateObjectiveText(ModelRef)
-		local objectiveText = Engine.GetModelValue(ModelRef)
-		AYZ_ObjectivePopup.Text:setText(objectiveText) -- Update text
+		if IsParamModelEqualToString(ModelRef, "AlienIsolationObjectivePopup") then
+			local objectiveText = CoD.GetScriptNotifyData(ModelRef)
+			AYZ_ObjectivePopup.Text:setText(objectiveText[1]) -- Update text
+		end
 	end
 	
-    HudRef:subscribeToModel(Engine.GetModel(Engine.GetModelForController(InstanceRef), "AlienIsolationObjectivePopup"), updateObjectiveText)
+	local function updateObjectiveTextNew(ModelRef)
+        if IsParamModelEqualToString(ModelRef, "AlienIsolationObjectivePopup") then
+            AYZ_ObjectivePopup.Text:setText("is update")
+        end
+    end
+	
+    HudRef:subscribeToGlobalModel(InstanceRef, "PerController", "scriptNotify", updateObjectiveTextNew)
     
 	HudRef:addElement(AYZ_ObjectivePopup_Header)
     HudRef.AlienObjectivePopupHeader = AYZ_ObjectivePopup_Header
     HudRef:addElement(AYZ_ObjectivePopup)
     HudRef.AlienObjectivePopup = AYZ_ObjectivePopup
+	
+	
+	
 	
 		
 		
