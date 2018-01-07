@@ -100,9 +100,9 @@
 
 //Precache UI
 //#precache("lui_menu", "T7Hud_zm_alien_isolation");
-#precache("lui_menu", "popup_zm_alien_isolation");
+//#precache("lui_menu", "popup_zm_alien_isolation");
 //#precache("lui_menu_data", "AlienIsolationObjectivePopup");
-#precache("eventstring", "AlienIsolationObjectivePopup");
+//#precache("eventstring", "AlienIsolationObjectivePopup");
 
 //Precache FX
 #precache("fx", "zm_alien_isolation/TowPlatform_WarningLight"); //Our warning light to spin

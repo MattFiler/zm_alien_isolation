@@ -49,7 +49,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	SetDvar("ai_disableSpawn", "1");
 	
 	//Start script to handle coridoor light effects
-	thread coridoorLightHandler();
+	//thread coridoorLightHandler();
 	
 	//Take stuff you'd normally get on spawn
 	level.start_weapon = level.weaponNone;
@@ -237,7 +237,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	thread primeTorrensAutomaticDoor("crewcoridoor", 1); //Door to coridoor to crew quarters
 	thread primeTorrensAutomaticDoor("crewroom", 2); //Door to crew quarters
 	thread primeTorrensAutomaticDoor("spawntoairlockjunction", 2); //Door to airlock junction from spawn
-	//thread primeTorrensAutomaticDoor("canteencoridoor", 1); //Door to coridoor to canteen
+	thread primeTorrensAutomaticDoor("canteencoridoor", 1); //Door to coridoor to canteen
 	thread primeTorrensAutomaticDoor("canteen", 1); //Door to canteen
 	thread primeTorrensAutomaticDoor("bridge", 1); //Door to the bridge
 	thread primeTorrensAutomaticDoor("medbaycoridoor", 2); //Door to coridoor to medbay from junction
@@ -751,105 +751,108 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 	doorTriggerZone = getEnt("torrens_doortrigger_" + doorID, "targetname"); //grab our trigger zone
 	doorTriggerZone NotSolid();
 	
-	if (doorID == "bridge") {
-		doorEntity = getEnt("torrens_door_bridge", "targetname");
-		doorEntity SetHintString(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED); //TODO: FIX THIS
-		doorEntity setCursorHint("HINT_NOICON");
-		self waittill("torrens_enable_bridge_door");
-		doorEntity SetHintString("");
-		//TODO: swap door lights here
-	}
-	
-	if (doorID == "spawntoairlockjunction") {
-		doorEntity = getEnt("torrens_door_spawntoairlockjunction", "targetname");
-		doorEntity SetHintString("Low power"); //TODO: FIX THIS
-		doorEntity setCursorHint("HINT_NOICON");
-		level waittill("torrens_brokendoor_fixed");
-		doorEntity SetHintString("");
-		//TODO: swap door lights here
-	}
-	
-	while(1) {
-		all_players_aboard_torrens = GetPlayers();
-		player_in_door_zone = false;
-		foreach (a_torrens_player in all_players_aboard_torrens) {
-			if (a_torrens_player IsTouching(doorTriggerZone) == true) {
-				player_in_door_zone = true; //player is in door zone, we should open or be open
-			} else {
-				continue;
-			}
+	//Only run door script if not canteencoridoor - that has been depreciated.
+	if (doorID != "canteencoridoor") {
+		if (doorID == "bridge") {
+			doorEntity = getEnt("torrens_door_bridge", "targetname");
+			doorEntity SetHintString(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED); //TODO: FIX THIS
+			doorEntity setCursorHint("HINT_NOICON");
+			self waittill("torrens_enable_bridge_door");
+			doorEntity SetHintString("");
+			//TODO: swap door lights here
 		}
 		
-		//check if door is open or not
-		doorIsOpen = false;
-		foreach (openDoor in level.currentlyOpenDoors) {
-			if (doorID == openDoor) {
-				doorIsOpen = true;
-			}
+		if (doorID == "spawntoairlockjunction") {
+			doorEntity = getEnt("torrens_door_spawntoairlockjunction", "targetname");
+			doorEntity SetHintString("Low power"); //TODO: FIX THIS
+			doorEntity setCursorHint("HINT_NOICON");
+			level waittill("torrens_brokendoor_fixed");
+			doorEntity SetHintString("");
+			//TODO: swap door lights here
 		}
 		
-		if (player_in_door_zone == true) {
-			//At least one player is in the zone. We should open the door if it's not already open.
-			if (doorIsOpen == false) {
-				wait(0.1); //delay a bit
-			
-				if (doorType == 1) {
-					doorEntity = getEnt("torrens_door_" + doorID, "targetname");
-					
-					doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.2, 0.5, 0.5);
-					doorEntity PlaySound("zm_alien_isolation_torrens_door_open");
-					
-					wait(1.2); //wait for anim to finish
-				}
-				if (doorType == 2) {
-					doorEntity = getEnt("torrens_door_" + doorID, "targetname");
-					
-					doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.7, 0.5, 0.5);
-					doorEntity PlaySound("zm_alien_isolation__smalldoor_open");
-					
-					wait(1.7); //wait for anim to finish
-				}
-				if (doorType == 3) {
-					doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
-					doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
-					
-					doorEntity1 MoveTo(doorEntity1.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
-					doorEntity1 PlaySound("zm_alien_isolation_torrens_medbay_open");
-					doorEntity2 MoveTo(doorEntity2.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
-					
-					wait(1.2); //wait for anim to finish
-				}
-				
-				wait(2); //wait a bit
-				
-				ArrayInsert(level.currentlyOpenDoors, doorID, level.currentlyOpenDoors.size); //remember that the door is open
-			}
-		} else {
-			//No players are in the zone, we should close (if open).
-			if (doorIsOpen == true) {
-				if (doorType != 3) {
-					doorEntity = getEnt("torrens_door_" + doorID, "targetname");
-					
-					doorEntity MoveTo(doorEntity.origin - (0,0,76), 1.7, 0.5, 0.5);
-					doorEntity PlaySound("zm_alien_isolation_torrens_door_close");
-					
-					wait(1.7); //wait for anim to finish
+		while(1) {
+			all_players_aboard_torrens = GetPlayers();
+			player_in_door_zone = false;
+			foreach (a_torrens_player in all_players_aboard_torrens) {
+				if (a_torrens_player IsTouching(doorTriggerZone) == true) {
+					player_in_door_zone = true; //player is in door zone, we should open or be open
 				} else {
-					doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
-					doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
-					
-					doorEntity1 MoveTo(doorEntity1.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
-					doorEntity1 PlaySound("zm_alien_isolation_torrens_medbay_close");
-					doorEntity2 MoveTo(doorEntity2.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
-					
-					wait(1.2); //wait for anim to finish
+					continue;
 				}
-			
-				ArrayRemoveValue(level.currentlyOpenDoors, doorID); //remove from open array
 			}
+			
+			//check if door is open or not
+			doorIsOpen = false;
+			foreach (openDoor in level.currentlyOpenDoors) {
+				if (doorID == openDoor) {
+					doorIsOpen = true;
+				}
+			}
+			
+			if (player_in_door_zone == true) {
+				//At least one player is in the zone. We should open the door if it's not already open.
+				if (doorIsOpen == false) {
+					wait(0.1); //delay a bit
+				
+					if (doorType == 1) {
+						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						
+						doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.2, 0.5, 0.5);
+						doorEntity PlaySound("zm_alien_isolation_torrens_door_open");
+						
+						wait(1.2); //wait for anim to finish
+					}
+					if (doorType == 2) {
+						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						
+						doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.7, 0.5, 0.5);
+						doorEntity PlaySound("zm_alien_isolation__smalldoor_open");
+						
+						wait(1.7); //wait for anim to finish
+					}
+					if (doorType == 3) {
+						doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
+						doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
+						
+						doorEntity1 MoveTo(doorEntity1.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
+						doorEntity1 PlaySound("zm_alien_isolation_torrens_medbay_open");
+						doorEntity2 MoveTo(doorEntity2.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
+						
+						wait(1.2); //wait for anim to finish
+					}
+					
+					wait(2); //wait a bit
+					
+					ArrayInsert(level.currentlyOpenDoors, doorID, level.currentlyOpenDoors.size); //remember that the door is open
+				}
+			} else {
+				//No players are in the zone, we should close (if open).
+				if (doorIsOpen == true) {
+					if (doorType != 3) {
+						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						
+						doorEntity MoveTo(doorEntity.origin - (0,0,76), 1.7, 0.5, 0.5);
+						doorEntity PlaySound("zm_alien_isolation_torrens_door_close");
+						
+						wait(1.7); //wait for anim to finish
+					} else {
+						doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
+						doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
+						
+						doorEntity1 MoveTo(doorEntity1.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
+						doorEntity1 PlaySound("zm_alien_isolation_torrens_medbay_close");
+						doorEntity2 MoveTo(doorEntity2.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
+						
+						wait(1.2); //wait for anim to finish
+					}
+				
+					ArrayRemoveValue(level.currentlyOpenDoors, doorID); //remove from open array
+				}
+			}
+			
+			wait 0.1;
 		}
-		
-		wait 0.1;
 	}
 }
 
@@ -861,9 +864,10 @@ function coridoorLightHandler() {
 	level.habLightRotations = array();
 	for (i=1;i<7;i++) {
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_LONG_"+i, "targetname");
-		ArrayInsert(level.habLightOrigins, habLight.origin, level.habLightOrigins.size); 
-		ArrayInsert(level.habLightRotations, habLight.angles, level.habLightRotations.size); 
-		habLight.origin = (-26428 , -13031 , 11752.5);
+		//ArrayInsert(level.habLightOrigins, habLight.origin, level.habLightOrigins.size); 
+		//ArrayInsert(level.habLightRotations, habLight.angles, level.habLightRotations.size); 
+		//habLight.origin = (-26428 , -13031 , 11752.5);
+		habLight.stops = 0;
 	}
 	
 	//Get all SCI lights (zone 2+3 - zone 2 up to 6)
@@ -873,14 +877,16 @@ function coridoorLightHandler() {
 	level.sciLightBottomRotations = array();
 	for (i=1;i<15;i++) {
 		sciLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
-		ArrayInsert(level.sciLightTopOrigins, sciLight.origin, level.sciLightTopOrigins.size); 
-		ArrayInsert(level.sciLightTopRotations, sciLight.angles, level.sciLightTopRotations.size); 
-		sciLight.origin = (-26428 , -13031 , 11752.5);
+		//ArrayInsert(level.sciLightTopOrigins, sciLight.origin, level.sciLightTopOrigins.size); 
+		//ArrayInsert(level.sciLightTopRotations, sciLight.angles, level.sciLightTopRotations.size); 
+		//sciLight.origin = (-26428 , -13031 , 11752.5);
+		sciLight.stops = 0;
 		
 		sciLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
-		ArrayInsert(level.sciLightBottomOrigins, sciLight2.origin, level.sciLightBottomOrigins.size); 
-		ArrayInsert(level.sciLightBottomRotations, sciLight2.angles, level.sciLightBottomRotations.size); 
-		sciLight2.origin = (-26428 , -13031 , 11752.5);
+		//ArrayInsert(level.sciLightBottomOrigins, sciLight2.origin, level.sciLightBottomOrigins.size); 
+		//ArrayInsert(level.sciLightBottomRotations, sciLight2.angles, level.sciLightBottomRotations.size); 
+		//sciLight2.origin = (-26428 , -13031 , 11752.5);
+		sciLight2.stops = 0;
 	}
 	
 	
@@ -908,8 +914,9 @@ function coridoorLightHandler() {
 			wait (0.5); //delay between light groups
 		}
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_LONG_"+i, "targetname");
-		habLight.origin = level.habLightOrigins[i];
-		habLight.angles = level.habLightRotations[i];
+		//habLight.origin = level.habLightOrigins[i];
+		//habLight.angles = level.habLightRotations[i];
+		habLight.stops = 20;
 		
 		iprintlnbold("DEBUG: MOVED HAB LIGHT " + i);
 	}
@@ -940,12 +947,14 @@ function coridoorLightHandler() {
 			wait (0.5); //delay between light groups
 		}
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
-		habLight.origin = level.sciLightTopOrigins[i];
-		habLight.angles = level.sciLightTopRotations[i];
+		//habLight.origin = level.sciLightTopOrigins[i];
+		//habLight.angles = level.sciLightTopRotations[i];
+		habLight.stops = 20;
 		
 		habLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
-		habLight2.origin = level.sciLightBottomOrigins[i];
-		habLight2.angles = level.sciLightBottomRotations[i];
+		//habLight2.origin = level.sciLightBottomOrigins[i];
+		//habLight2.angles = level.sciLightBottomRotations[i];
+		habLight2.stops = 20;
 		
 		iprintlnbold("DEBUG: MOVED SCI LIGHT " + i);
 	}
@@ -977,11 +986,13 @@ function coridoorLightHandler() {
 			wait (1); //delay between light groups
 		}
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
-		habLight.origin = level.sciLightTopOrigins[i];
-		habLight.angles = level.sciLightTopRotations[i];
+		//habLight.origin = level.sciLightTopOrigins[i];
+		//habLight.angles = level.sciLightTopRotations[i];
+		habLight.stops = 20;
 		habLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
-		habLight2.origin = level.sciLightBottomOrigins[i];
-		habLight2.angles = level.sciLightBottomRotations[i];
+		//habLight2.origin = level.sciLightBottomOrigins[i];
+		//habLight2.angles = level.sciLightBottomRotations[i];
+		habLight2.stops = 20;
 		
 		iprintlnbold("DEBUG: MOVED SCI LIGHT " + i);
 		iprintlnbold("DEBUG: ANGLE " + habLight2.angles);
