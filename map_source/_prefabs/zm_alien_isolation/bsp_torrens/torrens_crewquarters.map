@@ -42,6 +42,7 @@ guid "{8681FB2D-6D28-11E7-A55C-14DDA9E204AF}"
 {
 guid "{E0CA657E-6D2C-11E7-A55C-14DDA9E204AF}"
 "classname" "misc_model"
+"NO_SHADOW" "1"
 "angles" "0 45 0"
 "model" "torrens_crewquarters_middle"
 "modelscale" "2.5"
@@ -51,6 +52,7 @@ guid "{E0CA657E-6D2C-11E7-A55C-14DDA9E204AF}"
 "lightingstate3" "1"
 "lightingstate4" "1"
 "static" "1"
+"spawnflags" "2"
 }
 // entity 3
 {

@@ -152,6 +152,9 @@ function main()
 	//Run all nodding bird animations
 	thread play_nodding_bird(); 
 	
+	//Play all robotoy sfx
+	thread play_robotoy_stuff();
+	
 	//Start our random background sounds (helps with the "worldbuilding")
 	thread random_background_sounds();
 	thread random_background_sounds_towPlatform();
@@ -318,6 +321,44 @@ function single_nodding_bird(bird) {
 		wait(2);
 		bird RotatePitch(90, 2, 1, 1);
 		wait(2);
+	}
+}
+
+
+//Mini Robot SFX
+function play_robotoy_stuff() {
+	all_robotoys = GetEntArray("robotoy", "targetname");
+	foreach(robotoy in all_robotoys) {
+		thread single_robotoy(robotoy);
+	}
+}
+function single_robotoy(robotoy) {
+	while(true) {
+		if (randomintrange(1,100) > 50) {
+			//Loop through all 8 sounds FORWARDS
+			loopcount = 0;
+			while (loopcount < 8) {
+				loopcount = loopcount + 1;
+				
+				//Wait anywhere from 10 to 20 secs between sound clips
+				wait(randomintrange(10,20));
+				
+				//Play sound
+				robotoy PlaySound("zm_alien_isolation_robotoy_"+loopcount);
+			}
+		} else {
+			//Loop through all 8 sounds BACKWARDS
+			loopcount = 8;
+			while (loopcount > 0) {
+				//Wait anywhere from 10 to 20 secs between sound clips
+				wait(randomintrange(10,20));
+					
+				//Play sound
+				robotoy PlaySound("zm_alien_isolation_robotoy_"+loopcount);
+				
+				loopcount = loopcount - 1;
+			}
+		}
 	}
 }
 

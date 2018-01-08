@@ -246,8 +246,11 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	//Open spawnroom door
 	wait(1);
 	spawnDoor = getEnt("torrensSpawnDoor", "targetname");
+	spawnDoorClip = getEnt("torrensSpawnDoor_clip", "targetname");
+	
 	spawnDoor MoveTo(spawnDoor.origin + (0,0,76), 2, 1, 1);
 	spawnDoor PlaySound("zm_alien_isolation__smalldoor_open");
+	spawnDoorClip MoveTo(spawnDoorClip.origin + (0,0,76), 2, 1, 1);
 	wait(1);
 	
 	//Update objective
@@ -265,8 +268,9 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	trigger_reroute_power SetHintString("Hold ^3[{+activate}]^7 to reroute power"); //Update hint string
 	trigger_reroute_power waittill("trigger", player);
 	access_rewire = getEnt("torrens_access_rewire", "targetname");
-	access_rewire RotateTo((0,-145,180), 1, 0.5, 0.5);
+	access_rewire RotateTo((0,90,180), 1, 0.5, 0.5);
 	access_rewire PlaySound("zm_alien_isolation__tow_monitor_changed"); //sfx
+	trigger_reroute_power SetHintString(""); //Update hint string
 	level notify("torrens_brokendoor_fixed");
 	wait(1.5);
 	thread show_new_objective("Explore the Torrens.");
@@ -797,27 +801,38 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 				
 					if (doorType == 1) {
 						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						doorClip = getEnt("torrens_door_" + doorID + "_clip", "targetname");
 						
 						doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.2, 0.5, 0.5);
 						doorEntity PlaySound("zm_alien_isolation_torrens_door_open");
+						
+						doorClip MoveTo(doorClip.origin + (0,0,76), 1.2, 0.5, 0.5);
 						
 						wait(1.2); //wait for anim to finish
 					}
 					if (doorType == 2) {
 						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						doorClip = getEnt("torrens_door_" + doorID + "_clip", "targetname");
 						
 						doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.7, 0.5, 0.5);
 						doorEntity PlaySound("zm_alien_isolation__smalldoor_open");
+						
+						doorClip MoveTo(doorClip.origin + (0,0,76), 1.7, 0.5, 0.5);
 						
 						wait(1.7); //wait for anim to finish
 					}
 					if (doorType == 3) {
 						doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
+						doorClip1 = getEnt("torrens_door_" + doorID + "1_clip", "targetname");
 						doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
+						doorClip2 = getEnt("torrens_door_" + doorID + "2_clip", "targetname");
 						
 						doorEntity1 MoveTo(doorEntity1.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
 						doorEntity1 PlaySound("zm_alien_isolation_torrens_medbay_open");
 						doorEntity2 MoveTo(doorEntity2.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
+						
+						doorClip1 MoveTo(doorClip1.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
+						doorClip2 MoveTo(doorClip2.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
 						
 						wait(1.2); //wait for anim to finish
 					}
@@ -831,18 +846,26 @@ function primeTorrensAutomaticDoor(doorID, doorType) {
 				if (doorIsOpen == true) {
 					if (doorType != 3) {
 						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						doorClip = getEnt("torrens_door_" + doorID + "_clip", "targetname");
 						
 						doorEntity MoveTo(doorEntity.origin - (0,0,76), 1.7, 0.5, 0.5);
 						doorEntity PlaySound("zm_alien_isolation_torrens_door_close");
 						
+						doorClip MoveTo(doorClip.origin - (0,0,76), 1.7, 0.5, 0.5);
+						
 						wait(1.7); //wait for anim to finish
 					} else {
 						doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
+						doorClip1 = getEnt("torrens_door_" + doorID + "1_clip", "targetname");
 						doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
+						doorClip2 = getEnt("torrens_door_" + doorID + "2_clip", "targetname");
 						
 						doorEntity1 MoveTo(doorEntity1.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
 						doorEntity1 PlaySound("zm_alien_isolation_torrens_medbay_close");
 						doorEntity2 MoveTo(doorEntity2.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
+						
+						doorClip1 MoveTo(doorClip1.origin + (39.2,39.2,0), 1.2, 0.5, 0.5);
+						doorClip2 MoveTo(doorClip2.origin - (39.2,39.2,0), 1.1, 0.5, 0.5);
 						
 						wait(1.2); //wait for anim to finish
 					}
@@ -864,10 +887,9 @@ function coridoorLightHandler() {
 	level.habLightRotations = array();
 	for (i=1;i<7;i++) {
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_LONG_"+i, "targetname");
-		//ArrayInsert(level.habLightOrigins, habLight.origin, level.habLightOrigins.size); 
-		//ArrayInsert(level.habLightRotations, habLight.angles, level.habLightRotations.size); 
-		//habLight.origin = (-26428 , -13031 , 11752.5);
-		habLight.stops = 0;
+		ArrayInsert(level.habLightOrigins, habLight.origin, level.habLightOrigins.size); 
+		ArrayInsert(level.habLightRotations, habLight.angles, level.habLightRotations.size); 
+		habLight.origin = (-26428 , -13031 , 11752.5);
 	}
 	
 	//Get all SCI lights (zone 2+3 - zone 2 up to 6)
@@ -877,16 +899,14 @@ function coridoorLightHandler() {
 	level.sciLightBottomRotations = array();
 	for (i=1;i<15;i++) {
 		sciLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
-		//ArrayInsert(level.sciLightTopOrigins, sciLight.origin, level.sciLightTopOrigins.size); 
-		//ArrayInsert(level.sciLightTopRotations, sciLight.angles, level.sciLightTopRotations.size); 
-		//sciLight.origin = (-26428 , -13031 , 11752.5);
-		sciLight.stops = 0;
+		ArrayInsert(level.sciLightTopOrigins, sciLight.origin, level.sciLightTopOrigins.size); 
+		ArrayInsert(level.sciLightTopRotations, sciLight.angles, level.sciLightTopRotations.size); 
+		sciLight.origin = (-26428 , -13031 , 11752.5);
 		
 		sciLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
-		//ArrayInsert(level.sciLightBottomOrigins, sciLight2.origin, level.sciLightBottomOrigins.size); 
-		//ArrayInsert(level.sciLightBottomRotations, sciLight2.angles, level.sciLightBottomRotations.size); 
-		//sciLight2.origin = (-26428 , -13031 , 11752.5);
-		sciLight2.stops = 0;
+		ArrayInsert(level.sciLightBottomOrigins, sciLight2.origin, level.sciLightBottomOrigins.size); 
+		ArrayInsert(level.sciLightBottomRotations, sciLight2.angles, level.sciLightBottomRotations.size); 
+		sciLight2.origin = (-26428 , -13031 , 11752.5);
 	}
 	
 	
@@ -914,9 +934,14 @@ function coridoorLightHandler() {
 			wait (0.5); //delay between light groups
 		}
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_LONG_"+i, "targetname");
-		//habLight.origin = level.habLightOrigins[i];
-		//habLight.angles = level.habLightRotations[i];
-		habLight.stops = 20;
+		habLight.origin = level.habLightOrigins[i];
+		habLight.angles = level.habLightRotations[i];
+		
+		if (i==6) {
+			iprintlnbold("correctedangleoflight");
+			iprintlnbold("shouldbe 0,270,0 - actually - " + level.habLightRotations[i]);
+			habLight.angles = (0, 270, 0);
+		}
 		
 		iprintlnbold("DEBUG: MOVED HAB LIGHT " + i);
 	}
@@ -947,14 +972,12 @@ function coridoorLightHandler() {
 			wait (0.5); //delay between light groups
 		}
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
-		//habLight.origin = level.sciLightTopOrigins[i];
-		//habLight.angles = level.sciLightTopRotations[i];
-		habLight.stops = 20;
+		habLight.origin = level.sciLightTopOrigins[i];
+		habLight.angles = level.sciLightTopRotations[i];
 		
 		habLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
-		//habLight2.origin = level.sciLightBottomOrigins[i];
-		//habLight2.angles = level.sciLightBottomRotations[i];
-		habLight2.stops = 20;
+		habLight2.origin = level.sciLightBottomOrigins[i];
+		habLight2.angles = level.sciLightBottomRotations[i];
 		
 		iprintlnbold("DEBUG: MOVED SCI LIGHT " + i);
 	}
@@ -986,13 +1009,12 @@ function coridoorLightHandler() {
 			wait (1); //delay between light groups
 		}
 		habLight = GetEnt("TORRENS_CORIDOOR_LIGHT_TOP_"+i, "targetname");
-		//habLight.origin = level.sciLightTopOrigins[i];
-		//habLight.angles = level.sciLightTopRotations[i];
-		habLight.stops = 20;
+		habLight.origin = level.sciLightTopOrigins[i];
+		habLight.angles = level.sciLightTopRotations[i];
+		
 		habLight2 = GetEnt("TORRENS_CORIDOOR_LIGHT_BOTTOM_"+i, "targetname");
-		//habLight2.origin = level.sciLightBottomOrigins[i];
-		//habLight2.angles = level.sciLightBottomRotations[i];
-		habLight2.stops = 20;
+		habLight2.origin = level.sciLightBottomOrigins[i];
+		habLight2.angles = level.sciLightBottomRotations[i];
 		
 		iprintlnbold("DEBUG: MOVED SCI LIGHT " + i);
 		iprintlnbold("DEBUG: ANGLE " + habLight2.angles);
