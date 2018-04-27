@@ -332,13 +332,7 @@ function single_nodding_bird(bird) {
 function play_fan_prop() {
 	all_fan_blades = GetEntArray("fan_blade_ayz", "targetname");
 	foreach(fan in all_fan_blades) {
-		thread single_fan(fan);
-	}
-}
-function single_fan(fan) {
-	while(true) {
-		fan RotateTo((360, 0, 0), 5);
-		wait(5);
+		fan Rotate((180,0,0));
 	}
 }
 

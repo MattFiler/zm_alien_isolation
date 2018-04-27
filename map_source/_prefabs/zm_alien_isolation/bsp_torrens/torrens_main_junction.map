@@ -321,34 +321,6 @@ guid "{D64929E6-6E06-11E7-A55D-14DDA9E204AF}"
 }
 // entity 14
 {
-guid "{FC31BBFF-6E06-11E7-A55D-14DDA9E204AF}"
-"classname" "misc_model"
-"angles" "0 45 0"
-"model" "tow_airlock_suitcupboard"
-"modelscale" "2.5"
-"origin" "-25433.4 -13449.4 11733"
-"lightingstate1" "1"
-"lightingstate2" "1"
-"lightingstate3" "1"
-"lightingstate4" "1"
-"static" "1"
-}
-// entity 15
-{
-guid "{1E073D2A-6E07-11E7-A55D-14DDA9E204AF}"
-"classname" "misc_model"
-"angles" "0 135 0"
-"model" "tow_airlock_suitcupboard"
-"modelscale" "2.5"
-"origin" "-25434.2 -13277.7 11733"
-"lightingstate1" "1"
-"lightingstate2" "1"
-"lightingstate3" "1"
-"lightingstate4" "1"
-"static" "1"
-}
-// entity 16
-{
 guid "{242E9F59-6E07-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
 "angles" "0 180.992 0"
@@ -361,7 +333,7 @@ guid "{242E9F59-6E07-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 17
+// entity 15
 {
 guid "{404D7759-6E07-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -375,7 +347,7 @@ guid "{404D7759-6E07-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 18
+// entity 16
 {
 guid "{54FC8106-6E07-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -389,7 +361,7 @@ guid "{54FC8106-6E07-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 19
+// entity 17
 {
 guid "{41A3E4EE-68C3-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_model"
