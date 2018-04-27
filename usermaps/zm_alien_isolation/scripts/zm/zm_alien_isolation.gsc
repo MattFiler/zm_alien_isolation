@@ -152,6 +152,9 @@ function main()
 	//Run all nodding bird animations
 	thread play_nodding_bird(); 
 	
+	//Run all fan animations (props)
+	thread play_fan_prop();
+	
 	//Play all robotoy sfx
 	thread play_robotoy_stuff();
 	
@@ -321,6 +324,21 @@ function single_nodding_bird(bird) {
 		wait(2);
 		bird RotatePitch(90, 2, 1, 1);
 		wait(2);
+	}
+}
+
+
+//Fan (Prop Version) Animations
+function play_fan_prop() {
+	all_fan_blades = GetEntArray("fan_blade_ayz", "targetname");
+	foreach(fan in all_fan_blades) {
+		thread single_fan(fan);
+	}
+}
+function single_fan(fan) {
+	while(true) {
+		fan RotateTo((360, 0, 0), 5);
+		wait(5);
 	}
 }
 
