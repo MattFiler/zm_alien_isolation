@@ -6,7 +6,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{6674CCF1-4A4D-11E8-A57B-14DDA9E204AF}"
+guid "{419A226E-4A69-11E8-A57C-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -46801,6 +46801,7 @@ guid "{43112107-6E0A-11E7-A55D-14DDA9E204AF}"
 "classname" "light"
 "ENABLE_FALLOFF" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.7581 0.8911 0.9294"
 "angles" "0 45 0"
 "cut_on" "4"
 "falloffdistance" "63"
@@ -46814,7 +46815,6 @@ guid "{43112107-6E0A-11E7-A55D-14DDA9E204AF}"
 "volumetricCookies" "1"
 "volumetricIntensityBoost" "7"
 "PRIMARY_NOSHADOWMAP" "1"
-"_color" "1 1 1"
 "bake_intensity_scale" "1"
 "client_server" "ClientSide"
 "def_tile" "1 1"
@@ -46838,6 +46838,7 @@ guid "{7786735A-6E0A-11E7-A55D-14DDA9E204AF}"
 "classname" "light"
 "ENABLE_FALLOFF" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.7581 0.8911 0.9294"
 "angles" "0 -45 0"
 "cut_on" "4"
 "falloffdistance" "63"
@@ -46851,7 +46852,6 @@ guid "{7786735A-6E0A-11E7-A55D-14DDA9E204AF}"
 "volumetricCookies" "1"
 "volumetricIntensityBoost" "7"
 "PRIMARY_NOSHADOWMAP" "1"
-"_color" "1 1 1"
 "bake_intensity_scale" "1"
 "client_server" "ClientSide"
 "def_tile" "1 1"
@@ -46875,6 +46875,7 @@ guid "{8AD1BA72-6E0A-11E7-A55D-14DDA9E204AF}"
 "classname" "light"
 "ENABLE_FALLOFF" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.7581 0.8911 0.9294"
 "angles" "0 225 0"
 "cut_on" "4"
 "falloffdistance" "63"
@@ -46888,7 +46889,6 @@ guid "{8AD1BA72-6E0A-11E7-A55D-14DDA9E204AF}"
 "volumetricCookies" "1"
 "volumetricIntensityBoost" "7"
 "PRIMARY_NOSHADOWMAP" "1"
-"_color" "1 1 1"
 "bake_intensity_scale" "1"
 "client_server" "ClientSide"
 "def_tile" "1 1"
@@ -46912,6 +46912,7 @@ guid "{8AD1BA75-6E0A-11E7-A55D-14DDA9E204AF}"
 "classname" "light"
 "ENABLE_FALLOFF" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.7581 0.8911 0.9294"
 "angles" "0 135 0"
 "cut_on" "4"
 "falloffdistance" "63"
@@ -46925,7 +46926,6 @@ guid "{8AD1BA75-6E0A-11E7-A55D-14DDA9E204AF}"
 "volumetricCookies" "1"
 "volumetricIntensityBoost" "7"
 "PRIMARY_NOSHADOWMAP" "1"
-"_color" "1 1 1"
 "bake_intensity_scale" "1"
 "client_server" "ClientSide"
 "def_tile" "1 1"
@@ -47155,35 +47155,6 @@ guid "{CBC8C630-6E2F-11E7-A55D-14DDA9E204AF}"
 }
 // entity 2655
 {
-guid "{D6F30754-6E30-11E7-A55D-14DDA9E204AF}"
-"classname" "reflection_probe"
-"ao_power" "8"
-"ao_range" "25"
-"ao_strength_double_sided" "0.700000007450581"
-"brightnessAdjust" "3"
-"evcomp" "-0.5"
-"name" "probe_007"
-"origin" "-25800.8 -13880.5 11808.5"
-"resolution" "8x"
-"size_max" "348.5 357.75 57.75"
-"size_min" "367.5 459 58.25"
-"smooth_post_process" "1"
-"volumetric" "1"
-"adaptive_quality_boost" "Off"
-"ao_strength" "1"
-"blend_maxs" "3 3 3"
-"blend_mins" "3 3 3"
-"box" "1"
-"client_server" "ClientSide"
-"debugColor" "1 1 1"
-"grid_density" "0"
-"high_detail" "1"
-"in_play_space" "1"
-"inpaint_occluded_rays" "1"
-"placement_offset" "72"
-}
-// entity 2656
-{
 guid "{44898845-6E34-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
 "angles" "0 223.599 0"
@@ -47196,7 +47167,7 @@ guid "{44898845-6E34-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2657
+// entity 2656
 {
 guid "{CEE36CA2-6E34-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47210,7 +47181,7 @@ guid "{CEE36CA2-6E34-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2658
+// entity 2657
 {
 guid "{FA8B4718-6E34-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47224,7 +47195,7 @@ guid "{FA8B4718-6E34-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2659
+// entity 2658
 {
 guid "{4B91915F-6E35-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47238,7 +47209,7 @@ guid "{4B91915F-6E35-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2660
+// entity 2659
 {
 guid "{51A780A1-6E35-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47252,7 +47223,7 @@ guid "{51A780A1-6E35-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2661
+// entity 2660
 {
 guid "{0A8DC296-6E37-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47266,7 +47237,7 @@ guid "{0A8DC296-6E37-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2662
+// entity 2661
 {
 guid "{66CD4586-6E37-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47280,7 +47251,7 @@ guid "{66CD4586-6E37-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2663
+// entity 2662
 {
 guid "{E0F00ED4-6E37-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47294,7 +47265,7 @@ guid "{E0F00ED4-6E37-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2664
+// entity 2663
 {
 guid "{60BCB0B7-6E38-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47308,7 +47279,7 @@ guid "{60BCB0B7-6E38-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2665
+// entity 2664
 {
 guid "{75A91F1A-6E38-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47322,7 +47293,7 @@ guid "{75A91F1A-6E38-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2666
+// entity 2665
 {
 guid "{642444F9-6E3C-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47336,7 +47307,7 @@ guid "{642444F9-6E3C-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2667
+// entity 2666
 {
 guid "{642444FC-6E3C-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47350,7 +47321,7 @@ guid "{642444FC-6E3C-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2668
+// entity 2667
 {
 guid "{9D23B907-6E3C-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47364,7 +47335,7 @@ guid "{9D23B907-6E3C-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2669
+// entity 2668
 {
 guid "{CA3C32DB-6E3C-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47378,7 +47349,7 @@ guid "{CA3C32DB-6E3C-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2670
+// entity 2669
 {
 guid "{562FC272-6E3D-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47392,7 +47363,7 @@ guid "{562FC272-6E3D-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2671
+// entity 2670
 {
 guid "{5D2997D1-6E3D-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47406,7 +47377,7 @@ guid "{5D2997D1-6E3D-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2672
+// entity 2671
 {
 guid "{B1D24AE3-6E3D-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47420,7 +47391,7 @@ guid "{B1D24AE3-6E3D-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2673
+// entity 2672
 {
 guid "{B1D24AE6-6E3D-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47434,7 +47405,7 @@ guid "{B1D24AE6-6E3D-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2674
+// entity 2673
 {
 guid "{B1D24AE9-6E3D-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47448,7 +47419,7 @@ guid "{B1D24AE9-6E3D-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2675
+// entity 2674
 {
 guid "{1D108A71-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "script_model"
@@ -47465,7 +47436,7 @@ guid "{1D108A71-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
-// entity 2676
+// entity 2675
 {
 guid "{1D108A74-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47479,7 +47450,7 @@ guid "{1D108A74-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2677
+// entity 2676
 {
 guid "{1D108A77-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47493,7 +47464,7 @@ guid "{1D108A77-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2678
+// entity 2677
 {
 guid "{38711B01-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47507,7 +47478,7 @@ guid "{38711B01-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2679
+// entity 2678
 {
 guid "{750F79DF-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47521,7 +47492,7 @@ guid "{750F79DF-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2680
+// entity 2679
 {
 guid "{8CF13693-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47535,7 +47506,7 @@ guid "{8CF13693-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2681
+// entity 2680
 {
 guid "{8CF13696-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47549,7 +47520,7 @@ guid "{8CF13696-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2682
+// entity 2681
 {
 guid "{1C74F030-6E3F-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47563,7 +47534,7 @@ guid "{1C74F030-6E3F-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2683
+// entity 2682
 {
 guid "{0249CB25-6E40-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47577,7 +47548,7 @@ guid "{0249CB25-6E40-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2684
+// entity 2683
 {
 guid "{11115314-6E40-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47591,7 +47562,7 @@ guid "{11115314-6E40-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2685
+// entity 2684
 {
 guid "{5C059204-6E40-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47605,7 +47576,7 @@ guid "{5C059204-6E40-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2686
+// entity 2685
 {
 guid "{6C04AF7B-6E40-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47619,7 +47590,7 @@ guid "{6C04AF7B-6E40-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2687
+// entity 2686
 {
 guid "{8EB6E00A-6E40-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47633,7 +47604,7 @@ guid "{8EB6E00A-6E40-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2688
+// entity 2687
 {
 guid "{B0F5425A-6E40-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47647,7 +47618,7 @@ guid "{B0F5425A-6E40-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2689
+// entity 2688
 {
 guid "{D0A80F1E-6E4A-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47661,7 +47632,7 @@ guid "{D0A80F1E-6E4A-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2690
+// entity 2689
 {
 guid "{18457888-6E4B-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47674,7 +47645,7 @@ guid "{18457888-6E4B-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2691
+// entity 2690
 {
 guid "{AEC9817B-6E4F-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47687,7 +47658,7 @@ guid "{AEC9817B-6E4F-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2692
+// entity 2691
 {
 guid "{0F1E23D2-6E50-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47701,7 +47672,7 @@ guid "{0F1E23D2-6E50-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2693
+// entity 2692
 {
 guid "{6A9636BA-6E50-11E7-A55D-14DDA9E204AF}"
 "classname" "reflection_probe"
@@ -47731,7 +47702,7 @@ guid "{6A9636BA-6E50-11E7-A55D-14DDA9E204AF}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2694
+// entity 2693
 {
 guid "{20E2C42B-72BC-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47745,7 +47716,7 @@ guid "{20E2C42B-72BC-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2695
+// entity 2694
 {
 guid "{53E85ABA-72BC-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47759,7 +47730,7 @@ guid "{53E85ABA-72BC-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2696
+// entity 2695
 {
 guid "{7EAC65B0-72BC-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47773,7 +47744,7 @@ guid "{7EAC65B0-72BC-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2697
+// entity 2696
 {
 guid "{7EAC65B3-72BC-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47787,7 +47758,7 @@ guid "{7EAC65B3-72BC-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2698
+// entity 2697
 {
 guid "{5102FD05-72BD-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47801,7 +47772,7 @@ guid "{5102FD05-72BD-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2699
+// entity 2698
 {
 guid "{CE2682AE-72BE-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47815,7 +47786,7 @@ guid "{CE2682AE-72BE-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2700
+// entity 2699
 {
 guid "{93F96798-72C3-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47829,7 +47800,7 @@ guid "{93F96798-72C3-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2701
+// entity 2700
 {
 guid "{1228D2CB-72C7-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47843,7 +47814,7 @@ guid "{1228D2CB-72C7-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2702
+// entity 2701
 {
 guid "{EE5C6FD2-72C7-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47857,7 +47828,7 @@ guid "{EE5C6FD2-72C7-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2703
+// entity 2702
 {
 guid "{890AE8A9-72C4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47871,7 +47842,7 @@ guid "{890AE8A9-72C4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2704
+// entity 2703
 {
 guid "{3C50C6AD-72C7-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47885,7 +47856,7 @@ guid "{3C50C6AD-72C7-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2705
+// entity 2704
 {
 guid "{B0577E94-72C9-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47899,7 +47870,7 @@ guid "{B0577E94-72C9-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2706
+// entity 2705
 {
 guid "{A702F7A3-72C2-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47913,7 +47884,7 @@ guid "{A702F7A3-72C2-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2707
+// entity 2706
 {
 guid "{D4B29625-72CB-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47927,7 +47898,7 @@ guid "{D4B29625-72CB-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2708
+// entity 2707
 {
 guid "{14842A30-72CC-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47941,7 +47912,7 @@ guid "{14842A30-72CC-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2709
+// entity 2708
 {
 guid "{4DAB044B-72CE-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47955,7 +47926,7 @@ guid "{4DAB044B-72CE-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2710
+// entity 2709
 {
 guid "{582F5DBF-72CF-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47969,7 +47940,7 @@ guid "{582F5DBF-72CF-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2711
+// entity 2710
 {
 guid "{9A1ED49E-72CF-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47983,7 +47954,7 @@ guid "{9A1ED49E-72CF-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2712
+// entity 2711
 {
 guid "{489B255D-72D0-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -47997,7 +47968,7 @@ guid "{489B255D-72D0-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2713
+// entity 2712
 {
 guid "{DB22D586-72D0-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48011,7 +47982,7 @@ guid "{DB22D586-72D0-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2714
+// entity 2713
 {
 guid "{060F1756-72D1-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48025,7 +47996,7 @@ guid "{060F1756-72D1-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2715
+// entity 2714
 {
 guid "{526D5F5A-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48039,7 +48010,7 @@ guid "{526D5F5A-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2716
+// entity 2715
 {
 guid "{8D13AA8D-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48053,7 +48024,7 @@ guid "{8D13AA8D-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2717
+// entity 2716
 {
 guid "{A37ADE2B-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48067,7 +48038,7 @@ guid "{A37ADE2B-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2718
+// entity 2717
 {
 guid "{C8CE5F38-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48081,7 +48052,7 @@ guid "{C8CE5F38-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2719
+// entity 2718
 {
 guid "{E8ACB217-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48095,7 +48066,7 @@ guid "{E8ACB217-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2720
+// entity 2719
 {
 guid "{F870A66B-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48109,7 +48080,7 @@ guid "{F870A66B-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2721
+// entity 2720
 {
 guid "{F870A66E-72D4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48123,7 +48094,7 @@ guid "{F870A66E-72D4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2722
+// entity 2721
 {
 guid "{0CA47ACE-72D5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48137,7 +48108,7 @@ guid "{0CA47ACE-72D5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2723
+// entity 2722
 {
 guid "{1C5EB0B9-72D5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48151,7 +48122,7 @@ guid "{1C5EB0B9-72D5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2724
+// entity 2723
 {
 guid "{2FA6CE54-72D5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48165,7 +48136,7 @@ guid "{2FA6CE54-72D5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2725
+// entity 2724
 {
 guid "{4376BC38-72D5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48179,7 +48150,7 @@ guid "{4376BC38-72D5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2726
+// entity 2725
 {
 guid "{608E34BC-72D8-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48193,7 +48164,7 @@ guid "{608E34BC-72D8-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2727
+// entity 2726
 {
 guid "{29B920D9-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48207,7 +48178,7 @@ guid "{29B920D9-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2728
+// entity 2727
 {
 guid "{DA37B3EF-72F4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48221,7 +48192,7 @@ guid "{DA37B3EF-72F4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2729
+// entity 2728
 {
 guid "{F78B439D-72F4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48235,7 +48206,7 @@ guid "{F78B439D-72F4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2730
+// entity 2729
 {
 guid "{29B920DC-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48249,7 +48220,7 @@ guid "{29B920DC-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2731
+// entity 2730
 {
 guid "{7BBC4EB6-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48263,7 +48234,7 @@ guid "{7BBC4EB6-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2732
+// entity 2731
 {
 guid "{91D3599C-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48277,7 +48248,7 @@ guid "{91D3599C-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2733
+// entity 2732
 {
 guid "{91D3599F-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48291,7 +48262,7 @@ guid "{91D3599F-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2734
+// entity 2733
 {
 guid "{91D359A5-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48305,7 +48276,7 @@ guid "{91D359A5-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2735
+// entity 2734
 {
 guid "{91D359A8-72F5-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48319,7 +48290,7 @@ guid "{91D359A8-72F5-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2736
+// entity 2735
 {
 guid "{AD255750-72F4-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48333,7 +48304,7 @@ guid "{AD255750-72F4-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2737
+// entity 2736
 {
 guid "{04F7D1D2-72F6-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48347,7 +48318,7 @@ guid "{04F7D1D2-72F6-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2738
+// entity 2737
 {
 guid "{04F7D1D5-72F6-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48361,7 +48332,7 @@ guid "{04F7D1D5-72F6-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2739
+// entity 2738
 {
 guid "{0BD3A826-72F6-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48375,7 +48346,7 @@ guid "{0BD3A826-72F6-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2740
+// entity 2739
 {
 guid "{3DA3710F-75E6-11E7-A55E-14DDA9E204AF}"
 "classname" "light"
@@ -48408,7 +48379,7 @@ guid "{3DA3710F-75E6-11E7-A55E-14DDA9E204AF}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2741
+// entity 2740
 {
 guid "{F6B880E5-75EC-11E7-A55E-14DDA9E204AF}"
 "classname" "script_model"
@@ -48425,7 +48396,7 @@ guid "{F6B880E5-75EC-11E7-A55E-14DDA9E204AF}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
-// entity 2742
+// entity 2741
 {
 guid "{055BCF69-75ED-11E7-A55E-14DDA9E204AF}"
 "classname" "script_model"
@@ -48442,7 +48413,7 @@ guid "{055BCF69-75ED-11E7-A55E-14DDA9E204AF}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
-// entity 2743
+// entity 2742
 {
 guid "{D339FB4F-75EE-11E7-A55E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -48464,7 +48435,7 @@ guid "{D339FB4F-75EE-11E7-A55E-14DDA9E204AF}"
  ( -25593.25 -14144.75 11838.5 ) ( -25593.25 -14144.75 11752 ) ( -25893.75 -14084.25 11752 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 1839.677 16384 -14061.58 0 0 0
 }
 }
-// entity 2744
+// entity 2743
 {
 guid "{CB1081AC-75F0-11E7-A55E-14DDA9E204AF}"
 "classname" "script_model"
@@ -48481,7 +48452,7 @@ guid "{CB1081AC-75F0-11E7-A55E-14DDA9E204AF}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
-// entity 2745
+// entity 2744
 {
 guid "{0BAD2A57-75F1-11E7-A55E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -48503,7 +48474,7 @@ guid "{0BAD2A57-75F1-11E7-A55E-14DDA9E204AF}"
  ( -26926.75 -13420.75 11838.5 ) ( -26926.75 -13420.75 11752 ) ( -27265.25 -13426 11752 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 8408 -16384 33939.883 0 -180 0
 }
 }
-// entity 2746
+// entity 2745
 {
 guid "{D1FD2430-7B50-11E7-A55E-14DDA9E204AF}"
 "classname" "reflection_probe"
@@ -48543,7 +48514,7 @@ guid "{D1FD2430-7B50-11E7-A55E-14DDA9E204AF}"
 "name" "probe"
 "placement_offset" "72"
 }
-// entity 2747
+// entity 2746
 {
 guid "{FD8BE8F7-7B51-11E7-A55E-14DDA9E204AF}"
 "classname" "volume_litfog"
@@ -48575,7 +48546,7 @@ guid "{FD8BE8F7-7B51-11E7-A55E-14DDA9E204AF}"
  ( -630 -89.5 16 ) ( -630 -121.5 16 ) ( -630 -121.5 0 ) litfog_volume 64 64 -14.75 0 0 0 lightmap_gray 16384 16384 -14.75 0 0 0
 }
 }
-// entity 2748
+// entity 2747
 {
 guid "{95C2A690-7B52-11E7-A55E-14DDA9E204AF}"
 "classname" "reflection_probe"
@@ -48616,7 +48587,7 @@ guid "{95C2A690-7B52-11E7-A55E-14DDA9E204AF}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2749
+// entity 2748
 {
 guid "{95C2A693-7B52-11E7-A55E-14DDA9E204AF}"
 "classname" "volume_litfog"
@@ -48648,7 +48619,7 @@ guid "{95C2A693-7B52-11E7-A55E-14DDA9E204AF}"
  ( -630 641.75 0 ) ( -630 641.75 16 ) ( -630 609.75 16 ) litfog_volume 64 -64 -535 0 180 0 lightmap_gray 16384 -16384 -535 0 180 0
 }
 }
-// entity 2750
+// entity 2749
 {
 guid "{D821595C-7B54-11E7-A55E-14DDA9E204AF}"
 "classname" "volume_litfog"
@@ -48680,19 +48651,19 @@ guid "{D821595C-7B54-11E7-A55E-14DDA9E204AF}"
  ( -3879.75 -486 47 ) ( -3879.75 -518 47 ) ( -3879.75 -518 31 ) litfog_volume 64 64 -97.75 0 0 0 lightmap_gray 16384 16384 -97.75 0 0 0
 }
 }
-// entity 2751
+// entity 2750
 {
 guid "{68B9707D-6E10-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/torrens_main_junction.map"
 }
-// entity 2752
+// entity 2751
 {
 guid "{86903178-81AA-11E7-A55E-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/lights_sft.map"
 }
-// entity 2753
+// entity 2752
 {
 guid "{EEFB7AF0-964B-11E6-9C46-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -48700,7 +48671,7 @@ guid "{EEFB7AF0-964B-11E6-9C46-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/lights/lights_entire_front_window_prefab.map"
 "origin" "-129.826 -304.955 0"
 }
-// entity 2754
+// entity 2753
 {
 guid "{9DA04C83-9626-11E6-9C45-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -48708,7 +48679,7 @@ guid "{9DA04C83-9626-11E6-9C45-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/lights/main_light_noodle.map"
 "origin" "162.371 14.627 107"
 }
-// entity 2755
+// entity 2754
 {
 guid "{35B94A31-81B2-11E7-A55E-14DDA9E204AF}"
 "classname" "fx"
@@ -48722,7 +48693,7 @@ guid "{35B94A31-81B2-11E7-A55E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2756
+// entity 2755
 {
 guid "{35B94A3E-81B2-11E7-A55E-14DDA9E204AF}"
 "classname" "fx"
@@ -48736,7 +48707,7 @@ guid "{35B94A3E-81B2-11E7-A55E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2757
+// entity 2756
 {
 guid "{35B94A4B-81B2-11E7-A55E-14DDA9E204AF}"
 "classname" "fx"
@@ -48750,7 +48721,7 @@ guid "{35B94A4B-81B2-11E7-A55E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2758
+// entity 2757
 {
 guid "{5DA3B989-81B2-11E7-A55E-14DDA9E204AF}"
 "classname" "fx"
@@ -48764,7 +48735,7 @@ guid "{5DA3B989-81B2-11E7-A55E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2759
+// entity 2758
 {
 guid "{FF82C7CF-81B3-11E7-A55E-14DDA9E204AF}"
 "classname" "fx"
@@ -48778,7 +48749,7 @@ guid "{FF82C7CF-81B3-11E7-A55E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2760
+// entity 2759
 {
 guid "{26E1CF2B-81B2-11E7-A55E-14DDA9E204AF}"
 "classname" "fx"
@@ -48792,7 +48763,7 @@ guid "{26E1CF2B-81B2-11E7-A55E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 2761
+// entity 2760
 {
 guid "{030B6AD8-8FEE-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48806,7 +48777,7 @@ guid "{030B6AD8-8FEE-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2762
+// entity 2761
 {
 guid "{CA1559A1-8FEE-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48820,7 +48791,7 @@ guid "{CA1559A1-8FEE-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2763
+// entity 2762
 {
 guid "{C9AEC09F-8FEF-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48834,14 +48805,14 @@ guid "{C9AEC09F-8FEF-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2764
+// entity 2763
 {
 guid "{503A9853-8FF0-11E7-A561-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/muthur.map"
 "origin" "2.75 6 -9.25"
 }
-// entity 2765
+// entity 2764
 {
 guid "{B15D4C3D-8FF0-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48855,7 +48826,7 @@ guid "{B15D4C3D-8FF0-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2766
+// entity 2765
 {
 guid "{B15D4C43-8FF0-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48869,7 +48840,7 @@ guid "{B15D4C43-8FF0-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2767
+// entity 2766
 {
 guid "{E197F6FD-8FF0-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48883,7 +48854,7 @@ guid "{E197F6FD-8FF0-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2768
+// entity 2767
 {
 guid "{55ED2DCD-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48897,7 +48868,7 @@ guid "{55ED2DCD-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2769
+// entity 2768
 {
 guid "{8DB8A63C-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48911,7 +48882,7 @@ guid "{8DB8A63C-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2770
+// entity 2769
 {
 guid "{8DB8A63F-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48925,7 +48896,7 @@ guid "{8DB8A63F-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2771
+// entity 2770
 {
 guid "{8DB8A642-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48939,7 +48910,7 @@ guid "{8DB8A642-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2772
+// entity 2771
 {
 guid "{8DB8A639-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48953,7 +48924,7 @@ guid "{8DB8A639-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2773
+// entity 2772
 {
 guid "{8DB8A645-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48967,7 +48938,7 @@ guid "{8DB8A645-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2774
+// entity 2773
 {
 guid "{DDFAAC2C-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48981,7 +48952,7 @@ guid "{DDFAAC2C-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2775
+// entity 2774
 {
 guid "{EE445088-8FF2-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -48995,7 +48966,7 @@ guid "{EE445088-8FF2-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2776
+// entity 2775
 {
 guid "{5A3B2D99-8FF3-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49009,7 +48980,7 @@ guid "{5A3B2D99-8FF3-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2777
+// entity 2776
 {
 guid "{ECD0AC72-8FF3-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49023,7 +48994,7 @@ guid "{ECD0AC72-8FF3-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2778
+// entity 2777
 {
 guid "{2807CDE3-8FF4-11E7-A561-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49037,7 +49008,7 @@ guid "{2807CDE3-8FF4-11E7-A561-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2779
+// entity 2778
 {
 guid "{5C4C2C28-90C2-11E7-A561-14DDA9E204AF}"
 "classname" "light"
@@ -49069,7 +49040,7 @@ guid "{5C4C2C28-90C2-11E7-A561-14DDA9E204AF}"
 "volumetricSampleCount" "8"
 "spawnflags" "18"
 }
-// entity 2780
+// entity 2779
 {
 guid "{421AD084-9937-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49083,7 +49054,7 @@ guid "{421AD084-9937-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2781
+// entity 2780
 {
 guid "{840ABA7E-9937-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49097,7 +49068,7 @@ guid "{840ABA7E-9937-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2782
+// entity 2781
 {
 guid "{9FD1654D-9937-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49111,7 +49082,7 @@ guid "{9FD1654D-9937-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2783
+// entity 2782
 {
 guid "{BC46645D-9937-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49125,7 +49096,7 @@ guid "{BC46645D-9937-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2784
+// entity 2783
 {
 guid "{BC466460-9937-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49139,7 +49110,7 @@ guid "{BC466460-9937-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2785
+// entity 2784
 {
 guid "{BC466463-9937-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49153,13 +49124,13 @@ guid "{BC466463-9937-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2786
+// entity 2785
 {
 guid "{A2601505-9938-11E7-A562-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/spawnroom_light.map"
 }
-// entity 2787
+// entity 2786
 {
 guid "{B841791A-9938-11E7-A562-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -49167,7 +49138,7 @@ guid "{B841791A-9938-11E7-A562-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/spawnroom_light.map"
 "origin" "1389.02 -22200 0"
 }
-// entity 2788
+// entity 2787
 {
 guid "{E3A39BCC-9938-11E7-A562-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -49175,7 +49146,7 @@ guid "{E3A39BCC-9938-11E7-A562-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/spawnroom_light.map"
 "origin" "-13324.3 -38877.6 0"
 }
-// entity 2789
+// entity 2788
 {
 guid "{04948AA5-9939-11E7-A562-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -49183,7 +49154,7 @@ guid "{04948AA5-9939-11E7-A562-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/spawnroom_light.map"
 "origin" "-53591.3 -3354.5 0"
 }
-// entity 2790
+// entity 2789
 {
 guid "{04948AA8-9939-11E7-A562-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -49191,7 +49162,7 @@ guid "{04948AA8-9939-11E7-A562-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/spawnroom_light.map"
 "origin" "-38877.9 13323.9 0"
 }
-// entity 2791
+// entity 2790
 {
 guid "{67370E1A-9939-11E7-A562-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -49213,7 +49184,7 @@ guid "{67370E1A-9939-11E7-A562-14DDA9E204AF}"
  ( -26113 -12654 11786 ) ( -26113 -12910 11786 ) ( -26113 -12910 11770 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
 }
-// entity 2792
+// entity 2791
 {
 guid "{810FD163-9939-11E7-A562-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -49235,7 +49206,7 @@ guid "{810FD163-9939-11E7-A562-14DDA9E204AF}"
  ( -26196.619 -12698.36 11786 ) ( -26015.6 -12879.394 11786 ) ( -26015.6 -12879.394 11770 ) clip 45.258823 64 -3749.9417 0 0 0 lightmap_gray 11586.125 16384 -3749.9417 0 0 0
 }
 }
-// entity 2793
+// entity 2792
 {
 guid "{ADB1C09D-9939-11E7-A562-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -49257,7 +49228,7 @@ guid "{ADB1C09D-9939-11E7-A562-14DDA9E204AF}"
  ( -26022.646 -12681.61 11786 ) ( -26203.381 -12862.943 11786 ) ( -26203.381 -12862.943 11770 ) clip 45.333778 64 -3718.3762 0 0 0 lightmap_gray 11605.313 16384 -3718.375 0 0 0
 }
 }
-// entity 2794
+// entity 2793
 {
 guid "{CC78C29F-9939-11E7-A562-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -49279,7 +49250,7 @@ guid "{CC78C29F-9939-11E7-A562-14DDA9E204AF}"
  ( -26131.25 -12654.25 11786 ) ( -26131.25 -12910.25 11786 ) ( -26131.25 -12910.25 11770 ) clip 64 64 -0.25 0 0 0 lightmap_gray 16384 16384 -0.25 0 0 0
 }
 }
-// entity 2795
+// entity 2794
 {
 guid "{E303D902-9957-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49293,7 +49264,7 @@ guid "{E303D902-9957-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2796
+// entity 2795
 {
 guid "{37388E0C-9958-11E7-A562-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49307,12 +49278,13 @@ guid "{37388E0C-9958-11E7-A562-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2797
+// entity 2796
 {
 guid "{FC6ABBE0-6E07-11E7-A55D-14DDA9E204AF}"
 "classname" "light"
 "ENABLE_FALLOFF" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.7581 0.8911 0.9294"
 "cut_on" "4"
 "falloffdistance" "0"
 "far_edge" "0.300000004470348"
@@ -49320,10 +49292,9 @@ guid "{FC6ABBE0-6E07-11E7-A55D-14DDA9E204AF}"
 "origin" "-25514.3 -13363.3 11844.5"
 "ortho_effect" "0.2"
 "roundness" "1"
-"stops" "11.3000000312924"
+"stops" "12.6000000193715"
 "volumetricIntensityBoost" "7"
 "PRIMARY_NOSHADOWMAP" "1"
-"_color" "1 1 1"
 "bake_intensity_scale" "1"
 "client_server" "ClientSide"
 "def_tile" "1 1"
@@ -49341,7 +49312,7 @@ guid "{FC6ABBE0-6E07-11E7-A55D-14DDA9E204AF}"
 "volumetricSampleCount" "8"
 "spawnflags" "20"
 }
-// entity 2798
+// entity 2797
 {
 guid "{8FFC10ED-E1E4-11E7-A56A-0015833D0A57}"
 "classname" "reflection_probe"
@@ -49371,7 +49342,7 @@ guid "{8FFC10ED-E1E4-11E7-A56A-0015833D0A57}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2799
+// entity 2798
 {
 guid "{B1EACE9D-E1E4-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -49407,7 +49378,7 @@ guid "{B1EACE9D-E1E4-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2800
+// entity 2799
 {
 guid "{FD74F404-E1E4-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -49443,7 +49414,7 @@ guid "{FD74F404-E1E4-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2801
+// entity 2800
 {
 guid "{2BC0BE7F-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -49479,7 +49450,7 @@ guid "{2BC0BE7F-E1E5-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2802
+// entity 2801
 {
 guid "{435DD40E-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -49515,7 +49486,7 @@ guid "{435DD40E-E1E5-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2803
+// entity 2802
 {
 guid "{564F06F9-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -49551,7 +49522,7 @@ guid "{564F06F9-E1E5-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2804
+// entity 2803
 {
 guid "{83E6457C-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49565,7 +49536,7 @@ guid "{83E6457C-E1E5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2805
+// entity 2804
 {
 guid "{C12E831E-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49579,7 +49550,7 @@ guid "{C12E831E-E1E5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2806
+// entity 2805
 {
 guid "{DDDFAE98-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49593,7 +49564,7 @@ guid "{DDDFAE98-E1E5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2807
+// entity 2806
 {
 guid "{F879008B-E1E5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49607,7 +49578,7 @@ guid "{F879008B-E1E5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2808
+// entity 2807
 {
 guid "{13F00953-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49621,7 +49592,7 @@ guid "{13F00953-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2809
+// entity 2808
 {
 guid "{4AAC6AE9-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49635,7 +49606,7 @@ guid "{4AAC6AE9-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2810
+// entity 2809
 {
 guid "{76E999B7-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49649,7 +49620,7 @@ guid "{76E999B7-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2811
+// entity 2810
 {
 guid "{9068EA8C-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49663,7 +49634,7 @@ guid "{9068EA8C-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2812
+// entity 2811
 {
 guid "{9068EA8F-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49677,7 +49648,7 @@ guid "{9068EA8F-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2813
+// entity 2812
 {
 guid "{CA861A32-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49691,7 +49662,7 @@ guid "{CA861A32-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2814
+// entity 2813
 {
 guid "{CA861A35-E1E6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49705,7 +49676,7 @@ guid "{CA861A35-E1E6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2815
+// entity 2814
 {
 guid "{2D9771A8-E1E7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49719,7 +49690,7 @@ guid "{2D9771A8-E1E7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2816
+// entity 2815
 {
 guid "{99E0A75E-E1E7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49733,7 +49704,7 @@ guid "{99E0A75E-E1E7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2817
+// entity 2816
 {
 guid "{FD3E1FAD-E1E7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49747,7 +49718,7 @@ guid "{FD3E1FAD-E1E7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2818
+// entity 2817
 {
 guid "{0B6B888A-E1E8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49761,7 +49732,7 @@ guid "{0B6B888A-E1E8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2819
+// entity 2818
 {
 guid "{0B6B888D-E1E8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49775,7 +49746,7 @@ guid "{0B6B888D-E1E8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2820
+// entity 2819
 {
 guid "{32C3DE1B-E1E8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49789,7 +49760,7 @@ guid "{32C3DE1B-E1E8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2821
+// entity 2820
 {
 guid "{32C3DE1E-E1E8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49803,7 +49774,7 @@ guid "{32C3DE1E-E1E8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2822
+// entity 2821
 {
 guid "{35293368-E1E9-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49817,7 +49788,7 @@ guid "{35293368-E1E9-11E7-A56A-0015833D0A57}"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2823
+// entity 2822
 {
 guid "{6477F93C-E1E9-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49831,7 +49802,7 @@ guid "{6477F93C-E1E9-11E7-A56A-0015833D0A57}"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2824
+// entity 2823
 {
 guid "{7E39EAE8-E1E9-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49845,7 +49816,7 @@ guid "{7E39EAE8-E1E9-11E7-A56A-0015833D0A57}"
 "modelscale" "1"
 "static" "1"
 }
-// entity 2825
+// entity 2824
 {
 guid "{88ED16B1-E1E9-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49859,7 +49830,7 @@ guid "{88ED16B1-E1E9-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2826
+// entity 2825
 {
 guid "{B0443263-E1E9-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49872,7 +49843,7 @@ guid "{B0443263-E1E9-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2827
+// entity 2826
 {
 guid "{E0A7A02B-E1E9-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -49886,7 +49857,7 @@ guid "{E0A7A02B-E1E9-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2828
+// entity 2827
 {
 guid "{6A7ADDBE-6E35-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49900,7 +49871,7 @@ guid "{6A7ADDBE-6E35-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2829
+// entity 2828
 {
 guid "{BA4AE6BA-6E35-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49914,7 +49885,7 @@ guid "{BA4AE6BA-6E35-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2830
+// entity 2829
 {
 guid "{A207ED49-6E34-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49928,7 +49899,7 @@ guid "{A207ED49-6E34-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2831
+// entity 2830
 {
 guid "{0D06D44E-521F-11E7-A554-14DDA9E204AF}"
 "classname" "misc_model"
@@ -49942,7 +49913,7 @@ guid "{0D06D44E-521F-11E7-A554-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2832
+// entity 2831
 {
 guid "{3ED712B5-E1ED-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -49978,7 +49949,7 @@ guid "{3ED712B5-E1ED-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2833
+// entity 2832
 {
 guid "{7637CA94-E1ED-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50014,7 +49985,7 @@ guid "{7637CA94-E1ED-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2834
+// entity 2833
 {
 guid "{DCA76AAE-E1ED-11E7-A56A-0015833D0A57}"
 "classname" "misc_prefab"
@@ -50022,7 +49993,7 @@ guid "{DCA76AAE-E1ED-11E7-A56A-0015833D0A57}"
 "model" "_prefabs/zm_alien_isolation/noddingbird.map"
 "origin" "-25588 -13766 11785.5"
 }
-// entity 2835
+// entity 2834
 {
 guid "{38DE76AB-E1EE-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50058,7 +50029,7 @@ guid "{38DE76AB-E1EE-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2836
+// entity 2835
 {
 guid "{59E0D070-E1EE-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50094,7 +50065,7 @@ guid "{59E0D070-E1EE-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2837
+// entity 2836
 {
 guid "{706AFBDF-E1EE-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50130,7 +50101,7 @@ guid "{706AFBDF-E1EE-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2838
+// entity 2837
 {
 guid "{888E039E-E1EE-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50166,7 +50137,7 @@ guid "{888E039E-E1EE-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2839
+// entity 2838
 {
 guid "{E4148664-E1EE-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50180,7 +50151,7 @@ guid "{E4148664-E1EE-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2840
+// entity 2839
 {
 guid "{FFD2A3BF-E1EE-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50193,7 +50164,7 @@ guid "{FFD2A3BF-E1EE-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2841
+// entity 2840
 {
 guid "{19D68909-E1EF-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50207,7 +50178,7 @@ guid "{19D68909-E1EF-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2842
+// entity 2841
 {
 guid "{DCEA596D-E1F6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50221,7 +50192,7 @@ guid "{DCEA596D-E1F6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2843
+// entity 2842
 {
 guid "{F15E4194-E1F6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50235,7 +50206,7 @@ guid "{F15E4194-E1F6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2844
+// entity 2843
 {
 guid "{F15E4197-E1F6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50249,7 +50220,7 @@ guid "{F15E4197-E1F6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2845
+// entity 2844
 {
 guid "{00D13102-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50263,7 +50234,7 @@ guid "{00D13102-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2846
+// entity 2845
 {
 guid "{225948A5-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50277,7 +50248,7 @@ guid "{225948A5-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2847
+// entity 2846
 {
 guid "{225948A8-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50291,7 +50262,7 @@ guid "{225948A8-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2848
+// entity 2847
 {
 guid "{225948AB-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50305,7 +50276,7 @@ guid "{225948AB-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2849
+// entity 2848
 {
 guid "{225948AE-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50319,7 +50290,7 @@ guid "{225948AE-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2850
+// entity 2849
 {
 guid "{225948B1-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50333,7 +50304,7 @@ guid "{225948B1-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2851
+// entity 2850
 {
 guid "{54F26ADC-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50347,7 +50318,7 @@ guid "{54F26ADC-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2852
+// entity 2851
 {
 guid "{5F817887-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50361,7 +50332,7 @@ guid "{5F817887-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2853
+// entity 2852
 {
 guid "{8756101E-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50374,7 +50345,7 @@ guid "{8756101E-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2854
+// entity 2853
 {
 guid "{B69EA862-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50388,7 +50359,7 @@ guid "{B69EA862-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2855
+// entity 2854
 {
 guid "{EA527F8B-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50402,7 +50373,7 @@ guid "{EA527F8B-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2856
+// entity 2855
 {
 guid "{FD33F304-E1F7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50416,7 +50387,7 @@ guid "{FD33F304-E1F7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2857
+// entity 2856
 {
 guid "{0E9E4D8B-E1F8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50430,7 +50401,7 @@ guid "{0E9E4D8B-E1F8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2858
+// entity 2857
 {
 guid "{1F424F82-E1F8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50444,7 +50415,7 @@ guid "{1F424F82-E1F8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2859
+// entity 2858
 {
 guid "{3C6074F7-E1F8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50458,7 +50429,7 @@ guid "{3C6074F7-E1F8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2860
+// entity 2859
 {
 guid "{3C6074FA-E1F8-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50472,7 +50443,7 @@ guid "{3C6074FA-E1F8-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2861
+// entity 2860
 {
 guid "{E6813EDF-E294-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50486,7 +50457,7 @@ guid "{E6813EDF-E294-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2862
+// entity 2861
 {
 guid "{C938E4C5-E295-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50500,7 +50471,7 @@ guid "{C938E4C5-E295-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2863
+// entity 2862
 {
 guid "{F96F843D-E295-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50514,7 +50485,7 @@ guid "{F96F843D-E295-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2864
+// entity 2863
 {
 guid "{81D9C895-E296-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50528,7 +50499,7 @@ guid "{81D9C895-E296-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2865
+// entity 2864
 {
 guid "{9A94276E-E296-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50541,7 +50512,7 @@ guid "{9A94276E-E296-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2866
+// entity 2865
 {
 guid "{9A942775-E296-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50555,7 +50526,7 @@ guid "{9A942775-E296-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2867
+// entity 2866
 {
 guid "{AFAF273C-E296-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50568,7 +50539,7 @@ guid "{AFAF273C-E296-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2868
+// entity 2867
 {
 guid "{999EDD5B-66F9-11E7-A55A-14DDA9E204AF}"
 "classname" "misc_model"
@@ -50582,7 +50553,7 @@ guid "{999EDD5B-66F9-11E7-A55A-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2869
+// entity 2868
 {
 guid "{04948AA2-9939-11E7-A562-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -50590,7 +50561,7 @@ guid "{04948AA2-9939-11E7-A562-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/spawnroom_light.map"
 "origin" "-52202.3 -25553.8 0"
 }
-// entity 2870
+// entity 2869
 {
 guid "{999EDD5E-66F9-11E7-A55A-14DDA9E204AF}"
 "classname" "misc_model"
@@ -50604,7 +50575,7 @@ guid "{999EDD5E-66F9-11E7-A55A-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2871
+// entity 2870
 {
 guid "{748AD79A-E3F5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50618,7 +50589,7 @@ guid "{748AD79A-E3F5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2872
+// entity 2871
 {
 guid "{950B4D62-E3F5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50632,7 +50603,7 @@ guid "{950B4D62-E3F5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2873
+// entity 2872
 {
 guid "{950B4D65-E3F5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50646,7 +50617,7 @@ guid "{950B4D65-E3F5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2874
+// entity 2873
 {
 guid "{950B4D68-E3F5-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -50660,7 +50631,7 @@ guid "{950B4D68-E3F5-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2875
+// entity 2874
 {
 guid "{32D5C4F2-E3F9-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50696,7 +50667,7 @@ guid "{32D5C4F2-E3F9-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2876
+// entity 2875
 {
 guid "{80C186B9-E3F9-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50732,7 +50703,7 @@ guid "{80C186B9-E3F9-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2877
+// entity 2876
 {
 guid "{B77094FF-E3F9-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50768,7 +50739,7 @@ guid "{B77094FF-E3F9-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2878
+// entity 2877
 {
 guid "{DA5B649E-E3F9-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50804,7 +50775,7 @@ guid "{DA5B649E-E3F9-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2879
+// entity 2878
 {
 guid "{12ACE3E4-E3F8-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50822,7 +50793,7 @@ guid "{12ACE3E4-E3F8-11E7-A56A-0015833D0A57}"
 "superellipse" "0.51 0.81 0.09 0.24"
 "volumetric" "1"
 "volumetricCookies" "1"
-"volumetricIntensityBoost" "9"
+"volumetricIntensityBoost" "8.25"
 "ENABLE_FALLOFF" "1"
 "_color" "1 1 1"
 "bake_intensity_scale" "1"
@@ -50839,7 +50810,7 @@ guid "{12ACE3E4-E3F8-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2880
+// entity 2879
 {
 guid "{65EB23DC-E3FB-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50875,7 +50846,7 @@ guid "{65EB23DC-E3FB-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2881
+// entity 2880
 {
 guid "{B773ADDE-E3FB-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50906,7 +50877,7 @@ guid "{B773ADDE-E3FB-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2882
+// entity 2881
 {
 guid "{D1B0010B-E3FB-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50937,7 +50908,7 @@ guid "{D1B0010B-E3FB-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2883
+// entity 2882
 {
 guid "{DF731F3D-E3FB-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50968,7 +50939,7 @@ guid "{DF731F3D-E3FB-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2884
+// entity 2883
 {
 guid "{E5C17638-E3FB-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -50999,7 +50970,7 @@ guid "{E5C17638-E3FB-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2885
+// entity 2884
 {
 guid "{E5C1763B-E3FB-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51030,7 +51001,7 @@ guid "{E5C1763B-E3FB-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2886
+// entity 2885
 {
 guid "{0604C011-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51062,7 +51033,7 @@ guid "{0604C011-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "2"
 }
-// entity 2887
+// entity 2886
 {
 guid "{28906224-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51093,7 +51064,7 @@ guid "{28906224-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2888
+// entity 2887
 {
 guid "{3DBE431F-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51124,7 +51095,7 @@ guid "{3DBE431F-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2889
+// entity 2888
 {
 guid "{3DBE432A-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51155,7 +51126,7 @@ guid "{3DBE432A-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2890
+// entity 2889
 {
 guid "{3DBE4335-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51186,7 +51157,7 @@ guid "{3DBE4335-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2891
+// entity 2890
 {
 guid "{446A355F-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51217,7 +51188,7 @@ guid "{446A355F-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2892
+// entity 2891
 {
 guid "{446A356A-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51248,7 +51219,7 @@ guid "{446A356A-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2893
+// entity 2892
 {
 guid "{7B631333-E3FC-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51283,7 +51254,7 @@ guid "{7B631333-E3FC-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2894
+// entity 2893
 {
 guid "{97164F22-E3FE-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51321,7 +51292,7 @@ guid "{97164F22-E3FE-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2895
+// entity 2894
 {
 guid "{346C20F5-E3FF-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51359,7 +51330,7 @@ guid "{346C20F5-E3FF-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2896
+// entity 2895
 {
 guid "{824371B4-E3FF-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51397,7 +51368,7 @@ guid "{824371B4-E3FF-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2897
+// entity 2896
 {
 guid "{824371B7-E3FF-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51435,7 +51406,7 @@ guid "{824371B7-E3FF-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2898
+// entity 2897
 {
 guid "{C3635F60-E3FF-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51472,7 +51443,7 @@ guid "{C3635F60-E3FF-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2899
+// entity 2898
 {
 guid "{750F79E2-6E3E-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -51486,7 +51457,7 @@ guid "{750F79E2-6E3E-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2900
+// entity 2899
 {
 guid "{15480024-E400-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51519,7 +51490,7 @@ guid "{15480024-E400-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2901
+// entity 2900
 {
 guid "{62116097-E400-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51551,7 +51522,7 @@ guid "{62116097-E400-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "18"
 }
-// entity 2902
+// entity 2901
 {
 guid "{96999B3A-E400-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51585,7 +51556,7 @@ guid "{96999B3A-E400-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2903
+// entity 2902
 {
 guid "{96999B3D-E400-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51617,7 +51588,7 @@ guid "{96999B3D-E400-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "18"
 }
-// entity 2904
+// entity 2903
 {
 guid "{D9C83B25-E400-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51649,7 +51620,7 @@ guid "{D9C83B25-E400-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2905
+// entity 2904
 {
 guid "{04E0C19A-E401-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51681,7 +51652,7 @@ guid "{04E0C19A-E401-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2906
+// entity 2905
 {
 guid "{476AFA3F-E401-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51714,7 +51685,7 @@ guid "{476AFA3F-E401-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2907
+// entity 2906
 {
 guid "{787CEBD4-E401-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51746,7 +51717,7 @@ guid "{787CEBD4-E401-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2908
+// entity 2907
 {
 guid "{9F23AA8F-E401-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51778,7 +51749,7 @@ guid "{9F23AA8F-E401-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2909
+// entity 2908
 {
 guid "{B95D9917-E401-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51811,39 +51782,7 @@ guid "{B95D9917-E401-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2910
-{
-guid "{D82AEC82-E401-11E7-A56A-0015833D0A57}"
-"classname" "light"
-"PRIMARY_TYPE" "PRIMARY_SPOT"
-"name" "light_003"
-"origin" "-26681.3 -13175.8 11886.5"
-"ortho_effect" "0.300000000745058"
-"roundness" "0"
-"superellipse" "0.81 0.86 0.17 0.32"
-"ENABLE_FALLOFF" "1"
-"PRIMARY_NOSHADOWMAP" "1"
-"_color" "1 1 1"
-"bake_intensity_scale" "1"
-"client_server" "ClientSide"
-"def_tile" "1 1"
-"excludeDedicated" "Off"
-"falloffdistance" "12"
-"far_edge" "0.949999988079071"
-"fov_outer" "90"
-"lightingstate1" "1"
-"lightingstate2" "1"
-"lightingstate3" "1"
-"lightingstate4" "1"
-"penumbraRadius" "1.5"
-"radius" "100"
-"shadowUpdate" "Never"
-"shadowmapScale" "1"
-"stops" "11"
-"volumetricSampleCount" "8"
-"spawnflags" "84"
-}
-// entity 2911
+// entity 2909
 {
 guid "{2223BF36-E402-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51858,11 +51797,11 @@ guid "{2223BF36-E402-11E7-A56A-0015833D0A57}"
 "ortho_effect" "0.750000008195639"
 "radius" "133"
 "roundness" "0"
-"stops" "10.5"
+"stops" "11.0000000074506"
 "superellipse" "0.21 0.225 0.05 0.05"
 "volumetric" "1"
 "volumetricCookies" "1"
-"volumetricIntensityBoost" "9.75"
+"volumetricIntensityBoost" "7.5"
 "ENABLE_FALLOFF" "1"
 "_color" "1 1 1"
 "bake_intensity_scale" "1"
@@ -51879,7 +51818,7 @@ guid "{2223BF36-E402-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2912
+// entity 2910
 {
 guid "{5EEE4992-E402-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -51894,11 +51833,11 @@ guid "{5EEE4992-E402-11E7-A56A-0015833D0A57}"
 "ortho_effect" "0.750000008195639"
 "radius" "133"
 "roundness" "0"
-"stops" "10.5"
+"stops" "11.0000000074506"
 "superellipse" "0.21 0.225 0.05 0.05"
 "volumetric" "1"
 "volumetricCookies" "1"
-"volumetricIntensityBoost" "9.75"
+"volumetricIntensityBoost" "7.5"
 "ENABLE_FALLOFF" "1"
 "_color" "1 1 1"
 "bake_intensity_scale" "1"
@@ -51915,7 +51854,7 @@ guid "{5EEE4992-E402-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2913
+// entity 2911
 {
 guid "{817B04E5-E402-11E7-A56A-0015833D0A57}"
 "classname" "misc_prefab"
@@ -51923,7 +51862,7 @@ guid "{817B04E5-E402-11E7-A56A-0015833D0A57}"
 "model" "_prefabs/zm_alien_isolation/noddingbird.map"
 "origin" "-26741 -13398.3 11788.5"
 }
-// entity 2914
+// entity 2912
 {
 guid "{940BCF0F-E402-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -51937,7 +51876,7 @@ guid "{940BCF0F-E402-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2915
+// entity 2913
 {
 guid "{B149DB33-E402-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -51951,7 +51890,7 @@ guid "{B149DB33-E402-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2916
+// entity 2914
 {
 guid "{BF9FCB4D-E402-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -51965,7 +51904,7 @@ guid "{BF9FCB4D-E402-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2917
+// entity 2915
 {
 guid "{CE049801-E402-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -51979,7 +51918,7 @@ guid "{CE049801-E402-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2918
+// entity 2916
 {
 guid "{0AD2C7EC-E403-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52012,7 +51951,7 @@ guid "{0AD2C7EC-E403-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2919
+// entity 2917
 {
 guid "{1A0FC207-E403-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52026,7 +51965,7 @@ guid "{1A0FC207-E403-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2920
+// entity 2918
 {
 guid "{A7FC5185-E403-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52058,7 +51997,7 @@ guid "{A7FC5185-E403-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "2"
 }
-// entity 2921
+// entity 2919
 {
 guid "{EA69EE5A-E403-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52091,7 +52030,7 @@ guid "{EA69EE5A-E403-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 2922
+// entity 2920
 {
 guid "{EA69EE5D-E403-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52123,7 +52062,7 @@ guid "{EA69EE5D-E403-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "2"
 }
-// entity 2923
+// entity 2921
 {
 guid "{BD214074-E404-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52136,7 +52075,7 @@ guid "{BD214074-E404-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2924
+// entity 2922
 {
 guid "{D40758BC-E404-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52150,7 +52089,7 @@ guid "{D40758BC-E404-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2925
+// entity 2923
 {
 guid "{E29915D7-E404-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52163,7 +52102,7 @@ guid "{E29915D7-E404-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2926
+// entity 2924
 {
 guid "{80ED4E42-E40E-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52196,7 +52135,7 @@ guid "{80ED4E42-E40E-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "18"
 }
-// entity 2927
+// entity 2925
 {
 guid "{2BB5433E-E415-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52227,7 +52166,7 @@ guid "{2BB5433E-E415-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2928
+// entity 2926
 {
 guid "{4F0347FA-E415-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52258,7 +52197,7 @@ guid "{4F0347FA-E415-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2929
+// entity 2927
 {
 guid "{5BB20635-E415-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52289,7 +52228,7 @@ guid "{5BB20635-E415-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2930
+// entity 2928
 {
 guid "{5BB20638-E415-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52320,7 +52259,7 @@ guid "{5BB20638-E415-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2931
+// entity 2929
 {
 guid "{79D7AD2E-E415-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52351,7 +52290,7 @@ guid "{79D7AD2E-E415-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2932
+// entity 2930
 {
 guid "{79D7AD31-E415-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52382,7 +52321,7 @@ guid "{79D7AD31-E415-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2933
+// entity 2931
 {
 guid "{26469A29-E418-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52396,7 +52335,7 @@ guid "{26469A29-E418-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2934
+// entity 2932
 {
 guid "{69A8BCF4-E418-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52410,7 +52349,7 @@ guid "{69A8BCF4-E418-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2935
+// entity 2933
 {
 guid "{93148180-E418-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52424,7 +52363,7 @@ guid "{93148180-E418-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2936
+// entity 2934
 {
 guid "{D741D9C7-E41D-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52438,7 +52377,7 @@ guid "{D741D9C7-E41D-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2937
+// entity 2935
 {
 guid "{FEA0B0BA-E41D-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52452,7 +52391,7 @@ guid "{FEA0B0BA-E41D-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2938
+// entity 2936
 {
 guid "{FEA0B0BD-E41D-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52466,7 +52405,7 @@ guid "{FEA0B0BD-E41D-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2939
+// entity 2937
 {
 guid "{2DFC8BB8-E41E-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52480,7 +52419,7 @@ guid "{2DFC8BB8-E41E-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2940
+// entity 2938
 {
 guid "{4F5C2BFD-E41E-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52494,7 +52433,7 @@ guid "{4F5C2BFD-E41E-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2941
+// entity 2939
 {
 guid "{957139FB-E41E-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52508,7 +52447,7 @@ guid "{957139FB-E41E-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2942
+// entity 2940
 {
 guid "{957139FE-E41E-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52522,7 +52461,7 @@ guid "{957139FE-E41E-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2943
+// entity 2941
 {
 guid "{E70E1EE8-E41E-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52553,7 +52492,7 @@ guid "{E70E1EE8-E41E-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2944
+// entity 2942
 {
 guid "{F9D3877B-E41E-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52584,7 +52523,7 @@ guid "{F9D3877B-E41E-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2945
+// entity 2943
 {
 guid "{02231830-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52615,7 +52554,7 @@ guid "{02231830-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2946
+// entity 2944
 {
 guid "{2C0CDAB1-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52646,7 +52585,7 @@ guid "{2C0CDAB1-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2947
+// entity 2945
 {
 guid "{6375EFEA-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52677,7 +52616,7 @@ guid "{6375EFEA-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2948
+// entity 2946
 {
 guid "{72CEAAD4-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52708,7 +52647,7 @@ guid "{72CEAAD4-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2949
+// entity 2947
 {
 guid "{72CEAAD1-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52739,7 +52678,7 @@ guid "{72CEAAD1-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2950
+// entity 2948
 {
 guid "{985BA805-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52770,7 +52709,7 @@ guid "{985BA805-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2951
+// entity 2949
 {
 guid "{B90F5F9D-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52801,7 +52740,7 @@ guid "{B90F5F9D-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2952
+// entity 2950
 {
 guid "{F3A21634-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52832,7 +52771,7 @@ guid "{F3A21634-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2953
+// entity 2951
 {
 guid "{F3A21637-E41F-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -52863,7 +52802,7 @@ guid "{F3A21637-E41F-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2954
+// entity 2952
 {
 guid "{98F8D1E4-72F6-11E7-A55D-14DDA9E204AF}"
 "classname" "reflection_probe"
@@ -52891,7 +52830,7 @@ guid "{98F8D1E4-72F6-11E7-A55D-14DDA9E204AF}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2955
+// entity 2953
 {
 guid "{471C3169-E421-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52905,7 +52844,7 @@ guid "{471C3169-E421-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2956
+// entity 2954
 {
 guid "{AB00087B-E421-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52919,7 +52858,7 @@ guid "{AB00087B-E421-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2957
+// entity 2955
 {
 guid "{E55F99DD-E421-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52933,7 +52872,7 @@ guid "{E55F99DD-E421-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2958
+// entity 2956
 {
 guid "{FE57637E-E421-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52947,7 +52886,7 @@ guid "{FE57637E-E421-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2959
+// entity 2957
 {
 guid "{FE576381-E421-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52961,7 +52900,7 @@ guid "{FE576381-E421-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2960
+// entity 2958
 {
 guid "{FE576384-E421-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -52975,7 +52914,7 @@ guid "{FE576384-E421-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 2961
+// entity 2959
 {
 guid "{43E1C34F-E423-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53006,7 +52945,7 @@ guid "{43E1C34F-E423-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2962
+// entity 2960
 {
 guid "{731AA332-E423-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53037,7 +52976,7 @@ guid "{731AA332-E423-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2963
+// entity 2961
 {
 guid "{7D11C6A7-E423-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53068,7 +53007,7 @@ guid "{7D11C6A7-E423-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2964
+// entity 2962
 {
 guid "{862F9E46-E423-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53099,7 +53038,7 @@ guid "{862F9E46-E423-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2965
+// entity 2963
 {
 guid "{8EEB0430-E423-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53130,7 +53069,7 @@ guid "{8EEB0430-E423-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2966
+// entity 2964
 {
 guid "{98F40490-E423-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53161,14 +53100,14 @@ guid "{98F40490-E423-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "66"
 }
-// entity 2967
+// entity 2965
 {
 guid "{290E5085-68A9-11E7-83AF-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/bsp_torrens/torrens_coridoor_from_spawn.map"
 "origin" "3 0.25 0"
 }
-// entity 2968
+// entity 2966
 {
 guid "{20FD0EDF-E421-11E7-A56A-0015833D0A57}"
 "classname" "reflection_probe"
@@ -53196,7 +53135,7 @@ guid "{20FD0EDF-E421-11E7-A56A-0015833D0A57}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 2969
+// entity 2967
 {
 guid "{FF14302E-E425-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53229,7 +53168,7 @@ guid "{FF14302E-E425-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2970
+// entity 2968
 {
 guid "{4836FD62-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53262,7 +53201,7 @@ guid "{4836FD62-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2971
+// entity 2969
 {
 guid "{4EB52AF6-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53295,7 +53234,7 @@ guid "{4EB52AF6-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2972
+// entity 2970
 {
 guid "{5B5BB9EE-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53328,7 +53267,7 @@ guid "{5B5BB9EE-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2973
+// entity 2971
 {
 guid "{76F70520-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53361,7 +53300,7 @@ guid "{76F70520-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2974
+// entity 2972
 {
 guid "{85D204F1-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53394,7 +53333,7 @@ guid "{85D204F1-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2975
+// entity 2973
 {
 guid "{9BB67422-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53427,7 +53366,7 @@ guid "{9BB67422-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2976
+// entity 2974
 {
 guid "{ABFEDF6B-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53460,7 +53399,7 @@ guid "{ABFEDF6B-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2977
+// entity 2975
 {
 guid "{E1AFD6D0-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53493,7 +53432,7 @@ guid "{E1AFD6D0-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2978
+// entity 2976
 {
 guid "{E1AFD6D3-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53526,7 +53465,7 @@ guid "{E1AFD6D3-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2979
+// entity 2977
 {
 guid "{E1AFD6D6-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53559,7 +53498,7 @@ guid "{E1AFD6D6-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2980
+// entity 2978
 {
 guid "{E1AFD6D9-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53592,7 +53531,7 @@ guid "{E1AFD6D9-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2981
+// entity 2979
 {
 guid "{E1AFD6DC-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53625,7 +53564,7 @@ guid "{E1AFD6DC-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2982
+// entity 2980
 {
 guid "{E1AFD6DF-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53658,7 +53597,7 @@ guid "{E1AFD6DF-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2983
+// entity 2981
 {
 guid "{E1AFD6E2-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53691,7 +53630,7 @@ guid "{E1AFD6E2-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2984
+// entity 2982
 {
 guid "{E1AFD6E5-E426-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53724,7 +53663,7 @@ guid "{E1AFD6E5-E426-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 2985
+// entity 2983
 {
 guid "{4658D326-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53755,7 +53694,7 @@ guid "{4658D326-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2986
+// entity 2984
 {
 guid "{61EA941B-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53786,7 +53725,7 @@ guid "{61EA941B-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2987
+// entity 2985
 {
 guid "{61EA9426-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53817,7 +53756,7 @@ guid "{61EA9426-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2988
+// entity 2986
 {
 guid "{61EA9431-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53848,7 +53787,7 @@ guid "{61EA9431-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2989
+// entity 2987
 {
 guid "{6E80C8EF-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53879,7 +53818,7 @@ guid "{6E80C8EF-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2990
+// entity 2988
 {
 guid "{6E80C8FA-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53910,7 +53849,7 @@ guid "{6E80C8FA-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2991
+// entity 2989
 {
 guid "{770EE4D7-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53941,7 +53880,7 @@ guid "{770EE4D7-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2992
+// entity 2990
 {
 guid "{770EE4E5-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -53972,7 +53911,7 @@ guid "{770EE4E5-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2993
+// entity 2991
 {
 guid "{770EE4F0-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54003,7 +53942,7 @@ guid "{770EE4F0-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2994
+// entity 2992
 {
 guid "{7D25ED0C-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54034,7 +53973,7 @@ guid "{7D25ED0C-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2995
+// entity 2993
 {
 guid "{86D566A4-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54065,7 +54004,7 @@ guid "{86D566A4-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2996
+// entity 2994
 {
 guid "{A75EE520-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54096,7 +54035,7 @@ guid "{A75EE520-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2997
+// entity 2995
 {
 guid "{A75EE52E-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54127,7 +54066,7 @@ guid "{A75EE52E-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2998
+// entity 2996
 {
 guid "{AD700F78-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54158,7 +54097,7 @@ guid "{AD700F78-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 2999
+// entity 2997
 {
 guid "{AD700F83-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54189,7 +54128,7 @@ guid "{AD700F83-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 3000
+// entity 2998
 {
 guid "{AD700F8E-E42B-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54220,7 +54159,7 @@ guid "{AD700F8E-E42B-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 3001
+// entity 2999
 {
 guid "{12BC96A4-E42C-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54251,7 +54190,7 @@ guid "{12BC96A4-E42C-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 3002
+// entity 3000
 {
 guid "{3CF3BF59-E42C-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54282,38 +54221,7 @@ guid "{3CF3BF59-E42C-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "82"
 }
-// entity 3003
-{
-guid "{47D64E2B-72BE-11E7-A55D-14DDA9E204AF}"
-"classname" "light"
-"PRIMARY_NOSHADOWMAP" "0"
-"_color" "0.5669 0.6782 0.7569"
-"fov_outer" "180"
-"origin" "-26629 -13148 11824.5"
-"radius" "162"
-"stops" "11.6999999716878"
-"superellipse" "0.75 1 1 1"
-"ENABLE_FALLOFF" "1"
-"PRIMARY_TYPE" "PRIMARY_OMNI"
-"bake_intensity_scale" "1"
-"client_server" "ClientSide"
-"def_tile" "1 1"
-"excludeDedicated" "Off"
-"falloffdistance" "12"
-"far_edge" "0.949999988079071"
-"lightingstate1" "1"
-"lightingstate2" "1"
-"lightingstate3" "1"
-"lightingstate4" "1"
-"name" "light"
-"penumbraRadius" "1.5"
-"roundness" "0.5"
-"shadowUpdate" "Never"
-"shadowmapScale" "1"
-"volumetricSampleCount" "8"
-"spawnflags" "66"
-}
-// entity 3004
+// entity 3001
 {
 guid "{99E78CE8-E4AD-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54328,11 +54236,11 @@ guid "{99E78CE8-E4AD-11E7-A56A-0015833D0A57}"
 "ortho_effect" "0.750000008195639"
 "radius" "133"
 "roundness" "0"
-"stops" "11.400000013411"
+"stops" "11.8000000059605"
 "superellipse" "0.25 0.265 0.05 0.05"
 "volumetric" "1"
 "volumetricCookies" "1"
-"volumetricIntensityBoost" "7.75"
+"volumetricIntensityBoost" "6.5"
 "ENABLE_FALLOFF" "1"
 "_color" "1 1 1"
 "bake_intensity_scale" "1"
@@ -54349,7 +54257,7 @@ guid "{99E78CE8-E4AD-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 3005
+// entity 3002
 {
 guid "{DA8F8A83-E4AD-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54364,11 +54272,11 @@ guid "{DA8F8A83-E4AD-11E7-A56A-0015833D0A57}"
 "ortho_effect" "0.750000008195639"
 "radius" "133"
 "roundness" "0"
-"stops" "11.400000013411"
+"stops" "11.8000000059605"
 "superellipse" "0.25 0.265 0.05 0.05"
 "volumetric" "1"
 "volumetricCookies" "1"
-"volumetricIntensityBoost" "7.75"
+"volumetricIntensityBoost" "6.5"
 "ENABLE_FALLOFF" "1"
 "_color" "1 1 1"
 "bake_intensity_scale" "1"
@@ -54385,7 +54293,7 @@ guid "{DA8F8A83-E4AD-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 3006
+// entity 3003
 {
 guid "{BF745C14-E4AE-11E7-A56A-0015833D0A57}"
 "classname" "reflection_probe"
@@ -54414,7 +54322,7 @@ guid "{BF745C14-E4AE-11E7-A56A-0015833D0A57}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 3007
+// entity 3004
 {
 guid "{BF745C17-E4AE-11E7-A56A-0015833D0A57}"
 "classname" "reflection_probe"
@@ -54442,7 +54350,7 @@ guid "{BF745C17-E4AE-11E7-A56A-0015833D0A57}"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
 }
-// entity 3008
+// entity 3005
 {
 guid "{8EAFAE8D-E416-11E7-A56A-0015833D0A57}"
 "classname" "light"
@@ -54475,7 +54383,7 @@ guid "{8EAFAE8D-E416-11E7-A56A-0015833D0A57}"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
 }
-// entity 3009
+// entity 3006
 {
 guid "{9FFA6351-6E32-11E7-A55D-14DDA9E204AF}"
 "classname" "light"
@@ -54507,7 +54415,7 @@ guid "{9FFA6351-6E32-11E7-A55D-14DDA9E204AF}"
 "volumetricSampleCount" "8"
 "spawnflags" "18"
 }
-// entity 3010
+// entity 3007
 {
 guid "{C8FAC7C6-E4B6-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54521,7 +54429,7 @@ guid "{C8FAC7C6-E4B6-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3011
+// entity 3008
 {
 guid "{0BE58482-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54535,7 +54443,7 @@ guid "{0BE58482-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3012
+// entity 3009
 {
 guid "{169A8369-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54548,7 +54456,7 @@ guid "{169A8369-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3013
+// entity 3010
 {
 guid "{20F39A7A-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54562,7 +54470,7 @@ guid "{20F39A7A-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3014
+// entity 3011
 {
 guid "{20F39A89-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54575,7 +54483,7 @@ guid "{20F39A89-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3015
+// entity 3012
 {
 guid "{20F39A94-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54589,7 +54497,7 @@ guid "{20F39A94-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3016
+// entity 3013
 {
 guid "{35FECF82-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54603,7 +54511,7 @@ guid "{35FECF82-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3017
+// entity 3014
 {
 guid "{528705A0-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54617,7 +54525,7 @@ guid "{528705A0-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3018
+// entity 3015
 {
 guid "{6551D4F6-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54631,7 +54539,7 @@ guid "{6551D4F6-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3019
+// entity 3016
 {
 guid "{72F2A50F-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54645,7 +54553,7 @@ guid "{72F2A50F-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3020
+// entity 3017
 {
 guid "{82D0E619-E4B7-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54659,7 +54567,7 @@ guid "{82D0E619-E4B7-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3021
+// entity 3018
 {
 guid "{F75A50CB-E4F4-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54674,7 +54582,7 @@ guid "{F75A50CB-E4F4-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3022
+// entity 3019
 {
 guid "{2559D0E2-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54689,7 +54597,7 @@ guid "{2559D0E2-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3023
+// entity 3020
 {
 guid "{3B0714FF-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54704,7 +54612,7 @@ guid "{3B0714FF-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3024
+// entity 3021
 {
 guid "{3B071502-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54719,7 +54627,7 @@ guid "{3B071502-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3025
+// entity 3022
 {
 guid "{587672D8-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54734,7 +54642,7 @@ guid "{587672D8-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3026
+// entity 3023
 {
 guid "{587672DB-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54749,7 +54657,7 @@ guid "{587672DB-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3027
+// entity 3024
 {
 guid "{587672DE-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54764,22 +54672,7 @@ guid "{587672DE-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3028
-{
-guid "{587672E1-E4F5-11E7-A56A-0015833D0A57}"
-"classname" "fx"
-"angles" "83.7968 179.998 -0.00137864"
-"delay" "-19909"
-"fxdef" "steam/fx_steam_leak_md_soft_slow"
-"origin" "-26196.4 -13500 11808.8"
-"fxstate1" "1"
-"fxstate2" "1"
-"fxstate3" "1"
-"fxstate4" "1"
-"primaryLightFraction" "1"
-"timescale" "1"
-}
-// entity 3029
+// entity 3025
 {
 guid "{9B549FD1-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54794,7 +54687,7 @@ guid "{9B549FD1-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3030
+// entity 3026
 {
 guid "{9B549FD4-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54809,7 +54702,7 @@ guid "{9B549FD4-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3031
+// entity 3027
 {
 guid "{9B549FD7-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54824,7 +54717,7 @@ guid "{9B549FD7-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3032
+// entity 3028
 {
 guid "{9B549FDA-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54839,7 +54732,7 @@ guid "{9B549FDA-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3033
+// entity 3029
 {
 guid "{E259B2F7-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54854,7 +54747,7 @@ guid "{E259B2F7-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3034
+// entity 3030
 {
 guid "{E259B2FA-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54869,7 +54762,7 @@ guid "{E259B2FA-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3035
+// entity 3031
 {
 guid "{EEAD3817-E4F5-11E7-A56A-0015833D0A57}"
 "classname" "fx"
@@ -54884,7 +54777,7 @@ guid "{EEAD3817-E4F5-11E7-A56A-0015833D0A57}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3036
+// entity 3032
 {
 guid "{4849611D-E519-11E7-A56A-0015833D0A57}"
 "classname" "misc_model"
@@ -54898,7 +54791,7 @@ guid "{4849611D-E519-11E7-A56A-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3037
+// entity 3033
 {
 guid "{700E8AC5-E676-11E7-A56C-0015833D0A57}"
 "classname" "trigger_use"
@@ -54916,7 +54809,7 @@ guid "{700E8AC5-E676-11E7-A56C-0015833D0A57}"
  ( -25298 -13018 11824.5 ) ( -25275 -13040.25 11824.5 ) ( -25275 -13040.25 11808.5 ) trigger 45.891933 -64 34592.801 0 -180 0 lightmap_gray 11748.334 -16384 34592.805 0 -180 0
 }
 }
-// entity 3038
+// entity 3034
 {
 guid "{80914AED-E684-11E7-A56C-0015833D0A57}"
 "classname" "misc_model"
@@ -54930,7 +54823,7 @@ guid "{80914AED-E684-11E7-A56C-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3039
+// entity 3035
 {
 guid "{B64B70B6-E72D-11E7-A56C-0015833D0A57}"
 "classname" "misc_model"
@@ -54944,7 +54837,7 @@ guid "{B64B70B6-E72D-11E7-A56C-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3040
+// entity 3036
 {
 guid "{9296A7A1-E72D-11E7-A56C-0015833D0A57}"
 "classname" "misc_model"
@@ -54958,7 +54851,7 @@ guid "{9296A7A1-E72D-11E7-A56C-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3041
+// entity 3037
 {
 guid "{CDA542E8-E72D-11E7-A56C-0015833D0A57}"
 "classname" "misc_model"
@@ -54972,7 +54865,7 @@ guid "{CDA542E8-E72D-11E7-A56C-0015833D0A57}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3042
+// entity 3038
 {
 guid "{3CE00C5D-F469-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -54994,7 +54887,7 @@ guid "{3CE00C5D-F469-11E7-A56E-14DDA9E204AF}"
  ( -25918.25 -12727 11834 ) ( -25918.25 -12827.25 11834 ) ( -25918.25 -12827.25 11752.5 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
 }
 }
-// entity 3043
+// entity 3039
 {
 guid "{D0F0E62B-F469-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55016,7 +54909,7 @@ guid "{D0F0E62B-F469-11E7-A56E-14DDA9E204AF}"
  ( -25609.25 -12824.75 11752.5 ) ( -25609.25 -12824.75 11834 ) ( -25561.25 -12873 11834 ) clip 31.590792 64 -6542.1357 0 0 0 lightmap_gray 8087.2427 16384 -6542.1357 0 0 0
 }
 }
-// entity 3044
+// entity 3040
 {
 guid "{44BE91D7-F46A-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55038,7 +54931,7 @@ guid "{44BE91D7-F46A-11E7-A56E-14DDA9E204AF}"
  ( -25305.5 -12641.75 11752.5 ) ( -25305.5 -12641.75 11834 ) ( -25374 -12710.75 11834 ) clip 45.175476 64 -3657.1912 0 0 0 lightmap_gray 11565.178 16384 -3657.2861 0 0 0
 }
 }
-// entity 3045
+// entity 3041
 {
 guid "{671F251A-F46B-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55060,7 +54953,7 @@ guid "{671F251A-F46B-11E7-A56E-14DDA9E204AF}"
  ( -25563.25 -13196 11834 ) ( -25563.25 -13196 11752.5 ) ( -25466.5 -13196 11752.5 ) clip 63.34491 64 -12868.843 0 0 0 lightmap_gray 16216.389 16384 -12868.719 0 0 0
 }
 }
-// entity 3046
+// entity 3042
 {
 guid "{B308D403-F46B-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55082,7 +54975,7 @@ guid "{B308D403-F46B-11E7-A56E-14DDA9E204AF}"
  ( -25563.75 -13520.25 11834 ) ( -25563.75 -13520.25 11752.5 ) ( -25467 -13520.25 11752.5 ) clip 63.34491 64 -12869.343 0 0 0 lightmap_gray 16216.389 16384 -12869.218 0 0 0
 }
 }
-// entity 3047
+// entity 3043
 {
 guid "{F2CD535B-F46B-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55104,7 +54997,7 @@ guid "{F2CD535B-F46B-11E7-A56E-14DDA9E204AF}"
  ( -25712.25 -13329.5 11834 ) ( -25712.25 -13329.5 11752.5 ) ( -25615.5 -13329.5 11752.5 ) clip 63.34491 64 -13017.845 0 0 0 lightmap_gray 16216.389 16384 -13017.717 0 0 0
 }
 }
-// entity 3048
+// entity 3044
 {
 guid "{29DDBC3E-F46C-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55126,7 +55019,7 @@ guid "{29DDBC3E-F46C-11E7-A56E-14DDA9E204AF}"
  ( -26462.25 -13330.25 11834 ) ( -26462.25 -13330.25 11752.5 ) ( -26365.5 -13330.25 11752.5 ) clip 63.34491 64 -13767.846 0 0 0 lightmap_gray 16216.389 16384 -13767.714 0 0 0
 }
 }
-// entity 3049
+// entity 3045
 {
 guid "{5B471882-F46C-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55148,7 +55041,7 @@ guid "{5B471882-F46C-11E7-A56E-14DDA9E204AF}"
  ( -27080.25 -13331.25 11834 ) ( -27080.25 -13331.25 11752.5 ) ( -26983.5 -13331.25 11752.5 ) clip 63.34491 64 -14385.846 0 0 0 lightmap_gray 16216.389 16384 -14385.714 0 0 0
 }
 }
-// entity 3050
+// entity 3046
 {
 guid "{A4DE1E80-F46C-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55170,7 +55063,7 @@ guid "{A4DE1E80-F46C-11E7-A56E-14DDA9E204AF}"
  ( -25700.75 -14011 11834 ) ( -25700.75 -14011 11752.5 ) ( -25660 -13970.25 11752.5 ) clip 62.577095 64 -1525.2936 0 0 0 lightmap_gray 16019.825 16384 -1525.1666 0 0 0
 }
 }
-// entity 3051
+// entity 3047
 {
 guid "{D9AE6C69-F46C-11E7-A56E-14DDA9E204AF}"
 "classname" "script_brushmodel"
@@ -55192,7 +55085,7 @@ guid "{D9AE6C69-F46C-11E7-A56E-14DDA9E204AF}"
  ( -25695.25 -14016.75 11834 ) ( -25695.25 -14016.75 11752.5 ) ( -25654.5 -13976 11752.5 ) clip 62.577095 64 -1531.0448 0 0 0 lightmap_gray 16019.825 16384 -1530.9161 0 0 0
 }
 }
-// entity 3052
+// entity 3048
 {
 guid "{B364AD2B-E684-11E7-A56C-0015833D0A57}"
 "classname" "script_model"
@@ -55209,7 +55102,7 @@ guid "{B364AD2B-E684-11E7-A56C-0015833D0A57}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
-// entity 3053
+// entity 3049
 {
 guid "{A64917B7-F46F-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55222,7 +55115,7 @@ guid "{A64917B7-F46F-11E7-A56E-14DDA9E204AF}"
 "modelscale" "1"
 "static" "1"
 }
-// entity 3054
+// entity 3050
 {
 guid "{A64917BB-F46F-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55235,7 +55128,7 @@ guid "{A64917BB-F46F-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3055
+// entity 3051
 {
 guid "{BE3630F3-F46F-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55249,7 +55142,7 @@ guid "{BE3630F3-F46F-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3056
+// entity 3052
 {
 guid "{D7ADD05C-F46F-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55262,7 +55155,7 @@ guid "{D7ADD05C-F46F-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3057
+// entity 3053
 {
 guid "{EFF94E28-F46F-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55276,7 +55169,7 @@ guid "{EFF94E28-F46F-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3058
+// entity 3054
 {
 guid "{03174ED1-F470-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55289,7 +55182,7 @@ guid "{03174ED1-F470-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3059
+// entity 3055
 {
 guid "{03174ED8-F470-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55303,7 +55196,7 @@ guid "{03174ED8-F470-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3060
+// entity 3056
 {
 guid "{ED33BB3C-F473-11E7-A56E-14DDA9E204AF}"
 "classname" "script_model"
@@ -55320,7 +55213,7 @@ guid "{ED33BB3C-F473-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
-// entity 3061
+// entity 3057
 {
 guid "{A13B055B-F474-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55334,7 +55227,7 @@ guid "{A13B055B-F474-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3062
+// entity 3058
 {
 guid "{BA9418E5-F474-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55347,7 +55240,7 @@ guid "{BA9418E5-F474-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3063
+// entity 3059
 {
 guid "{8C05C50A-72BF-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55361,7 +55254,7 @@ guid "{8C05C50A-72BF-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3064
+// entity 3060
 {
 guid "{BBECA9C3-72BF-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55375,7 +55268,7 @@ guid "{BBECA9C3-72BF-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3065
+// entity 3061
 {
 guid "{9BBAF515-72BF-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55389,7 +55282,7 @@ guid "{9BBAF515-72BF-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3066
+// entity 3062
 {
 guid "{13A1664F-5225-11E7-A554-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55403,7 +55296,7 @@ guid "{13A1664F-5225-11E7-A554-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3067
+// entity 3063
 {
 guid "{F14606DD-FA01-11E7-A56E-14DDA9E204AF}"
 "classname" "fx"
@@ -55417,7 +55310,7 @@ guid "{F14606DD-FA01-11E7-A56E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3068
+// entity 3064
 {
 guid "{60E59139-FA02-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55430,7 +55323,7 @@ guid "{60E59139-FA02-11E7-A56E-14DDA9E204AF}"
 "modelscale" "1"
 "static" "1"
 }
-// entity 3069
+// entity 3065
 {
 guid "{77655E7F-FA02-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55444,7 +55337,7 @@ guid "{77655E7F-FA02-11E7-A56E-14DDA9E204AF}"
 "modelscale" "1"
 "static" "1"
 }
-// entity 3070
+// entity 3066
 {
 guid "{DC7478D2-FA02-11E7-A56E-14DDA9E204AF}"
 "classname" "fx"
@@ -55458,7 +55351,7 @@ guid "{DC7478D2-FA02-11E7-A56E-14DDA9E204AF}"
 "primaryLightFraction" "1"
 "timescale" "1"
 }
-// entity 3071
+// entity 3067
 {
 guid "{B83C0EFA-FA08-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55472,7 +55365,7 @@ guid "{B83C0EFA-FA08-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3072
+// entity 3068
 {
 guid "{D03C0F2C-FA08-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55486,7 +55379,7 @@ guid "{D03C0F2C-FA08-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3073
+// entity 3069
 {
 guid "{D03C0F33-FA08-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55500,14 +55393,14 @@ guid "{D03C0F33-FA08-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3074
+// entity 3070
 {
 guid "{00E43536-FA09-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/noddingbird.map"
 "origin" "-26197.5 -14308.5 11792.3"
 }
-// entity 3075
+// entity 3071
 {
 guid "{3A69CB66-FA09-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55521,7 +55414,7 @@ guid "{3A69CB66-FA09-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3076
+// entity 3072
 {
 guid "{4E00AB23-FA09-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55535,7 +55428,7 @@ guid "{4E00AB23-FA09-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3077
+// entity 3073
 {
 guid "{223AD017-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55548,7 +55441,7 @@ guid "{223AD017-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3078
+// entity 3074
 {
 guid "{464284A2-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55562,7 +55455,7 @@ guid "{464284A2-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3079
+// entity 3075
 {
 guid "{54D97595-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55576,7 +55469,7 @@ guid "{54D97595-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3080
+// entity 3076
 {
 guid "{612B331B-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55590,7 +55483,7 @@ guid "{612B331B-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3081
+// entity 3077
 {
 guid "{8664BB85-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55604,7 +55497,7 @@ guid "{8664BB85-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3082
+// entity 3078
 {
 guid "{8D3EDEF2-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55618,7 +55511,7 @@ guid "{8D3EDEF2-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3083
+// entity 3079
 {
 guid "{9F0359E1-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55631,7 +55524,7 @@ guid "{9F0359E1-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3084
+// entity 3080
 {
 guid "{AC236599-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55645,7 +55538,7 @@ guid "{AC236599-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3085
+// entity 3081
 {
 guid "{FA7E7C7D-FA0A-11E7-A56E-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55659,7 +55552,7 @@ guid "{FA7E7C7D-FA0A-11E7-A56E-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3086
+// entity 3082
 {
 guid "{B070D536-E4F6-11E7-A56A-0015833D0A57}"
 "classname" "script_brushmodel"
@@ -55681,7 +55574,7 @@ guid "{B070D536-E4F6-11E7-A56A-0015833D0A57}"
  ( -25577 -13286.25 11810.5 ) ( -25577 -13444.25 11810.5 ) ( -25577 -13444.25 11779.25 ) torrens_doortrigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 31.5 0 0
 }
 }
-// entity 3087
+// entity 3083
 {
 guid "{3EAC55FB-72CA-11E7-A55D-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55695,7 +55588,7 @@ guid "{3EAC55FB-72CA-11E7-A55D-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3088
+// entity 3084
 {
 guid "{895D93ED-49F1-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55709,7 +55602,7 @@ guid "{895D93ED-49F1-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3089
+// entity 3085
 {
 guid "{90F3C3EB-49F8-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55722,7 +55615,7 @@ guid "{90F3C3EB-49F8-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3090
+// entity 3086
 {
 guid "{4F6C40B2-49FD-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55736,7 +55629,7 @@ guid "{4F6C40B2-49FD-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3091
+// entity 3087
 {
 guid "{6BFC9F90-49FE-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55750,7 +55643,7 @@ guid "{6BFC9F90-49FE-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3092
+// entity 3088
 {
 guid "{871F8B52-49FE-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55763,7 +55656,7 @@ guid "{871F8B52-49FE-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3093
+// entity 3089
 {
 guid "{A3F8E0E1-49FE-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55776,7 +55669,7 @@ guid "{A3F8E0E1-49FE-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3094
+// entity 3090
 {
 guid "{B14B5974-49FE-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55789,7 +55682,7 @@ guid "{B14B5974-49FE-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3095
+// entity 3091
 {
 guid "{C06ECF30-49FE-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55802,7 +55695,7 @@ guid "{C06ECF30-49FE-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3096
+// entity 3092
 {
 guid "{6E5CBD07-4A10-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55815,7 +55708,7 @@ guid "{6E5CBD07-4A10-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3097
+// entity 3093
 {
 guid "{8FFC426D-4A10-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55828,7 +55721,7 @@ guid "{8FFC426D-4A10-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3098
+// entity 3094
 {
 guid "{EC77DBF8-4A10-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55842,7 +55735,7 @@ guid "{EC77DBF8-4A10-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3099
+// entity 3095
 {
 guid "{06E3B4EF-4A11-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55856,7 +55749,7 @@ guid "{06E3B4EF-4A11-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3100
+// entity 3096
 {
 guid "{298D90BB-4A11-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55870,7 +55763,7 @@ guid "{298D90BB-4A11-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3101
+// entity 3097
 {
 guid "{3890E955-4A11-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55884,7 +55777,7 @@ guid "{3890E955-4A11-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3102
+// entity 3098
 {
 guid "{687800DE-4A11-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55898,7 +55791,7 @@ guid "{687800DE-4A11-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3103
+// entity 3099
 {
 guid "{17C455D3-4A12-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55912,7 +55805,7 @@ guid "{17C455D3-4A12-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3104
+// entity 3100
 {
 guid "{A7E99024-4A17-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55926,7 +55819,7 @@ guid "{A7E99024-4A17-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3105
+// entity 3101
 {
 guid "{2142A845-4A1F-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55940,7 +55833,7 @@ guid "{2142A845-4A1F-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3106
+// entity 3102
 {
 guid "{9A67C44B-4A1F-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55954,7 +55847,7 @@ guid "{9A67C44B-4A1F-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3107
+// entity 3103
 {
 guid "{687021F0-4A20-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55968,7 +55861,7 @@ guid "{687021F0-4A20-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3108
+// entity 3104
 {
 guid "{BAF9EA42-4A20-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55982,7 +55875,7 @@ guid "{BAF9EA42-4A20-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3109
+// entity 3105
 {
 guid "{DAF37FAA-4A20-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -55996,7 +55889,7 @@ guid "{DAF37FAA-4A20-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3110
+// entity 3106
 {
 guid "{AD4B14D6-4A21-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56010,7 +55903,7 @@ guid "{AD4B14D6-4A21-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3111
+// entity 3107
 {
 guid "{70E84F6F-4A25-11E8-A579-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -56018,7 +55911,7 @@ guid "{70E84F6F-4A25-11E8-A579-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/fan_animated.map"
 "origin" "-2555.45 -29742.2 0"
 }
-// entity 3112
+// entity 3108
 {
 guid "{CBAE0EF2-4A25-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56032,7 +55925,7 @@ guid "{CBAE0EF2-4A25-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3113
+// entity 3109
 {
 guid "{E4468179-4A25-11E8-A579-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56046,7 +55939,7 @@ guid "{E4468179-4A25-11E8-A579-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3114
+// entity 3110
 {
 guid "{D00535D9-4A38-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56060,7 +55953,7 @@ guid "{D00535D9-4A38-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3115
+// entity 3111
 {
 guid "{C84084B9-4A37-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56074,7 +55967,7 @@ guid "{C84084B9-4A37-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3116
+// entity 3112
 {
 guid "{DFE3E075-4A39-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56088,7 +55981,7 @@ guid "{DFE3E075-4A39-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3117
+// entity 3113
 {
 guid "{E7E93413-4A39-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56102,7 +55995,7 @@ guid "{E7E93413-4A39-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3118
+// entity 3114
 {
 guid "{EF316F3A-4A39-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56116,7 +56009,7 @@ guid "{EF316F3A-4A39-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3119
+// entity 3115
 {
 guid "{F618D319-4A39-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56130,7 +56023,7 @@ guid "{F618D319-4A39-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3120
+// entity 3116
 {
 guid "{09742C8F-4A3A-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56144,7 +56037,7 @@ guid "{09742C8F-4A3A-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3121
+// entity 3117
 {
 guid "{13CB3BB6-4A3A-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56158,7 +56051,7 @@ guid "{13CB3BB6-4A3A-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3122
+// entity 3118
 {
 guid "{24957163-4A3A-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56172,7 +56065,7 @@ guid "{24957163-4A3A-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3123
+// entity 3119
 {
 guid "{3B96598D-4A3A-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56186,7 +56079,7 @@ guid "{3B96598D-4A3A-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3124
+// entity 3120
 {
 guid "{56AB12D5-4A3A-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56200,7 +56093,7 @@ guid "{56AB12D5-4A3A-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3125
+// entity 3121
 {
 guid "{56AB12DF-4A3A-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56214,7 +56107,7 @@ guid "{56AB12DF-4A3A-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3126
+// entity 3122
 {
 guid "{1CE14BDA-4A41-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56228,7 +56121,7 @@ guid "{1CE14BDA-4A41-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3127
+// entity 3123
 {
 guid "{A325544F-4A39-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56242,7 +56135,7 @@ guid "{A325544F-4A39-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3128
+// entity 3124
 {
 guid "{EE83EE07-4A43-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56255,7 +56148,7 @@ guid "{EE83EE07-4A43-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3129
+// entity 3125
 {
 guid "{FE0269C5-4A43-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56269,7 +56162,7 @@ guid "{FE0269C5-4A43-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3130
+// entity 3126
 {
 guid "{FE0269D6-4A43-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56283,7 +56176,7 @@ guid "{FE0269D6-4A43-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3131
+// entity 3127
 {
 guid "{6069BF9B-4A44-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56297,13 +56190,13 @@ guid "{6069BF9B-4A44-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3132
+// entity 3128
 {
 guid "{34241801-4A4C-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/suit_container.map"
 }
-// entity 3133
+// entity 3129
 {
 guid "{34241829-4A4C-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_prefab"
@@ -56311,7 +56204,7 @@ guid "{34241829-4A4C-11E8-A57B-14DDA9E204AF}"
 "model" "_prefabs/zm_alien_isolation/suit_container.map"
 "origin" "-12155.5 -38883.6 0"
 }
-// entity 3134
+// entity 3130
 {
 guid "{045CC17E-4A4D-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56325,7 +56218,7 @@ guid "{045CC17E-4A4D-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3135
+// entity 3131
 {
 guid "{045CC181-4A4D-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56339,7 +56232,7 @@ guid "{045CC181-4A4D-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3136
+// entity 3132
 {
 guid "{8E095D43-4789-11E7-A549-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56353,7 +56246,7 @@ guid "{8E095D43-4789-11E7-A549-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3137
+// entity 3133
 {
 guid "{D3C4265B-4789-11E7-A549-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56367,7 +56260,7 @@ guid "{D3C4265B-4789-11E7-A549-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3138
+// entity 3134
 {
 guid "{6674CCFA-4A4D-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56381,7 +56274,7 @@ guid "{6674CCFA-4A4D-11E8-A57B-14DDA9E204AF}"
 "lightingstate4" "1"
 "static" "1"
 }
-// entity 3139
+// entity 3135
 {
 guid "{6674CCFD-4A4D-11E8-A57B-14DDA9E204AF}"
 "classname" "misc_model"
@@ -56394,4 +56287,331 @@ guid "{6674CCFD-4A4D-11E8-A57B-14DDA9E204AF}"
 "lightingstate3" "1"
 "lightingstate4" "1"
 "static" "1"
+}
+// entity 3136
+{
+guid "{D986826E-4A5E-11E8-A57C-14DDA9E204AF}"
+"classname" "light"
+"ENABLE_FALLOFF" "0"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"_color" "0.7581 0.8911 0.9294"
+"angles" "0 90 0"
+"cut_on" "4"
+"falloffdistance" "63"
+"far_edge" "0.599999994039536"
+"fov_outer" "140"
+"name" "light_002"
+"origin" "-25639.1 -13363.1 11857"
+"ortho_effect" "0.200000002980232"
+"roundness" "0"
+"stops" "9.49999997764826"
+"superellipse" "0.05 0.16 0.8 1"
+"volumetric" "1"
+"volumetricCookies" "1"
+"volumetricIntensityBoost" "7"
+"PRIMARY_NOSHADOWMAP" "1"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"radius" "100"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "20"
+}
+// entity 3137
+{
+guid "{E503B8A4-4A62-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 19.5995 0"
+"model" "prop_ketchup"
+"modelscale" "2.5"
+"origin" "-26761.3 -13378.8 11781.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3138
+{
+guid "{0B55A635-4A63-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 301.999 0"
+"model" "prop_ketchup"
+"modelscale" "2.5"
+"origin" "-26800.8 -13575.8 11786.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3139
+{
+guid "{8C3A3653-4A63-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "303.799 247.598 90.0011"
+"model" "prop_fire_extinguisher"
+"modelscale" "2.5"
+"origin" "-26663.4 -13152.5 11789"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3140
+{
+guid "{CAE5667C-4A63-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "papers5"
+"modelscale" "2.5"
+"origin" "-26613 -13192.8 11752"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3141
+{
+guid "{587672E1-E4F5-11E7-A56A-0015833D0A57}"
+"classname" "fx"
+"angles" "83.7968 179.998 -0.00137864"
+"delay" "-19909"
+"fxdef" "steam/fx_steam_leak_md_soft_slow"
+"origin" "-26196.4 -13500 11808.8"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 3142
+{
+guid "{042C2998-4A64-11E8-A57C-14DDA9E204AF}"
+"classname" "fx"
+"angles" "83.7968 179.998 -0.00137864"
+"delay" "-26502"
+"fxdef" "steam/fx_steam_leak_md_soft_slow"
+"origin" "-26741.7 -13229.3 11852"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 3143
+{
+guid "{1C7ABFC6-4A64-11E8-A57C-14DDA9E204AF}"
+"classname" "fx"
+"angles" "83.7968 179.998 -0.00137864"
+"delay" "-28044"
+"fxdef" "steam/fx_steam_leak_md_soft_slow"
+"origin" "-26753.9 -13229.5 11853.3"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 3144
+{
+guid "{1C7ABFD1-4A64-11E8-A57C-14DDA9E204AF}"
+"classname" "fx"
+"angles" "83.7968 179.998 -0.00137864"
+"delay" "-27635"
+"fxdef" "steam/fx_steam_leak_md_soft_slow"
+"origin" "-26726.2 -13229.8 11850.3"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 3145
+{
+guid "{334D1703-4A64-11E8-A57C-14DDA9E204AF}"
+"classname" "fx"
+"angles" "83.7968 179.998 -0.00137864"
+"delay" "-24097"
+"fxdef" "steam/fx_steam_leak_md_soft_slow"
+"origin" "-26606.2 -13227 11849.3"
+"fxstate1" "1"
+"fxstate2" "1"
+"fxstate3" "1"
+"fxstate4" "1"
+"primaryLightFraction" "1"
+"timescale" "1"
+}
+// entity 3146
+{
+guid "{D82AEC82-E401-11E7-A56A-0015833D0A57}"
+"classname" "light"
+"PRIMARY_TYPE" "PRIMARY_SPOT"
+"falloffdistance" "18"
+"name" "light_003"
+"origin" "-26681.3 -13175.8 11886.5"
+"ortho_effect" "0.300000000745058"
+"roundness" "0"
+"stops" "12.0000000149012"
+"superellipse" "0.81 0.86 0.17 0.32"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_NOSHADOWMAP" "1"
+"_color" "1 1 1"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"far_edge" "0.949999988079071"
+"fov_outer" "90"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"penumbraRadius" "1.5"
+"radius" "100"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "84"
+}
+// entity 3147
+{
+guid "{47D64E2B-72BE-11E7-A55D-14DDA9E204AF}"
+"classname" "light"
+"PRIMARY_NOSHADOWMAP" "0"
+"_color" "0.5669 0.6782 0.7569"
+"far_edge" "0.599999994039536"
+"fov_outer" "180"
+"origin" "-26629 -13138 11824.5"
+"radius" "162"
+"stops" "11.6999999716878"
+"superellipse" "0.75 1 1 1"
+"ENABLE_FALLOFF" "1"
+"PRIMARY_TYPE" "PRIMARY_OMNI"
+"bake_intensity_scale" "1"
+"client_server" "ClientSide"
+"def_tile" "1 1"
+"excludeDedicated" "Off"
+"falloffdistance" "12"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"name" "light"
+"penumbraRadius" "1.5"
+"roundness" "0.5"
+"shadowUpdate" "Never"
+"shadowmapScale" "1"
+"volumetricSampleCount" "8"
+"spawnflags" "66"
+}
+// entity 3148
+{
+guid "{9AB5651F-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+}
+// entity 3149
+{
+guid "{A295B365-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+"origin" "-28.25 0 0"
+}
+// entity 3150
+{
+guid "{AA097C38-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+"origin" "-57.25 0 0"
+}
+// entity 3151
+{
+guid "{B0E54CFF-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+"origin" "-102.25 -33 -0.75"
+}
+// entity 3152
+{
+guid "{B76C3154-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+"origin" "-102.25 -61 -0.75"
+}
+// entity 3153
+{
+guid "{BE14C606-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+"origin" "-102.25 -89.25 -0.75"
+}
+// entity 3154
+{
+guid "{C464A214-4A65-11E8-A57C-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/canteen_bar_light.map"
+"origin" "28.5 0 0"
+}
+// entity 3155
+{
+guid "{D6F30754-6E30-11E7-A55D-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_power" "8"
+"ao_range" "25"
+"ao_strength_double_sided" "0.700000007450581"
+"brightnessAdjust" "1"
+"evcomp" "-1.5"
+"faceBlend0" "3"
+"faceBlend1" "3"
+"faceBlend2" "3"
+"faceBlend3" "3"
+"faceBlend4" "3"
+"faceBlend5" "3"
+"faceBlend6" "3"
+"faceBlend7" "3"
+"faceBlend8" "3"
+"faceBlend9" "3"
+"facePlane0" "1 0 0 -367.5"
+"facePlane1" "0 1 0 -459"
+"facePlane2" "0 0 1 -58.25"
+"facePlane3" "-1 -0 -0 -348.5"
+"facePlane4" "-0 -1 -0 -357.75"
+"facePlane5" "-0 -0 -1 -57.75"
+"facePlane6" "0.701517 0.712652 0 -314.762"
+"facePlane7" "0.00909053 0.999959 0 -214.141"
+"facePlane8" "-0.686486 0.727143 -0 -169.84"
+"facePlane9" "-0.999979 -0.00653581 -0 -226.016"
+"name" "probe_007"
+"origin" "-25800.8 -13880.5 11808.5"
+"resolution" "8x"
+"size_max" "349.161 360.75 60.75"
+"size_min" "370.5 461.096 61.25"
+"smooth_post_process" "1"
+"volumetric" "1"
+"adaptive_quality_boost" "Off"
+"ao_strength" "1"
+"blend_maxs" "3 3 3"
+"blend_mins" "3 3 3"
+"box" "1"
+"client_server" "ClientSide"
+"debugColor" "1 1 1"
+"grid_density" "0"
+"high_detail" "1"
+"in_play_space" "1"
+"inpaint_occluded_rays" "1"
+"placement_offset" "72"
 }
