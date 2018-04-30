@@ -158,6 +158,10 @@
 	{
 		"cookieImage" "zm_alien_isolation\\textures\\worklight.tif"
 	}
+	"gobo_crewroom_light" ( "light.gdf" )
+	{
+		"cookieImage" "zm_alien_isolation\\models\\BSP_TORRENS\\crewroom gobo.tif"
+	}
 	"gobo_grill" ( "light.gdf" )
 	{
 		"cookieImage" "zm_alien_isolation\\models\\BSP_TORRENS\\grill_gobo.tif"
