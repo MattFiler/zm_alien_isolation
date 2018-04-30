@@ -6,7 +6,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{419A226E-4A69-11E8-A57C-14DDA9E204AF}"
+guid "{89A94981-4C07-11E8-A57E-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -56614,4 +56614,201 @@ guid "{D6F30754-6E30-11E7-A55D-14DDA9E204AF}"
 "in_play_space" "1"
 "inpaint_occluded_rays" "1"
 "placement_offset" "72"
+}
+// entity 3156
+{
+guid "{76BC3487-4C07-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/tech_coridoor_light.map"
+"origin" "-106.25 0 0"
+}
+// entity 3157
+{
+guid "{76BC348A-4C07-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/tech_coridoor_light.map"
+"origin" "-48.75 0 0"
+}
+// entity 3158
+{
+guid "{89A94997-4C07-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 179.6 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/tech_coridoor_light.map"
+"origin" "-54360.1 -26538 0"
+}
+// entity 3159
+{
+guid "{89A94994-4C07-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_prefab"
+"angles" "0 179.6 0"
+"model" "_prefabs/zm_alien_isolation/bsp_torrens/tech_coridoor_light.map"
+"origin" "-54302.5 -26538.4 0"
+}
+// entity 3160
+{
+guid "{D4386350-4C07-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "329 269.6 -6.54093e-006"
+"model" "torrens_coridoor_light_tech"
+"modelscale" "2.5"
+"origin" "-27240 -13408.2 11821.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3161
+{
+guid "{578726DC-4C08-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "329 269.6 -6.54093e-006"
+"model" "torrens_coridoor_light_tech"
+"modelscale" "2.5"
+"origin" "-27182.5 -13408.6 11821.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3162
+{
+guid "{64099F17-4C08-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "-31 90 0"
+"model" "torrens_coridoor_light_tech"
+"modelscale" "2.5"
+"origin" "-27076.5 -13318.8 11821.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3163
+{
+guid "{64099F29-4C08-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "-31 90 0"
+"model" "torrens_coridoor_light_tech"
+"modelscale" "2.5"
+"origin" "-27134 -13318.8 11821.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3164
+{
+guid "{A84844D4-4C08-11E8-A57E-14DDA9E204AF}"
+"classname" "reflection_probe"
+"ao_power" "8"
+"ao_range" "25"
+"ao_strength_double_sided" "0.200000002980232"
+"origin" "-27157.8 -13363.8 11801"
+"resolution" "8x"
+"size_max" "106 55.25 36"
+"size_min" "107 55.5 52.25"
+"smooth_post_process" "1"
+"volumetric" "1"
+"adaptive_quality_boost" "Off"
+"ao_strength" "1"
+"blend_maxs" "3 3 3"
+"blend_mins" "3 3 3"
+"box" "1"
+"client_server" "ClientSide"
+"debugColor" "1 1 1"
+"grid_density" "0"
+"high_detail" "1"
+"in_play_space" "1"
+"inpaint_occluded_rays" "1"
+"name" "probe"
+"placement_offset" "72"
+}
+// entity 3165
+{
+guid "{AE2F4B2C-4C0E-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -90 90"
+"model" "prop_journey_poster"
+"modelscale" "0.250000001117587"
+"origin" "-26551 -13273.5 11807.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3166
+{
+guid "{149F837E-4C11-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "355.6 89.9997 6.4462e-007"
+"model" "prop_postcard_aurora"
+"modelscale" "2.5"
+"origin" "-26551 -13294.8 11814.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3167
+{
+guid "{269C486D-4C11-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 90 0"
+"model" "prop_postcard_bbq"
+"modelscale" "2.5"
+"origin" "-26551 -13302 11812.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3168
+{
+guid "{DE20B748-4C11-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "4.19975 89.9997 1.74694e-007"
+"model" "prop_postcard_stonehenge"
+"modelscale" "2.5"
+"origin" "-26551 -13289.5 11810.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3169
+{
+guid "{ECC92A21-4C11-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "90 89 0"
+"model" "prop_postcard_people01"
+"modelscale" "2.5"
+"origin" "-26551 -13299.3 11802.3"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 3170
+{
+guid "{F91EA5F5-4C11-11E8-A57E-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "357.799 89.9997 2.70228e-007"
+"model" "prop_postcard_beach02"
+"modelscale" "2.5"
+"origin" "-26551 -13292 11804"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
 }
