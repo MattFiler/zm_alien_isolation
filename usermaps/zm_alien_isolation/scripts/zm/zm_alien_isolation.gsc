@@ -158,9 +158,6 @@ function main()
 	//Play all robotoy sfx
 	thread play_robotoy_stuff();
 	
-	//Play Torrens boombox
-	thread play_torrens_boombox();
-	
 	//Start our random background sounds (helps with the "worldbuilding")
 	thread random_background_sounds();
 	thread random_background_sounds_towPlatform();
@@ -337,16 +334,6 @@ function play_fan_prop() {
 	foreach(fan in all_fan_blades) {
 		fan Rotate((180,0,0));
 	}
-}
-
-
-//Torrens Boombox
-function play_torrens_boombox() {
-	boombox = GetEnt("alien_boombox_torrens", "targetname");
-	//while(true) {
-		//wait(205);
-		//boombox PlaySound("zm_alien_isolation_radio_torrens");
-	//}
 }
 
 

@@ -11,6 +11,9 @@
 !/map_source/zm/zm_alien_isolation.map
 !/share/raw/animtables/zm_factory_zombie.ai_ast
 !/share/raw/animtables/zm_factory_zombie_dog.ai_ast
+!/share/raw/animtables/alien_isolation_zombies_npc.ai_ast
+!/share/raw/animstatemachines/alien_isolation_zombies_npc.ai_asm
+!/share/raw/behavior/alien_isolation_zombies_npc.ai_bt
 !/share/raw/fx/zm_alien_isolation/**
 !/share/raw/sound/aliases/zm_alien_isolation.csv
 !/share/raw/vision/zm_alien_isolation.vision
