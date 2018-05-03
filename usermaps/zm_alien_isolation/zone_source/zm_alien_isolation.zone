@@ -33,6 +33,11 @@ ttf,fonts/nostromo.ttf
 //Updated Wall Weapon Costs
 stringtable,gamedata/weapons/zm/zm_alien_isolation.csv
 
+//Characters
+rawfile,animtrees/alien_isolation_zombies.atr
+xanim,alien_isolation_verlaine_anim_idle
+xanim,alien_isolation_connor_anim_idle
+
 //FLAMER
 //weaponfull,alien_flamer
 //weaponfull,m2_flamethrower_zombie_bo3

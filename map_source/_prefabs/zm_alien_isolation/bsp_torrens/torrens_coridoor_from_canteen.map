@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{2D873E1B-6D70-11E7-A55D-14DDA9E204AF}"
+guid "{FE848464-4EE6-11E8-A58A-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -675,4 +675,32 @@ guid "{B154DC2E-4A0F-11E8-A579-14DDA9E204AF}"
 "shadowmapScale" "1"
 "volumetricSampleCount" "8"
 "spawnflags" "68"
+}
+// entity 53
+{
+guid "{CE3FA0D0-4EE6-11E8-A58A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "270 359.9 -35.1069"
+"model" "torrens_coridoor_ceiling_filler"
+"origin" "-26329 -13333.2 11802"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 54
+{
+guid "{FE84846B-4EE6-11E8-A58A-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "270 252.681 162.112"
+"model" "torrens_coridoor_ceiling_filler"
+"origin" "-26339.3 -13383.8 11802"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
 }

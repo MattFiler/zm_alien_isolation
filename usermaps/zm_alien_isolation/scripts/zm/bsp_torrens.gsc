@@ -11,6 +11,10 @@
 //Alien Isolation Zombies namespace
 #namespace alien_isolation_zombies;
 
+//Models
+#precache("xanim", "alien_isolation_verlaine_anim_idle");
+#using_animtree("alien_isolation_zombies");
+
 //Torrens spawn script
 function torrens_intro_sequence(should_skip_cutscenes) {
 	//Get all dynamic clips in spawn
@@ -310,11 +314,20 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	//Open bridge door
 	self notify("torrens_enable_bridge_door");
 	
+	//Start character animations	
+	verlaine = getEnt("verlaine_model", "targetname");
+	connor = getEnt("connor_model", "targetname");
+    verlaine useanimtree(#animtree);
+    connor useanimtree(#animtree);
+	wait(1);
+    verlaine AnimScripted("animations_on_torrens_verlaine", verlaine.origin , verlaine.angles, %alien_isolation_verlaine_anim_idle);
+    connor AnimScripted("animations_on_torrens_connor", connor.origin , connor.angles, %alien_isolation_connor_anim_idle);
+	
 	//Wait for transition trigger to be pushed
 	trigger_transition_to_sevastopol = getEnt("trigger_torrens_transition_to_sevastopol", "targetname");
 	trigger_transition_to_sevastopol SetHintString("Hold ^3[{+activate}]^7 to pick up weapon");
 	trigger_transition_to_sevastopol setCursorHint("HINT_NOICON");
-	trigger_transition_to_sevastopol waittill("trigger", player);
+	trigger_transition_to_sevastopol waittill("trigger", player);	
 	//WAIT FOR ALL PLAYERS TO DO THIS (TODO)
 	if (should_skip_cutscenes) {
 		TRANSITION_Torrens_to_SpaceflightTerminal(false);

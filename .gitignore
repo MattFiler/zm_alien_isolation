@@ -9,6 +9,7 @@
 !README.md
 !/map_source/_prefabs/**
 !/map_source/zm/zm_alien_isolation.map
+!/share/raw/animtrees/alien_isolation_zombies.atr
 !/share/raw/animtables/zm_factory_zombie.ai_ast
 !/share/raw/animtables/zm_factory_zombie_dog.ai_ast
 !/share/raw/animtables/alien_isolation_zombies_npc.ai_ast

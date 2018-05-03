@@ -121,7 +121,7 @@ function main()
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
 	//Torrens intro
-	thread torrens_intro_sequence(true); //Set param to true to skip cutscenes (false otherwise)
+	thread torrens_intro_sequence(false); //Set param to true to skip cutscenes (false otherwise)
 	
 	//Light states and animations/sounds for spawn
 	thread isolation_spawn_scripts(); 
