@@ -121,7 +121,7 @@ function main()
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
 	//Torrens intro
-	thread torrens_intro_sequence(false); //Set param to true to skip cutscenes (false otherwise)
+	thread torrens_intro_sequence(true); //Set param to true to skip cutscenes (false otherwise)
 	
 	//Light states and animations/sounds for spawn
 	thread isolation_spawn_scripts(); 
@@ -151,6 +151,9 @@ function main()
 	
 	//Run all nodding bird animations
 	thread play_nodding_bird(); 
+	
+	//Run bobblehead animations
+	thread play_bobblehead();
 	
 	//Run all fan animations (props)
 	thread play_fan_prop();
@@ -324,6 +327,23 @@ function single_nodding_bird(bird) {
 		wait(2);
 		bird RotatePitch(90, 2, 1, 1);
 		wait(2);
+	}
+}
+
+
+//Bobblehead Animations
+function play_bobblehead() {
+	all_bobbleheads = GetEntArray("bobblehead", "targetname");
+	foreach(bobblehead in all_bobbleheads) {
+		thread single_bobblehead(bobblehead);
+	}
+}
+function single_bobblehead(bobblehead) {
+	while(true) {
+		bobblehead MoveTo(bobblehead.origin + (0,0,1.5), 0.5, 0.2, 0.2);
+		wait(0.5);
+		bobblehead MoveTo(bobblehead.origin - (0,0,1.5), 0.5, 0.2, 0.2);
+		wait(0.5);
 	}
 }
 

@@ -13,6 +13,7 @@
 
 //Models
 #precache("xanim", "alien_isolation_verlaine_anim_idle");
+#precache("xanim", "alien_isolation_connor_anim_idle");
 #using_animtree("alien_isolation_zombies");
 
 //Torrens spawn script
