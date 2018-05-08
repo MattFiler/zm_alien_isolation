@@ -8,7 +8,7 @@ Fight your way through the zombie hordes in the Spaceflight Terminal to escape t
 
 Raw map files and scripts for Alien Isolation Zombies, a Black Ops 3 Zombies mod.
 
-This repo does not include any models, sounds, videos or textures.
+This repo does not include any models, sounds or textures.
 
 ---
 

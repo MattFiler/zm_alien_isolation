@@ -36,7 +36,7 @@ function round_wait_override()
 }
 
 
-//Tow Platform "Challenge" Script
+//Tow Platform "Challenge"
 function ENG_TOWPLATFORM_SPAWN() {
 	self waittill("ayz_elevator_arrived");
 	thread ENG_TOWPLATFORM_WARNING_LIGHTS();
@@ -54,6 +54,7 @@ function ENG_TOWPLATFORM_SPAWN() {
 }
 
 
+//Docking clamp sequence
 function ENG_TOWPLAFORM_DOCK_CLAMP_SEQUENCE() {
 	//Get triggers
 	dockingClampTrigger1 = getEnt("dockingClampTrigger1", "targetname");
@@ -94,6 +95,7 @@ function ENG_TOWPLAFORM_DOCK_CLAMP_SEQUENCE() {
 }
 
 
+//Airlock sequence
 function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	//Get triggers
 	airlockPressureTrigger = getEnt("airlockPressureTrigger", "targetname");
@@ -209,6 +211,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 }
 
 
+//Final ending cutscene (& ending of game)
 function ENG_TOWPLATFORM_ENDING_CUTSCENE() {
 	level thread lui::prime_movie(AYZ_CUTSCENE_ID_03);
 	
@@ -242,6 +245,7 @@ function ENG_TOWPLATFORM_ENDING_CUTSCENE() {
 }
 
 
+//Handle player activation of clamp terminals 1 and 2
 function ENG_TOWPLATFORM_CLAMP_TERMINAL_ACTIVATION(terminal_name, terminal_number, trigger) {
 	//Set our trigger properties
 	UPDATE_TRIGGER("Press ^3[{+activate}]^7 to activate Docking Clamp Terminal "+terminal_name, trigger);

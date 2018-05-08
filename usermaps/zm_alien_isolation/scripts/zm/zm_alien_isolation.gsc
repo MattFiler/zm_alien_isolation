@@ -105,9 +105,7 @@
 //#precache("eventstring", "AlienIsolationObjectivePopup");
 
 //Precache FX
-#precache("fx", "zm_alien_isolation/TowPlatform_WarningLight"); //Our warning light to spin
 #precache("fx", "zm_alien_isolation/Elevator_Light"); //Elevator lights
-#precache("fx", "zm_alien_isolation/TowPlatform_FlashingEvac"); //Flashing evac lights
 
 //*****************************************************************************
 // MAIN
@@ -116,7 +114,7 @@ function main()
 {
 	zm_usermap::main();
 	
-	level._effect["towplat_warninglight"] = "zm_alien_isolation/TowPlatform_WarningLight";
+	level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
 	thread BSP_TORRENS_SPAWN(true);
@@ -125,19 +123,10 @@ function main()
 
 	thread GLOBAL_BESPOKE_ANIMATIONS();
 	
-	//DEBUG: Set loads of points for testing (don't enable on ship)
-	level.player_starting_points = 500000;
+	level._zombie_custom_add_weapons =&ZM_ALIEN_ISOLATION_WEAPONS;
 	
-	//Init the flag for the spawn and endgame door
-	level flag::init("spawn_door_opened");
-	level flag::init("endgame_opened");
-	
-	//Core stuff
-	level._zombie_custom_add_weapons =&custom_add_weapons;
-	
-	//Setup the levels Zombie Zone Volumes
 	level.zones = [];
-	level.zone_manager_init_func =&usermap_test_zone_init;
+	level.zone_manager_init_func =&ZM_ALIEN_ISOLATION_ZONES;
 	init_zones[0] = "bsp_torrens"; //The Torrens
 	init_zones[1] = "sft_spawn_zone"; //Spawn room zone
 	init_zones[2] = "main_zone"; //Main area zone
@@ -147,15 +136,14 @@ function main()
 	init_zones[6] = "noodlebar_zone_main"; //Noodle Bar zone 2
 	init_zones[7] = "collection_zone"; //Temp Baggage Collection and Advert Coridoor zone
 	init_zones[8] = "comms_volume"; //Tow Platform
-	level thread zm_zonemgr::manage_zones( init_zones );
+	level thread zm_zonemgr::manage_zones(init_zones);
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
 	
-	//Change perk limit
 	level.perk_purchase_limit = 100;
 }
 
-function usermap_test_zone_init()
+function ZM_ALIEN_ISOLATION_ZONES()
 {
 	//Add connecting zones
 	zm_zonemgr::add_adjacent_zone("bsp_torrens", "sft_spawn_zone", "transition_from_torrens");
@@ -167,11 +155,11 @@ function usermap_test_zone_init()
 	zm_zonemgr::add_adjacent_zone("main_zone", "collection_zone", "enter_adverts_zone");
 	zm_zonemgr::add_adjacent_zone("endgame_zone", "comms_volume", "ayz_elevator_zoneswap");
 	
-	level flag::init( "always_on" );
-	level flag::set( "always_on" );
+	level flag::init("always_on");
+	level flag::set("always_on");
 }	
 
-function custom_add_weapons()
+function ZM_ALIEN_ISOLATION_WEAPONS()
 {
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_alien_isolation.csv", 1);
 }
