@@ -29,6 +29,9 @@
 !/usermaps/zm_alien_isolation/zone/workshopimage.psd
 !/usermaps/zm_alien_isolation/zone/video/**
 !/usermaps/zm_alien_isolation/zone_source/zm_alien_isolation.zone
+!/zm_alien_isolation/website/**
+!/zm_alien_isolation/website/css/**
+!/zm_alien_isolation/website/img/**
 
 # Disallow unrelated prefabs
 /map_source/_prefabs/_NSZ/
