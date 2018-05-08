@@ -144,7 +144,7 @@ guid "{C5D328C0-A20B-11E6-9C49-14DDA9E204AF}"
 "classname" "trigger_use"
 "ayz_doordef" "endgame_door"
 "script_flag" "enter_end_zone"
-"targetname" "zombie_door_custom"
+"targetname" "endgame_door_trigger"
 "_color" "0.3 0.5 0.8"
 "cursorhint" "HINT_ACTIVATE"
 // brush 0

@@ -16,8 +16,13 @@
 #precache("xanim", "alien_isolation_connor_anim_idle");
 #using_animtree("alien_isolation_zombies");
 
+//Use objpoints_shared to mark waypoints?
+
+
 //Torrens spawn script
-function torrens_intro_sequence(should_skip_cutscenes) {
+function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
+	level util::set_lighting_state(0); //TODO: do stuff with this - LS1, lights off - LS0, lights on? switch on spawn sequence?
+
 	//Get all dynamic clips in spawn
 	spawnClip1 = getEnt("torrens_spawn_clip_1", "targetname");
 	spawnClip2 = getEnt("torrens_spawn_clip_2", "targetname");
@@ -137,7 +142,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
 		
 		wait(2);
-		play_sound_locally("zm_alien_isolation__cs_torrensintro");
+		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrensintro");
 		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
 
 		//Wait for cutscene to end and continue
@@ -146,7 +151,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	
 	if (!should_skip_cutscenes) {
 		//Start SFX
-		play_sound_locally("zm_alien_isolation__cs_wakeup");
+		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_wakeup");
 		
 		//Wake em up! (this will all need to be retimed ideally)
 		lui::screen_fade_out(0);
@@ -160,7 +165,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 		thread open_cryro_beds();
 		wait(6);
 		lui::screen_fade_out(1);
-		play_sound_locally("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
+		PLAY_LOCAL_SOUND("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
 		wait(4);
 	
 		//Get out of the pod
@@ -229,7 +234,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	lui::screen_fade_in(1);
 	
 	//Update objective
-	thread show_new_objective("Sign in to the Torrens.");
+	thread UPDATE_OBJECTIVE("Sign in to the Torrens.");
 	
 	//DEBUG ONLY
 	//thread DEBUG_TORRENS_LIGHT();
@@ -259,7 +264,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	wait(1);
 	
 	//Update objective
-	thread show_new_objective("Explore the Torrens.");
+	thread UPDATE_OBJECTIVE("Explore the Torrens.");
 	
 	//Wait for player to approach the locked door and update objective
 	trigger_reroute_power = getEnt("trigger_reroute_power_torrens", "targetname");
@@ -267,7 +272,7 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	trigger_reroute_power setCursorHint("HINT_NOICON");
 	thread torrens_broken_door();
 	level waittill("torrens_brokendoor_notified");
-	thread show_new_objective("Reroute power to open the door.");
+	thread UPDATE_OBJECTIVE("Reroute power to open the door.");
 	
 	//Wait for player to fix the door
 	trigger_reroute_power SetHintString("Hold ^3[{+activate}]^7 to reroute power"); //Update hint string
@@ -278,11 +283,11 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	trigger_reroute_power SetHintString(""); //Update hint string
 	level notify("torrens_brokendoor_fixed");
 	wait(1.5);
-	thread show_new_objective("Explore the Torrens.");
+	thread UPDATE_OBJECTIVE("Explore the Torrens.");
 	
 	//Give perks and ammo if debug is enabled
 	if (should_skip_cutscenes) {
-		give_perks_and_ammo();
+		GIVE_ALL_PERKS_AND_AMMO();
 	}
 	
 	//Wait for a player to enter the canteen
@@ -306,11 +311,11 @@ function torrens_intro_sequence(should_skip_cutscenes) {
 	wait(3);
 	
 	//Push players towards the bridge (play verlaine broadcast)
-	play_sound_locally("zm_alien_isolation__torrens_get_to_bridge");
+	PLAY_LOCAL_SOUND("zm_alien_isolation__torrens_get_to_bridge");
 	
 	//Wait a bit and update objective
 	wait(5);
-	thread show_new_objective("Collect your weapons.");
+	thread UPDATE_OBJECTIVE("Collect your weapons.");
 	
 	//Open bridge door
 	self notify("torrens_enable_bridge_door");
@@ -612,7 +617,7 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 		lui::screen_fade_out(1);
 		wait(1);
 		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_02, "fullscreen", transition_cutscene_length, true);
-		play_sound_locally("zm_alien_isolation__cs_torrens2sev");
+		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrens2sev");
 	}
 	
 	//Get all spawners
@@ -698,67 +703,10 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	self notify("players_on_sevastopol");
 	
 	//Play "Welcome To Sevastopol" theme?
-	play_sound_locally("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
+	PLAY_LOCAL_SOUND("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
 	
 	//Start zombie spawning
 	SetDvar("ai_disableSpawn", "0");
-}
-
-
-//DEBUG ONLY - REMOVE WHEN TESTED
-//DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY DEBUGONLY - TODO: REMOVE!
-function DEBUG_TORRENS_LIGHT() {
-	lightzone = getEnt("torrens_debuglighttrigger", "targetname"); //grab our trigger zone
-	lightzone NotSolid();
-	hidden = false;
-	
-	while(1) {
-		players = GetPlayers();
-		player_in_zone = false;
-		
-		foreach (player in players) {
-			if (player IsTouching(lightzone) == true) {
-				player_in_zone = true;
-			} else {
-				continue;
-			}
-		}
-		
-		//I really can't be fucked to rebuild all the lighting - using server-side lights that already exist in TPF.
-		
-		if (player_in_zone == true) {
-			wait(0.1);
-			if (hidden == false) {
-				hidden = true;
-				//TESTLIGHT_TORRENS_1 = getEnt("TESTLIGHT_TORRENS_1", "targetname");
-				//TESTLIGHT_TORRENS_2 = getEnt("TESTLIGHT_TORRENS_2", "targetname");
-				//TESTLIGHT_TORRENS_1 hide();
-				//TESTLIGHT_TORRENS_2 hide();
-				iprintlnbold("DEBUGONLY: entered zone");
-				for (i=0; i < 28; i++) {
-					iprintlnbold("DEBUGONLY: HIDING LIGHT " + i);
-					test_ent = getEnt("tow_warning_light_bulb_" + i, "targetname");
-					test_ent.origin = (0,0,0); //This is how it will work - Grab origin of model, assign to array, set to 0, then when the light is needed, pull from array and move to the original origin.
-				}
-				wait(5);
-			} else {
-				hidden = false;
-				//TESTLIGHT_TORRENS_1 = getEnt("TESTLIGHT_TORRENS_1", "targetname");
-				//TESTLIGHT_TORRENS_2 = getEnt("TESTLIGHT_TORRENS_2", "targetname");
-				//TESTLIGHT_TORRENS_1 show();
-				//TESTLIGHT_TORRENS_2 show();
-				iprintlnbold("DEBUGONLY: entered zone");
-				for (i=0; i < 28; i++) {
-					iprintlnbold("DEBUGONLY: SHOWING LIGHT " + i);
-					test_ent = getEnt("tow_warning_light_bulb_" + i, "targetname");
-					test_ent show();
-				}
-				wait(5);
-			}
-		}
-		
-		wait(0.1);
-	}
 }
 
 

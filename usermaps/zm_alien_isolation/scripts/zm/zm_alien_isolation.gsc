@@ -116,92 +116,17 @@ function main()
 {
 	zm_usermap::main();
 	
-	//FX names
 	level._effect["towplat_warninglight"] = "zm_alien_isolation/TowPlatform_WarningLight";
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
-	//Torrens intro
-	thread torrens_intro_sequence(true); //Set param to true to skip cutscenes (false otherwise)
-	
-	//Light states and animations/sounds for spawn
-	thread isolation_spawn_scripts(); 
-	
-	//Light states and audio for power activation
-	thread init_power(); 
-	
-	//Bespoke location based ambient sounds for the gameroom machines.
-	//Other location based ambient sounds are handled in our CSC.
-	thread gameroom_ambient_sounds_bespoke();
-	
-	//The buyable ending door scripts
-	thread open_ending_area_door(); 
-	
-	//Sliding Door Script - GAMEROOM
-	thread ayz_slidingdoor_gameroom();
-	
-	//Sliding Door Script - PERKROOM
-	thread ayz_slidingdoor_perkroom();
-	
-	//Spaceflight Terminal Objective Popups
-	thread spaceflight_terminal_objectives();
-	thread keycard_objective();
-	
-	//The buyable ending scripts
-	thread buyable_ending();
-	
-	//Run all nodding bird animations
-	thread play_nodding_bird(); 
-	
-	//Run bobblehead animations
-	thread play_bobblehead();
-	
-	//Run all fan animations (props)
-	thread play_fan_prop();
-	
-	//Play all robotoy sfx
-	thread play_robotoy_stuff();
-	
-	//Start our random background sounds (helps with the "worldbuilding")
-	thread random_background_sounds();
-	thread random_background_sounds_towPlatform();
-	
-	//Start ADVERTS fan anims
-	thread adverts_fan_anims();
-	
-	//ADVERTS right side buyable door
-	thread adverts_right_door();
-	
-	//ADVERTS left side buyable door
-	thread adverts_left_door();
-	
-	//NEW KEYCARD SCRIPT for endgame door
-	thread keycard_setup();
-	
-	//Handle alarms at the tow platform. This won't do anything until prompted though.
-	thread play_alarm_loop_towPlatform1();
-	thread play_alarm_loop_towPlatform2();
-	thread play_alarm_loop_towPlatform3();
-	
-	//Handle elevator FX (only playing fx - stopping fx is done in the csc)
-	thread handle_elevator_fx();
-	
-	//DEBUG: Skip right to the tow platform (don't enable on ship)
-	//thread ayz_tow_platform_challenge(true); //set param to true to skip to airlock section
-	
-	//DEBUG: Set round number - depreciated
-	//thread dbgSetRoundNum(20);
+	thread BSP_TORRENS_SPAWN(true);
+	thread HAB_AIRPORT_SPAWN(); 
+	thread ENG_TOWPLATFORM_SPAWN();
+
+	thread GLOBAL_BESPOKE_ANIMATIONS();
 	
 	//DEBUG: Set loads of points for testing (don't enable on ship)
-	//level.player_starting_points = 500000;
-	
-	//DEBUG: Disable AI Spawn (don't enable on ship)
-	//SetDvar("ai_disableSpawn", "1");
-	
-	//DEBUG: Enable a bot player (don't enable on ship) - 07/17 THIS MAY CAUSE ISSUES DUE TO TORRENS INTRO
-	//SetDvar("scr_zm_enable_bots", "1");
-	
-	//Set this in mod tool launch options for splitscreen
-	//+set splitscreen 1 +set splitscreen_playerCount 2
+	level.player_starting_points = 500000;
 	
 	//Init the flag for the spawn and endgame door
 	level flag::init("spawn_door_opened");
@@ -251,19 +176,17 @@ function custom_add_weapons()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_alien_isolation.csv", 1);
 }
 
+
 //Play a sound locally to all players once
-function play_sound_locally(soundName) {
-	//iprintlnbold("DEBUG: Playing specified music to all players once.");
+function PLAY_LOCAL_SOUND(soundName) {
 	players = GetPlayers();
 	for (i = 0; i < players.size; i++) {
 		players[i] PlayLocalSound(soundName);
 	}
 }
 
-
 //Stop a local sound
-function stop_sound_locally(soundName) {
-	//iprintlnbold("DEBUG: STOPPING SOUND " + soundName);
+function STOP_LOCAL_SOUND(soundName) {
 	players = GetPlayers();
 	for (i = 0; i < players.size; i++) {
 		players[i] StopLocalSound(soundName);
@@ -273,27 +196,18 @@ function stop_sound_locally(soundName) {
 
 //Stop round start music
 function stop_round_start_music() {
-	//Find a better way pls...
-	//stop_sound_locally("mus_roundstart_first_intro");
-	//stop_sound_locally("mus_roundstart1_intro");
-	//stop_sound_locally("mus_roundstart2_intro");
-	//stop_sound_locally("mus_roundstart3_intro");
-	//stop_sound_locally("mus_roundstart4_intro");
-	//stop_sound_locally("mus_roundstart_short1_intro");
-	//stop_sound_locally("mus_roundstart_short2_intro");
-	//stop_sound_locally("mus_roundstart_short3_intro");
-	//stop_sound_locally("mus_roundstart_short4_intro");
+	//Depreciated...
 }
 
 
 //Show new objective
-function show_new_objective(objectiveText) {
-	play_sound_locally("zm_alien_isolation__objective_updated");
+function UPDATE_OBJECTIVE(objectiveText) {
+	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
 	iprintlnbold("OBJECTIVE UPDATED:");
 	iprintlnbold(objectiveText);
 	
 	//TODO, fix up new UI and use the popup here.
-	//play_sound_locally("zm_alien_isolation__objective_updated");
+	//PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
 	//foreach	(player in level.players) {		
 	//	dialog = player OpenLUIMenu("popup_zm_alien_isolation");
 	//	player LUINotifyEvent(&"AlienIsolationObjectivePopup", 1, objectiveText);
@@ -302,26 +216,47 @@ function show_new_objective(objectiveText) {
 	//}
 }
 
-
 //Completed an objective
 function completed_old_objective() {
-	//play_sound_locally("zm_alien_isolation__objective_updated");
-	//iprintlnbold("OBJECTIVE COMPLETE.");
-	//////////////////////////////
-	///////// DEPRECIATED! ///////
-	//////////////////////////////
+	//Depreciated...
 }
 
+
+//Easy trigger updaters
+function UPDATE_BUYABLE_TRIGGER(price, trigger) {
+	trigger setCursorHint("HINT_NOICON");
+	trigger setHintString(&"ZOMBIE_BUTTON_BUY_OPEN_DOOR_COST", price);
+	trigger SetVisibleToAll();
+}
+function UPDATE_TRIGGER(string, trigger) {
+	trigger setCursorHint("HINT_NOICON");
+	trigger setHintString(string);
+	trigger SetVisibleToAll();
+}
+function HIDE_TRIGGER(trigger) {
+	trigger setCursorHint("HINT_NOICON");
+	trigger setHintString("");
+	trigger SetInvisibleToAll();
+}
+
+
+//All animated things
+function GLOBAL_BESPOKE_ANIMATIONS() {
+	thread ANIMATED_NODDING_BIRD();
+	thread ANIMATED_BOBBLEHEAD();
+	thread ANIMATED_FAN_PROP();
+	thread ANIMATED_ROBOT_TOY();
+	thread ANIMATED_ELEVATOR_LIGHTS();
+}
 
 //Nodding Bird Animations
-function play_nodding_bird() {
-	all_noddingbird_ents = GetEntArray("noddingbird", "targetname");
-	foreach(noddingbird in all_noddingbird_ents) {
-		thread single_nodding_bird(noddingbird);
+function ANIMATED_NODDING_BIRD() {
+	allNoddingBirds = GetEntArray("noddingbird", "targetname");
+	foreach(noddingBird in allNoddingBirds) {
+		thread play_bird_anim(noddingBird);
 	}
 }
-function single_nodding_bird(bird) {
-	//We got to thread out each bird to this function so they can run at the same time
+function play_bird_anim(bird) {
 	while(true) {
 		bird RotatePitch(-90, 2, 1, 1);
 		wait(2);
@@ -330,15 +265,14 @@ function single_nodding_bird(bird) {
 	}
 }
 
-
 //Bobblehead Animations
-function play_bobblehead() {
-	all_bobbleheads = GetEntArray("bobblehead", "targetname");
-	foreach(bobblehead in all_bobbleheads) {
-		thread single_bobblehead(bobblehead);
+function ANIMATED_BOBBLEHEAD() {
+	allBobbleheads = GetEntArray("bobblehead", "targetname");
+	foreach(bobblehead in allBobbleheads) {
+		thread play_bobblehead_anim(bobblehead);
 	}
 }
-function single_bobblehead(bobblehead) {
+function play_bobblehead_anim(bobblehead) {
 	while(true) {
 		bobblehead MoveTo(bobblehead.origin + (0,0,1.5), 0.5, 0.2, 0.2);
 		wait(0.5);
@@ -347,60 +281,64 @@ function single_bobblehead(bobblehead) {
 	}
 }
 
-
-//Fan (Prop Version) Animations
-function play_fan_prop() {
-	all_fan_blades = GetEntArray("fan_blade_ayz", "targetname");
-	foreach(fan in all_fan_blades) {
+//Fan Prop Animations
+function ANIMATED_FAN_PROP() {
+	allFanProps = GetEntArray("fan_blade_ayz", "targetname");
+	foreach(fan in allFanProps) {
 		fan Rotate((180,0,0));
 	}
 }
 
-
 //Mini Robot SFX
-function play_robotoy_stuff() {
-	all_robotoys = GetEntArray("robotoy", "targetname");
-	foreach(robotoy in all_robotoys) {
-		thread single_robotoy(robotoy);
+function ANIMATED_ROBOT_TOY() {
+	allRobotToys = GetEntArray("robotoy", "targetname");
+	foreach(robotToy in allRobotToys) {
+		thread play_robotoy_sfx(robotToy);
 	}
 }
-function single_robotoy(robotoy) {
+function play_robotoy_sfx(robotoy) {
 	while(true) {
 		if (randomintrange(1,100) > 50) {
 			//Loop through all 8 sounds FORWARDS
 			loopcount = 0;
 			while (loopcount < 8) {
 				loopcount = loopcount + 1;
-				
-				//Wait anywhere from 10 to 20 secs between sound clips
 				wait(randomintrange(10,20));
-				
-				//Play sound
 				robotoy PlaySound("zm_alien_isolation_robotoy_"+loopcount);
 			}
 		} else {
 			//Loop through all 8 sounds BACKWARDS
 			loopcount = 8;
 			while (loopcount > 0) {
-				//Wait anywhere from 10 to 20 secs between sound clips
 				wait(randomintrange(10,20));
-					
-				//Play sound
 				robotoy PlaySound("zm_alien_isolation_robotoy_"+loopcount);
-				
 				loopcount = loopcount - 1;
 			}
 		}
 	}
 }
 
+//Elevator FX handler
+function ANIMATED_ELEVATOR_LIGHTS() {
+	//Wait for elevator to start moving
+	self waittill("ayz_elevator_moving");
+
+	//Place all FX
+	for (i=1;i<5;i++) {
+		fx_tpf = struct::get("elevator_fx"+i, "targetname");
+		fx_sft = struct::get("elevator_fx"+i+"_tpf", "targetname");
+
+		PlayFX(level._effect["elevator_light"], fx_tpf.origin);
+		PlayFX(level._effect["elevator_light"], fx_sft.origin);
+	}
+}
+
 
 //Give the player all perks and max ammo
-function give_perks_and_ammo() {
+function GIVE_ALL_PERKS_AND_AMMO() {
 	all_players = GetPlayers();
 	foreach (player in all_players) {
-		//SFX
-		play_sound_locally("zm_alien_isolation__tow_custom_perk");
+		PLAY_LOCAL_SOUND("zm_alien_isolation__tow_custom_perk");
 		
 		//GIVE ALL PERKS
 		a_str_perks = GetArrayKeys(level._custom_perks);

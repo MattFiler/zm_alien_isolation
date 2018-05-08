@@ -85,7 +85,7 @@ guid "{51B357F1-C6A8-11E6-9C62-14DDA9E204AF}"
 {
 guid "{571C1B73-C6BD-11E6-9C63-14DDA9E204AF}"
 "classname" "script_brushmodel"
-"targetname" "perkroom_shadow"
+"targetname" "perkroom_door_extra"
 "_color" "0 0.5 0.8"
 "lightingstate1" "1"
 "lightingstate2" "1"

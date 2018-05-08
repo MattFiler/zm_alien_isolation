@@ -140,7 +140,7 @@ guid "{9F352D01-A1F0-11E6-9C49-14DDA9E204AF}"
 "classname" "trigger_use"
 "ayz_doordef" "spawnroom_door"
 "script_flag" "enter_main_zone"
-"targetname" "zombie_door_custom"
+"targetname" "spawnroom_door_trigger"
 "_color" "0.3 0.5 0.8"
 "cursorhint" "HINT_ACTIVATE"
 // brush 0
