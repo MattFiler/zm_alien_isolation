@@ -26,23 +26,6 @@ guid "{5CA04826-4C7D-11E8-A580-14DDA9E204AF}"
 }
 // entity 1
 {
-guid "{AD2C5835-4C7B-11E8-A580-14DDA9E204AF}"
-"classname" "script_model"
-"angles" "0 -90 0"
-"model" "prop_boombox"
-"modelscale" "2.5"
-"origin" "-0.0507813 -0.0498047 0.0498047"
-"targetname" "alien_boombox_turned_on"
-"_color" "1 0 0"
-"client_server" "ServerSide"
-"lightingstate1" "1"
-"lightingstate2" "1"
-"lightingstate3" "1"
-"lightingstate4" "1"
-"shadow_casting" "1"
-}
-// entity 2
-{
 guid "{C3F085C9-4C7B-11E8-A580-14DDA9E204AF}"
 "classname" "light"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
@@ -73,7 +56,7 @@ guid "{C3F085C9-4C7B-11E8-A580-14DDA9E204AF}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 3
+// entity 2
 {
 guid "{31B5D318-4C7C-11E8-A580-14DDA9E204AF}"
 "classname" "light"
@@ -105,7 +88,7 @@ guid "{31B5D318-4C7C-11E8-A580-14DDA9E204AF}"
 "volumetricSampleCount" "8"
 "spawnflags" "84"
 }
-// entity 4
+// entity 3
 {
 guid "{314717BA-4C91-11E8-A581-14DDA9E204AF}"
 "classname" "script_struct"
@@ -113,4 +96,18 @@ guid "{314717BA-4C91-11E8-A581-14DDA9E204AF}"
 "origin" "0 0 7.25"
 "script_label" "looper"
 "script_sound" "zm_alien_isolation_radio_concreteskies"
+}
+// entity 4
+{
+guid "{73E0DE56-5AB7-11E8-A58F-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -90 0"
+"model" "prop_boombox"
+"modelscale" "2.5"
+"origin" "-0.0507813 -0.0498047 0.0498047"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
 }
