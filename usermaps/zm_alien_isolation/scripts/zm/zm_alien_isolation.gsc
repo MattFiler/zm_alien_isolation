@@ -83,6 +83,12 @@
 #define		AYZ_CUTSCENE_ID_02						"zm_alien_isolation_cs02" 			//Transition - Torrens to Sevastopol
 #define		AYZ_CUTSCENE_ID_03						"zm_alien_isolation_cs03"			//Endgame
 
+#define PLAYTYPE_REJECT 1
+#define PLAYTYPE_QUEUE 2
+#define PLAYTYPE_ROUND 3
+#define PLAYTYPE_SPECIAL 4
+#define PLAYTYPE_GAMEEND 5
+
 //Precache models
 #precache("model", "ayz_new_door_lights_open"); 										//door lights when door is open
 #precache("model", "monitor_50cm_gameroom"); 											//gameroom monitor turned on
@@ -122,6 +128,7 @@ function main()
 	thread ENG_TOWPLATFORM_SPAWN();
 
 	thread GLOBAL_BESPOKE_ANIMATIONS();
+	thread GLOBAL_MUSIC_SETUP();
 	
 	level._zombie_custom_add_weapons =&ZM_ALIEN_ISOLATION_WEAPONS;
 	
@@ -225,6 +232,12 @@ function HIDE_TRIGGER(trigger) {
 	trigger setCursorHint("HINT_NOICON");
 	trigger setHintString("");
 	trigger SetInvisibleToAll();
+}
+
+
+//Set up all audio ambiences and cutscene soundtracks
+function GLOBAL_MUSIC_SETUP() {
+    //zm_audio::musicState_Create("empty_reception", PLAYTYPE_ROUND, "emptyreception");
 }
 
 

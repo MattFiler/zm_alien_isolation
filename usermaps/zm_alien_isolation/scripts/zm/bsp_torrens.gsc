@@ -285,11 +285,6 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 	wait(1.5);
 	thread UPDATE_OBJECTIVE("Explore the Torrens.");
 	
-	//Give perks and ammo if debug is enabled
-	if (should_skip_cutscenes) {
-		GIVE_ALL_PERKS_AND_AMMO();
-	}
-	
 	//Wait for a player to enter the canteen
 	canteenZone = getEnt("torrens_canteen_zone", "targetname");
 	canteenZone NotSolid();
@@ -697,6 +692,7 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	//Unfreeze controls
 	foreach(player in level.players) {
 		player FreezeControls(false);
+		player SetPlayerCollision(true); //re-enable player collision to allow zombie damage
 	}
 	
 	//Let the game know we're on Sevastopol

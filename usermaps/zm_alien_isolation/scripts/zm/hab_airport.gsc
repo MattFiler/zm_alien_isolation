@@ -51,6 +51,7 @@ function HAB_AIRPORT_AMBIENCES() {
 //Lockdown sequence
 function HAB_AIRPORT_LOCKDOWN_SEQUENCE() {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__sft_theme");
+	//level thread zm_audio::sndMusicSystem_PlayState("empty_reception");
 	wait(39);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__lockdown");
 	wait(5);
@@ -324,9 +325,6 @@ function HAB_AIRPORT_ENDGAME_DOOR() {
 	
 	//Play door sound at location
 	endgame_door1 PlaySound("zm_alien_isolation__largedoor_open");
-	
-	//Set the flag to let our program know the door is open
-	level flag::set("endgame_opened");
 	
 	//Hide trigger
 	HIDE_TRIGGER(endgame_trigger);
