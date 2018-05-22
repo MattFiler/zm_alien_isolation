@@ -50,8 +50,7 @@ function HAB_AIRPORT_AMBIENCES() {
 
 //Lockdown sequence
 function HAB_AIRPORT_LOCKDOWN_SEQUENCE() {
-	PLAY_LOCAL_SOUND("zm_alien_isolation__sft_theme");
-	//level thread zm_audio::sndMusicSystem_PlayState("empty_reception");
+	level thread zm_audio::sndMusicSystem_PlayState("sft_intro_theme");
 	wait(39);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__lockdown");
 	wait(5);

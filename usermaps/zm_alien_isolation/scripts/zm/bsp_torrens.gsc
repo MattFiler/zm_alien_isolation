@@ -142,7 +142,7 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
 		
 		wait(2);
-		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrensintro");
+		level thread zm_audio::sndMusicSystem_PlayState("alien_cutscene_01");
 		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
 
 		//Wait for cutscene to end and continue
@@ -165,7 +165,8 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 		thread open_cryro_beds();
 		wait(6);
 		lui::screen_fade_out(1);
-		PLAY_LOCAL_SOUND("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
+		//PLAY_LOCAL_SOUND("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
+		level thread zm_audio::sndMusicSystem_PlayState("torrens_intro_theme");
 		wait(4);
 	
 		//Get out of the pod
@@ -611,8 +612,8 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	if (should_play_cutscene) {
 		lui::screen_fade_out(1);
 		wait(1);
+		level thread zm_audio::sndMusicSystem_PlayState("alien_cutscene_02");
 		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_02, "fullscreen", transition_cutscene_length, true);
-		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrens2sev");
 	}
 	
 	//Get all spawners

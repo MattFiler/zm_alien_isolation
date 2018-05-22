@@ -123,7 +123,7 @@ function main()
 	level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
-	thread BSP_TORRENS_SPAWN(true);
+	thread BSP_TORRENS_SPAWN(false);
 	thread HAB_AIRPORT_SPAWN(); 
 	thread ENG_TOWPLATFORM_SPAWN();
 
@@ -235,9 +235,22 @@ function HIDE_TRIGGER(trigger) {
 }
 
 
-//Set up all audio ambiences and cutscene soundtracks
+//Set up music tracks and cutscene audio
 function GLOBAL_MUSIC_SETUP() {
-    //zm_audio::musicState_Create("empty_reception", PLAYTYPE_ROUND, "emptyreception");
+	//CUTSCENES
+    zm_audio::musicState_Create("alien_cutscene_01", PLAYTYPE_SPECIAL, "zod_parasite_end");
+    zm_audio::musicState_Create("alien_cutscene_02", PLAYTYPE_SPECIAL, "zod_meatball_start");
+    zm_audio::musicState_Create("alien_cutscene_03", PLAYTYPE_SPECIAL, "zod_meatball_end");
+
+	//TORRENS
+    zm_audio::musicState_Create("torrens_intro_theme", PLAYTYPE_SPECIAL, "zod_gameover");
+
+    //SPACEFLIGHT TERMINAL
+    zm_audio::musicState_Create("sft_intro_theme", PLAYTYPE_SPECIAL, "zod_egg_coldhardcash");
+
+    //TOW PLATFORM
+    zm_audio::musicState_Create("tpf_intro_theme", PLAYTYPE_SPECIAL, "zod_endigc_lullaby");
+    zm_audio::musicState_Create("tpf_airlock_pressurising_theme", PLAYTYPE_SPECIAL, "zod_egg_snakeskin_instr");
 }
 
 

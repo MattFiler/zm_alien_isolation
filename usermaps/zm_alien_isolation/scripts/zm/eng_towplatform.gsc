@@ -65,7 +65,7 @@ function ENG_TOWPLAFORM_DOCK_CLAMP_SEQUENCE() {
 	HIDE_TRIGGER(airlockPressureTrigger);
 	
 	//Play intro
-	PLAY_LOCAL_SOUND("zm_alien_isolation__enter_towplatform");
+	level thread zm_audio::sndMusicSystem_PlayState("tpf_intro_theme");
 	wait(18);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__verlaine_activate_clamps");
 	wait(13);
@@ -138,7 +138,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	thread UPDATE_OBJECTIVE("Survive while the airlock pressurises.");
 	wait(5);
 	self notify("ayz_airlock_started");
-	PLAY_LOCAL_SOUND("zm_alien_isolation__alt_final_action_cut");
+	level thread zm_audio::sndMusicSystem_PlayState("tpf_airlock_pressurising_theme");
 	wait(20);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__airlock_25percent"); //25%
 	wait(30);
@@ -221,14 +221,13 @@ function ENG_TOWPLATFORM_ENDING_CUTSCENE() {
     }
 	lui::screen_fade_out(1); //make it a smooth transition
 	wait(1);
+	level thread zm_audio::sndMusicSystem_PlayState("alien_cutscene_03");
 	level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_03, "fullscreen", 36, true);
 	
-	//Sort out cutscene audio
-	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_ripsev"); //play cutscene music
+	//Sort out cutscene audio - this should be handled by zm_audio, but just in case
 	STOP_LOCAL_SOUND("zm_alien_isolation__final_action_ost"); //stop our previous music
 	STOP_LOCAL_SOUND("zm_alien_isolation__bg_tow_xeno"); //stop specifically our xeno track
-	stop_round_start_music(); //just in case
-	level notify("kill_towplatform_ambience"); //also don't forget to stop our ambience
+	level notify("kill_towplatform_ambience"); //also don't forget to stop our ambience (zm_audio might not do this)
 	
 	//Kill all zombies and mute them
 	zombies = GetAiTeamArray("axis");
