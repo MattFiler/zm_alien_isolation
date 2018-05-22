@@ -57,6 +57,7 @@
 !/texture_assets/alien_isolation_textures.gdt
 !/texture_assets/alien_isolation_textures_generic.gdt
 !/texture_assets/custom_craftdanimations.gdt
+!/texture_assets/alien_isolation_decals.gdt
 
 # Allow all assets
 #!/sound_assets/**
