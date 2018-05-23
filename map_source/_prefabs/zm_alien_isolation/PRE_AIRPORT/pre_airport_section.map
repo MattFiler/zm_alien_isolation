@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{913FCBDB-5E2A-11E8-A590-14DDA9E204AF}"
+guid "{A836FBDC-5E93-11E8-A590-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -61,7 +61,7 @@ guid "{A572B80F-5E23-11E8-A590-14DDA9E204AF}"
 "angles" "0 -60 0"
 "model" "pre_airport_microview"
 "modelscale" "2.5"
-"origin" "-494.25 2065.75 -0.5"
+"origin" "-495.25 2068.75 -0.5"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
@@ -89,7 +89,7 @@ guid "{1628754D-5E24-11E8-A590-14DDA9E204AF}"
 "angles" "35 30 -0"
 "model" "tow_airlock_microview_screen"
 "modelscale" "2.5"
-"origin" "-483 2025.75 36.75"
+"origin" "-484 2028.75 36.75"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
@@ -103,7 +103,7 @@ guid "{4A90EE77-5E24-11E8-A590-14DDA9E204AF}"
 "angles" "35 30 -0"
 "model" "tow_airlock_microview_screen"
 "modelscale" "2.5"
-"origin" "-523.25 2095.75 36.75"
+"origin" "-524.25 2098.75 36.75"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
@@ -197,7 +197,7 @@ guid "{1BF4C262-5E2A-11E8-A590-14DDA9E204AF}"
 "angles" "0 120 0"
 "model" "pre_airport_microview"
 "modelscale" "2.5"
-"origin" "-7.5 2345.5 -0.5"
+"origin" "-10.5 2349.25 -0.5"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
@@ -211,7 +211,7 @@ guid "{300FD0DF-5E2A-11E8-A590-14DDA9E204AF}"
 "angles" "35 210 4.19334e-007"
 "model" "tow_airlock_microview_screen"
 "modelscale" "2.5"
-"origin" "-18.75 2385.25 36.75"
+"origin" "-21.75 2389 36.75"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
@@ -225,7 +225,7 @@ guid "{300FD0E2-5E2A-11E8-A590-14DDA9E204AF}"
 "angles" "35 210 4.19334e-007"
 "model" "tow_airlock_microview_screen"
 "modelscale" "2.5"
-"origin" "21.5 2315.25 36.75"
+"origin" "18.5 2319 36.75"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
@@ -259,4 +259,809 @@ guid "{8152B323-5E2A-11E8-A590-14DDA9E204AF}"
 "lightingstate3" "1"
 "lightingstate4" "1"
 "static" "1"
+}
+// entity 19
+{
+guid "{2998116B-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_pillar_corner"
+"modelscale" "2.5"
+"origin" "-431.75 1959.5 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 20
+{
+guid "{3E2FA942-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "pre_airport_pillar_corner"
+"modelscale" "2.5"
+"origin" "54 2239.75 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 21
+{
+guid "{E2B04E11-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "adverts_ceiling_light_insert"
+"modelscale" "2.5"
+"origin" "-214.5 2464.25 147"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 22
+{
+guid "{E2B04E0E-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "pre_airport_ceiling2"
+"modelscale" "2.5"
+"origin" "-214.25 2464 155.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 23
+{
+guid "{E2B04E0B-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 210 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-312.25 2432.75 177"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 24
+{
+guid "{E2B04E05-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 300 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-121.75 2399.75 177"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 25
+{
+guid "{E2B04E02-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "adverts_ceiling_light_insert"
+"modelscale" "2.5"
+"origin" "-490.5 2304.75 147"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 26
+{
+guid "{E2B04DFF-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_ceiling3"
+"modelscale" "2.5"
+"origin" "-491.25 2304.5 155.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 27
+{
+guid "{E2B04DFC-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-416.5 2371.75 177"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 28
+{
+guid "{E2B04DF6-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_ceiling_middle"
+"modelscale" "2.5"
+"origin" "-336.25 2355.25 162.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 29
+{
+guid "{E2B04DF3-5E7E-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-475.75 2194.25 177"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 30
+{
+guid "{260008AD-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 210 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-203 2243.75 180"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 31
+{
+guid "{34C9D62D-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-306.75 2181.75 178.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 32
+{
+guid "{3BD9D30F-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_ceiling_middle"
+"modelscale" "2.5"
+"origin" "-237 2183.5 162.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 33
+{
+guid "{7597CBCD-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_ceiling"
+"modelscale" "2.5"
+"origin" "-390.5 2130.25 155.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 34
+{
+guid "{80678E84-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "pre_airport_ceiling"
+"modelscale" "2.5"
+"origin" "-115.25 2292.75 155.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 35
+{
+guid "{8AD3974E-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "adverts_ceiling_light_insert"
+"modelscale" "2.5"
+"origin" "-115.25 2292.75 147"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 36
+{
+guid "{97E6CE68-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "adverts_ceiling_light_insert"
+"modelscale" "2.5"
+"origin" "-389.75 2130.5 147"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 37
+{
+guid "{BD1D76AF-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "360 59.8972 -90"
+"model" "pre_airport_ceiling_cables"
+"modelscale" "2.5"
+"origin" "-282.743 2256.18 162.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 38
+{
+guid "{BD1D76B2-5E7F-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0.000214724 352.794 -90.0004"
+"model" "pre_airport_ceiling_cables2"
+"modelscale" "2.5"
+"origin" "-179.972 2466.64 158.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 39
+{
+guid "{1ABC83AA-5E85-11E8-A590-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/spaceflight_terminal_tripodlight.map"
+"origin" "95.5 2084.5 -1"
+}
+// entity 40
+{
+guid "{36EB0B9C-5E85-11E8-A590-14DDA9E204AF}"
+"classname" "misc_prefab"
+"model" "_prefabs/zm_alien_isolation/spaceflight_terminal_tripodlight.map"
+"origin" "504.75 2318.25 -0.5"
+}
+// entity 41
+{
+guid "{AD16870A-5E86-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "collection_monitor"
+"modelscale" "2.5"
+"origin" "-457.75 2603 -30.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 42
+{
+guid "{BEF180C7-5E86-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "collection_monitor"
+"modelscale" "2.5"
+"origin" "-490.75 2583.5 -30.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 43
+{
+guid "{C6A01816-5E86-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "360 29.9999 -30.3003"
+"model" "monitor_50cm_evac"
+"modelscale" "2.6699999962002"
+"origin" "-467.071 2618.94 -34.8239"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 44
+{
+guid "{ED80C083-5E86-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "360 29.9999 -30.3003"
+"model" "monitor_50cm_evac"
+"modelscale" "2.6699999962002"
+"origin" "-500.071 2599.69 -34.8239"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 45
+{
+guid "{C7FB0B62-5E8B-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_stairs"
+"modelscale" "3.16"
+"origin" "-473 2425 -116.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 46
+{
+guid "{F7742DFF-5E8B-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_stairs"
+"modelscale" "3.16"
+"origin" "-327 2509 -116.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 47
+{
+guid "{3C64862E-5E8C-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "pre_airport_wall_extension_nobeam"
+"modelscale" "2.5"
+"origin" "-406 2350.5 51.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 48
+{
+guid "{7DD8F228-5E8C-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 300 0"
+"model" "pre_airport_wall_extension_nobeam"
+"modelscale" "2.5"
+"origin" "-295 2414 51.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 49
+{
+guid "{8DEA04FB-5E8C-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 300 0"
+"model" "pre_airport_pillar_extension"
+"modelscale" "2.5"
+"origin" "-338 2505.25 58.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 50
+{
+guid "{F60C9DB2-5E90-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall"
+"modelscale" "2.5"
+"origin" "-593.5 2242 -120"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 51
+{
+guid "{071019AE-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "top_coridoor_wall"
+"modelscale" "2.5"
+"origin" "-418.5 2341.5 -120"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 52
+{
+guid "{177BD530-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_stairs"
+"modelscale" "3.16"
+"origin" "-636.5 2330.5 -116.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 53
+{
+guid "{322CA16D-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "pre_airport_stairs"
+"modelscale" "3.16"
+"origin" "-163.5 2603.5 -116.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 54
+{
+guid "{4849A508-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "top_coridoor_wall"
+"modelscale" "2.5"
+"origin" "-110.5 2518.5 -120"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 55
+{
+guid "{4E47656B-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall"
+"modelscale" "2.5"
+"origin" "-282.5 2420.5 -120"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 56
+{
+guid "{58BAFAB8-5E8C-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 120 0"
+"model" "pre_airport_pillar_extension"
+"modelscale" "2.5"
+"origin" "-463 2433.75 58.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 57
+{
+guid "{B917AA39-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "prop_box1"
+"modelscale" "2.5"
+"origin" "-9 2234.5 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 58
+{
+guid "{B917AA40-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 58.1977 0"
+"model" "prop_box3_02"
+"modelscale" "2.5"
+"origin" "-14.5 2256 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 59
+{
+guid "{C587E7F8-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 141.898 0"
+"model" "prop_cone"
+"modelscale" "2.5"
+"origin" "-6 2281.5 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 60
+{
+guid "{D28C8DDF-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 0 90"
+"model" "prop_luggage1"
+"modelscale" "2.5"
+"origin" "-410 2005.5 12.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 61
+{
+guid "{D9BC4C3B-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "2.13443e-007 5.99961 89.9997"
+"model" "prop_luggage2"
+"modelscale" "2.5"
+"origin" "-410.127 2021.47 12.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 62
+{
+guid "{EBBFE19D-5E91-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 32.999 0"
+"model" "prop_luggage3"
+"modelscale" "2.5"
+"origin" "-374 2026 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 63
+{
+guid "{0DDC334E-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "prop_pringles"
+"modelscale" "2.5"
+"origin" "-435.5 2015 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 64
+{
+guid "{1B21E580-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 286.199 0"
+"model" "prop_can_crushed"
+"modelscale" "2.5"
+"origin" "-431.681 2022.76 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 65
+{
+guid "{22DBC0DB-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 213.998 0"
+"model" "prop_can_crushed"
+"modelscale" "2.5"
+"origin" "-431.838 2005.27 -0.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 66
+{
+guid "{35DBA637-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "poster_planethopper"
+"modelscale" "2.5"
+"origin" "-348 2018.5 66.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 67
+{
+guid "{3E4449AD-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "poster_workingjoe"
+"modelscale" "2.5"
+"origin" "-38 2197 66.5"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}
+// entity 68
+{
+guid "{AA81C511-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "1.66753e-008 29.9999 8.79967"
+"decalsize" "1 46 16"
+"modeloverridematerial" "graffitti_16"
+"origin" "-267 2393 91"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 69
+{
+guid "{C1F56CA3-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "360 29.9997 -31.1013"
+"decalsize" "2 22 16"
+"modeloverridematerial" "graffitti_random04"
+"origin" "-302.5 2451.5 102.5"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 70
+{
+guid "{DD19011A-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "0 30 0"
+"decalsize" "2 22 16"
+"modeloverridematerial" "dirt_run"
+"origin" "-263.75 2385 106.25"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 71
+{
+guid "{FD916EEC-5E92-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "3.93534e-007 119.999 11.3995"
+"decalsize" "2 55 31"
+"modeloverridematerial" "graffitti_14"
+"origin" "-39.75 2194.5 66.25"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 72
+{
+guid "{3494DBAA-5E93-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "19.9999 29.9997 -23.7008"
+"decalsize" "5 21 28"
+"modeloverridematerial" "graffitti_random26"
+"origin" "-479 2017 106.75"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 73
+{
+guid "{4A820E8A-5E93-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "19.9999 29.9997 -30.2015"
+"decalsize" "5 53 28"
+"modeloverridematerial" "graffitti_random13"
+"origin" "-526.5 2087 95"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 74
+{
+guid "{642B5825-5E93-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "0 120 -5.00053"
+"decalsize" "4 52 46"
+"modeloverridematerial" "graffitti_34"
+"origin" "-332.5 2025.25 58.25"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 75
+{
+guid "{89E3C428-5E93-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "0 120 0"
+"decalsize" "1 46 16"
+"modeloverridematerial" "graffitti_random12"
+"origin" "-86.5 2170.75 120.75"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
+}
+// entity 76
+{
+guid "{A836FBE3-5E93-11E8-A590-14DDA9E204AF}"
+"classname" "misc_volume_decal"
+"angles" "0 120 0"
+"decalsize" "1 24 16"
+"modeloverridematerial" "graffitti_random15"
+"origin" "-356.75 2014.75 120.75"
+"decalEditorSortEnum" "-1"
+"decalLayerSortEnum" "-1"
+"model" "vol_decal_cube"
+"revealDataSize" "revealAll"
+"textureTiling" "1 1"
+"uvBaseAndScale" "0 0 1 1"
 }
