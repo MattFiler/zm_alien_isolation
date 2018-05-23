@@ -1,0 +1,214 @@
+iwmap 4
+// entity 0
+{
+guid "{73B9AD0A-5E26-11E8-A590-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"message" "There's a new threat on Sevastopol."
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"umbra_prime_depth" "1"
+"wsi" "default_day"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+{
+guid "{FE1EBE1A-5E1A-11E8-8398-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall_chairs"
+"modelscale" "2.5"
+"origin" "-868.25 2718.5 -120"
+}
+// entity 8
+{
+guid "{FE1EBE28-5E1A-11E8-8398-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall_chairs"
+"modelscale" "2.5"
+"origin" "-970 2895.25 -120"
+}
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+{
+guid "{093053B3-5E22-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2.5"
+"origin" "-817.5 2629.5 -120"
+}
+// entity 16
+{
+guid "{DEB8A456-5E1A-11E8-8398-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall"
+"modelscale" "2.5"
+"origin" "-766 2540.5 -120"
+}
+// entity 17
+{
+guid "{2B87A363-5E22-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2.5"
+"origin" "-919.75 2806.5 -120"
+}
+// entity 18
+{
+guid "{5FA5FD25-5E22-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2.5"
+"origin" "-1021.75 2983.25 -120"
+}
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+{
+guid "{BE3B34EC-5E23-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_wall_pillar"
+"modelscale" "2.5"
+"origin" "-715 2452.25 -120"
+}
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+{
+guid "{6DC9443F-5E24-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "adverts_pillar_corner"
+"modelscale" "2.5"
+"origin" "-1252.5 3304.5 -120"
+}
+// entity 29
+{
+guid "{891CEEE6-5E24-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "adverts_pillar_corner"
+"modelscale" "2.5"
+"origin" "-1066.5 2982 -120"
+}
+// entity 30
+{
+guid "{A4C90984-5E24-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 30 0"
+"model" "top_coridoor_ceiling_beam"
+"modelscale" "2.5"
+"origin" "-1144.75 3153.5 59.5"
+}
+// entity 31
+{
+guid "{E082DC39-5E24-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "airport_door"
+"modelscale" "2.5"
+"origin" "-1169.75 3136 -141.5"
+}
+// entity 32
+{
+guid "{C6176952-5E24-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "top_coridoor_door"
+"modelscale" "2.5"
+"origin" "-1169.75 3136 -120"
+}
+// entity 33
+{
+guid "{65D3F6E7-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_wall_extension"
+"modelscale" "2.5"
+"origin" "-868.25 2718.5 60"
+}
+// entity 34
+{
+guid "{7D63632E-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_wall_extension"
+"modelscale" "2.5"
+"origin" "-970 2895.25 60"
+}
+// entity 35
+{
+guid "{84A6778A-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_wall_extension"
+"modelscale" "2.5"
+"origin" "-766 2540.5 60"
+}
+// entity 36
+{
+guid "{BE6F89F4-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_pillar_extension"
+"modelscale" "2.5"
+"origin" "-799.75 2639.75 59"
+}
+// entity 37
+{
+guid "{E7B9C803-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_pillar_extension"
+"modelscale" "2.5"
+"origin" "-901.75 2816.5 59"
+}
+// entity 38
+{
+guid "{F72C97AF-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_pillar_extension"
+"modelscale" "2.5"
+"origin" "-1003.75 2993.5 59"
+}
+// entity 39
+{
+guid "{FDD79E30-5E25-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_pillar_extension"
+"modelscale" "2.5"
+"origin" "-697.25 2462.25 59"
+}
+// entity 40
+{
+guid "{385F1038-5E26-11E8-A590-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 -60 0"
+"model" "pre_airport_wall_extension_large"
+"modelscale" "2.5"
+"origin" "-1120.25 3155.5 60"
+}
