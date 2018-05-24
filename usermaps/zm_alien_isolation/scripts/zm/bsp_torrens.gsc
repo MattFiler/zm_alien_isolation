@@ -604,7 +604,7 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	//Freeze players and start transition cutscene
 	foreach(player in level.players) {
 		player FreezeControls(true);
-		player AllowSprint(true);
+		//player AllowSprint(true);
 		player AllowJump(true);
 		player AllowMelee(true);
 	}

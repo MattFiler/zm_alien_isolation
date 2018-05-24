@@ -136,6 +136,10 @@ function HAB_AIRPORT_TURN_ON_ZOMBIES() {
 	//ENABLE ZOMBIES
 	SetDvar("ai_disableSpawn", "0");
 
+	foreach(player in level.players) {
+		player AllowSprint(true);
+	}
+
 	//PLAY VOX
 
 }
