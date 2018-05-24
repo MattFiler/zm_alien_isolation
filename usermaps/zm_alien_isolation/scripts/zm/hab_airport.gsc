@@ -16,11 +16,17 @@
 //On spawn, activate LS2, wait 5 seconds, close windows and activate LS1
 function HAB_AIRPORT_SPAWN() {
 	self waittill("players_on_sevastopol");
+	
+	//Play "Welcome To Sevastopol" theme
+	PLAY_LOCAL_SOUND("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
 
 	thread HAB_AIRPORT_OBJECTIVES();
 	thread HAB_AIRPORT_AMBIENCES();
 	thread HAB_AIRPORT_POWER();
 	
+	//Enable zombies from lobby
+	HAB_AIRPORT_TURN_ON_ZOMBIES();
+
 	//Wait for player to open the spawn room door
 	HAB_AIRPORT_SPAWNROOM_DOOR();
 
@@ -110,6 +116,28 @@ function keycard_objective() {
 		}
 		wait 0.5; //delay a bit so we dont kill the game
 	}
+}
+
+
+//SFT Lobby zombie intro
+function HAB_AIRPORT_TURN_ON_ZOMBIES() {
+
+	//PLAY ANIMATED MESSAGE PICKUP PROMPT ON COMPUTER
+
+	lobby_zombie_trigger = GetEnt("sft_lobby_activate_zombies", "targetname");
+	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to retrieve message", lobby_zombie_trigger);
+	lobby_zombie_trigger waittill("trigger", player);
+	HIDE_TRIGGER(lobby_zombie_trigger);
+
+	//PLAY AUDIOLOG
+
+	//WAIT
+
+	//ENABLE ZOMBIES
+	SetDvar("ai_disableSpawn", "0");
+
+	//PLAY VOX
+
 }
 
 

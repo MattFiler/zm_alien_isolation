@@ -698,12 +698,6 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	
 	//Let the game know we're on Sevastopol
 	self notify("players_on_sevastopol");
-	
-	//Play "Welcome To Sevastopol" theme?
-	PLAY_LOCAL_SOUND("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
-	
-	//Start zombie spawning
-	SetDvar("ai_disableSpawn", "0");
 }
 
 

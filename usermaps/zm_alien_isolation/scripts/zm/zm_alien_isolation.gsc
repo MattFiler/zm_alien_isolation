@@ -135,14 +135,15 @@ function main()
 	level.zones = [];
 	level.zone_manager_init_func =&ZM_ALIEN_ISOLATION_ZONES;
 	init_zones[0] = "bsp_torrens"; //The Torrens
-	init_zones[1] = "sft_spawn_zone"; //Spawn room zone
-	init_zones[2] = "main_zone"; //Main area zone
-	init_zones[3] = "perkroom_zone"; //Fast Cash zone
-	init_zones[4] = "endgame_zone"; //Buyable ending zone
-	init_zones[5] = "noodlebar_zone"; //Noodle Bar zone
-	init_zones[6] = "noodlebar_zone_main"; //Noodle Bar zone 2
-	init_zones[7] = "collection_zone"; //Temp Baggage Collection and Advert Coridoor zone
-	init_zones[8] = "comms_volume"; //Tow Platform
+	init_zones[1] = "sft_lobby"; //Sevastopol lobby
+	init_zones[2] = "sft_spawn_zone"; //Old spawn room zone
+	init_zones[3] = "main_zone"; //Main area zone
+	init_zones[4] = "perkroom_zone"; //Fast Cash zone
+	init_zones[5] = "endgame_zone"; //Buyable ending zone
+	init_zones[6] = "noodlebar_zone"; //Noodle Bar zone
+	init_zones[7] = "noodlebar_zone_main"; //Noodle Bar zone 2
+	init_zones[8] = "collection_zone"; //Temp Baggage Collection and Advert Coridoor zone
+	init_zones[9] = "comms_volume"; //Tow Platform
 	level thread zm_zonemgr::manage_zones(init_zones);
 
 	level.pathdist_type = PATHDIST_ORIGINAL;
