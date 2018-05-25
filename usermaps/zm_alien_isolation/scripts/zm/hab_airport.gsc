@@ -141,6 +141,7 @@ function HAB_AIRPORT_TURN_ON_ZOMBIES() {
 
 	foreach(player in level.players) {
 		player AllowSprint(true);
+		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
 
 	//PLAY VOX

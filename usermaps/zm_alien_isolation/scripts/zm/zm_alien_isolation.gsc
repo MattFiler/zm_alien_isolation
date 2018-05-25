@@ -123,7 +123,7 @@ function main()
 	level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	
-	thread BSP_TORRENS_SPAWN(false);
+	thread BSP_TORRENS_SPAWN();
 	thread HAB_AIRPORT_SPAWN(); 
 	thread ENG_TOWPLATFORM_SPAWN();
 
