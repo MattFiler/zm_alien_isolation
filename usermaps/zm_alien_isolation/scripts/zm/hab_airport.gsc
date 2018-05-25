@@ -48,6 +48,7 @@ function HAB_AIRPORT_AMBIENCES() {
 	//Ambiences
 	thread HAB_AIRPORT_ALIEN_VENT_RUMBLES();
 	thread HAB_AIRPORT_GAMEROOM_BESPOKE();
+	thread HAB_AIRPORT_TOUR_AUDIO();
 
 	//Animations
 	thread HAB_AIRPORT_CEILING_FANS();
@@ -122,6 +123,8 @@ function keycard_objective() {
 //SFT Lobby zombie intro
 function HAB_AIRPORT_TURN_ON_ZOMBIES() {
 
+	SetDvar("cg_draw2d", "1");
+
 	//PLAY ANIMATED MESSAGE PICKUP PROMPT ON COMPUTER
 
 	lobby_zombie_trigger = GetEnt("sft_lobby_activate_zombies", "targetname");
@@ -142,6 +145,54 @@ function HAB_AIRPORT_TURN_ON_ZOMBIES() {
 
 	//PLAY VOX
 
+}
+
+
+//Pre-airport lobby tour audio
+function HAB_AIRPORT_TOUR_AUDIO() {
+	self waittill("players_on_sevastopol");
+	self endon("arrived_at_tow_platform");
+
+	previous_track = 0;
+	current_track = 1;
+   	dockingClampStruct = struct::get("sevastopol_tour_audio", "targetname");
+	while (true) {
+		while (current_track == previous_track) {
+			current_track = randomintrange(1,9);
+		}
+
+		PlaySoundAtPosition("zm_alien_isolation_sev_tour_"+current_track, dockingClampStruct.origin);
+
+   		if (current_track == 1) {
+   			wait(45);
+   		}
+   		else if (current_track == 2) {
+   			wait(32);
+   		}
+   		else if (current_track == 3) {
+   			wait(20);
+   		}
+   		else if (current_track == 4) {
+   			wait(35);
+   		}
+   		else if (current_track == 5) {
+   			wait(15);
+   		}
+   		else if (current_track == 6) {
+   			wait(20);
+   		}
+   		else if (current_track == 7) {
+   			wait(37);
+   		}
+   		else if (current_track == 8) {
+   			wait(55);
+   		}
+   		else {
+   			wait(33);
+   		}
+
+   		previous_track = current_track;
+	}
 }
 
 

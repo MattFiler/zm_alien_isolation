@@ -21,7 +21,7 @@
 
 //Torrens spawn script
 function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
-	level util::set_lighting_state(0); //TODO: do stuff with this - LS1, lights off - LS0, lights on? switch on spawn sequence?
+	level util::set_lighting_state(1); 
 
 	//Get all dynamic clips in spawn
 	spawnClip1 = getEnt("torrens_spawn_clip_1", "targetname");
@@ -35,25 +35,42 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 	spawnClip3 NotSolid();
 	spawnClip4 NotSolid();
 
-	//Handle control lock
-	if (!should_skip_cutscenes) {
-		thread spawn_control_lock_override();
+	SetDvar("cg_draw2d", "0");
+
+	level flag::wait_till("all_players_connected");
+
+	foreach	(player in level.players) {		
+		thread hide_game_until_prompted(player);
+
+		//Take weapons
+		weapons = player GetWeaponsList(true);
+		foreach (weapon in weapons)
+		{
+			player TakeWeapon(weapon);
+		}
+		
+		player SetStance("prone");
+		player FreezeControls(true);
 	}
 
-	//Disable start-of-game fade-in
-	level flag::wait_till("all_players_connected");
-	wait(4.999);
+	level flag::wait_till("initial_blackscreen_passed");
 	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
-	wait(0.001);
-	lui::screen_fade_out(0);
+
+	//Pre-define cutscene info
+	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
+
+	//Wait a little then play the cutscene
+	if (!should_skip_cutscenes) {
+		//Prime our cutscene
+		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
+		
+		wait(2);
+		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrensintro");
+		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
+
+		//Wait for cutscene to end and continue
+		wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
+	}
 	
 	//Stop zombies spawning
 	SetDvar("ai_disableSpawn", "1");
@@ -62,6 +79,7 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 	//thread coridoorLightHandler();
 	
 	//Take stuff you'd normally get on spawn
+	/*
 	level.start_weapon = level.weaponNone;
 	allPlayersTakeGuns = GetPlayers();
 	foreach (playerTakeGuns in allPlayersTakeGuns) {
@@ -81,28 +99,24 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 		
 		//playerTakeGuns SetClientUIVisibilityFlag("weapon_hud_visible", 0);
 	}
+	*/
 	
 	//Setup login screens
 	setup_login_screens_torrens();	
 	
 	//Force players to look UP
-	allPlayersOnTorrens = GetPlayers();
-	foreach (torrensPlayer in allPlayersOnTorrens) {
-		torrensPlayer FreezeControls(false);
-		torrensPlayer SetStance("prone");
-		torrensPlayer FreezeControls(true);
-		
+	foreach (player in level.players) {		
 		bedLocation = 0;
-		if (torrensPlayer.characterIndex == 0) {
+		if (player.characterIndex == 0) {
 			bedLocation = level.dempseybedlocation;
 		}
-		if (torrensPlayer.characterIndex == 1) {
+		if (player.characterIndex == 1) {
 			bedLocation = level.nikolaibedlocation;
 		}
-		if (torrensPlayer.characterIndex == 2) {
+		if (player.characterIndex == 2) {
 			bedLocation = level.richtofenbedlocation;
 		}
-		if (torrensPlayer.characterIndex == 3) {
+		if (player.characterIndex == 3) {
 			bedLocation = level.takeobedlocation;
 		}
 		
@@ -126,27 +140,14 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 			playerLocation = (-26101.1, -12822, 11778);
 		}
 		
-		torrensPlayer setorigin(playerLocation);
-		torrensPlayer SetPlayerAngles(playerAngle);
+		player SetOrigin(playerLocation);
+		player SetPlayerAngles(playerAngle);
 		
-		//torrensPlayer setClientUIVisibilityFlag("hud_visible", 0);
-		//torrensPlayer setClientUIVisibilityFlag("weapon_hud_visible", 0);
-	}
-
-	//Pre-define cutscene info
-	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
-
-	//Wait a little then play the cutscene
-	if (!should_skip_cutscenes) {
-		//Prime our cutscene
-		level thread lui::prime_movie(AYZ_CUTSCENE_ID_01);
+		player SetStance("prone");
+		player FreezeControls(true);
 		
-		wait(2);
-		level thread zm_audio::sndMusicSystem_PlayState("alien_cutscene_01");
-		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
-
-		//Wait for cutscene to end and continue
-		wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
+		//player setClientUIVisibilityFlag("hud_visible", 0);
+		//player setClientUIVisibilityFlag("weapon_hud_visible", 0);
 	}
 	
 	if (!should_skip_cutscenes) {
@@ -155,6 +156,7 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 		
 		//Wake em up! (this will all need to be retimed ideally)
 		lui::screen_fade_out(0);
+		level notify("starting_torrens_wakeup");
 		wait(4);
 		lui::screen_fade_in(1);
 		wait(1);
@@ -163,9 +165,10 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 		lui::screen_fade_in(1);
 		wait(1);
 		thread open_cryro_beds();
-		wait(6);
+		wait(3);
+		level util::set_lighting_state(0); 
+		wait(3);
 		lui::screen_fade_out(1);
-		//PLAY_LOCAL_SOUND("zm_alien_isolation__torrens_theme_wakeup"); //play wakeup theme
 		level thread zm_audio::sndMusicSystem_PlayState("torrens_intro_theme");
 		wait(4);
 	
@@ -207,7 +210,7 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 			}
 			
 			torrensPlayerTwo SetPlayerAngles(playerAngle);
-			torrensPlayerTwo setorigin(playerLocation);
+			torrensPlayerTwo SetOrigin(playerLocation);
 			torrensPlayerTwo SetStance("stand");
 		}
 
@@ -339,6 +342,14 @@ function BSP_TORRENS_SPAWN(should_skip_cutscenes) {
 }
 
 
+//Blackscreen for each player (closed on wakeup start)
+function hide_game_until_prompted(player) {
+	alien_black_screen = player OpenLUIMenu("blackscreen");
+	level waittill("starting_torrens_wakeup");
+	player CloseLUIMenu(alien_black_screen);
+}
+
+
 //handle broken door on Torrens
 function torrens_broken_door() {
 	brokendoorZone = getEnt("torrens_brokendoor_zone", "targetname");
@@ -358,53 +369,6 @@ function torrens_broken_door() {
 			break;
 		}
 		wait 0.1;
-	}
-}
-
-
-//Try and stop auto control unfreeze
-function spawn_control_lock_override() {
-	level flag::wait_till("all_players_connected");
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	level flag::wait_till( "initial_blackscreen_passed" );
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	wait(0.1);
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	wait(0.1);
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	wait(0.1);
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	wait(0.1);
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	wait(0.1);
-	foreach (player in level.players) {
-		player FreezeControls(false);
-		player SetStance("prone");
-		player FreezeControls(true);
 	}
 }
 
@@ -612,7 +576,7 @@ function TRANSITION_Torrens_to_SpaceflightTerminal(should_play_cutscene) {
 	if (should_play_cutscene) {
 		lui::screen_fade_out(1);
 		wait(1);
-		level thread zm_audio::sndMusicSystem_PlayState("alien_cutscene_02");
+		PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrens2sev");
 		level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_02, "fullscreen", transition_cutscene_length, true);
 	}
 	

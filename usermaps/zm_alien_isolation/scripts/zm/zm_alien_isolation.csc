@@ -51,7 +51,8 @@ function main()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_alien_isolation.csv", 1);
 	
 	//Load new UI
-	//callback::on_localclient_connect(&on_local_client_connect);
+	callback::on_localclient_connect(&on_local_client_connect);
+	LuiLoad("ui.uieditor.menus.hud.blackscreen");
 	//LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
 	//LuiLoad("ui.uieditor.menus.hud.popup_zm_alien_isolation");
 	
@@ -62,10 +63,7 @@ function main()
 
 //Load UI on connect & handle objectives
 function on_local_client_connect(localClientNum)
-{
-	//hud = CreateLUIMenu(localClientNum, "T7Hud_zm_alien_isolation");
+{	
+	hud = CreateLUIMenu(localClientNum, "screenhide_zm_alien_isolation");
 	//OpenLUIMenu(localClientNum, hud);
-	
-	//hud2 = CreateLUIMenu(localClientNum, "popup_zm_alien_isolation");
-	//OpenLUIMenu(localClientNum, hud2);
 }

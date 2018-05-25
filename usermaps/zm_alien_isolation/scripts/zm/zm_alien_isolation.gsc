@@ -105,7 +105,7 @@
 #precache("model", "monitor_torrens_signin"); 											//sign in monitor default
 
 //Precache UI
-//#precache("lui_menu", "T7Hud_zm_alien_isolation");
+#precache("lui_menu", "blackscreen");
 //#precache("lui_menu", "popup_zm_alien_isolation");
 //#precache("lui_menu_data", "AlienIsolationObjectivePopup");
 //#precache("eventstring", "AlienIsolationObjectivePopup");
@@ -236,22 +236,12 @@ function HIDE_TRIGGER(trigger) {
 }
 
 
-//Set up music tracks and cutscene audio
+//Set up zm_audio music tracks and cutscene audio
 function GLOBAL_MUSIC_SETUP() {
-	//CUTSCENES
-    zm_audio::musicState_Create("alien_cutscene_01", PLAYTYPE_SPECIAL, "zod_parasite_end");
-    zm_audio::musicState_Create("alien_cutscene_02", PLAYTYPE_SPECIAL, "zod_meatball_start");
     zm_audio::musicState_Create("alien_cutscene_03", PLAYTYPE_SPECIAL, "zod_meatball_end");
-
-	//TORRENS
     zm_audio::musicState_Create("torrens_intro_theme", PLAYTYPE_SPECIAL, "zod_gameover");
-
-    //SPACEFLIGHT TERMINAL
     zm_audio::musicState_Create("sft_intro_theme", PLAYTYPE_SPECIAL, "zod_egg_coldhardcash");
-
-    //TOW PLATFORM
     zm_audio::musicState_Create("tpf_intro_theme", PLAYTYPE_SPECIAL, "zod_endigc_lullaby");
-    zm_audio::musicState_Create("tpf_airlock_pressurising_theme", PLAYTYPE_SPECIAL, "zod_egg_snakeskin_instr");
 }
 
 
