@@ -122,74 +122,82 @@ function keycard_objective() {
 
 //SFT Lobby zombie intro
 function HAB_AIRPORT_TURN_ON_ZOMBIES() {
-
 	SetDvar("cg_draw2d", "1");
-
-	//PLAY ANIMATED MESSAGE PICKUP PROMPT ON COMPUTER
+	level.PauseSevastopolTourAudio = false;
 
 	lobby_zombie_trigger = GetEnt("sft_lobby_activate_zombies", "targetname");
 	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to retrieve message", lobby_zombie_trigger);
 	lobby_zombie_trigger waittill("trigger", player);
 	HIDE_TRIGGER(lobby_zombie_trigger);
 
-	//PLAY AUDIOLOG
+	level.PauseSevastopolTourAudio = true;
+	tour_audio_emitter = GetEnt("sft_lobby_audio_source", "targetname");
+	tour_audio_emitter StopSounds();
 
-	//WAIT
+	sevastolink_monitor = GetEnt("lobby_sevastolink_monitor", "targetname");
+	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_playing");
 
-	//ENABLE ZOMBIES
+	PLAY_LOCAL_SOUND("zm_alien_isolation__audiolog");
+	wait(2.4);
+	//PLAY_LOCAL_SOUND("zm_alien_isolation__post_audiolog");
+	level thread zm_audio::sndMusicSystem_PlayState("sft_audiolog_theme");
+	wait(47.5);
 	SetDvar("ai_disableSpawn", "0");
-
 	foreach(player in level.players) {
 		player AllowSprint(true);
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
+	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_played");
+	wait(20); //131
 
-	//PLAY VOX
-
+	level.PauseSevastopolTourAudio = false;
 }
 
 
 //Pre-airport lobby tour audio
 function HAB_AIRPORT_TOUR_AUDIO() {
-	self waittill("players_on_sevastopol");
-	self endon("arrived_at_tow_platform");
-
 	previous_track = 0;
 	current_track = 1;
-   	dockingClampStruct = struct::get("sevastopol_tour_audio", "targetname");
+	audio_source = GetEnt("sft_lobby_audio_source", "targetname");
 	while (true) {
-		while (current_track == previous_track) {
-			current_track = randomintrange(1,9);
+		if (level.PauseSevastopolTourAudio != true) {
+			while (current_track == previous_track) {
+				current_track = randomintrange(1,9);
+			}
+
+			level.CurrentSevastopolTourAudio = "zm_alien_isolation_sev_tour_"+current_track;
+			audio_source PlaySound("zm_alien_isolation_sev_tour_"+current_track);
 		}
 
-		PlaySoundAtPosition("zm_alien_isolation_sev_tour_"+current_track, dockingClampStruct.origin);
-
    		if (current_track == 1) {
-   			wait(45);
+   			wait(75);
    		}
    		else if (current_track == 2) {
-   			wait(32);
+   			wait(62);
    		}
    		else if (current_track == 3) {
-   			wait(20);
+   			wait(50);
    		}
    		else if (current_track == 4) {
-   			wait(35);
+   			wait(65);
    		}
    		else if (current_track == 5) {
-   			wait(15);
+   			wait(45);
    		}
    		else if (current_track == 6) {
-   			wait(20);
+   			wait(50);
    		}
    		else if (current_track == 7) {
-   			wait(37);
+   			wait(67);
    		}
    		else if (current_track == 8) {
-   			wait(55);
+   			wait(85);
+   		}
+   		else if (current_track == 8) {
+   			wait(63);
    		}
    		else {
-   			wait(33);
+   			wait(0.5);
    		}
 
    		previous_track = current_track;
@@ -634,6 +642,7 @@ function HAB_AIRPORT_ELEVATOR_PURCHASE() {
 function HAB_AIRPORT_ELEVATOR_SEQUENCE() {
 	SetDvar("ai_disableSpawn", "1");
 	PLAY_LOCAL_SOUND("zm_alien_isolation_sfx_elevator");
+	level.PauseSevastopolTourAudio = true;
 
 	//Door parts
 	elevatorDoor1_SFT = getEnt("sft_elevator_sideone", "targetname");

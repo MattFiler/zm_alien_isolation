@@ -326,6 +326,19 @@ function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 function BSP_TORRENS_WAKEUP_SEQUENCE() {
 	//Start SFX
 	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_wakeup");
+
+	//Take weapons again (just in case)
+	foreach (player in level.players) {
+		weapons = player GetWeaponsList(true);
+		foreach (weapon in weapons)
+		{
+			player TakeWeapon(weapon);
+		}
+
+		//Set player stance (and re-freeze controls)
+		player SetStance("prone");
+		player FreezeControls(true);
+	}
 	
 	//Run wakeup sequence
 	lui::screen_fade_out(0);
@@ -748,10 +761,8 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		destination = struct::get("sft_spawners_" + destinationNum, "targetname");
 		
 		//Move player
-		player setorigin(destination.origin); 
-		
-		//will also probably want to do some angle stuff here.
-		//e.g. struct angle = player angle (+-90 if we're off)
+		player SetOrigin(destination.origin); 
+		player SetPlayerAngles((0,-150,0));
 	}
 	
 	//Give stuff you'd normally get on spawn

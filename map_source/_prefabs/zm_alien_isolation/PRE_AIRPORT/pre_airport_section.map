@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{7A142CA3-5F45-11E8-A590-14DDA9E204AF}"
+guid "{3B8F7D62-6079-11E8-A591-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -1809,16 +1809,19 @@ guid "{66587FB9-5F2F-11E8-A590-14DDA9E204AF}"
 // entity 108
 {
 guid "{AD0708EF-5F2F-11E8-A590-14DDA9E204AF}"
-"classname" "misc_model"
+"classname" "script_model"
 "angles" "0 210 0"
 "model" "monitor_50cm_sevastolink_message"
 "modelscale" "1.18999999575317"
 "origin" "-463.75 2576.5 43"
+"targetname" "lobby_sevastolink_monitor"
+"_color" "1 0 0"
+"client_server" "ServerSide"
 "lightingstate1" "1"
 "lightingstate2" "1"
 "lightingstate3" "1"
 "lightingstate4" "1"
-"static" "1"
+"shadow_casting" "1"
 }
 // entity 109
 {
@@ -2157,4 +2160,30 @@ guid "{7A142CAA-5F45-11E8-A590-14DDA9E204AF}"
 "revealDataSize" "revealAll"
 "textureTiling" "1 1"
 "uvBaseAndScale" "0 0 1 1"
+}
+// entity 125
+{
+guid "{358677BB-6079-11E8-A591-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "monitor_50cm_sevastolink_message_played"
+"origin" "143.25 2598.5 -2.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
+}
+// entity 126
+{
+guid "{3B8F7D69-6079-11E8-A591-14DDA9E204AF}"
+"classname" "misc_model"
+"model" "monitor_50cm_sevastolink_message_playing"
+"origin" "129 2598.25 -2.75"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"static" "1"
 }

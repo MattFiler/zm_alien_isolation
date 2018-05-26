@@ -103,6 +103,8 @@
 #precache("model", "monitor_torrens_signin_richtofen"); 								//sign in monitor 3
 #precache("model", "monitor_torrens_signin_takeo"); 									//sign in monitor 4
 #precache("model", "monitor_torrens_signin"); 											//sign in monitor default
+#precache("model", "monitor_50cm_sevastolink_message_playing"); 						//sevastolink monitor playing message
+#precache("model", "monitor_50cm_sevastolink_message_played"); 							//sevastolink monitor played message
 
 //Precache UI
 #precache("lui_menu", "blackscreen");
@@ -242,6 +244,7 @@ function GLOBAL_MUSIC_SETUP() {
     zm_audio::musicState_Create("torrens_intro_theme", PLAYTYPE_SPECIAL, "zod_gameover");
     zm_audio::musicState_Create("sft_intro_theme", PLAYTYPE_SPECIAL, "zod_egg_coldhardcash");
     zm_audio::musicState_Create("tpf_intro_theme", PLAYTYPE_SPECIAL, "zod_endigc_lullaby");
+    zm_audio::musicState_Create("sft_audiolog_theme", PLAYTYPE_SPECIAL, "zod_parasite_start");
 }
 
 

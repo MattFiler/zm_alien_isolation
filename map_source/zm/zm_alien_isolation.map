@@ -61919,3 +61919,19 @@ guid "{3AC0A6EC-605A-11E8-A591-14DDA9E204AF}"
  ( -25560.25 -13159.5 11806 ) ( -25560.25 -13191.5 11806 ) ( -25560.25 -13191.5 11790 ) trigger 64 64 172.75 0 0 0 lightmap_gray 16384 16384 172.75 0 0 0
 }
 }
+// entity 3345
+{
+guid "{5369384B-6076-11E8-A591-14DDA9E204AF}"
+"classname" "script_model"
+"model" "wall_speaker"
+"origin" "-706.25 2984.75 -107.25"
+"targetname" "sft_lobby_audio_source"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"modelscale" "1"
+"shadow_casting" "1"
+}
