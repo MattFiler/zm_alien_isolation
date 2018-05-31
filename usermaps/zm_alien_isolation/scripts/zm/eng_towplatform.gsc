@@ -221,7 +221,7 @@ function ENG_TOWPLATFORM_ENDING_CUTSCENE() {
     }
 	lui::screen_fade_out(1); //make it a smooth transition
 	wait(1);
-	PLAY_LOCAL_SOUND("zm_alien_isolation__alt_final_action_cut");
+	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_ripsev");
 	level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_03, "fullscreen", 36, true);
 	
 	//Sort out cutscene audio - this should be handled by zm_audio, but just in case

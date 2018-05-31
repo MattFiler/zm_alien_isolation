@@ -1,0 +1,175 @@
+iwmap 4
+"script_startingnumber" 0
+"000_Global" flags  active
+"The Map" flags expanded 
+// entity 0
+{
+guid "{3460E30E-6455-11E8-A593-14DDA9E204AF}"
+"classname" "worldspawn"
+"lightingquality" "4096"
+"lutmaterial" "luts_ayz"
+"message" "There's a new threat on Sevastopol."
+"samplescale" "1"
+"skyboxmodel" "skybox_default_day"
+"ssi" "default_day"
+"umbra_prime_depth" "1"
+"wsi" "default_day"
+"fsi" "default"
+"gravity" "800"
+"lodbias" "default"
+"numOmniShadowSlices" "24"
+"numSpotShadowSlices" "64"
+"sky_intensity_factor0" "1"
+"sky_intensity_factor1" "1"
+"state_alias_1" "State 1"
+"state_alias_2" "State 2"
+"state_alias_3" "State 3"
+"state_alias_4" "State 4"
+}
+// entity 1
+{
+guid "{4D3B4FC8-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 30 0"
+"model" "airport_door_side2"
+"modelscale" "2"
+"origin" "-186 2096.3 -18"
+"targetname" "airportdoor_lobby_to_spawn_side1_door"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 2
+{
+guid "{4D3B4FCB-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 30 0"
+"model" "airport_door_side1"
+"modelscale" "2"
+"origin" "-186 2096.3 -18"
+"targetname" "airportdoor_lobby_to_spawn_side2_door"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}
+// entity 3
+{
+guid "{4D3B4FCE-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "-247.751 2059.84 -17"
+"targetname" "airportdoor_lobby_to_spawn_side1_door_move"
+"_color" "1 0 0"
+}
+// entity 4
+{
+guid "{4D3B4FD1-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "-124.751 2130.09 -17"
+"targetname" "airportdoor_lobby_to_spawn_side2_door_move"
+"_color" "1 0 0"
+}
+// entity 5
+{
+guid "{4D3B4FD7-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "-274.251 2040.34 39"
+"targetname" "airportdoor_lobby_to_spawn_side1_clip_move"
+"_color" "1 0 0"
+}
+// entity 6
+{
+guid "{4D3B4FDA-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_struct"
+"origin" "-97.251 2143.59 39"
+"targetname" "airportdoor_lobby_to_spawn_side2_clip_move"
+"_color" "1 0 0"
+}
+// entity 7
+{
+guid "{4D3B4FDD-6455-11E8-A593-14DDA9E204AF}"
+"classname" "trigger_use"
+"ayz_doordef" "spawnroom_door"
+"script_flag" "enter_main_zone"
+"targetname" "airportdoor_lobby_to_spawn_trigger"
+"_color" "0.3 0.5 0.8"
+"cursorhint" "HINT_ACTIVATE"
+// brush 0
+{
+ guid "{4D3B4FDC-6455-11E8-A593-14DDA9E204AF}"
+ ( -189.5 2130 2.5 ) ( -217 2113.5 2.5 ) ( -200.5 2086 2.5 ) trigger 64 64 520.65802 -617.80914 30.800215 0 lightmap_gray 16384.199 16384.066 520.66248 -617.80597 30.800228 0
+ ( -198.5 2086 72.25 ) ( -215 2113.5 72.25 ) ( -187.5 2130 72.25 ) trigger 64 64 522.37604 -616.78503 30.800215 0 lightmap_gray 16384.199 16384.066 522.37952 -616.78186 30.800228 0
+ ( -197.25 2089.75 44.25 ) ( -169.75 2106.25 44.25 ) ( -169.75 2106.25 28.25 ) trigger 54.972744 64 -519.62384 -28.25 0 0 lightmap_gray 14073.125 16384 -519.625 -28.25 0 0
+ ( -116.25 2135.25 44.25 ) ( -132.75 2162.75 44.25 ) ( -132.75 2162.75 28.25 ) trigger 54.973621 64 1038.5681 -28.25 0 0 lightmap_gray 14073.247 16384 1038.5681 -28.25 0 0
+ ( -190.25 2130 44.25 ) ( -217.75 2113.5 44.25 ) ( -217.75 2113.5 28.25 ) trigger 54.972744 64 -540.00848 -28.25 0 0 lightmap_gray 14073.125 16384 -540.00903 -28.25 0 0
+ ( -270 2086.75 44.25 ) ( -253.5 2059.25 44.25 ) ( -253.5 2059.25 28.25 ) trigger 54.973621 64 962.68304 -28.25 0 0 lightmap_gray 14073.247 16384 962.68304 -28.25 0 0
+}
+}
+// entity 8
+{
+guid "{4D3B4FE0-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "airportdoor_lobby_to_spawn_side1_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{4D3B4FDF-6455-11E8-A593-14DDA9E204AF}"
+ ( -91 2192.25 -0.75 ) ( -251 2101.25 -0.75 ) ( -219.5 2045.5 -0.75 ) clip 64 64 671.63855 -1563.088 29.599945 0 lightmap_gray 16383.992 16383.906 671.63855 -1563.0818 29.599945 0
+ ( -249.5 2029.75 78 ) ( -281 2085.5 78 ) ( -121.25 2176.25 78 ) clip 64 64 621.68176 -1564.193 29.599966 0 lightmap_gray 16384 16384.023 637.68176 -1564.1893 29.599966 0
+ ( -238.5 2060 178 ) ( -78.5 2151 178 ) ( -78.5 2151 146 ) clip 55.64764 64 -367.10962 2 0 0 lightmap_gray 14245.796 16384 -367.10962 -26 0 0
+ ( -178 2072.5 175 ) ( -209.75 2128 175 ) ( -209.75 2128 143 ) clip 55.648067 64 1790.7404 9 0 0 lightmap_gray 14245.905 16384 1790.74 -23 0 0
+ ( -94 2154.75 182 ) ( -254 2063.75 182 ) ( -254 2063.75 150 ) clip 55.647682 64 -382.69757 2 0 0 lightmap_gray 14245.804 16384 -382.69778 -30 0 0
+ ( -278.5 2086 194 ) ( -246.75 2030.25 194 ) ( -246.75 2030.25 162 ) clip 55.647461 64 1748.6417 -18 0 0 lightmap_gray 14245.75 16384 1748.6417 -42 0 0
+}
+}
+// entity 9
+{
+guid "{4D3B4FE3-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_brushmodel"
+"targetname" "airportdoor_lobby_to_spawn_side2_clip"
+"_color" "0 0.5 0.8"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+// brush 0
+{
+ guid "{4D3B4FE2-6455-11E8-A593-14DDA9E204AF}"
+ ( -91.25 2192 -0.75 ) ( -251.25 2101 -0.75 ) ( -219.75 2045.25 -0.75 ) clip 64 64 671.29767 -1562.9941 29.599945 0 lightmap_gray 16383.992 16383.906 671.29767 -1562.9879 29.599945 0
+ ( -249.75 2029.5 78 ) ( -281.25 2085.25 78 ) ( -121.5 2176 78 ) clip 64 64 621.34088 -1564.0991 29.599966 0 lightmap_gray 16384 16384.023 637.34088 -1564.0955 29.599966 0
+ ( -238.75 2059.75 178 ) ( -78.75 2150.75 178 ) ( -78.75 2150.75 146 ) clip 55.64764 64 -367.35959 2 0 0 lightmap_gray 14245.796 16384 -367.35959 -26 0 0
+ ( -101.25 2115.25 175 ) ( -133 2170.75 175 ) ( -133 2170.75 143 ) clip 55.648067 64 1833.4871 9 0 0 lightmap_gray 14245.905 16384 1833.4869 -23 0 0
+ ( -94.25 2154.5 182 ) ( -254.25 2063.5 182 ) ( -254.25 2063.5 150 ) clip 55.647682 64 -382.94757 2 0 0 lightmap_gray 14245.804 16384 -382.94778 -30 0 0
+ ( -202.75 2116.75 194 ) ( -171 2061 194 ) ( -171 2061 162 ) clip 55.647461 64 1779.3894 -18 0 0 lightmap_gray 14245.75 16384 1779.3894 -42 0 0
+}
+}
+// entity 10
+{
+guid "{4D3B4FE6-6455-11E8-A593-14DDA9E204AF}"
+"classname" "script_model"
+"angles" "0 30 0"
+"model" "ayz_new_door_lights"
+"modelscale" "2"
+"origin" "-186 2096.55 -10.75"
+"targetname" "lobby_to_spawn_flasher"
+"_color" "1 0 0"
+"client_server" "ServerSide"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"shadow_casting" "1"
+}

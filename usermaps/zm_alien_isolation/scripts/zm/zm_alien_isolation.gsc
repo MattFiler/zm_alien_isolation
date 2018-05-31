@@ -79,6 +79,8 @@
 
 //Define some stuff
 #define		AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED		"Door is disabled, please wait!" 	//Shown on doors pre-lockdown in SFT
+#define     AYZ_DOORPROMPT_LOW_POWER                "Low power - door disabled"         //Low power for door
+#define     AYZ_DOORPROMPT_LOCKED                   "Door locked - please wait!"        //Door locked
 #define		AYZ_CUTSCENE_ID_01						"zm_alien_isolation_cs01" 			//Story intro
 #define		AYZ_CUTSCENE_ID_02						"zm_alien_isolation_cs02" 			//Transition - Torrens to Sevastopol
 #define		AYZ_CUTSCENE_ID_03						"zm_alien_isolation_cs03"			//Endgame
@@ -113,6 +115,7 @@
 //#precache("eventstring", "AlienIsolationObjectivePopup");
 
 //Precache FX
+#precache("fx", "electric/fx_elec_sparks_bounce_lg_orange"); //Sevastolink broken spark
 #precache("fx", "zm_alien_isolation/Elevator_Light"); //Elevator lights
 
 //*****************************************************************************
@@ -124,6 +127,7 @@ function main()
 	
 	level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
+	level._effect["sevastolink_spark"] = "electric/fx_elec_sparks_bounce_lg_orange";
 	
 	thread BSP_TORRENS_SPAWN();
 	thread HAB_AIRPORT_SPAWN(); 
@@ -240,11 +244,11 @@ function HIDE_TRIGGER(trigger) {
 
 //Set up zm_audio music tracks and cutscene audio
 function GLOBAL_MUSIC_SETUP() {
-    zm_audio::musicState_Create("alien_cutscene_03", PLAYTYPE_SPECIAL, "zod_meatball_end");
     zm_audio::musicState_Create("torrens_intro_theme", PLAYTYPE_SPECIAL, "zod_gameover");
-    zm_audio::musicState_Create("sft_intro_theme", PLAYTYPE_SPECIAL, "zod_egg_coldhardcash");
-    zm_audio::musicState_Create("tpf_intro_theme", PLAYTYPE_SPECIAL, "zod_endigc_lullaby");
     zm_audio::musicState_Create("sft_audiolog_theme", PLAYTYPE_SPECIAL, "zod_parasite_start");
+    zm_audio::musicState_Create("sft_intro_theme", PLAYTYPE_GAMEEND, "zod_egg_coldhardcash");
+    zm_audio::musicState_Create("tpf_intro_theme", PLAYTYPE_GAMEEND, "zod_endigc_lullaby");
+    zm_audio::musicState_Create("tpf_airlock_pressurising_theme", PLAYTYPE_GAMEEND, "zod_meatball_end");
 }
 
 

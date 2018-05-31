@@ -13,6 +13,13 @@
 #namespace alien_isolation_zombies;
 
 
+/*
+
+ToDo: Move ADVERTS doors to new HAB_AIRPORT_DOOR() function.
+
+*/
+
+
 //On spawn, activate LS2, wait 5 seconds, close windows and activate LS1
 function HAB_AIRPORT_SPAWN() {
 	self waittill("players_on_sevastopol");
@@ -20,15 +27,13 @@ function HAB_AIRPORT_SPAWN() {
 	//Play "Welcome To Sevastopol" theme
 	PLAY_LOCAL_SOUND("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
 
-	thread HAB_AIRPORT_OBJECTIVES();
+	thread HAB_AIRPORT_EVENT_DRIVEN_OBJECTIVES();
 	thread HAB_AIRPORT_AMBIENCES();
 	thread HAB_AIRPORT_POWER();
+	thread HAB_AIRPORT_LOBBY_TO_SPAWNROOM_DOOR();
 	
 	//Enable zombies from lobby
-	HAB_AIRPORT_TURN_ON_ZOMBIES();
-
-	//Wait for player to open the spawn room door
-	HAB_AIRPORT_SPAWNROOM_DOOR();
+	HAB_AIRPORT_PRE_TERMINAL_SEQUENCE();
 
 	thread HAB_AIRPORT_SHUTTER_DOOR("gameroom", 1500);
 	thread HAB_AIRPORT_SHUTTER_DOOR("perkroom", 1500);
@@ -75,7 +80,7 @@ function HAB_AIRPORT_LOCKDOWN_SEQUENCE() {
 
 
 //Spaceflight Terminal Objectives
-function HAB_AIRPORT_OBJECTIVES() {
+function HAB_AIRPORT_EVENT_DRIVEN_OBJECTIVES() {
 	//Wait for intro lockdown to finish and then show objective a bit later
 	self waittill("ayz_lockdown_completed");
 	thread keycard_objective();
@@ -121,7 +126,7 @@ function keycard_objective() {
 
 
 //SFT Lobby zombie intro
-function HAB_AIRPORT_TURN_ON_ZOMBIES() {
+function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	SetDvar("cg_draw2d", "1");
 	level.PauseSevastopolTourAudio = false;
 
@@ -132,25 +137,41 @@ function HAB_AIRPORT_TURN_ON_ZOMBIES() {
 
 	level.PauseSevastopolTourAudio = true;
 	tour_audio_emitter = GetEnt("sft_lobby_audio_source", "targetname");
-	tour_audio_emitter StopSounds();
+	tour_audio_emitter StopSound(level.CurrentSevastopolTourAudio);
 
 	sevastolink_monitor = GetEnt("lobby_sevastolink_monitor", "targetname");
 	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_playing");
 
 	PLAY_LOCAL_SOUND("zm_alien_isolation__audiolog");
 	wait(2.4);
-	//PLAY_LOCAL_SOUND("zm_alien_isolation__post_audiolog");
 	level thread zm_audio::sndMusicSystem_PlayState("sft_audiolog_theme");
-	wait(47.5);
+	wait(43.5);
+	PLAY_LOCAL_SOUND("zm_alien_isolation_power_out");
+	wait(1);
+	sevastolink_spark = struct::get("sevastolink_broken_spark", "targetname");
+	PlayFX(level._effect["sevastolink_spark"], sevastolink_spark.origin);
+	level util::set_lighting_state(1); 
+	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_played");
+	wait(3);
 	SetDvar("ai_disableSpawn", "0");
 	foreach(player in level.players) {
 		player AllowSprint(true);
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
-	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_played");
-	wait(20); //131
+	wait(5);
+	thread UPDATE_OBJECTIVE("Survive until power is restored to the lobby.");
+	wait(20); 
+
+	PLAY_LOCAL_SOUND("zm_alien_isolation_power_restored");
+	level notify("lobby_power_restored");
+	level util::set_lighting_state(0); 
 
 	level.PauseSevastopolTourAudio = false;
+
+	wait(2);
+	thread UPDATE_OBJECTIVE("Enter the Spaceflight Terminal.");
+
+	HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR();
 }
 
 
@@ -205,66 +226,60 @@ function HAB_AIRPORT_TOUR_AUDIO() {
 }
 
 
-//Handle spawn room door
-function HAB_AIRPORT_SPAWNROOM_DOOR() {
-	//Get all door parts
-	spawn_door_trigger = GetEnt("spawnroom_door_trigger", "targetname");
-	spawn_door_door1 = GetEnt("spawn_room_buyable_door_side1", "targetname");
-	spawn_door_door2 = GetEnt("spawn_room_buyable_door_side2", "targetname");
-	spawn_door_door1_clip = GetEnt("spawn_room_buyable_door_side1_clip", "targetname");
-	spawn_door_door2_clip = GetEnt("spawn_room_buyable_door_side2_clip", "targetname");
-	door_flasher = GetEnt("spawndoor_flasher", "targetname");
+//Airport doors
+function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE) {
+	airport_door_trigger = GetEnt("airportdoor_" + DOOR_NAME + "_trigger", "targetname");
+	airport_door1 = GetEnt("airportdoor_" + DOOR_NAME + "_side1_door", "targetname");
+	airport_door2 = GetEnt("airportdoor_" + DOOR_NAME + "_side2_door", "targetname");
+	airport_door1_clip = GetEnt("airportdoor_" + DOOR_NAME + "_side1_clip", "targetname");
+	airport_door2_clip = GetEnt("airportdoor_" + DOOR_NAME + "_side2_clip", "targetname");
+	door_flasher = GetEnt("" + DOOR_NAME + "_flasher", "targetname");
 	
 	//Get movement positions
-	spawn_door_door1_move = struct::get("spawn_room_buyable_door_side1_move", "targetname");
-	spawn_door_door2_move = struct::get("spawn_room_buyable_door_side2_move", "targetname");
-	spawn_door_clip1_move = struct::get("spawn_room_buyable_clip_side1_move", "targetname");
-	spawn_door_clip2_move = struct::get("spawn_room_buyable_clip_side2_move", "targetname");
+	airport_door1_move = struct::get("airportdoor_" + DOOR_NAME + "_side1_door_move", "targetname");
+	airport_door2_move = struct::get("airportdoor_" + DOOR_NAME + "_side2_door_move", "targetname");
+	airport_door_clip1_move = struct::get("airportdoor_" + DOOR_NAME + "_side1_clip_move", "targetname");
+	airport_door_clip2_move = struct::get("airportdoor_" + DOOR_NAME + "_side2_clip_move", "targetname");
 	
 	//Set door price
-	UPDATE_BUYABLE_TRIGGER(1000, spawn_door_trigger);
+	UPDATE_BUYABLE_TRIGGER(DOOR_PRICE, airport_door_trigger);
 	
 	//Wait for the door to be purchased before starting anything
 	while(1) {
-		spawn_door_trigger waittill("trigger", player);
-		if(player.score < 1000)
+		airport_door_trigger waittill("trigger", player);
+		if(player.score < DOOR_PRICE)
 		{
 			wait 0.1;
 			player playsound("zmb_no_cha_ching");
 			continue;
 		}
-		player zm_score::minus_to_player_score(1000); 
+		player zm_score::minus_to_player_score(DOOR_PRICE); 
 		player playsound("zmb_cha_ching");
 		break;
 	}
 	
 	//Hide trigger
-	HIDE_TRIGGER(spawn_door_trigger);
+	HIDE_TRIGGER(airport_door_trigger);
 	
 	//Move door 1 and clip
-	spawn_door_door1 MoveTo(spawn_door_door1_move.origin, 2, 1, 1);
-	spawn_door_door1_clip MoveTo(spawn_door_clip1_move.origin, 2, 1, 1);
+	airport_door1 MoveTo(airport_door1_move.origin, 2, 1, 1);
+	airport_door1_clip MoveTo(airport_door_clip1_move.origin, 2, 1, 1);
 	
 	//Move door 2 and clip
-	spawn_door_door2 MoveTo(spawn_door_door2_move.origin, 2, 1, 1);
-	spawn_door_door2_clip MoveTo(spawn_door_clip2_move.origin, 2, 1, 1);
+	airport_door2 MoveTo(airport_door2_move.origin, 2, 1, 1);
+	airport_door2_clip MoveTo(airport_door_clip2_move.origin, 2, 1, 1);
 	
 	//Update status light and move
 	door_flasher SetModel("ayz_new_door_lights_open");
-	door_flasher MoveTo((door_flasher.origin + (-63.501, -32.46, 1)), 2, 1, 1);
+	door_flasher MoveTo((door_flasher.origin + (airport_door1.origin - airport_door1_move.origin)), 2, 1, 1); 
+	//door_flasher MoveTo((door_flasher.origin + (-63.501, -32.46, 1)), 2, 1, 1); //wrong location - struct'd be easier for moving to generic function
 	
 	//Play door sfx
-	spawn_door_door1 PlaySound("zm_alien_isolation__largedoor_open");
-	
-	//Set the flag to let our program know the door is open
-	level flag::set("spawn_door_opened");
-	
-	//Wait 1 second before doing anything
-	wait(1);
+	airport_door1 PlaySound("zm_alien_isolation__largedoor_open");
 }
 
 
-//Gameroom sliding door
+//Shutter doors
 function HAB_AIRPORT_SHUTTER_DOOR(room_name, door_cost) {
 	//Get door parts
 	trigger = getEnt(room_name + "_trigger", "targetname"); 
@@ -299,6 +314,26 @@ function HAB_AIRPORT_SHUTTER_DOOR(room_name, door_cost) {
 	shutter_collision MoveTo((shutter_collision.origin + (0,0,80)), 1.5, 0.75, 0.75); 
 	shutter_extra MoveTo((shutter_extra.origin + (0,0,80)), 1.5, 0.75, 0.75);
 	shutter PlaySound("zm_alien_isolation__shutter_opening");
+}
+
+
+//Handle spawn room door
+function HAB_AIRPORT_LOBBY_TO_SPAWNROOM_DOOR() {
+	//Low power initially
+	lobby_door_trigger = GetEnt("airportdoor_lobby_to_spawn_trigger", "targetname");
+	UPDATE_TRIGGER(AYZ_DOORPROMPT_LOW_POWER, lobby_door_trigger);
+	level waittill("lobby_power_restored");
+
+	//Setup door and wait for it to be purchased
+	HAB_AIRPORT_DOOR("lobby_to_spawn", 750);
+}
+
+
+//Handle spawn room door
+function HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR() {
+	//Setup door and wait for it to be purchased
+	HAB_AIRPORT_DOOR("spawn_to_terminal", 1000);
+	wait(1);
 }
 
 

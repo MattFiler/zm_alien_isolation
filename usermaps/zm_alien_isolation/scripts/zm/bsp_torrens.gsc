@@ -482,7 +482,7 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 	if (doorID != "canteencoridoor") {
 		if (doorID == "bridge") {
 			doorTrigger = getEnt("torrens_bridge_door_trigger", "targetname");
-			UPDATE_TRIGGER("Door locked - please wait!", doorTrigger);
+			UPDATE_TRIGGER(AYZ_DOORPROMPT_LOCKED, doorTrigger);
 			self waittill("torrens_enable_bridge_door");
 			HIDE_TRIGGER(doorTrigger);
 			//TODO swap door lights here
@@ -490,7 +490,7 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 		
 		if (doorID == "spawntoairlockjunction") {
 			doorTrigger = getEnt("junction_door_trigger_lowpower", "targetname");
-			UPDATE_TRIGGER("Low power - door disabled", doorTrigger);
+			UPDATE_TRIGGER(AYZ_DOORPROMPT_LOW_POWER, doorTrigger);
 			self waittill("torrens_brokendoor_fixed");
 			HIDE_TRIGGER(doorTrigger);
 			//TODO swap door lights here
