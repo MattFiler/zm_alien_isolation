@@ -9976,7 +9976,7 @@ guid "{610590D4-6457-11E8-A593-14DDA9E204AF}"
  ( -653.25 2479.5 -35 ) ( -637.25 2451.75 -35 ) ( 22.75 2833 -35 ) caulk_shadow 16 16 -329.25 -1626.75 0 0 lightmap_gray 16383.865 16384 2457.9622 824.08221 120 0
  ( 22.75 2833 427 ) ( -637.25 2451.75 427 ) ( -653.25 2479.5 427 ) caulk_shadow 16 16 -329.25 -1626.75 0 0 lightmap_gray 16383.865 16384 2457.9622 824.08221 120 0
  ( -73.25 2687 427 ) ( -89 2714.75 427 ) ( -89 2714.75 -35 ) caulk_shadow 16 16 1424 0 0 0 lightmap_gray 14243.803 16384 2700.875 60 0 0
- ( 205.5 2351.25 427 ) ( -454.5 1970.25 427 ) ( -454.5 1970.25 -35 ) caulk_shadow 16 16 -119.5 0 0 0 lightmap_gray 14188.029 -16384 324.4473 -60 180 0
+ ( 214.25 2340.75 427 ) ( -445.75 1959.75 427 ) ( -445.75 1959.75 -35 ) caulk_shadow 16 16 -110.75 0 0 0 lightmap_gray 14188.029 -16384 315.69739 -60 180 0
  ( -385 2910.25 427 ) ( -369 2882.5 427 ) ( -369 2882.5 -35 ) caulk_shadow 16 16 1820.5 0 0 0 lightmap_gray 14243.693 16384 2896.375 60 0 0
  ( -382 1970.5 427 ) ( 278 2351.75 427 ) ( 278 2351.75 -35 ) caulk_shadow 16 16 -74 0 0 0 lightmap_gray 14188.044 -16384 252.125 -60 180 0
 }
@@ -61761,25 +61761,11 @@ guid "{3AC0A6EC-605A-11E8-A591-14DDA9E204AF}"
 }
 // entity 3339
 {
-guid "{3DEB386C-61E8-11E8-A591-14DDA9E204AF}"
-"classname" "misc_model"
-"angles" "0 90 0"
-"model" "amanda_ripley"
-"modelscale" "2.5"
-"origin" "-25967.8 -12755 11752.8"
-"lightingstate1" "1"
-"lightingstate2" "1"
-"lightingstate3" "1"
-"lightingstate4" "1"
-"static" "1"
-}
-// entity 3340
-{
 guid "{3460E2EF-6455-11E8-A593-14DDA9E204AF}"
 "classname" "misc_prefab"
 "model" "_prefabs/zm_alien_isolation/sft_lobby_to_old_spawn.map"
 }
-// entity 3341
+// entity 3340
 {
 guid "{7855D79C-5E7E-11E8-A590-14DDA9E204AF}"
 "classname" "misc_model"

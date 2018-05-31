@@ -271,7 +271,7 @@ function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE) {
 	
 	//Update status light and move
 	door_flasher SetModel("ayz_new_door_lights_open");
-	door_flasher MoveTo((door_flasher.origin + (airport_door1.origin - airport_door1_move.origin)), 2, 1, 1); 
+	door_flasher MoveTo((door_flasher.origin + (airport_door2.origin - airport_door2_move.origin)), 2, 1, 1); 
 	//door_flasher MoveTo((door_flasher.origin + (-63.501, -32.46, 1)), 2, 1, 1); //wrong location - struct'd be easier for moving to generic function
 	
 	//Play door sfx

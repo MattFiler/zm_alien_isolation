@@ -68,6 +68,10 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	SetDvar("cg_draw2d", "0");
 	SetDvar("ai_disableSpawn", "1");
 
+	foreach	(player in level.players) {		
+		thread OVERRIDE_CONTROL_UNFREEZE(player); 
+	}
+
 	level flag::wait_till("all_players_connected");
 
 	//Prime our cutscene
@@ -76,11 +80,15 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	//Freeze controls and show blackscreen to hide game
 	foreach	(player in level.players) {		
 		thread BSP_TORRENS_BLACKSCREEN(player);
-		player FreezeControls(true);
+		thread OVERRIDE_CONTROL_UNFREEZE(player); 
 	}
 
 	level flag::wait_till("initial_blackscreen_passed");
 	lui::screen_fade_out(0);
+
+	foreach	(player in level.players) {		
+		thread OVERRIDE_CONTROL_UNFREEZE(player); 
+	}
 
 	//Pre-define cutscene info
 	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
@@ -264,17 +272,6 @@ function BSP_TORRENS_HANDLE_SIGNIN_MONITORS(bedNum, charName) {
 //Put all players in cryopods
 function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 	foreach (player in level.players) {		
-		//Take weapons
-		weapons = player GetWeaponsList(true);
-		foreach (weapon in weapons)
-		{
-			player TakeWeapon(weapon);
-		}
-
-		//Set player stance (and re-freeze controls)
-		player SetStance("prone");
-		player FreezeControls(true);
-
 		//Force players to look UP
 		bedLocation = 0;
 		if (player.characterIndex == 0) {
@@ -310,12 +307,9 @@ function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 			playerLocation = (-26101.1, -12822, 11778);
 		}
 		
-		//Place player and re-do stance again
+		//Place player in pod
 		player SetOrigin(playerLocation);
 		player SetPlayerAngles(playerAngle);
-		
-		player SetStance("prone");
-		player FreezeControls(true);
 
 		//Hide weapon hud
 		player setClientUIVisibilityFlag("weapon_hud_visible", 0);
@@ -327,7 +321,7 @@ function BSP_TORRENS_WAKEUP_SEQUENCE() {
 	//Start SFX
 	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_wakeup");
 
-	//Take weapons again (just in case)
+	//Take weapons again (just in case) and set stance
 	foreach (player in level.players) {
 		weapons = player GetWeaponsList(true);
 		foreach (weapon in weapons)
@@ -417,6 +411,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 			playerLocation = (-26101.1, -12822, 11778);
 		}
 		
+		torrensPlayerTwo AllowCrouch(false);
 		torrensPlayerTwo SetPlayerAngles(playerAngle);
 		torrensPlayerTwo SetOrigin(playerLocation);
 		torrensPlayerTwo SetStance("stand");
@@ -432,6 +427,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 		player AllowSprint(false);
 		player AllowJump(false);
 		player AllowMelee(false);
+		player AllowCrouch(true);
 	}
 	
 	//Fade back in

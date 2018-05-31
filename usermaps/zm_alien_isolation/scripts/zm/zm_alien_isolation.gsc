@@ -371,3 +371,13 @@ function GIVE_ALL_PERKS_AND_AMMO() {
 		}
 	}
 }
+
+
+//Override the next control unfreeze
+function OVERRIDE_CONTROL_UNFREEZE(player) {
+	player FreezeControls(true);
+	while (player AreControlsFrozen() == true) {
+		wait(0.1);
+	}
+	player FreezeControls(true);
+}

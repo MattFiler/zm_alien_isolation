@@ -44,9 +44,8 @@ xanim,alien_isolation_connor_anim_idle
 //weaponfull,m2_flamethrower_zombie_bo3_up
 
 //Cached FX
-fx,zm_alien_isolation/TowPlatform_WarningLight
+fx,electric/fx_elec_sparks_bounce_lg_orange
 fx,zm_alien_isolation/Elevator_Light
-fx,zm_alien_isolation/TowPlatform_FlashingEvac
 
 //Cached models
 xmodel,ayz_new_door_lights_open
