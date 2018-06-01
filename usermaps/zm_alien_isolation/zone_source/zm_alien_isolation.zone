@@ -6,12 +6,15 @@ xmodel,skybox_default_day
 material,luts_t7_default
 material,luts_ayz
 	
-// BSP
+//BSP
 col_map,maps/zm/zm_alien_isolation.d3dbsp
 gfx_map,maps/zm/zm_alien_isolation.d3dbsp
 
-// Audio
+//Audio
 sound,zm_alien_isolation
+
+//Strings
+localize,ayz
 
 //Scripts
 scriptparsetree,scripts/zm/zm_alien_isolation.gsc	//Shared (serverside)
@@ -20,7 +23,7 @@ scriptparsetree,scripts/zm/bsp_torrens.gsc			//The Torrens (serverside)
 scriptparsetree,scripts/zm/eng_towplatform.gsc		//Tow Platform (serverside)
 scriptparsetree,scripts/zm/hab_airport.gsc			//Spaceflight Terminal (serverside)
 
-// Vision
+//Vision
 rawfile,vision/zm_alien_isolation.vision
 
 //UI

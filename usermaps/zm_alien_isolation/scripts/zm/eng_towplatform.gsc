@@ -73,7 +73,7 @@ function ENG_TOWPLAFORM_DOCK_CLAMP_SEQUENCE() {
 	GIVE_ALL_PERKS_AND_AMMO();
 	
 	//First docking clamp
-	thread UPDATE_OBJECTIVE("Activate the first Docking Clamp terminal.");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_ACTIVATE_TERMINAL_ONE");
 	ENG_TOWPLATFORM_CLAMP_TERMINAL_ACTIVATION("One", 1, dockingClampTrigger1);
 	
 	//Start alarms
@@ -83,7 +83,7 @@ function ENG_TOWPLAFORM_DOCK_CLAMP_SEQUENCE() {
 	wait(4);
 		
 	//Second docking clamp
-	thread UPDATE_OBJECTIVE("Activate the second Docking Clamp terminal.");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_ACTIVATE_TERMINAL_TWO");
 	ENG_TOWPLATFORM_CLAMP_TERMINAL_ACTIVATION("Two", 2, dockingClampTrigger2);
 
 	//Move the clamp
@@ -107,7 +107,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	wait(5);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__verlaine_get_to_airlock");
 	wait(8);
-	thread UPDATE_OBJECTIVE("Pressurise the airlock.");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_PRESSURISE_AIRLOCK");
 	
 	//Set our trigger properties
 	UPDATE_TRIGGER("Press ^3[{+activate}]^7 to Pressurise the Airlock", airlockPressureTrigger);
@@ -135,7 +135,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__airlock_0percent");
 	thread ENG_TOWPLATFORM_AIRLOCK_HUD_COUNTER();
 	wait(5);
-	thread UPDATE_OBJECTIVE("Survive while the airlock pressurises.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_WAIT_FOR_PRESSURISE");
 	wait(5);
 	self notify("ayz_airlock_started");
 	level thread zm_audio::sndMusicSystem_PlayState("tpf_airlock_pressurising_theme");
@@ -166,7 +166,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	airlock_door_clip NotSolid();
 	
 	//We're ready to leave!
-	thread UPDATE_OBJECTIVE("Everybody get to the airlock!");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_GET_TO_AIRLOCK");
 	PLAY_LOCAL_SOUND("zm_alien_isolation__final_action_ost");
 	
 	//Wait for everyone to get in the airlock...

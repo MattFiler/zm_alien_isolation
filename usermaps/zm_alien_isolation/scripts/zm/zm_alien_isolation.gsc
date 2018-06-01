@@ -77,19 +77,44 @@
 //Alien Isolation Zombies Namespace
 #namespace alien_isolation_zombies;
 
-//Define some stuff
-#define		AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED		"Door is disabled, please wait!" 	//Shown on doors pre-lockdown in SFT
-#define     AYZ_DOORPROMPT_LOW_POWER                "Low power - door disabled"         //Low power for door
-#define     AYZ_DOORPROMPT_LOCKED                   "Door locked - please wait!"        //Door locked
+//Define cutscene names
 #define		AYZ_CUTSCENE_ID_01						"zm_alien_isolation_cs01" 			//Story intro
 #define		AYZ_CUTSCENE_ID_02						"zm_alien_isolation_cs02" 			//Transition - Torrens to Sevastopol
 #define		AYZ_CUTSCENE_ID_03						"zm_alien_isolation_cs03"			//Endgame
 
+//Define playtypes for zm_audio
 #define PLAYTYPE_REJECT 1
 #define PLAYTYPE_QUEUE 2
 #define PLAYTYPE_ROUND 3
 #define PLAYTYPE_SPECIAL 4
 #define PLAYTYPE_GAMEEND 5
+
+//Precache localised ui strings
+#precache("string", "AYZ_UI_OBJECTIVE_UPDATED");
+
+//Precache localised door prompt strings
+#precache("string", "AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED");
+#precache("string", "AYZ_DOORPROMPT_LOW_POWER");
+#precache("string", "AYZ_DOORPROMPT_LOCKED");
+
+//Precache localised objective strings - Torrens
+#precache("string", "AYZ_OBJECTIVE_SIGN_IN_TO_TORRENS");
+#precache("string", "AYZ_OBJECTIVE_EXPLORE_TORRENS");
+#precache("string", "AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
+#precache("string", "AYZ_OBJECTIVE_COLLECT_WEAPONS");
+
+//Precache localised objective strings - Spaceflight Terminal
+#precache("string", "AYZ_OBJECTIVE_SURVIVE_POWER_OUTAGE");
+#precache("string", "AYZ_OBJECTIVE_GET_TO_TERMINAL");
+#precache("string", "AYZ_OBJECTIVE_RESTORE_POWER_TO_TERMINAL");
+#precache("string", "AYZ_OBJECTIVE_FIND_KEYCARD");
+
+//Precache localised objective strings - Tow Platform
+#precache("string", "AYZ_OBJECTIVE_ACTIVATE_TERMINAL_ONE");
+#precache("string", "AYZ_OBJECTIVE_ACTIVATE_TERMINAL_TWO");
+#precache("string", "AYZ_OBJECTIVE_PRESSURISE_AIRLOCK");
+#precache("string", "AYZ_OBJECTIVE_WAIT_FOR_PRESSURISE");
+#precache("string", "AYZ_OBJECTIVE_GET_TO_AIRLOCK");
 
 //Precache models
 #precache("model", "ayz_new_door_lights_open"); 										//door lights when door is open
@@ -205,7 +230,7 @@ function stop_round_start_music() {
 //Show new objective
 function UPDATE_OBJECTIVE(objectiveText) {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
-	iprintlnbold("OBJECTIVE UPDATED:");
+	iprintlnbold(&"AYZ_UI_OBJECTIVE_UPDATED");
 	iprintlnbold(objectiveText);
 	
 	//TODO, fix up new UI and use the popup here.

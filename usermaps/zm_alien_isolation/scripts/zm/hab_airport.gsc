@@ -85,14 +85,14 @@ function HAB_AIRPORT_EVENT_DRIVEN_OBJECTIVES() {
 	self waittill("ayz_lockdown_completed");
 	thread keycard_objective();
 	wait(5);
-	thread UPDATE_OBJECTIVE("Restore power to the Spaceflight Terminal.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_RESTORE_POWER_TO_TERMINAL");
 	
 	//Wait for power to be restored, play verlaine's message, then show objective.
 	level flag::wait_till("power_on");
 	wait(15);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__verlainebroadcast");
 	wait(10.5);
-	thread UPDATE_OBJECTIVE("Get to the Tow Platform and escape on the Torrens.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_GET_TO_TOW_PLATFORM");
 	
 	//Keycard objective is handled in another function (look below).
 }
@@ -109,7 +109,7 @@ function keycard_objective() {
 				if (player IsTouching(keycardZone) == true) {
 					//Someone's in the keycard zone
 					wait(1.5);
-					thread UPDATE_OBJECTIVE("Find a keycard to open the door."); //show objective
+					thread UPDATE_OBJECTIVE(&"OBJECTIVE_FIND_KEYCARD"); //show objective
 					touched = true;
 					break; 
 				}
@@ -159,7 +159,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
 	wait(5);
-	thread UPDATE_OBJECTIVE("Survive until power is restored to the lobby.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_SURVIVE_POWER_OUTAGE");
 	wait(20); 
 
 	PLAY_LOCAL_SOUND("zm_alien_isolation_power_restored");
@@ -169,7 +169,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	level.PauseSevastopolTourAudio = false;
 
 	wait(2);
-	thread UPDATE_OBJECTIVE("Enter the Spaceflight Terminal.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_GET_TO_TERMINAL");
 
 	HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR();
 }
@@ -288,7 +288,7 @@ function HAB_AIRPORT_SHUTTER_DOOR(room_name, door_cost) {
 	shutter_extra = getEnt(room_name + "_door_extra", "targetname"); //Generic extra, probs either graffiti or a shadow brush
 	
 	//Set trigger depending on lockdown state
-	UPDATE_TRIGGER(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED, trigger);
+	UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED", trigger);
 	self waittill("ayz_lockdown_completed");
 	UPDATE_BUYABLE_TRIGGER(door_cost, trigger);
 	
@@ -321,7 +321,7 @@ function HAB_AIRPORT_SHUTTER_DOOR(room_name, door_cost) {
 function HAB_AIRPORT_LOBBY_TO_SPAWNROOM_DOOR() {
 	//Low power initially
 	lobby_door_trigger = GetEnt("airportdoor_lobby_to_spawn_trigger", "targetname");
-	UPDATE_TRIGGER(AYZ_DOORPROMPT_LOW_POWER, lobby_door_trigger);
+	UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOW_POWER", lobby_door_trigger);
 	level waittill("lobby_power_restored");
 
 	//Setup door and wait for it to be purchased
@@ -416,7 +416,7 @@ function HAB_AIRPORT_ENDGAME_DOOR() {
 	endgame_clip2_move = struct::get("endgame_buyable_clip_side2_move", "targetname");
 	
 	//Set our trigger properties
-	UPDATE_TRIGGER(AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED, endgame_trigger);
+	UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED", endgame_trigger);
 	
 	//Wait for the lockdown to finish
 	self waittill("ayz_lockdown_completed");

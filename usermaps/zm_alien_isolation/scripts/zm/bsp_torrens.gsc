@@ -69,7 +69,7 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	SetDvar("ai_disableSpawn", "1");
 
 	foreach	(player in level.players) {		
-		thread OVERRIDE_CONTROL_UNFREEZE(player); 
+		player FreezeControls(true); 
 	}
 
 	level flag::wait_till("all_players_connected");
@@ -86,15 +86,10 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	level flag::wait_till("initial_blackscreen_passed");
 	lui::screen_fade_out(0);
 
-	foreach	(player in level.players) {		
-		thread OVERRIDE_CONTROL_UNFREEZE(player); 
-	}
-
 	//Pre-define cutscene info
 	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
 	
 	//Play cutscene
-	wait(0.5);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrensintro");
 	level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
 
@@ -434,7 +429,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 	lui::screen_fade_in(1);
 
 	//Update objective
-	thread UPDATE_OBJECTIVE("Sign in to the Torrens.");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_SIGN_IN_TO_TORRENS");
 }
 
 //Open spawn door once players have signed in (and also enable all other doors)
@@ -464,7 +459,7 @@ function BSP_TORRENS_OPEN_SPAWN_DOOR_WHEN_ALL_SIGNED_IN() {
 	wait(1);
 	
 	//Update objective
-	thread UPDATE_OBJECTIVE("Explore the Torrens.");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_TORRENS");
 }
 
 //Auto door open script
@@ -478,7 +473,7 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 	if (doorID != "canteencoridoor") {
 		if (doorID == "bridge") {
 			doorTrigger = getEnt("torrens_bridge_door_trigger", "targetname");
-			UPDATE_TRIGGER(AYZ_DOORPROMPT_LOCKED, doorTrigger);
+			UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOCKED", doorTrigger);
 			self waittill("torrens_enable_bridge_door");
 			HIDE_TRIGGER(doorTrigger);
 			//TODO swap door lights here
@@ -486,7 +481,7 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 		
 		if (doorID == "spawntoairlockjunction") {
 			doorTrigger = getEnt("junction_door_trigger_lowpower", "targetname");
-			UPDATE_TRIGGER(AYZ_DOORPROMPT_LOW_POWER, doorTrigger);
+			UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOW_POWER", doorTrigger);
 			self waittill("torrens_brokendoor_fixed");
 			HIDE_TRIGGER(doorTrigger);
 			//TODO swap door lights here
@@ -603,7 +598,7 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	HIDE_TRIGGER(trigger_reroute_power);
 	thread BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH();
 	level waittill("torrens_brokendoor_notified");
-	thread UPDATE_OBJECTIVE("Reroute power to open the door.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_REROUTE_POWER_FOR_DOOR");
 	
 	//Wait for player to fix the door
 	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to reroute power", trigger_reroute_power);
@@ -614,7 +609,7 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	HIDE_TRIGGER(trigger_reroute_power);
 	level notify("torrens_brokendoor_fixed");
 	wait(1.5);
-	thread UPDATE_OBJECTIVE("Explore the Torrens.");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_TORRENS");
 }
 
 //handle broken door on Torrens
@@ -666,7 +661,7 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 	
 	//Wait a bit and update objective
 	wait(5);
-	thread UPDATE_OBJECTIVE("Collect your weapons.");
+	thread UPDATE_OBJECTIVE(&"OBJECTIVE_COLLECT_WEAPONS");
 	
 	//Open bridge door
 	self notify("torrens_enable_bridge_door");
