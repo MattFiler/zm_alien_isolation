@@ -2,57 +2,57 @@ VERSION			"1"
 CONFIG			"C:\projects\cod\t5\bin\StringEd.cfg"
 
 REFERENCE		UI_OBJECTIVE_UPDATED
-LANG_ENGLISH	"OBJECTIVE UPDATED:"
+LANG_RUSSIAN	"ОБНОВЛЕННАЯ ЦЕЛЬ:"
 
 REFERENCE		DOORPROMPT_LOCKDOWN_UNFINISHED
-LANG_ENGLISH	"Door is disabled, please wait!"
+LANG_RUSSIAN	"Дверь отключена, подождите!"
 
 REFERENCE		DOORPROMPT_LOW_POWER
-LANG_ENGLISH	"Low power - door disabled"
+LANG_RUSSIAN	"Низкая мощность - дверь отключена"
 
 REFERENCE		DOORPROMPT_LOCKED
-LANG_ENGLISH	"Door locked - please wait!"
+LANG_RUSSIAN	"Дверь заперта - пожалуйста, подождите!"
 
 REFERENCE		OBJECTIVE_SIGN_IN_TO_TORRENS
-LANG_ENGLISH	"Sign in to the Torrens."
+LANG_RUSSIAN	"Войдите в Торренс."
 
 REFERENCE		OBJECTIVE_EXPLORE_TORRENS
-LANG_ENGLISH	"Explore the Torrens."
+LANG_RUSSIAN	"Исследуйте Торренс."
 
 REFERENCE		OBJECTIVE_REROUTE_POWER_FOR_DOOR
-LANG_ENGLISH	"Reroute power to open the door."
+LANG_RUSSIAN	"Измените полномочия, чтобы открыть дверь."
 
 REFERENCE		OBJECTIVE_COLLECT_WEAPONS
-LANG_ENGLISH	"Collect your weapons."
+LANG_RUSSIAN	"Соберите свое оружие."
 
 REFERENCE		OBJECTIVE_SURVIVE_POWER_OUTAGE
-LANG_ENGLISH	"Survive until power is restored to the lobby."
+LANG_RUSSIAN	"Выживите, пока питание не будет восстановлено в вестибюле."
 
 REFERENCE		OBJECTIVE_GET_TO_TERMINAL
-LANG_ENGLISH	"Enter the Spaceflight Terminal."
+LANG_RUSSIAN	"Войдите в терминал космического полета."
 
 REFERENCE		OBJECTIVE_RESTORE_POWER_TO_TERMINAL
-LANG_ENGLISH	"Restore power to the Spaceflight Terminal."
+LANG_RUSSIAN	"Восстановите питание к терминалу космического полета."
 
 REFERENCE		OBJECTIVE_GET_TO_TOW_PLATFORM
-LANG_ENGLISH	"Get to the Tow Platform and escape on the Torrens."
+LANG_RUSSIAN	"Поднимитесь на платформу Tow Tow и убегите на Torrens."
 
 REFERENCE		OBJECTIVE_FIND_KEYCARD
-LANG_ENGLISH	"Find a keycard to open the door."
+LANG_RUSSIAN	"Найдите ключ-карту, чтобы открыть дверь."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_ONE
-LANG_ENGLISH	"Activate the first Docking Clamp terminal."
+LANG_RUSSIAN	"Активируйте первый терминал стыковочного зажима."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_TWO
-LANG_ENGLISH	"Activate the second Docking Clamp terminal."
+LANG_RUSSIAN	"Активируйте второй терминал стыковочного зажима."
 
 REFERENCE		OBJECTIVE_PRESSURISE_AIRLOCK
-LANG_ENGLISH	"Pressurise the airlock."
+LANG_RUSSIAN	"Надавите на воздушный шлюз."
 
 REFERENCE		OBJECTIVE_WAIT_FOR_PRESSURISE
-LANG_ENGLISH	"Survive while the airlock pressurises."
+LANG_RUSSIAN	"Выживайте, когда воздушный шлюз поднимается."
 
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
-LANG_ENGLISH	"Everybody get to the airlock!"
+LANG_RUSSIAN	"Все добираются до шлюза!"
 
 ENDMARKER

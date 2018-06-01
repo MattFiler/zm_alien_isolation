@@ -2,57 +2,57 @@ VERSION			"1"
 CONFIG			"C:\projects\cod\t5\bin\StringEd.cfg"
 
 REFERENCE		UI_OBJECTIVE_UPDATED
-LANG_ENGLISH	"OBJECTIVE UPDATED:"
+LANG_ENGLISHARABIC	"الهدف المحدث:"
 
 REFERENCE		DOORPROMPT_LOCKDOWN_UNFINISHED
-LANG_ENGLISH	"Door is disabled, please wait!"
+LANG_ENGLISHARABIC	"تم تعطيل الباب ، يرجى الانتظار!"
 
 REFERENCE		DOORPROMPT_LOW_POWER
-LANG_ENGLISH	"Low power - door disabled"
+LANG_ENGLISHARABIC	"منخفضة الطاقة - تعطيل الباب"
 
 REFERENCE		DOORPROMPT_LOCKED
-LANG_ENGLISH	"Door locked - please wait!"
+LANG_ENGLISHARABIC	"باب مغلق - يرجى الانتظار!"
 
 REFERENCE		OBJECTIVE_SIGN_IN_TO_TORRENS
-LANG_ENGLISH	"Sign in to the Torrens."
+LANG_ENGLISHARABIC	"تسجيل الدخول إلى Torrens."
 
 REFERENCE		OBJECTIVE_EXPLORE_TORRENS
-LANG_ENGLISH	"Explore the Torrens."
+LANG_ENGLISHARABIC	"استكشاف Torrens."
 
 REFERENCE		OBJECTIVE_REROUTE_POWER_FOR_DOOR
-LANG_ENGLISH	"Reroute power to open the door."
+LANG_ENGLISHARABIC	"إعادة توجيه السلطة لفتح الباب."
 
 REFERENCE		OBJECTIVE_COLLECT_WEAPONS
-LANG_ENGLISH	"Collect your weapons."
+LANG_ENGLISHARABIC	"اجمع أسلحتك."
 
 REFERENCE		OBJECTIVE_SURVIVE_POWER_OUTAGE
-LANG_ENGLISH	"Survive until power is restored to the lobby."
+LANG_ENGLISHARABIC	"البقاء على قيد الحياة حتى يتم استعادة السلطة إلى اللوبي."
 
 REFERENCE		OBJECTIVE_GET_TO_TERMINAL
-LANG_ENGLISH	"Enter the Spaceflight Terminal."
+LANG_ENGLISHARABIC	"أدخل محطة الفضاء."
 
 REFERENCE		OBJECTIVE_RESTORE_POWER_TO_TERMINAL
-LANG_ENGLISH	"Restore power to the Spaceflight Terminal."
+LANG_ENGLISHARABIC	"استعادة الطاقة إلى محطة Spaceflight."
 
 REFERENCE		OBJECTIVE_GET_TO_TOW_PLATFORM
-LANG_ENGLISH	"Get to the Tow Platform and escape on the Torrens."
+LANG_ENGLISHARABIC	"وصول إلى منصة السحب والهروب على Torrens."
 
 REFERENCE		OBJECTIVE_FIND_KEYCARD
-LANG_ENGLISH	"Find a keycard to open the door."
+LANG_ENGLISHARABIC	"العثور على keycard لفتح الباب."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_ONE
-LANG_ENGLISH	"Activate the first Docking Clamp terminal."
+LANG_ENGLISHARABIC	"قم بتفعيل أول محطة دوكينج كلام."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_TWO
-LANG_ENGLISH	"Activate the second Docking Clamp terminal."
+LANG_ENGLISHARABIC	"تنشيط محطة الإرساء الثانية المشبك."
 
 REFERENCE		OBJECTIVE_PRESSURISE_AIRLOCK
-LANG_ENGLISH	"Pressurise the airlock."
+LANG_ENGLISHARABIC	"الضغط على غرفة معادلة الضغط."
 
 REFERENCE		OBJECTIVE_WAIT_FOR_PRESSURISE
-LANG_ENGLISH	"Survive while the airlock pressurises."
+LANG_ENGLISHARABIC	"البقاء على قيد الحياة في حين ضغط غرفة الضغط."
 
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
-LANG_ENGLISH	"Everybody get to the airlock!"
+LANG_ENGLISHARABIC	"الجميع يحصل على غرفة معادلة الضغط!"
 
 ENDMARKER

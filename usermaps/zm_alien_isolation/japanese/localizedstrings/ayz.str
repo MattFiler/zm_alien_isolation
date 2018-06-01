@@ -2,57 +2,57 @@ VERSION			"1"
 CONFIG			"C:\projects\cod\t5\bin\StringEd.cfg"
 
 REFERENCE		UI_OBJECTIVE_UPDATED
-LANG_ENGLISH	"OBJECTIVE UPDATED:"
+LANG_JAPANESE	"目的更新："
 
 REFERENCE		DOORPROMPT_LOCKDOWN_UNFINISHED
-LANG_ENGLISH	"Door is disabled, please wait!"
+LANG_JAPANESE	"ドアが無効です。お待ちください！"
 
 REFERENCE		DOORPROMPT_LOW_POWER
-LANG_ENGLISH	"Low power - door disabled"
+LANG_JAPANESE	"低電力ドアが無効"
 
 REFERENCE		DOORPROMPT_LOCKED
-LANG_ENGLISH	"Door locked - please wait!"
+LANG_JAPANESE	"ドアロック - お待ちください！"
 
 REFERENCE		OBJECTIVE_SIGN_IN_TO_TORRENS
-LANG_ENGLISH	"Sign in to the Torrens."
+LANG_JAPANESE	"Torrensにサインインしてください。"
 
 REFERENCE		OBJECTIVE_EXPLORE_TORRENS
-LANG_ENGLISH	"Explore the Torrens."
+LANG_JAPANESE	"Torrensを探索してください。"
 
 REFERENCE		OBJECTIVE_REROUTE_POWER_FOR_DOOR
-LANG_ENGLISH	"Reroute power to open the door."
+LANG_JAPANESE	"ドアを開くために電源を再投入してください。"
 
 REFERENCE		OBJECTIVE_COLLECT_WEAPONS
-LANG_ENGLISH	"Collect your weapons."
+LANG_JAPANESE	"あなたの武器を集める。"
 
 REFERENCE		OBJECTIVE_SURVIVE_POWER_OUTAGE
-LANG_ENGLISH	"Survive until power is restored to the lobby."
+LANG_JAPANESE	"ロビーに電源が回復するまで生き残ります。"
 
 REFERENCE		OBJECTIVE_GET_TO_TERMINAL
-LANG_ENGLISH	"Enter the Spaceflight Terminal."
+LANG_JAPANESE	"Spaceflightターミナルに入ります。"
 
 REFERENCE		OBJECTIVE_RESTORE_POWER_TO_TERMINAL
-LANG_ENGLISH	"Restore power to the Spaceflight Terminal."
+LANG_JAPANESE	"宇宙飛行士ターミナルに電源を再投入する。"
 
 REFERENCE		OBJECTIVE_GET_TO_TOW_PLATFORM
-LANG_ENGLISH	"Get to the Tow Platform and escape on the Torrens."
+LANG_JAPANESE	"トウのプラットホームに着き、トーレンで逃げる。"
 
 REFERENCE		OBJECTIVE_FIND_KEYCARD
-LANG_ENGLISH	"Find a keycard to open the door."
+LANG_JAPANESE	"ドアを開くためのキーカードを見つけてください。"
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_ONE
-LANG_ENGLISH	"Activate the first Docking Clamp terminal."
+LANG_JAPANESE	"最初のドッキングクランプ端子を有効にします。"
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_TWO
-LANG_ENGLISH	"Activate the second Docking Clamp terminal."
+LANG_JAPANESE	"2番目のドッキングクランプ端子を有効にします。"
 
 REFERENCE		OBJECTIVE_PRESSURISE_AIRLOCK
-LANG_ENGLISH	"Pressurise the airlock."
+LANG_JAPANESE	"エアロックを加圧する。"
 
 REFERENCE		OBJECTIVE_WAIT_FOR_PRESSURISE
-LANG_ENGLISH	"Survive while the airlock pressurises."
+LANG_JAPANESE	"エアロックが加圧する間生き残ります。"
 
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
-LANG_ENGLISH	"Everybody get to the airlock!"
+LANG_JAPANESE	"みんなエアロックに乗る！"
 
 ENDMARKER
