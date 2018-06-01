@@ -598,7 +598,7 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	HIDE_TRIGGER(trigger_reroute_power);
 	thread BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH();
 	level waittill("torrens_brokendoor_notified");
-	thread UPDATE_OBJECTIVE(&"OBJECTIVE_REROUTE_POWER_FOR_DOOR");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
 	
 	//Wait for player to fix the door
 	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to reroute power", trigger_reroute_power);
@@ -661,7 +661,7 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 	
 	//Wait a bit and update objective
 	wait(5);
-	thread UPDATE_OBJECTIVE(&"OBJECTIVE_COLLECT_WEAPONS");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_COLLECT_WEAPONS");
 	
 	//Open bridge door
 	self notify("torrens_enable_bridge_door");

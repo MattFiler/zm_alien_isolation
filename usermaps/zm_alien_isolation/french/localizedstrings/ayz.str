@@ -2,57 +2,57 @@ VERSION			"1"
 CONFIG			"C:\projects\cod\t5\bin\StringEd.cfg"
 
 REFERENCE		UI_OBJECTIVE_UPDATED
-LANG_ENGLISH	"OBJECTIVE UPDATED:"
+LANG_FRENCH		"OBJECTIF MIS À JOUR:"
 
 REFERENCE		DOORPROMPT_LOCKDOWN_UNFINISHED
-LANG_ENGLISH	"Door is disabled, please wait!"
+LANG_FRENCH		"La porte est désactivée, veuillez patienter!"
 
 REFERENCE		DOORPROMPT_LOW_POWER
-LANG_ENGLISH	"Low power - door disabled"
+LANG_FRENCH		"Faible puissance - porte désactivée"
 
 REFERENCE		DOORPROMPT_LOCKED
-LANG_ENGLISH	"Door locked - please wait!"
+LANG_FRENCH		"Porte verrouillée - veuillez patienter!"
 
 REFERENCE		OBJECTIVE_SIGN_IN_TO_TORRENS
-LANG_ENGLISH	"Sign in to the Torrens."
+LANG_FRENCH		"Connectez-vous au Torrens."
 
 REFERENCE		OBJECTIVE_EXPLORE_TORRENS
-LANG_ENGLISH	"Explore the Torrens."
+LANG_FRENCH		"Explorez le Torrens."
 
 REFERENCE		OBJECTIVE_REROUTE_POWER_FOR_DOOR
-LANG_ENGLISH	"Reroute power to open the door."
+LANG_FRENCH		"Rediriger le courant pour ouvrir la porte."
 
 REFERENCE		OBJECTIVE_COLLECT_WEAPONS
-LANG_ENGLISH	"Collect your weapons."
+LANG_FRENCH		"Récupérez vos armes."
 
 REFERENCE		OBJECTIVE_SURVIVE_POWER_OUTAGE
-LANG_ENGLISH	"Survive until power is restored to the lobby."
+LANG_FRENCH		"Survivre jusqu'à ce que le courant soit rétabli dans le hall."
 
 REFERENCE		OBJECTIVE_GET_TO_TERMINAL
-LANG_ENGLISH	"Enter the Spaceflight Terminal."
+LANG_FRENCH		"Entrez dans le terminal Spaceflight."
 
 REFERENCE		OBJECTIVE_RESTORE_POWER_TO_TERMINAL
-LANG_ENGLISH	"Restore power to the Spaceflight Terminal."
+LANG_FRENCH		"Rétablissez l'alimentation du terminal Spaceflight."
 
 REFERENCE		OBJECTIVE_GET_TO_TOW_PLATFORM
-LANG_ENGLISH	"Get to the Tow Platform and escape on the Torrens."
+LANG_FRENCH		"Accédez à la plate-forme de remorquage et évadez-vous sur le Torrens."
 
 REFERENCE		OBJECTIVE_FIND_KEYCARD
-LANG_ENGLISH	"Find a keycard to open the door."
+LANG_FRENCH		"Trouver une carte-clé pour ouvrir la porte."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_ONE
-LANG_ENGLISH	"Activate the first Docking Clamp terminal."
+LANG_FRENCH		"Activer le premier terminal Docking Clamp."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_TWO
-LANG_ENGLISH	"Activate the second Docking Clamp terminal."
+LANG_FRENCH		"Activer le deuxième terminal Docking Clamp."
 
 REFERENCE		OBJECTIVE_PRESSURISE_AIRLOCK
-LANG_ENGLISH	"Pressurise the airlock."
+LANG_FRENCH		"Pressuriser le sas."
 
 REFERENCE		OBJECTIVE_WAIT_FOR_PRESSURISE
-LANG_ENGLISH	"Survive while the airlock pressurises."
+LANG_FRENCH		"Survivre pendant que le sas pressurise."
 
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
-LANG_ENGLISH	"Everybody get to the airlock!"
+LANG_FRENCH		"Tout le monde va au sas!"
 
 ENDMARKER

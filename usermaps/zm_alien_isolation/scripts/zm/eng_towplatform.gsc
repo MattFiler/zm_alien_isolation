@@ -135,7 +135,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__airlock_0percent");
 	thread ENG_TOWPLATFORM_AIRLOCK_HUD_COUNTER();
 	wait(5);
-	thread UPDATE_OBJECTIVE(&"OBJECTIVE_WAIT_FOR_PRESSURISE");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_WAIT_FOR_PRESSURISE");
 	wait(5);
 	self notify("ayz_airlock_started");
 	level thread zm_audio::sndMusicSystem_PlayState("tpf_airlock_pressurising_theme");
@@ -166,7 +166,7 @@ function ENG_TOWPLATFORM_AIRLOCK_SEQUENCE() {
 	airlock_door_clip NotSolid();
 	
 	//We're ready to leave!
-	thread UPDATE_OBJECTIVE(&"OBJECTIVE_GET_TO_AIRLOCK");
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_GET_TO_AIRLOCK");
 	PLAY_LOCAL_SOUND("zm_alien_isolation__final_action_ost");
 	
 	//Wait for everyone to get in the airlock...
