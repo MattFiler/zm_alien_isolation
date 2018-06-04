@@ -32,7 +32,6 @@ function BSP_TORRENS_SPAWN() {
 function BSP_TORRENS_SCRIPTED_SEQUENCE_INTRODUCTION() {
 	thread BSP_TORRENS_CRYOPOD_COLLISION();
 	BSP_TORRENS_INTRO_CUTSCENE();
-	BSP_TORRENS_LOGIN_SCREENS();	
 	BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS();
 	BSP_TORRENS_WAKEUP_SEQUENCE();
 	BSP_TORRENS_GET_OUT_OF_CYROPODS();
@@ -75,12 +74,19 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 
 	//Freeze controls and show blackscreen to hide game
 	foreach	(player in level.players) {		
+		player FreezeControls(true);
 		thread BSP_TORRENS_BLACKSCREEN(player);
 		thread OVERRIDE_CONTROL_UNFREEZE(player); 
 	}
 
 	level flag::wait_till("initial_blackscreen_passed");
 	lui::screen_fade_out(0);
+
+	foreach (player in level.players) {
+		player FreezeControls(true);
+	}
+
+	BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS();
 
 	//Take weapon and set stance
 	foreach (player in level.players) {	
@@ -114,15 +120,26 @@ function BSP_TORRENS_BLACKSCREEN(player) {
 }
 
 //Initiate login screens
-function BSP_TORRENS_LOGIN_SCREENS() {	
+function BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS() {	
 	level.dempseybedlocation = 0;
 	level.nikolaibedlocation = 0;
 	level.richtofenbedlocation = 0;
 	level.takeobedlocation = 0;
-
-	CURRENT_BED = 5;
 	
 	foreach(player in level.players) {	
+		if (player.origin[0] == -26101.1 && player.origin[1] == -12731.1) {
+			CURRENT_BED = 2;
+		}
+		else if (player.origin[0] == -26067.2 && player.origin[1] == -12742.8) {
+			CURRENT_BED = 3;
+		}
+		else if (player.origin[0] == -26066.9 && player.origin[1] == -12810.7) {
+			CURRENT_BED = 4;
+		}
+		else if (player.origin[0] == -26101.1 && player.origin[1] == -12822) {
+			CURRENT_BED = 5;
+		}
+
 		if (player.characterIndex == 0) {
 			level.dempseybedlocation = CURRENT_BED;
 		}
@@ -135,11 +152,7 @@ function BSP_TORRENS_LOGIN_SCREENS() {
 		if (player.characterIndex == 3) {
 			level.takeobedlocation = CURRENT_BED;
 		}
-		CURRENT_BED++;
     }
-	
-	//Count players
-	level.signedInPlayerCount = 0;
 	
 	//Trigger resets
 	signInTrigger1 = getEnt("signintrigger_bed2", "targetname");
@@ -152,6 +165,7 @@ function BSP_TORRENS_LOGIN_SCREENS() {
 	HIDE_TRIGGER(signInTrigger3);
 	HIDE_TRIGGER(signInTrigger4);
 	
+	//Setup monitors
 	if (level.dempseybedlocation != 0) {
 		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(level.dempseybedlocation, "Dempsey");
 	}
@@ -168,9 +182,15 @@ function BSP_TORRENS_LOGIN_SCREENS() {
 
 //Handle login screen character
 function BSP_TORRENS_HANDLE_SIGNIN_MONITORS(bedNum, charName) {
+	//Update trigger
 	signInTrigger = getEnt("signintrigger_bed" + bedNum, "targetname");
 	UPDATE_TRIGGER("Press ^3[{+activate}]^7 to Sign In as " + charName, signInTrigger);
 	
+	//Update Monitor
+	bedMonitor = getEnt("torrens_signinmonitor_0" + bedNum, "targetname");
+	bedMonitor SetModel("monitor_torrens_signin"); 
+	
+	//Wait for correct player to trigger
 	charNum = 4;
 	if (charName == "Dempsey") {
 		charNum = 0;
@@ -183,11 +203,7 @@ function BSP_TORRENS_HANDLE_SIGNIN_MONITORS(bedNum, charName) {
 	}
 	if (charName == "Takeo") {
 		charNum = 3;
-	}
-	
-	bedMonitor = getEnt("torrens_signinmonitor_0" + bedNum, "targetname");
-	bedMonitor SetModel("monitor_torrens_signin"); //swapped from default monitor_50cm_blank
-	
+	}	
 	while(1) {
 		signInTrigger waittill("trigger", player);
 		
@@ -226,31 +242,31 @@ function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 	foreach (player in level.players) {
 		player FreezeControls(true);
 
-		//Force players to look UP
-		bedLocation = 0;
-		if (player.characterIndex == 0) {
-			bedLocation = level.dempseybedlocation;
-		}
-		if (player.characterIndex == 1) {
-			bedLocation = level.nikolaibedlocation;
-		}
-		if (player.characterIndex == 2) {
-			bedLocation = level.richtofenbedlocation;
-		}
-		if (player.characterIndex == 3) {
-			bedLocation = level.takeobedlocation;
-		}
-		
-		//Place player in pod
-		bed_struct = struct::get("SPAWN_BED_" + bedLocation, "targetname");
-		player SetOrigin(bed_struct.origin);
-		player SetPlayerAngles(bed_struct.angles);
+		//Look Up
+		player SetPlayerAngles((-45,0,0));
 
-		//Hide viewmodel
+		//Make sure to be in right bed (after control unfreeze)
+		if (player.characterIndex == 0) {
+			BED_LOCATION = level.dempseybedlocation;
+		}
+		else if (player.characterIndex == 1) {
+			BED_LOCATION = level.nikolaibedlocation;
+		}
+		else if (player.characterIndex == 2) {
+			BED_LOCATION = level.richtofenbedlocation;
+		}
+		else if (player.characterIndex == 3) {
+			BED_LOCATION = level.takeobedlocation;
+		}
+		BedLocationStruct = struct::get("SPAWN_BED_" + BED_LOCATION, "targetname");
+		player SetOrigin(BedLocationStruct.origin);
+		player SetStance("prone");
+
+		//Hide viewmodel & freeze controls
 		player HideViewModel();
 
 		//Hide weapon hud
-		//player setClientUIVisibilityFlag("weapon_hud_visible", 0);
+		player setClientUIVisibilityFlag("weapon_hud_visible", 0);
 	}
 }
 
@@ -276,10 +292,6 @@ function BSP_TORRENS_WAKEUP_SEQUENCE() {
 	lui::screen_fade_out(1);
 	level thread zm_audio::sndMusicSystem_PlayState("torrens_intro_theme");
 	wait(4);
-
-	foreach (player in level.players) {
-		IPrintLnBold(player GetPlayerAngles());
-	}
 }
 
 //Open all lids to cryro beds
@@ -334,8 +346,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 			playerLocation = (-26101.1, -12822, 11778);
 		}
 		
-		PLAYER_ANGLE = player GetPlayerAngles();
-		//player SetPlayerAngles((0, PLAYER_ANGLE[1], PLAYER_ANGLE[2]));
+		player SetPlayerAngles((0,0,0));
 		player SetOrigin(playerLocation);
 		player SetStance("stand");
 		player AllowSprint(false);
