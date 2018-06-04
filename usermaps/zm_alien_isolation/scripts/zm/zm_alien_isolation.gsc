@@ -142,6 +142,8 @@
 //Precache FX
 #precache("fx", "electric/fx_elec_sparks_bounce_lg_orange"); //Sevastolink broken spark
 #precache("fx", "zm_alien_isolation/Elevator_Light"); //Elevator lights
+#precache("fx", "lensflares/fx_lensflare_light_cool_xlg"); //Lensflare for lobby lights
+#precache("fx", "player/fx_plyr_jump_dust"); //Torrens door dust
 
 //*****************************************************************************
 // MAIN
@@ -153,6 +155,8 @@ function main()
 	level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	level._effect["sevastolink_spark"] = "electric/fx_elec_sparks_bounce_lg_orange";
+	level._effect["big_lensflare"] = "lensflares/fx_lensflare_light_cool_xlg";
+	level._effect["torrens_door_dust"] = "player/fx_plyr_jump_dust";
 	
 	thread BSP_TORRENS_SPAWN();
 	thread HAB_AIRPORT_SPAWN(); 
@@ -230,8 +234,8 @@ function stop_round_start_music() {
 //Show new objective
 function UPDATE_OBJECTIVE(objectiveText) {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
-	iprintlnbold(&"AYZ_UI_OBJECTIVE_UPDATED");
-	iprintlnbold(objectiveText);
+	IPrintLnBold(&"AYZ_UI_OBJECTIVE_UPDATED");
+	IPrintLnBold(objectiveText);
 	
 	//TODO, fix up new UI and use the popup here.
 	//PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
@@ -365,8 +369,19 @@ function ANIMATED_ELEVATOR_LIGHTS() {
 		fx_tpf = struct::get("elevator_fx"+i, "targetname");
 		fx_sft = struct::get("elevator_fx"+i+"_tpf", "targetname");
 
-		PlayFX(level._effect["elevator_light"], fx_tpf.origin);
-		PlayFX(level._effect["elevator_light"], fx_sft.origin);
+		elevator_fx[i] = PlayFX(level._effect["elevator_light"], fx_tpf.origin);
+		elevator_fx2[i] = PlayFX(level._effect["elevator_light"], fx_sft.origin);
+	}
+
+	//Wait for elevator to stop moving
+	self waittill("arrived_at_tow_platform");
+
+	//Stop FX
+	foreach (player in level.players) {
+		for (i=1;i<5;i++) {
+			//StopFX(player, elevator_fx[i]);
+			//StopFX(player, elevator_fx2[i]);
+		}
 	}
 }
 

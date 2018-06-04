@@ -127,7 +127,12 @@ function keycard_objective() {
 
 //SFT Lobby zombie intro
 function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
-	SetDvar("cg_draw2d", "1");
+	for (i=1;i<3;i++) {
+		lensflare = struct::get("lobby_lensflare_"+i, "targetname");
+		lensflare_fx[i] = PlayFX(level._effect["big_lensflare"], lensflare.origin);
+	}
+
+	SetDvar("cg_draw2d", 1);
 	level.PauseSevastopolTourAudio = false;
 
 	lobby_zombie_trigger = GetEnt("sft_lobby_activate_zombies", "targetname");
@@ -151,6 +156,13 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	sevastolink_spark = struct::get("sevastolink_broken_spark", "targetname");
 	PlayFX(level._effect["sevastolink_spark"], sevastolink_spark.origin);
 	level util::set_lighting_state(1); 
+
+	foreach (player in level.players) {
+		for (i=1;i<3;i++) {
+			//StopFX(player, lensflare_fx[i]);
+		}
+	}
+
 	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_played");
 	wait(3);
 	SetDvar("ai_disableSpawn", "0");
@@ -165,6 +177,11 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	PLAY_LOCAL_SOUND("zm_alien_isolation_power_restored");
 	level notify("lobby_power_restored");
 	level util::set_lighting_state(0); 
+
+	for (i=1;i<3;i++) {
+		lensflare = struct::get("lobby_lensflare_"+i, "targetname");
+		lensflare_fx2[i] = PlayFX(level._effect["big_lensflare"], lensflare.origin);
+	}
 
 	level.PauseSevastopolTourAudio = false;
 

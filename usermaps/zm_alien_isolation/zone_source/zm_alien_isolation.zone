@@ -49,6 +49,8 @@ xanim,alien_isolation_connor_anim_idle
 //Cached FX
 fx,electric/fx_elec_sparks_bounce_lg_orange
 fx,zm_alien_isolation/Elevator_Light
+fx,lensflares/fx_lensflare_light_cool_xlg
+fx,player/fx_plyr_jump_dust
 
 //Cached models
 xmodel,ayz_new_door_lights_open

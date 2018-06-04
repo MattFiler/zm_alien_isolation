@@ -65,12 +65,8 @@ function BSP_TORRENS_CRYOPOD_COLLISION() {
 //Play intro cutscene
 function BSP_TORRENS_INTRO_CUTSCENE() {
 	//Hide crosshairs (as precaution) and disable zombies
-	SetDvar("cg_draw2d", "0");
+	SetDvar("cg_draw2d", 0);
 	SetDvar("ai_disableSpawn", "1");
-
-	foreach	(player in level.players) {		
-		player FreezeControls(true); 
-	}
 
 	level flag::wait_till("all_players_connected");
 
@@ -85,6 +81,19 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 
 	level flag::wait_till("initial_blackscreen_passed");
 	lui::screen_fade_out(0);
+
+	//Take weapon and set stance
+	foreach (player in level.players) {	
+		player FreezeControls(false);
+		weapons = player GetWeaponsListPrimaries();
+		foreach (weapon in weapons)
+		{
+			player TakeWeapon(weapon);
+		}
+		player DisableOffhandSpecial();
+		player SetPlayerCollision(false);
+		player SetStance("prone");
+	}
 
 	//Pre-define cutscene info
 	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
@@ -106,84 +115,31 @@ function BSP_TORRENS_BLACKSCREEN(player) {
 
 //Initiate login screens
 function BSP_TORRENS_LOGIN_SCREENS() {	
-	dempseyInBed = 0;
-	nikolaiInBed = 0;
-	richtofenInBed = 0;
-	takeoInBed = 0;
-	
-	//if these vals are changed they will need to be modified in our above player location/view control script
-	cryoBedOne = 2;
-	cryoBedTwo = 3;
-	cryoBedThree = 4;
-	cryoBedFour = 5;
+	level.dempseybedlocation = 0;
+	level.nikolaibedlocation = 0;
+	level.richtofenbedlocation = 0;
+	level.takeobedlocation = 0;
+
+	CURRENT_BED = 5;
 	
 	foreach(player in level.players) {	
-		if (player.origin[1] == -12731.1) {
-			if (player.characterIndex == 0) {
-				dempseyInBed = cryoBedOne;
-			}
-			if (player.characterIndex == 1) {
-				nikolaiInBed = cryoBedOne;
-			}
-			if (player.characterIndex == 2) {
-				richtofenInBed = cryoBedOne;
-			}
-			if (player.characterIndex == 3) {
-				takeoInBed = cryoBedOne;
-			}
+		if (player.characterIndex == 0) {
+			level.dempseybedlocation = CURRENT_BED;
 		}
-		if (player.origin[1] == -12742.8) {
-			if (player.characterIndex == 0) {
-				dempseyInBed = cryoBedTwo;
-			}
-			if (player.characterIndex == 1) {
-				nikolaiInBed = cryoBedTwo;
-			}
-			if (player.characterIndex == 2) {
-				richtofenInBed = cryoBedTwo;
-			}
-			if (player.characterIndex == 3) {
-				takeoInBed = cryoBedTwo;
-			}
+		if (player.characterIndex == 1) {
+			level.nikolaibedlocation = CURRENT_BED;
 		}
-		if (player.origin[1] == -12810.7) {
-			if (player.characterIndex == 0) {
-				dempseyInBed = cryoBedThree;
-			}
-			if (player.characterIndex == 1) {
-				nikolaiInBed = cryoBedThree;
-			}
-			if (player.characterIndex == 2) {
-				richtofenInBed = cryoBedThree;
-			}
-			if (player.characterIndex == 3) {
-				takeoInBed = cryoBedThree;
-			}
+		if (player.characterIndex == 2) {
+			level.richtofenbedlocation = CURRENT_BED;
 		}
-		if (player.origin[1] == -12822) {
-			if (player.characterIndex == 0) {
-				dempseyInBed = cryoBedFour;
-			}
-			if (player.characterIndex == 1) {
-				nikolaiInBed = cryoBedFour;
-			}
-			if (player.characterIndex == 2) {
-				richtofenInBed = cryoBedFour;
-			}
-			if (player.characterIndex == 3) {
-				takeoInBed = cryoBedFour;
-			}
+		if (player.characterIndex == 3) {
+			level.takeobedlocation = CURRENT_BED;
 		}
+		CURRENT_BED++;
     }
 	
 	//Count players
 	level.signedInPlayerCount = 0;
-	
-	//Share bed nums with everyone
-	level.dempseybedlocation = dempseyInBed;
-	level.nikolaibedlocation = nikolaiInBed;
-	level.richtofenbedlocation = richtofenInBed;
-	level.takeobedlocation = takeoInBed;
 	
 	//Trigger resets
 	signInTrigger1 = getEnt("signintrigger_bed2", "targetname");
@@ -196,17 +152,17 @@ function BSP_TORRENS_LOGIN_SCREENS() {
 	HIDE_TRIGGER(signInTrigger3);
 	HIDE_TRIGGER(signInTrigger4);
 	
-	if (dempseyInBed != 0) {
-		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(dempseyInBed, "Dempsey");
+	if (level.dempseybedlocation != 0) {
+		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(level.dempseybedlocation, "Dempsey");
 	}
-	if (nikolaiInBed != 0) {
-		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(nikolaiInBed, "Nikolai");
+	if (level.nikolaibedlocation != 0) {
+		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(level.nikolaibedlocation, "Nikolai");
 	}
-	if (richtofenInBed != 0) {
-		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(richtofenInBed, "Richtofen");
+	if (level.richtofenbedlocation != 0) {
+		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(level.richtofenbedlocation, "Richtofen");
 	} 
-	if (takeoInBed != 0) {
-		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(takeoInBed, "Takeo");
+	if (level.takeobedlocation != 0) {
+		thread BSP_TORRENS_HANDLE_SIGNIN_MONITORS(level.takeobedlocation, "Takeo");
 	} 
 }
 
@@ -266,7 +222,10 @@ function BSP_TORRENS_HANDLE_SIGNIN_MONITORS(bedNum, charName) {
 
 //Put all players in cryopods
 function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
-	foreach (player in level.players) {		
+	WAIT_SERVER_FRAME;
+	foreach (player in level.players) {
+		player FreezeControls(true);
+
 		//Force players to look UP
 		bedLocation = 0;
 		if (player.characterIndex == 0) {
@@ -282,32 +241,16 @@ function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 			bedLocation = level.takeobedlocation;
 		}
 		
-		//these bedLocation vals will need to be modified if spawns are moved
-		playerAngle = (0,0,0);
-		playerLocation = (0,0,0);
-		if (bedLocation == 2) {
-			playerAngle = (-45, 90, 0);
-			playerLocation = (-26101.1, -12731.1, 11778);
-		}
-		if (bedLocation == 3) {
-			playerAngle = (-45, 45, 0);
-			playerLocation = (-26067.2, -12742.8, 11778);
-		}
-		if (bedLocation == 4) {
-			playerAngle = (-45, -45, 0);
-			playerLocation = (-26066.9, -12810.7, 11778);
-		}
-		if (bedLocation == 5) {
-			playerAngle = (-45, -90, 0);
-			playerLocation = (-26101.1, -12822, 11778);
-		}
-		
 		//Place player in pod
-		player SetOrigin(playerLocation);
-		player SetPlayerAngles(playerAngle);
+		bed_struct = struct::get("SPAWN_BED_" + bedLocation, "targetname");
+		player SetOrigin(bed_struct.origin);
+		player SetPlayerAngles(bed_struct.angles);
+
+		//Hide viewmodel
+		player HideViewModel();
 
 		//Hide weapon hud
-		player setClientUIVisibilityFlag("weapon_hud_visible", 0);
+		//player setClientUIVisibilityFlag("weapon_hud_visible", 0);
 	}
 }
 
@@ -316,20 +259,7 @@ function BSP_TORRENS_WAKEUP_SEQUENCE() {
 	//Start SFX
 	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_wakeup");
 
-	//Take weapons again (just in case) and set stance
-	foreach (player in level.players) {
-		weapons = player GetWeaponsList(true);
-		foreach (weapon in weapons)
-		{
-			player TakeWeapon(weapon);
-		}
-
-		//Set player stance (and re-freeze controls)
-		player SetStance("prone");
-		player FreezeControls(true);
-	}
-	
-	//Run wakeup sequence
+	//Start wakeup sequence
 	lui::screen_fade_out(0);
 	level notify("starting_torrens_wakeup");
 	wait(4);
@@ -346,6 +276,10 @@ function BSP_TORRENS_WAKEUP_SEQUENCE() {
 	lui::screen_fade_out(1);
 	level thread zm_audio::sndMusicSystem_PlayState("torrens_intro_theme");
 	wait(4);
+
+	foreach (player in level.players) {
+		IPrintLnBold(player GetPlayerAngles());
+	}
 }
 
 //Open all lids to cryro beds
@@ -370,59 +304,51 @@ function BSP_TORRENS_CRYOPOD_OPEN_SEQUENCE() {
 //Get players out of cryopods
 function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 	//Get out of the pod
-	allPlayersOnTorrensTwo = GetPlayers();
-	foreach (torrensPlayerTwo in allPlayersOnTorrensTwo) {
+	foreach (player in level.players) {
 		bedLocation = 0;
-		if (torrensPlayerTwo.characterIndex == 0) {
+		if (player.characterIndex == 0) {
 			bedLocation = level.dempseybedlocation;
 		}
-		if (torrensPlayerTwo.characterIndex == 1) {
+		if (player.characterIndex == 1) {
 			bedLocation = level.nikolaibedlocation;
 		}
-		if (torrensPlayerTwo.characterIndex == 2) {
+		if (player.characterIndex == 2) {
 			bedLocation = level.richtofenbedlocation;
 		}
-		if (torrensPlayerTwo.characterIndex == 3) {
+		if (player.characterIndex == 3) {
 			bedLocation = level.takeobedlocation;
 		}
 		
 		//these bedLocation vals will need to be modified if spawns are moved
-		playerAngle = (0,0,0);
 		playerLocation = (0,0,0);
 		if (bedLocation == 2) {
-			playerAngle = (-45, 90, 0);
 			playerLocation = (-26101.1, -12731.1, 11778);
 		}
 		if (bedLocation == 3) {
-			playerAngle = (-45, 45, 0);
 			playerLocation = (-26067.2, -12742.8, 11778);
 		}
 		if (bedLocation == 4) {
-			playerAngle = (-45, -45, 0);
 			playerLocation = (-26066.9, -12810.7, 11778);
 		}
 		if (bedLocation == 5) {
-			playerAngle = (-45, -90, 0);
 			playerLocation = (-26101.1, -12822, 11778);
 		}
 		
-		torrensPlayerTwo AllowCrouch(false);
-		torrensPlayerTwo SetPlayerAngles(playerAngle);
-		torrensPlayerTwo SetOrigin(playerLocation);
-		torrensPlayerTwo SetStance("stand");
+		PLAYER_ANGLE = player GetPlayerAngles();
+		//player SetPlayerAngles((0, PLAYER_ANGLE[1], PLAYER_ANGLE[2]));
+		player SetOrigin(playerLocation);
+		player SetStance("stand");
+		player AllowSprint(false);
+		player AllowJump(false);
+		player AllowMelee(false);
 	}
 
 	level notify("torrens_enable_cryo_collision");
 
 	wait(4);
-	
-	//Disallow sprint, jump and melee for Torrens
-	foreach (player in level.players) {	
+
+	foreach (player in level.players) {
 		player FreezeControls(false);
-		player AllowSprint(false);
-		player AllowJump(false);
-		player AllowMelee(false);
-		player AllowCrouch(true);
 	}
 	
 	//Fade back in
@@ -451,11 +377,15 @@ function BSP_TORRENS_OPEN_SPAWN_DOOR_WHEN_ALL_SIGNED_IN() {
 	//Open spawnroom door
 	wait(1);
 	spawnDoor = getEnt("torrensSpawnDoor", "targetname");
+	spawnDoorLight = getEnt("torrensSpawnDoor_Light", "targetname");
 	spawnDoorClip = getEnt("torrensSpawnDoor_clip", "targetname");
 	
 	spawnDoor MoveTo(spawnDoor.origin + (0,0,76), 2, 1, 1);
+	spawnDoorLight MoveTo(spawnDoorLight.origin + (0,0,76), 2, 1, 1);
+	spawnDoorLight SetModel("ayz_new_door_lights_open");
 	spawnDoor PlaySound("zm_alien_isolation__smalldoor_open");
 	spawnDoorClip MoveTo(spawnDoorClip.origin + (0,0,76), 2, 1, 1);
+	PlayFX(level._effect["torrens_door_dust"], spawnDoor.origin + (0,0,23));
 	wait(1);
 	
 	//Update objective
@@ -473,18 +403,20 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 	if (doorID != "canteencoridoor") {
 		if (doorID == "bridge") {
 			doorTrigger = getEnt("torrens_bridge_door_trigger", "targetname");
+			doorLightEntity = getEnt("torrens_door_light_bridge", "targetname");
 			UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOCKED", doorTrigger);
 			self waittill("torrens_enable_bridge_door");
 			HIDE_TRIGGER(doorTrigger);
-			//TODO swap door lights here
+			doorLightEntity SetModel("ayz_new_door_lights_open");
 		}
 		
 		if (doorID == "spawntoairlockjunction") {
 			doorTrigger = getEnt("junction_door_trigger_lowpower", "targetname");
+			doorLightEntity = getEnt("torrens_door_light_spawntoairlockjunction", "targetname");
 			UPDATE_TRIGGER(&"AYZ_DOORPROMPT_LOW_POWER", doorTrigger);
 			self waittill("torrens_brokendoor_fixed");
 			HIDE_TRIGGER(doorTrigger);
-			//TODO swap door lights here
+			doorLightEntity SetModel("ayz_new_door_lights_open");
 		}
 		
 		while(1) {
@@ -510,30 +442,30 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 				//At least one player is in the zone. We should open the door if it's not already open.
 				if (doorIsOpen == false) {
 					wait(0.1); //delay a bit
-				
+
 					if (doorType == 1) {
-						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
-						doorClip = getEnt("torrens_door_" + doorID + "_clip", "targetname");
-						
-						doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.2, 0.5, 0.5);
-						doorEntity PlaySound("zm_alien_isolation_torrens_door_open");
-						
-						doorClip MoveTo(doorClip.origin + (0,0,76), 1.2, 0.5, 0.5);
-						
-						wait(1.2); //wait for anim to finish
+						door_open_time = 1.2;
 					}
-					if (doorType == 2) {
+					else if (doorType == 2) {
+						door_open_time = 1.7;
+					}
+
+					if (doorType != 3) {
 						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						doorLightEntity = getEnt("torrens_door_light_" + doorID, "targetname");
 						doorClip = getEnt("torrens_door_" + doorID + "_clip", "targetname");
 						
-						doorEntity MoveTo(doorEntity.origin + (0,0,76), 1.7, 0.5, 0.5);
+						doorEntity MoveTo(doorEntity.origin + (0,0,76), door_open_time, 0.5, 0.5);
 						doorEntity PlaySound("zm_alien_isolation__smalldoor_open");
+
+						doorLightEntity MoveTo(doorLightEntity.origin + (0,0,76), door_open_time, 0.5, 0.5);
 						
-						doorClip MoveTo(doorClip.origin + (0,0,76), 1.7, 0.5, 0.5);
+						doorClip MoveTo(doorClip.origin + (0,0,76), door_open_time, 0.5, 0.5);
+
+						PlayFX(level._effect["torrens_door_dust"], doorEntity.origin + (0,0,23));
 						
-						wait(1.7); //wait for anim to finish
-					}
-					if (doorType == 3) {
+						wait(door_open_time); //wait for anim to finish
+					} else {
 						doorEntity1 = getEnt("torrens_door_" + doorID + "1", "targetname");
 						doorClip1 = getEnt("torrens_door_" + doorID + "1_clip", "targetname");
 						doorEntity2 = getEnt("torrens_door_" + doorID + "2", "targetname");
@@ -558,10 +490,13 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 				if (doorIsOpen == true) {
 					if (doorType != 3) {
 						doorEntity = getEnt("torrens_door_" + doorID, "targetname");
+						doorLightEntity = getEnt("torrens_door_light_" + doorID, "targetname");
 						doorClip = getEnt("torrens_door_" + doorID + "_clip", "targetname");
 						
 						doorEntity MoveTo(doorEntity.origin - (0,0,76), 1.7, 0.5, 0.5);
 						doorEntity PlaySound("zm_alien_isolation_torrens_door_close");
+
+						doorLightEntity MoveTo(doorLightEntity.origin - (0,0,76), 1.7, 0.5, 0.5);
 						
 						doorClip MoveTo(doorClip.origin - (0,0,76), 1.7, 0.5, 0.5);
 						
@@ -597,8 +532,8 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	trigger_reroute_power = getEnt("trigger_reroute_power_torrens", "targetname");
 	HIDE_TRIGGER(trigger_reroute_power);
 	thread BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH();
-	level waittill("torrens_brokendoor_notified");
-	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
+	//level waittill("torrens_brokendoor_notified");
+	//thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
 	
 	//Wait for player to fix the door
 	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to reroute power", trigger_reroute_power);
@@ -627,11 +562,12 @@ function BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH() {
 			}
 		}
 		if (player_by_door == true) {
-			level notify("torrens_brokendoor_notified");
+			//level notify("torrens_brokendoor_notified");
 			break;
 		}
 		wait 0.1;
 	}
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
 }
 
 //Setup the bridge once the player enters the canteen (and objective update)
@@ -700,6 +636,7 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		//player AllowSprint(true);
 		player AllowJump(true);
 		player AllowMelee(true);
+		player EnableOffhandSpecial();
 	}
 	
 	lui::screen_fade_out(1);
@@ -754,6 +691,7 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		//Move player
 		player SetOrigin(destination.origin); 
 		player SetPlayerAngles((0,-150,0));
+		player ShowViewModel();
 	}
 	
 	//Give stuff you'd normally get on spawn
