@@ -153,6 +153,8 @@ function BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS() {
 			level.takeobedlocation = CURRENT_BED;
 		}
     }
+
+    level.signedInPlayerCount = 0;
 	
 	//Trigger resets
 	signInTrigger1 = getEnt("signintrigger_bed2", "targetname");
@@ -225,8 +227,7 @@ function BSP_TORRENS_HANDLE_SIGNIN_MONITORS(bedNum, charName) {
 	bedMonitor SetModel("monitor_torrens_signin_" + ToLower(charName));
 	
 	player_counter = 0;
-	players = GetPlayers();
-	foreach(player in players) {
+	foreach(player in level.players) {
 		player_counter = player_counter + 1;
 	}
 	
