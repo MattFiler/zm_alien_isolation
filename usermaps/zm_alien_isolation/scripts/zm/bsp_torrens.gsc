@@ -629,7 +629,45 @@ function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 	//Wait for transition trigger to be pushed
 	bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol", "targetname");
 	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to pick up weapon", bridge_weapon_trigger);
-	bridge_weapon_trigger waittill("trigger", player);	
+	
+	//Wait for all players to trigger it
+	level.torrens_players_picked_up_weapon_count = 0;
+	foreach (player in level.players) {
+		thread BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, bridge_weapon_trigger);
+	}
+	level waittill("all_players_picked_up_weapons");
+	wait(1);
+}
+
+//Check per player weapon pickup status
+function BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, trigger) {
+	//Wait for trigger
+	trigger waittill("trigger", player);	
+	level.torrens_players_picked_up_weapon_count++;
+	player ShowViewModel();
+	
+	//Give stuff you'd normally get on spawn
+	player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
+	lethal_grenade = player zm_utility::get_player_lethal_grenade();
+	if(!player HasWeapon(lethal_grenade))
+	{
+		player GiveWeapon(lethal_grenade);	
+		player SetWeaponAmmoClip(lethal_grenade, 0);
+	}
+
+	//Freeze player
+	player FreezeControls(true);
+
+	//Count players
+	player_count = 0;
+	foreach (player in level.players) {
+		player_count++;
+	}
+
+	//All players have picked up
+	if (player_count == level.torrens_players_picked_up_weapon_count) {
+		level notify("all_players_picked_up_weapons");
+	}
 }
 
 //Transition over to the spaceflight terminal.
@@ -637,15 +675,11 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 	//Pre-define some stuff
 	transition_cutscene_length = 63; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
 	
-	//transition_from_torrens script_flag
-	
 	//Prime our cutscene (might want to do this a bit earlier)
 	level thread lui::prime_movie(AYZ_CUTSCENE_ID_02);
 
 	//Freeze players and start transition cutscene
 	foreach(player in level.players) {
-		player FreezeControls(true);
-		//player AllowSprint(true);
 		player AllowJump(true);
 		player AllowMelee(true);
 		player EnableOffhandSpecial();
@@ -669,6 +703,7 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		
 		//Move to new position
 		currentSpawner.origin = spawnerStructNew.origin;
+		currentSpawner.angles = spawnerStructNew.angles;
 	}
 	
 	//Grab original and new respawn struct
@@ -677,6 +712,7 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 	
 	//Move original to new
 	respawnOrigStruct.origin = respawnMoveStruct.origin;
+	respawnOrigStruct.angles = respawnMoveStruct.angles;
 	
 	//Move every player
 	loopCounter = 0;
@@ -702,20 +738,7 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		
 		//Move player
 		player SetOrigin(destination.origin); 
-		player SetPlayerAngles((0,-150,0));
-		player ShowViewModel();
-	}
-	
-	//Give stuff you'd normally get on spawn
-	allPlayersGiveGuns = GetPlayers();
-	foreach (playerGiveGuns in allPlayersGiveGuns) {
-		playerGiveGuns zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
-		lethal_grenade = playerGiveGuns zm_utility::get_player_lethal_grenade();
-		if(!playerGiveGuns HasWeapon(lethal_grenade))
-		{
-			playerGiveGuns GiveWeapon(lethal_grenade);	
-			playerGiveGuns SetWeaponAmmoClip(lethal_grenade, 0);
-		}
+		player SetPlayerAngles(destination.angles);
 	}
 	
 	//Wait for cutscene to end - fade back in and allow players to move again
