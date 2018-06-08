@@ -128,8 +128,9 @@ function keycard_objective() {
 //SFT Lobby zombie intro
 function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	for (i=1;i<3;i++) {
-		lensflare = struct::get("lobby_lensflare_"+i, "targetname");
-		lensflare_fx[i] = PlayFX(level._effect["big_lensflare"], lensflare.origin);
+		lensflare[i] = struct::get("lobby_lensflare_"+i, "targetname");
+		fx_model[i] = util::spawn_model("tag_origin", lensflare[i].origin, lensflare[i].angles);
+		PlayFXOnTag(level._effect["big_lensflare"], fx_model[i], "tag_origin");
 	}
 
 	SetDvar("cg_draw2d", 1);
@@ -147,10 +148,16 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	sevastolink_monitor = GetEnt("lobby_sevastolink_monitor", "targetname");
 	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_playing");
 
+	foreach (player in level.players) {
+		thread HAB_AIRPORT_AUDIOLOG_UI(player);
+	}
+
 	PLAY_LOCAL_SOUND("zm_alien_isolation__audiolog");
 	wait(2.4);
 	level thread zm_audio::sndMusicSystem_PlayState("sft_audiolog_theme");
-	wait(43.5);
+	wait(41.7);
+	level notify("audiolog_finished");
+	wait(1.8);
 	PLAY_LOCAL_SOUND("zm_alien_isolation_power_out");
 	wait(1);
 	sevastolink_spark = struct::get("sevastolink_broken_spark", "targetname");
@@ -159,7 +166,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 
 	foreach (player in level.players) {
 		for (i=1;i<3;i++) {
-			//StopFX(player, lensflare_fx[i]);
+			fx_model[i] Delete(); 
 		}
 	}
 
@@ -342,7 +349,7 @@ function HAB_AIRPORT_LOBBY_TO_SPAWNROOM_DOOR() {
 	level waittill("lobby_power_restored");
 
 	//Setup door and wait for it to be purchased
-	HAB_AIRPORT_DOOR("lobby_to_spawn", 750);
+	HAB_AIRPORT_DOOR("lobby_to_spawn", 500);
 }
 
 
@@ -351,6 +358,14 @@ function HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR() {
 	//Setup door and wait for it to be purchased
 	HAB_AIRPORT_DOOR("spawn_to_terminal", 1000);
 	wait(1);
+}
+
+
+//Audiolog UI
+function HAB_AIRPORT_AUDIOLOG_UI(player) {
+	audiolog_ui = player OpenLUIMenu("audiolog");
+	level waittill("audiolog_finished");
+	player CloseLUIMenu(audiolog_ui);
 }
 
 

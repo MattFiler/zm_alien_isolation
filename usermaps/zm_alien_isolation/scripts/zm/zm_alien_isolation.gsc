@@ -135,6 +135,7 @@
 
 //Precache UI
 #precache("lui_menu", "blackscreen");
+#precache("lui_menu", "audiolog");
 //#precache("lui_menu", "popup_zm_alien_isolation");
 //#precache("lui_menu_data", "AlienIsolationObjectivePopup");
 //#precache("eventstring", "AlienIsolationObjectivePopup");
@@ -144,6 +145,7 @@
 #precache("fx", "zm_alien_isolation/Elevator_Light"); //Elevator lights
 #precache("fx", "lensflares/fx_lensflare_light_cool_xlg"); //Lensflare for lobby lights
 #precache("fx", "player/fx_plyr_jump_dust"); //Torrens door dust
+#precache("fx", "zm_alien_isolation/TORRENS_ONBOARD_CryoOpen"); //Torrens cryo open smoke
 
 //*****************************************************************************
 // MAIN
@@ -157,6 +159,7 @@ function main()
 	level._effect["sevastolink_spark"] = "electric/fx_elec_sparks_bounce_lg_orange";
 	level._effect["big_lensflare"] = "lensflares/fx_lensflare_light_cool_xlg";
 	level._effect["torrens_door_dust"] = "player/fx_plyr_jump_dust";
+	level._effect["torrens_cryo_smoke"] = "zm_alien_isolation/TORRENS_ONBOARD_CryoOpen";
 	
 	thread BSP_TORRENS_SPAWN();
 	thread HAB_AIRPORT_SPAWN(); 

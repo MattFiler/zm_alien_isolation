@@ -312,6 +312,10 @@ function BSP_TORRENS_CRYOPOD_OPEN_SEQUENCE() {
 	cryroBedLid4 RotatePitch(50, transitiontime, (transitiontime/2), (transitiontime/2));
 	cryroBedLid5 RotatePitch(50, transitiontime, (transitiontime/2), (transitiontime/2));
 	cryroBedLid6 RotatePitch(50, transitiontime, (transitiontime/2), (transitiontime/2));
+
+	wait(1);
+	cryoSmokeSpot = struct::get("cryo_smoke_spot", "targetname");
+	PlayFX(level._effect["torrens_cryo_smoke"], cryoSmokeSpot.origin);
 }
 
 //Get players out of cryopods
@@ -542,7 +546,7 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	//Wait for player to approach the locked door and update objective
 	trigger_reroute_power = getEnt("trigger_reroute_power_torrens", "targetname");
-	HIDE_TRIGGER(trigger_reroute_power);
+	//HIDE_TRIGGER(trigger_reroute_power);
 	thread BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH();
 	//level waittill("torrens_brokendoor_notified");
 	//thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
@@ -561,6 +565,8 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 
 //handle broken door on Torrens
 function BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH() {
+	level endon("torrens_brokendoor_fixed");
+
 	brokendoorZone = getEnt("torrens_brokendoor_zone", "targetname");
 	brokendoorZone NotSolid();
 	while(1) {
@@ -636,7 +642,7 @@ function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 		thread BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, bridge_weapon_trigger);
 	}
 	level waittill("all_players_picked_up_weapons");
-	wait(1);
+	wait(0.5);
 }
 
 //Check per player weapon pickup status
@@ -656,6 +662,7 @@ function BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, trigger) {
 	}
 
 	//Freeze player
+	wait(0.5);
 	player FreezeControls(true);
 
 	//Count players

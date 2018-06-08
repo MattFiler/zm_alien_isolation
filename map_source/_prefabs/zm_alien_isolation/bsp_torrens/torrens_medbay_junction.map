@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{817D21FD-67CE-11E8-A593-14DDA9E204AF}"
+guid "{29E8C64F-6B12-11E8-A597-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"

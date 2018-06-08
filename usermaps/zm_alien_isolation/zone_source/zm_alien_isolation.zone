@@ -29,6 +29,7 @@ rawfile,vision/zm_alien_isolation.vision
 //UI
 rawfile,ui/uieditor/menus/hud/popup_zm_alien_isolation.lua
 rawfile,ui/uieditor/menus/hud/blackscreen.lua
+rawfile,ui/uieditor/menus/hud/audiolog.lua
 ttf,fonts/isolation.ttf
 ttf,fonts/jixellation.ttf
 ttf,fonts/nostromo.ttf
@@ -51,6 +52,7 @@ fx,electric/fx_elec_sparks_bounce_lg_orange
 fx,zm_alien_isolation/Elevator_Light
 fx,lensflares/fx_lensflare_light_cool_xlg
 fx,player/fx_plyr_jump_dust
+fx,zm_alien_isolation/TORRENS_ONBOARD_CryoOpen
 
 //Cached models
 xmodel,ayz_new_door_lights_open

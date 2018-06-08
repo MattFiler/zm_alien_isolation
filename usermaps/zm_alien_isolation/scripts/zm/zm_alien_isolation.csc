@@ -53,6 +53,7 @@ function main()
 	//Load new UI
 	callback::on_localclient_connect(&on_local_client_connect);
 	LuiLoad("ui.uieditor.menus.hud.blackscreen");
+	//LuiLoad("ui.uieditor.menus.hud.audiolog");
 	//LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
 	//LuiLoad("ui.uieditor.menus.hud.popup_zm_alien_isolation");
 	
@@ -64,6 +65,9 @@ function main()
 //Load UI on connect & handle objectives
 function on_local_client_connect(localClientNum)
 {	
-	hud = CreateLUIMenu(localClientNum, "screenhide_zm_alien_isolation");
+	//hud = CreateLUIMenu(localClientNum, "blackscreen");
 	//OpenLUIMenu(localClientNum, hud);
+	//hud2 = CreateLUIMenu(localClientNum, "ui.uieditor.menus.hud.audiolog");
+	//OpenLUIMenu(localClientNum, hud2);
+	//CloseLUIMenu(localClientNum, hud2);
 }
