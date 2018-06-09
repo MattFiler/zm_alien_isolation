@@ -83,22 +83,14 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	lui::screen_fade_out(0);
 
 	foreach (player in level.players) {
-		player FreezeControls(true);
+		player FreezeControls(true); //paranoia is setting in...
 	}
 
 	BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS();
 
-	//Take weapon and set stance
-	foreach (player in level.players) {	
-		player FreezeControls(false);
-		weapons = player GetWeaponsListPrimaries();
-		foreach (weapon in weapons)
-		{
-			player TakeWeapon(weapon);
-		}
-		player DisableOffhandSpecial();
-		player SetPlayerCollision(false);
-		player SetStance("prone");
+	//Take weapon, set stance, disable grenades, hide view model, set walk speed, etc...
+	foreach (player in level.players) {
+		thread BSP_TORRENS_SETUP_PLAYER(player);
 	}
 
 	//Pre-define cutscene info
@@ -110,6 +102,31 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 
 	//Wait for cutscene to end and continue
 	wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
+}
+
+//Setup player for the Torrens "level"
+function BSP_TORRENS_SETUP_PLAYER(player) {
+	player FreezeControls(false);
+	player ResetFOV(); //SORRY!
+	weapons = player GetWeaponsListPrimaries();
+	foreach (weapon in weapons)
+	{
+		player TakeWeapon(weapon);
+	}
+	WAIT_SERVER_FRAME; 
+	player DisableWeapons();
+	player DisableWeaponFire();
+	player DisableOffhandSpecial();
+	player SetPlayerCollision(false);
+	player AllowStand(false);
+	player AllowCrouch(false);
+	player AllowProne(true);
+	WAIT_SERVER_FRAME; 
+	player SetStance("prone");
+	player HideViewModel();
+	player SetMoveSpeedScale(0.5);
+	WAIT_SERVER_FRAME;
+	player FreezeControls(true);
 }
 
 //Blackscreen for each player (closed on wakeup start)
@@ -261,10 +278,7 @@ function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 		}
 		BedLocationStruct = struct::get("SPAWN_BED_" + BED_LOCATION, "targetname");
 		player SetOrigin(BedLocationStruct.origin);
-		player SetStance("prone");
-
-		//Hide viewmodel & freeze controls
-		player HideViewModel();
+		player SetStance("prone"); //shouldn't need this again, but just in case
 
 		//Hide weapon hud
 		player setClientUIVisibilityFlag("weapon_hud_visible", 0);
@@ -353,6 +367,9 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 		
 		player SetPlayerAngles((0,0,0));
 		player SetOrigin(playerLocation);
+		player AllowProne(false);
+		player AllowCrouch(false);
+		player AllowStand(true);
 		player SetStance("stand");
 		player AllowSprint(false);
 		player AllowJump(false);
@@ -756,6 +773,11 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 	//Unfreeze controls
 	foreach(player in level.players) {
 		player FreezeControls(false);
+		player AllowProne(true);
+		player AllowCrouch(true);
+		player AllowStand(true);
+		player EnableWeaponFire();
+		player SetMoveSpeedScale(1);
 		player SetPlayerCollision(true); //re-enable player collision to allow zombie damage
 	}
 	
