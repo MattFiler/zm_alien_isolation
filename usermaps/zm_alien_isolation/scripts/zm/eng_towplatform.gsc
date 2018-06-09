@@ -416,6 +416,7 @@ function ENG_TOWPLATFORM_AIRLOCK_HUD_COUNTER()
     hud.x = 80;
     hud.y = hud.y - 50;
     hud.alpha = 1;
+    hud.font = "fonts/jixellation.ttf";
 	
 	percent = 0;
 	counter = 0;

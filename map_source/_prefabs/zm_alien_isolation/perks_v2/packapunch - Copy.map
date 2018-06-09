@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{FBFE2A06-2F62-11E7-A533-14DDA9E204AF}"
+guid "{42760608-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -26,7 +26,7 @@ guid "{FBFE2A06-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 1
 {
-guid "{FBFE2A0F-2F62-11E7-A533-14DDA9E204AF}"
+guid "{42760609-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "script_struct"
 "angles" "0 270 0"
 "origin" "229.75 270.75 53.5"
@@ -36,7 +36,7 @@ guid "{FBFE2A0F-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 2
 {
-guid "{FBFE2A12-2F62-11E7-A533-14DDA9E204AF}"
+guid "{4276060A-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "light"
 "PRIMARY_NOSHADOWMAP" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
@@ -50,9 +50,9 @@ guid "{FBFE2A12-2F62-11E7-A533-14DDA9E204AF}"
 "exploderFade" "1"
 "far_edge" "0.75"
 "fov_outer" "45"
-"lightingstate1" "0"
-"lightingstate2" "0"
-"lightingstate4" "0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate4" "1"
 "name" "light_001"
 "note" "lightstate_was_all"
 "note_grab" "pap_lights_sept4"
@@ -77,7 +77,7 @@ guid "{FBFE2A12-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 3
 {
-guid "{FBFE2A15-2F62-11E7-A533-14DDA9E204AF}"
+guid "{4276060B-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "light"
 "PRIMARY_NOSHADOWMAP" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
@@ -91,9 +91,9 @@ guid "{FBFE2A15-2F62-11E7-A533-14DDA9E204AF}"
 "exploderFade" "1"
 "far_edge" "0.75"
 "fov_outer" "115"
-"lightingstate1" "0"
-"lightingstate2" "0"
-"lightingstate4" "0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate4" "1"
 "name" "light_001"
 "note" "lightstate_was_1_3_4"
 "note_grab" "pap_lights_sept4"
@@ -119,7 +119,7 @@ guid "{FBFE2A15-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 4
 {
-guid "{FBFE2A18-2F62-11E7-A533-14DDA9E204AF}"
+guid "{4276060C-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "info_null"
 "origin" "176.195 267.068 76"
 "targetname" "auto2"
@@ -127,14 +127,14 @@ guid "{FBFE2A18-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 5
 {
-guid "{FBFE2A1B-2F62-11E7-A533-14DDA9E204AF}"
+guid "{4276060D-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "info_null"
 "origin" "179.945 269.374 39.3569"
 "_color" "0 0.5 0"
 }
 // entity 6
 {
-guid "{FBFE2A1E-2F62-11E7-A533-14DDA9E204AF}"
+guid "{4276060E-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "light"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
 "_color" "0.8118 0.9725 0.8496"
@@ -148,9 +148,9 @@ guid "{FBFE2A1E-2F62-11E7-A533-14DDA9E204AF}"
 "exploderFade" "1"
 "far_edge" "0.75"
 "fov_outer" "55"
-"lightingstate1" "0"
-"lightingstate2" "0"
-"lightingstate4" "0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate4" "1"
 "name" "light_001"
 "note" "lightstate_was_all"
 "note_grab" "pap_lights_sept4"
@@ -176,7 +176,7 @@ guid "{FBFE2A1E-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 7
 {
-guid "{FBFE2A21-2F62-11E7-A533-14DDA9E204AF}"
+guid "{4276060F-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "light"
 "PRIMARY_NOSHADOWMAP" "0"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
@@ -190,9 +190,9 @@ guid "{FBFE2A21-2F62-11E7-A533-14DDA9E204AF}"
 "exploderFade" "1"
 "far_edge" "0.75"
 "fov_outer" "144"
-"lightingstate1" "0"
-"lightingstate2" "0"
-"lightingstate4" "0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate4" "1"
 "name" "light_002"
 "note" "lightstate_was_1_3_4"
 "note_grab" "pap_lights_sept4"
@@ -216,7 +216,7 @@ guid "{FBFE2A21-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 8
 {
-guid "{FBFE2A24-2F62-11E7-A533-14DDA9E204AF}"
+guid "{42760610-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "light"
 "PRIMARY_TYPE" "PRIMARY_SPOT"
 "_color" "0.8039 0.9239 1"
@@ -226,9 +226,9 @@ guid "{FBFE2A24-2F62-11E7-A533-14DDA9E204AF}"
 "dirSpan" "100 100 100"
 "exploderFade" "1"
 "fov_outer" "111"
-"lightingstate1" "0"
-"lightingstate2" "0"
-"lightingstate4" "0"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate4" "1"
 "name" "light_001"
 "note" "lightstate_was_all"
 "note_grab" "pap_lights_sept4"
@@ -254,7 +254,7 @@ guid "{FBFE2A24-2F62-11E7-A533-14DDA9E204AF}"
 }
 // entity 9
 {
-guid "{FBFE2A27-2F62-11E7-A533-14DDA9E204AF}"
+guid "{42760611-6BC6-11E8-A598-14DDA9E204AF}"
 "classname" "zbarrier_zmcore_packapunch"
 "angles" "0 270 0"
 "origin" "241.75 267.25 0.5"

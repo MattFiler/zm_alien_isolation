@@ -88,7 +88,7 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 
 	BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS();
 
-	//Take weapon, set stance, disable grenades, hide view model, set walk speed, etc...
+	//Set stance, disable grenades, hide view model, set walk speed, etc...
 	foreach (player in level.players) {
 		thread BSP_TORRENS_SETUP_PLAYER(player);
 	}
@@ -108,13 +108,7 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 function BSP_TORRENS_SETUP_PLAYER(player) {
 	player FreezeControls(false);
 	player ResetFOV(); //SORRY!
-	weapons = player GetWeaponsListPrimaries();
-	foreach (weapon in weapons)
-	{
-		player TakeWeapon(weapon);
-	}
 	WAIT_SERVER_FRAME; 
-	player DisableWeapons();
 	player DisableWeaponFire();
 	player DisableOffhandSpecial();
 	player SetPlayerCollision(false);
@@ -124,7 +118,7 @@ function BSP_TORRENS_SETUP_PLAYER(player) {
 	WAIT_SERVER_FRAME; 
 	player SetStance("prone");
 	player HideViewModel();
-	player SetMoveSpeedScale(0.5);
+	player SetMoveSpeedScale(0.7);
 	WAIT_SERVER_FRAME;
 	player FreezeControls(true);
 }
@@ -669,14 +663,8 @@ function BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, trigger) {
 	level.torrens_players_picked_up_weapon_count++;
 	player ShowViewModel();
 	
-	//Give stuff you'd normally get on spawn
+	//Give original spawn pistol
 	player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
-	lethal_grenade = player zm_utility::get_player_lethal_grenade();
-	if(!player HasWeapon(lethal_grenade))
-	{
-		player GiveWeapon(lethal_grenade);	
-		player SetWeaponAmmoClip(lethal_grenade, 0);
-	}
 
 	//Freeze player
 	wait(0.5);
