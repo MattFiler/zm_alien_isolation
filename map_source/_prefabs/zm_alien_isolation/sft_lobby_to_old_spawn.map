@@ -173,3 +173,17 @@ guid "{4D3B4FE6-6455-11E8-A593-14DDA9E204AF}"
 "lightingstate4" "1"
 "shadow_casting" "1"
 }
+// entity 11
+{
+guid "{CD72AF66-6D77-11E8-A598-14DDA9E204AF}"
+"classname" "misc_model"
+"angles" "0 27.3987 0"
+"model" "tow_floor_vent_filler"
+"modelscale" "1.50999998860061"
+"origin" "-187.75 2096.25 -3.25"
+"lightingstate1" "1"
+"lightingstate2" "1"
+"lightingstate3" "1"
+"lightingstate4" "1"
+"static" "1"
+}

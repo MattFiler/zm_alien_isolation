@@ -98,7 +98,7 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	
 	//Play cutscene
 	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrensintro");
-	level thread lui::play_movie_with_timeout(AYZ_CUTSCENE_ID_01, "fullscreen", intro_cutscene_length, true);
+	level thread lui::play_movie(AYZ_CUTSCENE_ID_01, "fullscreen");
 
 	//Wait for cutscene to end and continue
 	wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
@@ -138,7 +138,7 @@ function BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS() {
 	level.takeobedlocation = 0;
 	
 	foreach(player in level.players) {	
-		if (player.origin[0] == -26101.1 && player.origin[1] == -12731.1) {
+		if (player.origin[0] == -26101.1 && player.origin[1] == -12729.1) {
 			CURRENT_BED = 2;
 		}
 		else if (player.origin[0] == -26067.2 && player.origin[1] == -12742.8) {
@@ -147,7 +147,7 @@ function BSP_TORRENS_GET_BED_LOCATIONS_AND_SETUP_MONITORS() {
 		else if (player.origin[0] == -26066.9 && player.origin[1] == -12810.7) {
 			CURRENT_BED = 4;
 		}
-		else if (player.origin[0] == -26101.1 && player.origin[1] == -12822) {
+		else if (player.origin[0] == -26101.1 && player.origin[1] == -12825) {
 			CURRENT_BED = 5;
 		}
 

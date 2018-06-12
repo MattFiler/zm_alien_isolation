@@ -240,31 +240,9 @@ function stop_round_start_music() {
 //Show new objective
 function UPDATE_OBJECTIVE(objectiveText) {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
-	//IPrintLnBold(&"AYZ_UI_OBJECTIVE_UPDATED");
-	//IPrintLnBold(objectiveText);
+	IPrintLnBold(&"AYZ_UI_OBJECTIVE_UPDATED");
+	IPrintLnBold(objectiveText);
 
-	hud = NewHudElem();
-    hud.foreground = true;
-    hud.fontScale = 2;
-    hud.sort = 1;
-    hud.hidewheninmenu = false;
-    hud.alignX = "center";
-    hud.alignY = "top";
-    hud.horzAlign = "fullscreen";
-    hud.vertAlign = "fullscreen";
-    hud.x = 80;
-    hud.y = hud.y - 50;
-    hud.alpha = 1;
-    hud.font = "objective";
-	
-	hud SetText(objectiveText);
-	
-	wait(5);
-    hud fadeOverTime( 5 );
-    hud.alpha = 0;
-    wait( 5 );
-    hud Destroy();
-	
 	//TODO, fix up new UI and use the popup here.
 	//PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
 	//foreach	(player in level.players) {		

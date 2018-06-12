@@ -25,7 +25,7 @@ function HAB_AIRPORT_SPAWN() {
 	self waittill("players_on_sevastopol");
 	
 	//Play "Welcome To Sevastopol" theme
-	PLAY_LOCAL_SOUND("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
+	//PLAY_LOCAL_SOUND("zm_alien_isolation__arrive_on_sevastopol"); //currently playing the old intro theme, but might want to change to M2 power on theme or something along the same lines
 
 	thread HAB_AIRPORT_EVENT_DRIVEN_OBJECTIVES();
 	thread HAB_AIRPORT_AMBIENCES();
@@ -144,6 +144,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	level.PauseSevastopolTourAudio = true;
 	tour_audio_emitter = GetEnt("sft_lobby_audio_source", "targetname");
 	tour_audio_emitter StopSound(level.CurrentSevastopolTourAudio);
+	tour_audio_emitter PlaySound("zm_alien_isolation_sev_tour_broken");
 
 	sevastolink_monitor = GetEnt("lobby_sevastolink_monitor", "targetname");
 	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_playing");
@@ -152,6 +153,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 		thread HAB_AIRPORT_AUDIOLOG_UI(player);
 	}
 
+	wait(1);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__audiolog");
 	wait(2.4);
 	level thread zm_audio::sndMusicSystem_PlayState("sft_audiolog_theme");
@@ -257,7 +259,7 @@ function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE) {
 	airport_door2 = GetEnt("airportdoor_" + DOOR_NAME + "_side2_door", "targetname");
 	airport_door1_clip = GetEnt("airportdoor_" + DOOR_NAME + "_side1_clip", "targetname");
 	airport_door2_clip = GetEnt("airportdoor_" + DOOR_NAME + "_side2_clip", "targetname");
-	door_flasher = GetEnt("" + DOOR_NAME + "_flasher", "targetname");
+	door_flasher = GetEnt(DOOR_NAME + "_flasher", "targetname");
 	
 	//Get movement positions
 	airport_door1_move = struct::get("airportdoor_" + DOOR_NAME + "_side1_door_move", "targetname");
