@@ -46,7 +46,7 @@ function BSP_TORRENS_CRYOPOD_COLLISION() {
 	spawnClip3 = getEnt("torrens_spawn_clip_3", "targetname");
 	spawnClip4 = getEnt("torrens_spawn_clip_4", "targetname");
 	
-	//Make clips non-solid - might need to do this earlier
+	//Make clips non-solid
 	spawnClip1 NotSolid();
 	spawnClip2 NotSolid();
 	spawnClip3 NotSolid();
@@ -63,7 +63,7 @@ function BSP_TORRENS_CRYOPOD_COLLISION() {
 
 //Play intro cutscene
 function BSP_TORRENS_INTRO_CUTSCENE() {
-	//Hide crosshairs (as precaution) and disable zombies
+	//Disable zombies
 	SetDvar("cg_draw2d", 0);
 	SetDvar("ai_disableSpawn", "1");
 
@@ -92,22 +92,19 @@ function BSP_TORRENS_INTRO_CUTSCENE() {
 	foreach (player in level.players) {
 		thread BSP_TORRENS_SETUP_PLAYER(player);
 	}
-
-	//Pre-define cutscene info
-	intro_cutscene_length = 19.9; //THIS WILL NEED CHANGING TO THE ACTUAL LENGTH
 	
 	//Play cutscene
 	PLAY_LOCAL_SOUND("zm_alien_isolation__cs_torrensintro");
 	level thread lui::play_movie(AYZ_CUTSCENE_ID_01, "fullscreen");
 
 	//Wait for cutscene to end and continue
-	wait(intro_cutscene_length + 2); //+2 to smooth transition a bit
+	wait(23.4); //+2 to smooth transition a bit
 }
 
 //Setup player for the Torrens "level"
 function BSP_TORRENS_SETUP_PLAYER(player) {
 	player FreezeControls(false);
-	player ResetFOV(); //SORRY!
+	WAIT_SERVER_FRAME; 
 	WAIT_SERVER_FRAME; 
 	player DisableWeaponFire();
 	player DisableOffhandSpecial();
@@ -117,9 +114,11 @@ function BSP_TORRENS_SETUP_PLAYER(player) {
 	player AllowProne(true);
 	WAIT_SERVER_FRAME; 
 	player SetStance("prone");
+	WAIT_SERVER_FRAME; 
 	player HideViewModel();
 	player SetMoveSpeedScale(0.7);
 	WAIT_SERVER_FRAME;
+	WAIT_SERVER_FRAME; 
 	player FreezeControls(true);
 }
 
@@ -368,6 +367,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 		player AllowSprint(false);
 		player AllowJump(false);
 		player AllowMelee(false);
+		util::setClientSysState("levelNotify", "out_of_cryopod", player);
 	}
 
 	level notify("torrens_enable_cryo_collision");

@@ -7,6 +7,7 @@
 #using scripts\shared\util_shared;
 #using scripts\shared\flag_shared;
 #using scripts\shared\flagsys_shared;
+#using scripts\shared\system_shared;
 
 #insert scripts\shared\shared.gsh;
 #insert scripts\shared\version.gsh;
@@ -36,10 +37,6 @@
 //Traps
 #using scripts\zm\_zm_trap_electric;
 
-//Required for emissive colour change
-//#using scripts\shared\clientfield_shared;
-#using scripts\shared\system_shared;
-
 //Usermap
 #using scripts\zm\zm_usermap;
 
@@ -57,8 +54,12 @@ function main()
 	//LuiLoad("ui.uieditor.menus.hud.T7Hud_zm_alien_isolation");
 	//LuiLoad("ui.uieditor.menus.hud.popup_zm_alien_isolation");
 	
-	//Wait for client to load
-	//util::waitforclient( 0 );
+	//Wait for client to load & perform FOV changes
+	util::waitforclient(0);
+	clientFov = GetDvarFloat("cg_fov_default");
+	SetDvar("cg_fov_default", "91");
+	level waittill("out_of_cryopod", localClientNum);
+	SetDvar("cg_fov_default", clientFov);
 }
 
 
