@@ -108,7 +108,7 @@ function BSP_TORRENS_SETUP_PLAYER(player) {
 	WAIT_SERVER_FRAME; 
 	player DisableWeaponFire();
 	player DisableOffhandSpecial();
-	player SetPlayerCollision(false);
+	//player SetPlayerCollision(false);
 	player AllowStand(false);
 	player AllowCrouch(false);
 	player AllowProne(true);
@@ -120,6 +120,7 @@ function BSP_TORRENS_SETUP_PLAYER(player) {
 	WAIT_SERVER_FRAME;
 	WAIT_SERVER_FRAME; 
 	player FreezeControls(true);
+	player.allowdeath = false; 
 }
 
 //Blackscreen for each player (closed on wakeup start)
@@ -643,43 +644,52 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 
 //Wait for all players to pick up their weapons from the bridge
 function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
-	//Wait for transition trigger to be pushed
-	bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol", "targetname");
-	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to pick up weapon", bridge_weapon_trigger);
-	
-	//Wait for all players to trigger it
-	level.torrens_players_picked_up_weapon_count = 0;
-	foreach (player in level.players) {
-		thread BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, bridge_weapon_trigger);
+	//Setup up all triggers
+	for (i=0; i<4;i++) {
+		bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol_"+(i+1), "targetname");
+		UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to pick up weapon", bridge_weapon_trigger);
+		HIDE_TRIGGER(bridge_weapon_trigger, false);
+		if (i==0) {
+			SHOW_TRIGGER(bridge_weapon_trigger);
+		}
 	}
-	level waittill("all_players_picked_up_weapons");
-	wait(0.5);
-}
-
-//Check per player weapon pickup status
-function BSP_TORRENS_INDIVIDUAL_WEAPON_PICKUP(player, trigger) {
-	//Wait for trigger
-	trigger waittill("trigger", player);	
-	level.torrens_players_picked_up_weapon_count++;
-	player ShowViewModel();
 	
-	//Give original spawn pistol
-	player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
-
-	//Freeze player
-	wait(0.5);
-	player FreezeControls(true);
-
-	//Count players
+	//Count up our players
 	player_count = 0;
 	foreach (player in level.players) {
-		player_count++;
+		player_count = player_count + 1;
+	}
+	WAIT_SERVER_FRAME;
+
+	//Wait for all players to trigger (pick up a weapon)
+	level.playersWhoHavePickedUpWeapons = array();
+	for (i=0;i<player_count;i++) {
+		//Get trigger and show to people that haven't triggered yet
+		bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol_"+(i+1), "targetname");
+		foreach (player in level.players) {
+			foreach (activatedPlayer in level.playersWhoHavePickedUpWeapons) {
+				if (player != activatedPlayer) {
+					bridge_weapon_trigger SetVisibleToPlayer(player);
+				}
+			}
+		}
+		//Wait for it to be activated, and remember who did it
+		bridge_weapon_trigger waittill("trigger", player);
+		ArrayInsert(level.playersWhoHavePickedUpWeapons, player, level.playersWhoHavePickedUpWeapons.size);
+		//Show view model, give weapon, hide trigger
+		player ShowViewModel();
+		player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
+		player DisableWeaponFire();
+		player DisableWeapons();
+		HIDE_TRIGGER(bridge_weapon_trigger);
 	}
 
-	//All players have picked up
-	if (player_count == level.torrens_players_picked_up_weapon_count) {
-		level notify("all_players_picked_up_weapons");
+	//Freeze and fade out to cutscene
+	wait(1);
+	foreach (player in level.players) {
+		player FreezeControls(true);
 	}
+	wait(0.5);
 }
 
 //Transition over to the spaceflight terminal.
@@ -764,9 +774,9 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		player AllowProne(true);
 		player AllowCrouch(true);
 		player AllowStand(true);
-		player EnableWeaponFire();
 		player SetMoveSpeedScale(1);
-		player SetPlayerCollision(true); //re-enable player collision to allow zombie damage
+		//player SetPlayerCollision(true); //re-enable player collision to allow zombie damage
+		player.allowdeath = true; 
 	}
 	
 	//Let the game know we're on Sevastopol

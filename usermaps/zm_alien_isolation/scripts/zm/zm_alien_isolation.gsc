@@ -157,12 +157,24 @@ function main()
 	//Clear starting weapon
 	level.start_weapon = (getWeapon("knife"));
 	
-	//level.player_starting_points = 500000; //Debug only!
+	level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	level._effect["sevastolink_spark"] = "electric/fx_elec_sparks_bounce_lg_orange";
 	level._effect["big_lensflare"] = "lensflares/fx_lensflare_light_cool_xlg";
 	level._effect["torrens_door_dust"] = "player/fx_plyr_jump_dust";
 	level._effect["torrens_cryo_smoke"] = "zm_alien_isolation/TORRENS_ONBOARD_CryoOpen";
+
+	level.key_obtained = false;
+	level.adverts_theme_played = false;
+	level.PauseSevastopolTourAudio = false;
+	level.CurrentSevastopolTourAudio = "zm_alien_isolation_sev_tour_1";
+	level.dempseybedlocation = 0;
+	level.nikolaibedlocation = 0;
+	level.richtofenbedlocation = 0;
+	level.takeobedlocation = 0;
+	level.signedInPlayerCount = 0;
+	level.currentlyOpenDoors = array();
+	level.playersWhoHavePickedUpWeapons = array();
 	
 	thread BSP_TORRENS_SPAWN();
 	thread HAB_AIRPORT_SPAWN(); 
@@ -270,10 +282,15 @@ function UPDATE_TRIGGER(string, trigger) {
 	trigger setHintString(string);
 	trigger SetVisibleToAll();
 }
-function HIDE_TRIGGER(trigger) {
+function HIDE_TRIGGER(trigger, clearText=true) {
 	trigger setCursorHint("HINT_NOICON");
-	trigger setHintString("");
+	if (clearText) {
+		trigger setHintString("");
+	}
 	trigger SetInvisibleToAll();
+}
+function SHOW_TRIGGER(trigger) {
+	trigger SetVisibleToAll();
 }
 
 

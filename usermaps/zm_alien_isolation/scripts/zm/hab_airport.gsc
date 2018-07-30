@@ -177,6 +177,8 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	SetDvar("ai_disableSpawn", "0");
 	foreach(player in level.players) {
 		player AllowSprint(true);
+		player EnableWeaponFire();
+		player EnableWeapons();
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
 	wait(5);
@@ -253,7 +255,7 @@ function HAB_AIRPORT_TOUR_AUDIO() {
 
 
 //Airport doors
-function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE) {
+function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE, FLASH_OFFSET) {
 	airport_door_trigger = GetEnt("airportdoor_" + DOOR_NAME + "_trigger", "targetname");
 	airport_door1 = GetEnt("airportdoor_" + DOOR_NAME + "_side1_door", "targetname");
 	airport_door2 = GetEnt("airportdoor_" + DOOR_NAME + "_side2_door", "targetname");
@@ -297,8 +299,7 @@ function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE) {
 	
 	//Update status light and move
 	door_flasher SetModel("ayz_new_door_lights_open");
-	door_flasher MoveTo((door_flasher.origin + (airport_door2.origin - airport_door2_move.origin)), 2, 1, 1); 
-	//door_flasher MoveTo((door_flasher.origin + (-63.501, -32.46, 1)), 2, 1, 1); //wrong location - struct'd be easier for moving to generic function
+	door_flasher MoveTo(door_flasher.origin + (airport_door2.origin - airport_door2_move.origin) + FLASH_OFFSET, 2, 1, 1); 
 	
 	//Play door sfx
 	airport_door1 PlaySound("zm_alien_isolation__largedoor_open");
@@ -351,14 +352,14 @@ function HAB_AIRPORT_LOBBY_TO_SPAWNROOM_DOOR() {
 	level waittill("lobby_power_restored");
 
 	//Setup door and wait for it to be purchased
-	HAB_AIRPORT_DOOR("lobby_to_spawn", 500);
+	HAB_AIRPORT_DOOR("lobby_to_spawn", 500, (-2,-2,0));
 }
 
 
 //Handle spawn room door
 function HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR() {
 	//Setup door and wait for it to be purchased
-	HAB_AIRPORT_DOOR("spawn_to_terminal", 1000);
+	HAB_AIRPORT_DOOR("spawn_to_terminal", 1000, (0,3.5,0));
 	wait(1);
 }
 
@@ -557,6 +558,14 @@ function HAB_AIRPORT_ADVERTS_DOOR(door_location) {
 	clipSide2Move = struct::get("adverts_"+door_location+"_buyable_clip_side2_move", "targetname");
 	rightSide42Struct = struct::get("adverts_door_"+door_location+"_42", "targetname");
     door_flasher_move = struct::get("adverts_"+door_location+"_toggle_move", "targetname");
+    new_flasher_pos = (0,0,0);
+    if (door_flasher_move.origin == (0,0,0)) { //IsVec is dodgy, so forcing a flasher move in every instance, dropped to 0,0,0.
+    	door_flasher_move = struct::get("adverts_"+door_location+"_buyable_door_side1_move", "targetname"); //backup
+    	new_flasher_pos = door_flasher_move.origin + (0,0,7);
+    }
+    else {
+    	new_flasher_pos = door_flasher_move.origin;
+    }
 	
 	//Set trigger before and after power
 	UPDATE_TRIGGER(&"ZOMBIE_NEED_POWER", getTrigger);
@@ -588,7 +597,7 @@ function HAB_AIRPORT_ADVERTS_DOOR(door_location) {
 	
 	//Update status light and move
 	door_flasher SetModel("ayz_new_door_lights_open");
-	door_flasher MoveTo(door_flasher_move.origin, 2, 1, 1); 
+	door_flasher MoveTo(new_flasher_pos, 2, 1, 1); 
 	
 	//Play door sound at location
 	doorSide1 PlaySound("zm_alien_isolation__largedoor_open");

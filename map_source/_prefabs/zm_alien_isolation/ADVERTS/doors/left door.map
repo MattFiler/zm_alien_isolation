@@ -4,7 +4,7 @@ iwmap 4
 "The Map" flags expanded 
 // entity 0
 {
-guid "{95518B83-F1F7-11E6-A515-14DDA9E204AF}"
+guid "{C8A89E1C-9418-11E8-A5A6-14DDA9E204AF}"
 "classname" "worldspawn"
 "lightingquality" "4096"
 "lutmaterial" "luts_ayz"
@@ -187,4 +187,11 @@ guid "{F3A30BFB-37BB-11E7-A535-14DDA9E204AF}"
 "lightingstate3" "1"
 "lightingstate4" "1"
 "shadow_casting" "1"
+}
+// entity 12
+{
+guid "{C8A89E23-9418-11E8-A5A6-14DDA9E204AF}"
+"classname" "script_struct"
+"targetname" "adverts_left_toggle_move"
+"_color" "1 0 0"
 }
