@@ -338,6 +338,9 @@ function ENG_TOWPLATFORM_WARNING_LIGHTS() {
 
 	//Lights
 	for(i=0; i<28; i++) {
+		if (i==3 || i==4 || i==7 || i==10 || i==14 || i==17 || i==18) {
+			continue; //These lights were removed.
+		}
 		tpfWarningLight = getEnt("tow_warning_light_bulb_"+i, "targetname");
 		tpfWarningLight Rotate((0,rotationSpeed,0));
 	}

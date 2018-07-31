@@ -680,7 +680,7 @@ function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 		player ShowViewModel();
 		player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
 		player DisableWeaponFire();
-		player DisableWeapons();
+		//player DisableWeapons();
 		HIDE_TRIGGER(bridge_weapon_trigger);
 	}
 

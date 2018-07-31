@@ -178,7 +178,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	foreach(player in level.players) {
 		player AllowSprint(true);
 		player EnableWeaponFire();
-		player EnableWeapons();
+		//player EnableWeapons();
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
 	wait(5);
@@ -255,7 +255,7 @@ function HAB_AIRPORT_TOUR_AUDIO() {
 
 
 //Airport doors
-function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE, FLASH_OFFSET) {
+function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE) {
 	airport_door_trigger = GetEnt("airportdoor_" + DOOR_NAME + "_trigger", "targetname");
 	airport_door1 = GetEnt("airportdoor_" + DOOR_NAME + "_side1_door", "targetname");
 	airport_door2 = GetEnt("airportdoor_" + DOOR_NAME + "_side2_door", "targetname");
@@ -299,7 +299,7 @@ function HAB_AIRPORT_DOOR(DOOR_NAME, DOOR_PRICE, FLASH_OFFSET) {
 	
 	//Update status light and move
 	door_flasher SetModel("ayz_new_door_lights_open");
-	door_flasher MoveTo(door_flasher.origin + (airport_door2.origin - airport_door2_move.origin) + FLASH_OFFSET, 2, 1, 1); 
+	door_flasher MoveTo(airport_door1_move.origin + (0,0,7), 2, 1, 1); 
 	
 	//Play door sfx
 	airport_door1 PlaySound("zm_alien_isolation__largedoor_open");
@@ -352,14 +352,14 @@ function HAB_AIRPORT_LOBBY_TO_SPAWNROOM_DOOR() {
 	level waittill("lobby_power_restored");
 
 	//Setup door and wait for it to be purchased
-	HAB_AIRPORT_DOOR("lobby_to_spawn", 500, (-2,-2,0));
+	HAB_AIRPORT_DOOR("lobby_to_spawn", 500);
 }
 
 
 //Handle spawn room door
 function HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR() {
 	//Setup door and wait for it to be purchased
-	HAB_AIRPORT_DOOR("spawn_to_terminal", 1000, (0,3.5,0));
+	HAB_AIRPORT_DOOR("spawn_to_terminal", 1000);
 	wait(1);
 }
 
