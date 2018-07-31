@@ -113,7 +113,11 @@ function BSP_TORRENS_SETUP_PLAYER(player) {
 	player AllowCrouch(false);
 	player AllowProne(true);
 	WAIT_SERVER_FRAME; 
+	WAIT_SERVER_FRAME;
+	WAIT_SERVER_FRAME;
 	player SetStance("prone");
+	WAIT_SERVER_FRAME; //SetStance is the buggiest thing I've ever seen around a control freeze. Hopefully this helps.
+	WAIT_SERVER_FRAME;
 	WAIT_SERVER_FRAME; 
 	player HideViewModel();
 	player SetMoveSpeedScale(0.7);
@@ -272,7 +276,11 @@ function BSP_TORRENS_PUT_PLAYERS_IN_CRYOPODS() {
 		}
 		BedLocationStruct = struct::get("SPAWN_BED_" + BED_LOCATION, "targetname");
 		player SetOrigin(BedLocationStruct.origin);
+		WAIT_SERVER_FRAME;
+		WAIT_SERVER_FRAME;
 		player SetStance("prone"); //shouldn't need this again, but just in case
+		WAIT_SERVER_FRAME;
+		WAIT_SERVER_FRAME;
 
 		//Hide weapon hud
 		player setClientUIVisibilityFlag("weapon_hud_visible", 0);
@@ -680,7 +688,8 @@ function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 		player ShowViewModel();
 		player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
 		player DisableWeaponFire();
-		//player DisableWeapons();
+		player SetWeaponAmmoClip(GetWeapon("pistol_standard"), 0);
+		player SetWeaponAmmoStock(GetWeapon("pistol_standard"), 0);
 		HIDE_TRIGGER(bridge_weapon_trigger);
 	}
 

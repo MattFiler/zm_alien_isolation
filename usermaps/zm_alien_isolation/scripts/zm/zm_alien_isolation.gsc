@@ -157,7 +157,7 @@ function main()
 	//Clear starting weapon
 	level.start_weapon = (getWeapon("knife"));
 	
-	level.player_starting_points = 500000; //Debug only!
+	//level.player_starting_points = 500000; //Debug only!
 	level._effect["elevator_light"] = "zm_alien_isolation/Elevator_Light";
 	level._effect["sevastolink_spark"] = "electric/fx_elec_sparks_bounce_lg_orange";
 	level._effect["big_lensflare"] = "lensflares/fx_lensflare_light_cool_xlg";

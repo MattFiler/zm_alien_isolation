@@ -166,10 +166,8 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	PlayFX(level._effect["sevastolink_spark"], sevastolink_spark.origin);
 	level util::set_lighting_state(1); 
 
-	foreach (player in level.players) {
-		for (i=1;i<3;i++) {
-			fx_model[i] Delete(); 
-		}
+	for (i=1;i<3;i++) {
+		fx_model[i] Delete(); 
 	}
 
 	sevastolink_monitor SetModel("monitor_50cm_sevastolink_message_played");
@@ -178,7 +176,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	foreach(player in level.players) {
 		player AllowSprint(true);
 		player EnableWeaponFire();
-		//player EnableWeapons();
+		player GiveMaxAmmo(GetWeapon("pistol_standard"));
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
 	wait(5);
