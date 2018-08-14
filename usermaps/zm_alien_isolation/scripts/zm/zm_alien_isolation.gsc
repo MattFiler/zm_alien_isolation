@@ -155,6 +155,7 @@ function main()
 	zm_usermap::main();
 
 	//Clear starting weapon
+	level.ORIGINAL_start_weapon = level.start_weapon;
 	level.start_weapon = (getWeapon("knife"));
 	
 	//level.player_starting_points = 500000; //Debug only!

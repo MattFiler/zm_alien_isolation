@@ -115343,7 +115343,7 @@
 		"autogenLowestLodPercent" "13"
 		"autogenLowLod" "0"
 		"autogenLowLodPercent" "25"
-		"autogenMediumLod" "1"
+		"autogenMediumLod" "0"
 		"autogenMediumLodPercent" "50"
 		"boneControllers" ""
 		"boneStabilizers" ""

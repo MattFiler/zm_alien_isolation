@@ -663,8 +663,10 @@ function HAB_AIRPORT_ELEVATOR_PURCHASE() {
 			endgameCost = 50000;
 		case 2:
 			endgameCost = 45000;
-		default:
+		case 3:
 			endgameCost = 40000;
+		case 4:
+			endgameCost = 35000;
 	}
 	
 	//Re-set our trigger properties

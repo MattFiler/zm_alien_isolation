@@ -651,6 +651,7 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 }
 
 //Wait for all players to pick up their weapons from the bridge
+//14/08/18: This isn't quite right, and needs looking at. After another player picks up a weapon, there's an opportunity to steal it off the remaining player(s).
 function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 	//Setup up all triggers
 	for (i=0; i<4;i++) {
@@ -786,6 +787,7 @@ function BSP_TORRENS_WEAPON_PICKUP_CUTSCENE() {
 		player SetMoveSpeedScale(1);
 		//player SetPlayerCollision(true); //re-enable player collision to allow zombie damage
 		player.allowdeath = true; 
+		level.start_weapon = level.ORIGINAL_start_weapon;
 	}
 	
 	//Let the game know we're on Sevastopol
