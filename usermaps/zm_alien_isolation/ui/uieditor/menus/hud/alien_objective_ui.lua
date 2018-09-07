@@ -1,5 +1,8 @@
-function LUI.createMenu.audiolog(Instance)
-    local Hud = CoD.Menu.NewForUIEditor("audiolog")
+function LUI.createMenu.alien_objective(Instance)
+    local Hud = CoD.Menu.NewForUIEditor("alien_objective")
+
+    --All Possible Objectives (ENGLISH)
+    local ObjectiveArray = {"Sign in to the Torrens.","Explore the Torrens.","Reroute power to open the door.","Collect your weapons.","Survive until power is restored to the lobby.","Enter the Spaceflight Terminal.","Restore power to the Spaceflight Terminal.","Get to the Tow Platform and escape on the Torrens.","Find a keycard to open the door.","Activate the first Docking Clamp terminal.","Activate the second Docking Clamp terminal.","Pressurise the airlock.","Survive while the airlock pressurises.","Everybody get to the airlock!"}
 
     --Hud Container
     Hud.soundSet = "HUD"
@@ -11,9 +14,9 @@ function LUI.createMenu.audiolog(Instance)
 
     --Update Title
 	local AudiologBox1 = CoD.TextWithBg.new(Hud, Instance)
-    AudiologBox2:setLeftRight(false, false, 300, 300)
-    AudiologBox2:setTopBottom(true, false, 50, 150)
-    AudiologBox1.Text:setText("AUDIOLOG PLACEHOLDER")
+    AudiologBox1:setLeftRight(false, false, 300, 300)
+    AudiologBox1:setTopBottom(true, false, 50, 150)
+    AudiologBox1.Text:setText("OBJECTIVE UPDATED:")
     AudiologBox1.Text:setTTF("fonts/jixellation.ttf")
     AudiologBox1.Text:setScale(1)
     AudiologBox1.Bg:setRGB(0, 0, 0)
@@ -25,17 +28,16 @@ function LUI.createMenu.audiolog(Instance)
     AudiologBox2.Text:setTTF("fonts/jixellation.ttf")
     AudiologBox2:setLeftRight(false, false, 300, 300)
     AudiologBox2:setTopBottom(true, false, 200, 300)
-    AudiologBox2.Text:setText("AUDIOLOG PLACEHOLDER")
     AudiologBox2.Bg:setRGB(0.098, 0.098, 0.098)
     AudiologBox2.Bg:setAlpha(0.8)
 
-    local function ShowHideAudiolog(ModelRef)
-        if IsParamModelEqualToString(ModelRef, "AYZ_AudiologVisible") then
+    local function AlienObjectiveUpdate(ModelRef)
+        if IsParamModelEqualToString(ModelRef, "AYZ_ObjectiveNotification") then
             local notifyData = CoD.GetScriptNotifyData(ModelRef)
-            AudiologBox2:setAlpha(notifyData[1])
+            AudiologBox2.Text:setText(ObjectiveArray[notifyData[1]])
         end
     end
-    Hud:subscribeToGlobalModel(InstanceRef, "PerController", "scriptNotify", ShowHideAudiolog)
+    Hud:subscribeToGlobalModel(InstanceRef, "PerController", "scriptNotify", AlienObjectiveUpdate)
     
     Hud:addElement(AudiologBox1)
     Hud.box1 = AudiologBox1

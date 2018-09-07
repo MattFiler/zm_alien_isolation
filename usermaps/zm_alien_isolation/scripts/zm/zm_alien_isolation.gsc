@@ -78,9 +78,9 @@
 #namespace alien_isolation_zombies;
 
 //Define cutscene names
-#define		AYZ_CUTSCENE_ID_01						"zm_alien_isolation_cs01" 			//Story intro
-#define		AYZ_CUTSCENE_ID_02						"zm_alien_isolation_cs02" 			//Transition - Torrens to Sevastopol
-#define		AYZ_CUTSCENE_ID_03						"zm_alien_isolation_cs03"			//Endgame
+#define	AYZ_CUTSCENE_ID_01 "zm_alien_isolation_cs01" 									//Story intro
+#define	AYZ_CUTSCENE_ID_02 "zm_alien_isolation_cs02" 									//Transition - Torrens to Sevastopol
+#define	AYZ_CUTSCENE_ID_03 "zm_alien_isolation_cs03"									//Endgame
 
 //Define playtypes for zm_audio
 #define PLAYTYPE_REJECT 1
@@ -135,17 +135,18 @@
 
 //Precache UI
 #precache("lui_menu", "blackscreen");
-#precache("lui_menu", "audiolog");
+#precache("lui_menu", "alien_objective_ui");
 //#precache("lui_menu", "popup_zm_alien_isolation");
 //#precache("lui_menu_data", "AlienIsolationObjectivePopup");
 //#precache("eventstring", "AlienIsolationObjectivePopup");
+#precache("eventstring", "AYZ_ObjectiveNotification");
 
 //Precache FX
-#precache("fx", "electric/fx_elec_sparks_bounce_lg_orange"); //Sevastolink broken spark
-#precache("fx", "zm_alien_isolation/Elevator_Light"); //Elevator lights
-#precache("fx", "lensflares/fx_lensflare_light_cool_xlg"); //Lensflare for lobby lights
-#precache("fx", "player/fx_plyr_jump_dust"); //Torrens door dust
-#precache("fx", "zm_alien_isolation/TORRENS_ONBOARD_CryoOpen"); //Torrens cryo open smoke
+#precache("fx", "electric/fx_elec_sparks_bounce_lg_orange"); 							//Sevastolink broken spark
+#precache("fx", "zm_alien_isolation/Elevator_Light");									//Elevator lights
+#precache("fx", "lensflares/fx_lensflare_light_cool_xlg"); 								//Lensflare for lobby lights
+#precache("fx", "player/fx_plyr_jump_dust"); 											//Torrens door dust
+#precache("fx", "zm_alien_isolation/TORRENS_ONBOARD_CryoOpen"); 						//Torrens cryo open smoke
 
 //*****************************************************************************
 // MAIN
@@ -251,19 +252,17 @@ function stop_round_start_music() {
 
 
 //Show new objective
-function UPDATE_OBJECTIVE(objectiveText) {
+function UPDATE_OBJECTIVE(objectiveIndex) {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
-	IPrintLnBold(&"AYZ_UI_OBJECTIVE_UPDATED");
-	IPrintLnBold(objectiveText);
-
-	//TODO, fix up new UI and use the popup here.
-	//PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
-	//foreach	(player in level.players) {		
-	//	dialog = player OpenLUIMenu("popup_zm_alien_isolation");
-	//	player LUINotifyEvent(&"AlienIsolationObjectivePopup", 1, objectiveText);
-	//	wait(5);
-	//	player CloseLUIMenu(dialog);
-	//}
+	foreach (player in level.players) {
+    	thread objective_per_player(objectiveIndex, player);
+	}
+}
+function objective_per_player(objectiveIndex, player) {
+	//alien_objective_ui = player OpenLUIMenu("alien_objective");
+	player LUINotifyEvent(&"AYZ_ObjectiveNotification", 1, objectiveIndex);
+	//wait(5);
+	//player CloseLUIMenu(alien_objective_ui);
 }
 
 //Completed an objective

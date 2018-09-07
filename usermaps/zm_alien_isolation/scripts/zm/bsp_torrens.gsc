@@ -116,7 +116,7 @@ function BSP_TORRENS_SETUP_PLAYER(player) {
 	WAIT_SERVER_FRAME;
 	WAIT_SERVER_FRAME;
 	player SetStance("prone");
-	WAIT_SERVER_FRAME; //SetStance is the buggiest thing I've ever seen around a control freeze. Hopefully this helps.
+	WAIT_SERVER_FRAME; 
 	WAIT_SERVER_FRAME;
 	WAIT_SERVER_FRAME; 
 	player HideViewModel();
@@ -355,16 +355,16 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 		//these bedLocation vals will need to be modified if spawns are moved
 		playerLocation = (0,0,0);
 		if (bedLocation == 2) {
-			playerLocation = (-26101.1, -12731.1, 11778);
+			playerLocation = (-26126.6, -12711.6, 11778);
 		}
 		if (bedLocation == 3) {
-			playerLocation = (-26067.2, -12742.8, 11778);
+			playerLocation = (-26072.2, -12706.8, 11778);
 		}
 		if (bedLocation == 4) {
-			playerLocation = (-26066.9, -12810.7, 11778);
+			playerLocation = (-26074.4, -12847.2, 11778);
 		}
 		if (bedLocation == 5) {
-			playerLocation = (-26101.1, -12822, 11778);
+			playerLocation = (-26130.1, -12848.5, 11778);
 		}
 		
 		player SetPlayerAngles((0,0,0));
@@ -391,7 +391,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 	lui::screen_fade_in(1);
 
 	//Update objective
-	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_SIGN_IN_TO_TORRENS");
+	thread UPDATE_OBJECTIVE(1);
 }
 
 //Open spawn door once players have signed in (and also enable all other doors)
@@ -425,7 +425,7 @@ function BSP_TORRENS_OPEN_SPAWN_DOOR_WHEN_ALL_SIGNED_IN() {
 	wait(1);
 	
 	//Update objective
-	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_TORRENS");
+	thread UPDATE_OBJECTIVE(2);
 }
 
 //Auto door open script
@@ -566,10 +566,7 @@ function BSP_TORRENS_AUTOMATIC_DOOR(doorID, doorType) {
 function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	//Wait for player to approach the locked door and update objective
 	trigger_reroute_power = getEnt("trigger_reroute_power_torrens", "targetname");
-	//HIDE_TRIGGER(trigger_reroute_power);
 	thread BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH();
-	//level waittill("torrens_brokendoor_notified");
-	//thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
 	
 	//Wait for player to fix the door
 	UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to reroute power", trigger_reroute_power);
@@ -580,7 +577,7 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	HIDE_TRIGGER(trigger_reroute_power);
 	level notify("torrens_brokendoor_fixed");
 	wait(1.5);
-	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_TORRENS");
+	thread UPDATE_OBJECTIVE(2);
 }
 
 //handle broken door on Torrens
@@ -600,12 +597,11 @@ function BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH() {
 			}
 		}
 		if (player_by_door == true) {
-			//level notify("torrens_brokendoor_notified");
 			break;
 		}
 		wait 0.1;
 	}
-	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
+	thread UPDATE_OBJECTIVE(3);
 }
 
 //Setup the bridge once the player enters the canteen (and objective update)
@@ -635,7 +631,7 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 	
 	//Wait a bit and update objective
 	wait(5);
-	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_COLLECT_WEAPONS");
+	thread UPDATE_OBJECTIVE(4);
 	
 	//Open bridge door
 	self notify("torrens_enable_bridge_door");
@@ -676,15 +672,24 @@ function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 		//Get trigger and show to people that haven't triggered yet
 		bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol_"+(i+1), "targetname");
 		foreach (player in level.players) {
+			is_activated = false;
 			foreach (activatedPlayer in level.playersWhoHavePickedUpWeapons) {
-				if (player != activatedPlayer) {
-					bridge_weapon_trigger SetVisibleToPlayer(player);
+				if (player == activatedPlayer) {
+					is_activated = true;
 				}
+			}
+			if (!is_activated) {
+				bridge_weapon_trigger SetVisibleToPlayer(player);
+			}
+			else
+			{
+				bridge_weapon_trigger SetInvisibleToPlayer(player, true);
 			}
 		}
 		//Wait for it to be activated, and remember who did it
 		bridge_weapon_trigger waittill("trigger", player);
 		ArrayInsert(level.playersWhoHavePickedUpWeapons, player, level.playersWhoHavePickedUpWeapons.size);
+		IPrintLnBold(level.playersWhoHavePickedUpWeapons);
 		//Show view model, give weapon, hide trigger
 		player ShowViewModel();
 		player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
