@@ -55,4 +55,7 @@ LANG_SPANISH	"Sobrevive mientras la esclusa presiona."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_SPANISH	"¡Todos a la esclusa!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_SPANISH	"Explore el Lobby de Sebastopol."
+
 ENDMARKER

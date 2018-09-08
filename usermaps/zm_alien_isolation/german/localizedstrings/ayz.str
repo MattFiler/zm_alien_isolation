@@ -55,4 +55,7 @@ LANG_GERMAN		"Überlebe, während die Luftschleuse unter Druck steht."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_GERMAN		"Jeder kommt zur Luftschleuse!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_GERMAN	"Erkunden Sie die Lobby in Sewastopol."
+
 ENDMARKER

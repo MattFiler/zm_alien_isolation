@@ -55,4 +55,7 @@ LANG_FRENCH		"Survivre pendant que le sas pressurise."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_FRENCH		"Tout le monde va au sas!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_FRENCH		"Explorez le hall de Sébastopol."
+
 ENDMARKER

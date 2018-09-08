@@ -27,10 +27,10 @@ scriptparsetree,scripts/zm/hab_airport.gsc			//Spaceflight Terminal (serverside)
 rawfile,vision/zm_alien_isolation.vision
 
 //UI
-rawfile,ui/uieditor/menus/hud/popup_zm_alien_isolation.lua
+//rawfile,ui/uieditor/menus/hud/popup_zm_alien_isolation.lua
 rawfile,ui/uieditor/menus/hud/blackscreen.lua
 //rawfile,ui/uieditor/menus/hud/audiolog.lua
-rawfile,ui/uieditor/menus/hud/alien_objective_ui.lua
+//rawfile,ui/uieditor/menus/hud/alien_objective_ui.lua
 ttf,fonts/isolation.ttf
 ttf,fonts/jixellation.ttf
 ttf,fonts/nostromo.ttf

@@ -55,4 +55,7 @@ LANG_ENGLISHARABIC	"البقاء على قيد الحياة في حين ضغط �
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_ENGLISHARABIC	"الجميع يحصل على غرفة معادلة الضغط!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_ENGLISHARABIC	"استكشاف ردهة سيفاستوبول."
+
 ENDMARKER

@@ -55,4 +55,7 @@ LANG_PORTUGUESE	"Sobreviva enquanto a câmara pressuriza."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_PORTUGUESE	"Todo mundo vai para a eclusa de ar!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_PORTUGUESE	"Explore o Lobby Sevastopol."
+
 ENDMARKER

@@ -55,4 +55,7 @@ LANG_ENGLISH	"Survive while the airlock pressurises."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_ENGLISH	"Everybody get to the airlock!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_ENGLISH	"Explore the Sevastopol Lobby."
+
 ENDMARKER

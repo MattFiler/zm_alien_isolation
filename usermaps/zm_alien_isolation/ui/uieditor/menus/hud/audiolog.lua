@@ -11,8 +11,9 @@ function LUI.createMenu.audiolog(Instance)
 
     --Update Title
 	local AudiologBox1 = CoD.TextWithBg.new(Hud, Instance)
-    AudiologBox2:setLeftRight(false, false, 300, 300)
-    AudiologBox2:setTopBottom(true, false, 50, 150)
+    AudiologBox1:setLeftRight(true, true, 0, 0)
+    AudiologBox1:setTopBottom(true, true, 0, 0)
+    AudiologBox1:setAlpha(1)
     AudiologBox1.Text:setText("AUDIOLOG PLACEHOLDER")
     AudiologBox1.Text:setTTF("fonts/jixellation.ttf")
     AudiologBox1.Text:setScale(1)
@@ -21,10 +22,10 @@ function LUI.createMenu.audiolog(Instance)
 
     --Objective Text
     local AudiologBox2 = CoD.TextWithBg.new(Hud, Instance)
-    AudiologBox2.Text:setText(ObjectiveArray[1])
+    AudiologBox2:setAlpha(0)
     AudiologBox2.Text:setTTF("fonts/jixellation.ttf")
-    AudiologBox2:setLeftRight(false, false, 300, 300)
-    AudiologBox2:setTopBottom(true, false, 200, 300)
+    AudiologBox2:setLeftRight(true, true, 0, 0)
+    AudiologBox2:setTopBottom(true, true, 0, 0)
     AudiologBox2.Text:setText("AUDIOLOG PLACEHOLDER")
     AudiologBox2.Bg:setRGB(0.098, 0.098, 0.098)
     AudiologBox2.Bg:setAlpha(0.8)
@@ -32,6 +33,7 @@ function LUI.createMenu.audiolog(Instance)
     local function ShowHideAudiolog(ModelRef)
         if IsParamModelEqualToString(ModelRef, "AYZ_AudiologVisible") then
             local notifyData = CoD.GetScriptNotifyData(ModelRef)
+            --AudiologBox1:setAlpha(notifyData[1])
             AudiologBox2:setAlpha(notifyData[1])
         end
     end

@@ -391,7 +391,7 @@ function BSP_TORRENS_GET_OUT_OF_CYROPODS() {
 	lui::screen_fade_in(1);
 
 	//Update objective
-	thread UPDATE_OBJECTIVE(1);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_SIGN_IN_TO_TORRENS");
 }
 
 //Open spawn door once players have signed in (and also enable all other doors)
@@ -425,7 +425,7 @@ function BSP_TORRENS_OPEN_SPAWN_DOOR_WHEN_ALL_SIGNED_IN() {
 	wait(1);
 	
 	//Update objective
-	thread UPDATE_OBJECTIVE(2);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_TORRENS");
 }
 
 //Auto door open script
@@ -577,7 +577,7 @@ function BSP_TORRENS_BROKEN_DOOR_POWER_REROUTE() {
 	HIDE_TRIGGER(trigger_reroute_power);
 	level notify("torrens_brokendoor_fixed");
 	wait(1.5);
-	thread UPDATE_OBJECTIVE(2);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_TORRENS");
 }
 
 //handle broken door on Torrens
@@ -601,7 +601,7 @@ function BSP_TORRENS_BROKEN_DOOR_WAIT_FOR_APPROACH() {
 		}
 		wait 0.1;
 	}
-	thread UPDATE_OBJECTIVE(3);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_REROUTE_POWER_FOR_DOOR");
 }
 
 //Setup the bridge once the player enters the canteen (and objective update)
@@ -631,7 +631,7 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 	
 	//Wait a bit and update objective
 	wait(5);
-	thread UPDATE_OBJECTIVE(4);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_COLLECT_WEAPONS");
 	
 	//Open bridge door
 	self notify("torrens_enable_bridge_door");

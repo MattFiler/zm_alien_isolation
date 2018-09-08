@@ -48,10 +48,10 @@ function main()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_alien_isolation.csv", 1);
 	
 	//Load blackscreen on connect (for cryopod transition hide)
-	callback::on_localclient_connect(&on_local_client_connect);
 	LuiLoad("ui.uieditor.menus.hud.blackscreen");
-	LuiLoad("ui.uieditor.menus.hud.alien_objective");
+	//LuiLoad("ui.uieditor.menus.hud.alien_objective");
 	//LuiLoad("ui.uieditor.menus.hud.audiolog");
+	callback::on_localclient_connect(&on_local_client_connect);
 	
 	//Wait for client to load & perform FOV changes in cryopod cutscene
 	util::waitforclient(0);
@@ -67,7 +67,11 @@ function main()
 
 function on_local_client_connect(localClientNum)
 {	
-	hud2 = CreateLUIMenu(localClientNum, "ui.uieditor.menus.hud.alien_objective");
-	OpenLUIMenu(localClientNum, hud2);
+	//hud = CreateLUIMenu(localClientNum, "ui.uieditor.menus.hud.audiolog");
+	//OpenLUIMenu(localClientNum, hud);
+	//CloseLUIMenu(localClientNum, hud);
+
+	//hud2 = CreateLUIMenu(localClientNum, "ui.uieditor.menus.hud.alien_objective");
+	//OpenLUIMenu(localClientNum, hud2);
 	//CloseLUIMenu(localClientNum, hud2);
 }

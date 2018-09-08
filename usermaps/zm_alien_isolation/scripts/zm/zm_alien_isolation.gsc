@@ -104,6 +104,7 @@
 #precache("string", "AYZ_OBJECTIVE_COLLECT_WEAPONS");
 
 //Precache localised objective strings - Spaceflight Terminal
+#precache("string", "AYZ_OBJECTIVE_EXPLORE_LOBBY")
 #precache("string", "AYZ_OBJECTIVE_SURVIVE_POWER_OUTAGE");
 #precache("string", "AYZ_OBJECTIVE_GET_TO_TERMINAL");
 #precache("string", "AYZ_OBJECTIVE_RESTORE_POWER_TO_TERMINAL");
@@ -135,11 +136,10 @@
 
 //Precache UI
 #precache("lui_menu", "blackscreen");
-#precache("lui_menu", "alien_objective_ui");
+//#precache("lui_menu", "alien_objective_ui");
 //#precache("lui_menu", "popup_zm_alien_isolation");
-//#precache("lui_menu_data", "AlienIsolationObjectivePopup");
-//#precache("eventstring", "AlienIsolationObjectivePopup");
-#precache("eventstring", "AYZ_ObjectiveNotification");
+//#precache("eventstring", "AYZ_ObjectiveNotification");
+//#precache("eventstring", "AYZ_AudiologVisible");
 
 //Precache FX
 #precache("fx", "electric/fx_elec_sparks_bounce_lg_orange"); 							//Sevastolink broken spark
@@ -252,22 +252,32 @@ function stop_round_start_music() {
 
 
 //Show new objective
-function UPDATE_OBJECTIVE(objectiveIndex) {
+function UPDATE_OBJECTIVE(objectiveText) {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
-	foreach (player in level.players) {
-    	thread objective_per_player(objectiveIndex, player);
-	}
-}
-function objective_per_player(objectiveIndex, player) {
-	//alien_objective_ui = player OpenLUIMenu("alien_objective");
-	player LUINotifyEvent(&"AYZ_ObjectiveNotification", 1, objectiveIndex);
-	//wait(5);
-	//player CloseLUIMenu(alien_objective_ui);
+	IPrintLnBold(&"AYZ_UI_OBJECTIVE_UPDATED");
+	IPrintLnBold(objectiveText);
 }
 
 //Completed an objective
 function completed_old_objective() {
 	//Depreciated...
+}
+
+
+//Audiolog UI
+function SHOW_AUDIOLOG_UI() {
+	//unused until lui finished...
+	/*
+	foreach (player in level.players) {
+		if (shouldShow) {
+			player LUINotifyEvent(&"AYZ_AudiologVisible", 1, 1);
+		}
+		else
+		{
+			player LUINotifyEvent(&"AYZ_AudiologVisible", 1, 0);
+		}
+	}
+	*/
 }
 
 

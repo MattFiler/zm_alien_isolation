@@ -55,4 +55,7 @@ LANG_POLISH	"Przetrwaj, gdy śluza wytwarza ciśnienie."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_POLISH	"Wszyscy docieramy do śluzy!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_POLISH	"Poznaj lobby w Sewastopolu."
+
 ENDMARKER

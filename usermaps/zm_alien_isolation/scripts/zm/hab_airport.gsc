@@ -85,14 +85,14 @@ function HAB_AIRPORT_EVENT_DRIVEN_OBJECTIVES() {
 	self waittill("ayz_lockdown_completed");
 	thread keycard_objective();
 	wait(5);
-	thread UPDATE_OBJECTIVE(7);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_RESTORE_POWER_TO_TERMINAL");
 	
 	//Wait for power to be restored, play verlaine's message, then show objective.
 	level flag::wait_till("power_on");
 	wait(15);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__verlainebroadcast");
 	wait(10.5);
-	thread UPDATE_OBJECTIVE(8);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_GET_TO_TOW_PLATFORM");
 	
 	//Keycard objective is handled in another function (look below).
 }
@@ -109,7 +109,7 @@ function keycard_objective() {
 				if (player IsTouching(keycardZone) == true) {
 					//Someone's in the keycard zone
 					wait(1.5);
-					thread UPDATE_OBJECTIVE(9); //show objective
+					thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_FIND_KEYCARD"); //show objective
 					touched = true;
 					break; 
 				}
@@ -133,6 +133,8 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 		PlayFXOnTag(level._effect["big_lensflare"], fx_model[i], "tag_origin");
 	}
 
+	UPDATE_OBJECTIVE(&"OBJECTIVE_EXPLORE_LOBBY");
+
 	SetDvar("cg_draw2d", "1");
 	level.PauseSevastopolTourAudio = false;
 
@@ -155,6 +157,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 
 	wait(1);
 	PLAY_LOCAL_SOUND("zm_alien_isolation__audiolog");
+	IPrintLn("PLAYING TERMINAL AUDIOLOG 3156");
 	wait(2.4);
 	level thread zm_audio::sndMusicSystem_PlayState("sft_audiolog_theme");
 	wait(41.7);
@@ -180,7 +183,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 		player setClientUIVisibilityFlag("weapon_hud_visible", 1);
 	}
 	wait(5);
-	thread UPDATE_OBJECTIVE(5);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_SURVIVE_POWER_OUTAGE");
 	wait(20); 
 
 	PLAY_LOCAL_SOUND("zm_alien_isolation_power_restored");
@@ -195,7 +198,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 	level.PauseSevastopolTourAudio = false;
 
 	wait(2);
-	thread UPDATE_OBJECTIVE(6);
+	thread UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_GET_TO_TERMINAL");
 
 	HAB_AIRPORT_SPAWNROOM_TO_TERMINAL_DOOR();
 }

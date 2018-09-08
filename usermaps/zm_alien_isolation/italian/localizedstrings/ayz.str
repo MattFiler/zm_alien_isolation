@@ -55,4 +55,7 @@ LANG_ITALIAN	"Sopravvivere mentre la camera di equilibrio pressurizza."
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_ITALIAN	"Tutti raggiungono la camera di equilibrio!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_ITALIAN	"Esplora la Lobby di Sebastopoli."
+
 ENDMARKER

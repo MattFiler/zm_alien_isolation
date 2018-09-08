@@ -55,4 +55,7 @@ LANG_RUSSIAN	"Выживайте, когда воздушный шлюз под�
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
 LANG_RUSSIAN	"Все добираются до шлюза!"
 
+REFERENCE		OBJECTIVE_EXPLORE_LOBBY
+LANG_RUSSIAN	"Исследуйте Севастопольское лобби."
+
 ENDMARKER
