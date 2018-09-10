@@ -58,4 +58,7 @@ LANG_RUSSIAN	"Все добираются до шлюза!"
 REFERENCE		OBJECTIVE_EXPLORE_LOBBY
 LANG_RUSSIAN	"Исследуйте Севастопольское лобби."
 
+REFERENCE		UI_OBJECTIVE_REMINDER
+LANG_RUSSIAN	"ТЕКУЩАЯ ЦЕЛЬ:"
+
 ENDMARKER

@@ -133,7 +133,7 @@ function HAB_AIRPORT_PRE_TERMINAL_SEQUENCE() {
 		PlayFXOnTag(level._effect["big_lensflare"], fx_model[i], "tag_origin");
 	}
 
-	UPDATE_OBJECTIVE(&"OBJECTIVE_EXPLORE_LOBBY");
+	UPDATE_OBJECTIVE(&"AYZ_OBJECTIVE_EXPLORE_LOBBY");
 
 	SetDvar("cg_draw2d", "1");
 	level.PauseSevastopolTourAudio = false;

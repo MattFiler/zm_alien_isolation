@@ -2,60 +2,63 @@ VERSION			"1"
 CONFIG			"C:\projects\cod\t5\bin\StringEd.cfg"
 
 REFERENCE		UI_OBJECTIVE_UPDATED
-LANG_POLISH	"CEL ZAKTUALIZOWANY:"
+LANG_POLISH		"CEL ZAKTUALIZOWANY:"
 
 REFERENCE		DOORPROMPT_LOCKDOWN_UNFINISHED
-LANG_POLISH	"Drzwi są wyłączone, proszę czekać!"
+LANG_POLISH		"Drzwi są wyłączone, proszę czekać!"
 
 REFERENCE		DOORPROMPT_LOW_POWER
-LANG_POLISH	"Niska moc - drzwi są wyłączone"
+LANG_POLISH		"Niska moc - drzwi są wyłączone"
 
 REFERENCE		DOORPROMPT_LOCKED
-LANG_POLISH	"Drzwi zamknięte - proszę czekać!"
+LANG_POLISH		"Drzwi zamknięte - proszę czekać!"
 
 REFERENCE		OBJECTIVE_SIGN_IN_TO_TORRENS
-LANG_POLISH	"Zaloguj się do Torrens."
+LANG_POLISH		"Zaloguj się do Torrens."
 
 REFERENCE		OBJECTIVE_EXPLORE_TORRENS
-LANG_POLISH	"Poznaj Torrens."
+LANG_POLISH		"Poznaj Torrens."
 
 REFERENCE		OBJECTIVE_REROUTE_POWER_FOR_DOOR
-LANG_POLISH	"Zmień moc, aby otworzyć drzwi."
+LANG_POLISH		"Zmień moc, aby otworzyć drzwi."
 
 REFERENCE		OBJECTIVE_COLLECT_WEAPONS
-LANG_POLISH	"Zbierz swoją broń."
+LANG_POLISH		"Zbierz swoją broń."
 
 REFERENCE		OBJECTIVE_SURVIVE_POWER_OUTAGE
-LANG_POLISH	"Przetrwaj, aż moc zostanie przywrócona do holu."
+LANG_POLISH		"Przetrwaj, aż moc zostanie przywrócona do holu."
 
 REFERENCE		OBJECTIVE_GET_TO_TERMINAL
-LANG_POLISH	"Wejdź do Terminalu Lotów Kosmicznych."
+LANG_POLISH		"Wejdź do Terminalu Lotów Kosmicznych."
 
 REFERENCE		OBJECTIVE_RESTORE_POWER_TO_TERMINAL
-LANG_POLISH	"Przywróć zasilanie do Terminalu Lotów Kosmicznych."
+LANG_POLISH		"Przywróć zasilanie do Terminalu Lotów Kosmicznych."
 
 REFERENCE		OBJECTIVE_GET_TO_TOW_PLATFORM
-LANG_POLISH	"Dostań się na Platformę Tow i uciekaj na Torrenach."
+LANG_POLISH		"Dostań się na Platformę Tow i uciekaj na Torrenach."
 
 REFERENCE		OBJECTIVE_FIND_KEYCARD
-LANG_POLISH	"Znajdź kartę dostępu, aby otworzyć drzwi."
+LANG_POLISH		"Znajdź kartę dostępu, aby otworzyć drzwi."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_ONE
-LANG_POLISH	"Aktywuj pierwszy terminal zaciskowy dokowania."
+LANG_POLISH		"Aktywuj pierwszy terminal zaciskowy dokowania."
 
 REFERENCE		OBJECTIVE_ACTIVATE_TERMINAL_TWO
-LANG_POLISH	"Aktywuj drugi terminal zaciskowy dokowania."
+LANG_POLISH		"Aktywuj drugi terminal zaciskowy dokowania."
 
 REFERENCE		OBJECTIVE_PRESSURISE_AIRLOCK
-LANG_POLISH	"Zwiększ ciśnienie w śluzie."
+LANG_POLISH		"Zwiększ ciśnienie w śluzie."
 
 REFERENCE		OBJECTIVE_WAIT_FOR_PRESSURISE
-LANG_POLISH	"Przetrwaj, gdy śluza wytwarza ciśnienie."
+LANG_POLISH		"Przetrwaj, gdy śluza wytwarza ciśnienie."
 
 REFERENCE		OBJECTIVE_GET_TO_AIRLOCK
-LANG_POLISH	"Wszyscy docieramy do śluzy!"
+LANG_POLISH		"Wszyscy docieramy do śluzy!"
 
 REFERENCE		OBJECTIVE_EXPLORE_LOBBY
-LANG_POLISH	"Poznaj lobby w Sewastopolu."
+LANG_POLISH		"Poznaj lobby w Sewastopolu."
+
+REFERENCE		UI_OBJECTIVE_REMINDER
+LANG_POLISH		"OBECNY CEL:"
 
 ENDMARKER

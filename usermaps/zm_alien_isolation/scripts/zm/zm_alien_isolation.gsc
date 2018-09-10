@@ -91,6 +91,7 @@
 
 //Precache localised ui strings
 #precache("string", "AYZ_UI_OBJECTIVE_UPDATED");
+#precache("string", "AYZ_UI_OBJECTIVE_REMINDER");
 
 //Precache localised door prompt strings
 #precache("string", "AYZ_DOORPROMPT_LOCKDOWN_UNFINISHED");
@@ -104,7 +105,7 @@
 #precache("string", "AYZ_OBJECTIVE_COLLECT_WEAPONS");
 
 //Precache localised objective strings - Spaceflight Terminal
-#precache("string", "AYZ_OBJECTIVE_EXPLORE_LOBBY")
+#precache("string", "AYZ_OBJECTIVE_EXPLORE_LOBBY");
 #precache("string", "AYZ_OBJECTIVE_SURVIVE_POWER_OUTAGE");
 #precache("string", "AYZ_OBJECTIVE_GET_TO_TERMINAL");
 #precache("string", "AYZ_OBJECTIVE_RESTORE_POWER_TO_TERMINAL");
@@ -177,6 +178,8 @@ function main()
 	level.signedInPlayerCount = 0;
 	level.currentlyOpenDoors = array();
 	level.playersWhoHavePickedUpWeapons = array();
+	level.hasActivatedConsoleOne = false;
+	level.hasActivatedConsoleTwo = false;
 	
 	thread BSP_TORRENS_SPAWN();
 	thread HAB_AIRPORT_SPAWN(); 
@@ -255,6 +258,13 @@ function stop_round_start_music() {
 function UPDATE_OBJECTIVE(objectiveText) {
 	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
 	IPrintLnBold(&"AYZ_UI_OBJECTIVE_UPDATED");
+	IPrintLnBold(objectiveText);
+}
+
+//Remind of previous objective
+function REMIND_OBJECTIVE(objectiveText) {
+	PLAY_LOCAL_SOUND("zm_alien_isolation__objective_updated");
+	IPrintLnBold(&"AYZ_UI_OBJECTIVE_REMINDER");
 	IPrintLnBold(objectiveText);
 }
 

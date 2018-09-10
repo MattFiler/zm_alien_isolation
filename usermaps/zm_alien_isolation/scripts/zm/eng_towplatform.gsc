@@ -246,12 +246,23 @@ function ENG_TOWPLATFORM_ENDING_CUTSCENE() {
 
 //Handle player activation of clamp terminals 1 and 2
 function ENG_TOWPLATFORM_CLAMP_TERMINAL_ACTIVATION(terminal_name, terminal_number, trigger) {
+	thread ENG_TOWPLATFORM_OBJECTIVE_REMINDER(terminal_number);
+
 	//Set our trigger properties
 	UPDATE_TRIGGER("Press ^3[{+activate}]^7 to activate Docking Clamp Terminal "+terminal_name, trigger);
 	
 	//Wait until terminal is triggered...
 	trigger waittill("trigger", player);
 	HIDE_TRIGGER(trigger);
+
+	//Update global status
+	if (terminal_number == 1) {
+		level.hasActivatedConsoleOne = true;
+	}
+	else
+	{
+		level.hasActivatedConsoleTwo = true;
+	}
 	
 	//Grab our monitors
 	monitor_1 = GetEnt("tow_activate_"+terminal_number+"_monitor1", "targetname");
@@ -266,6 +277,18 @@ function ENG_TOWPLATFORM_CLAMP_TERMINAL_ACTIVATION(terminal_name, terminal_numbe
 	monitor_1 SetModel("monitor_static_trace"); //green
 	monitor_2 SetModel("monitor_static_trace"); //green
 	wait(0.5);
+}
+
+
+//Re-prompt players to activate terminals if time has passed
+function ENG_TOWPLATFORM_OBJECTIVE_REMINDER(terminal_number) {
+	wait(60);
+	if (terminal_number == 1 && level.hasActivatedConsoleOne == false) {
+		thread REMIND_OBJECTIVE(&"AYZ_OBJECTIVE_ACTIVATE_TERMINAL_ONE");
+	}
+	else if (terminal_number == 2 && level.hasActivatedConsoleTwo == false) {
+		thread REMIND_OBJECTIVE(&"AYZ_OBJECTIVE_ACTIVATE_TERMINAL_TWO");
+	}
 }
 
 

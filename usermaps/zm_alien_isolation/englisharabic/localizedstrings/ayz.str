@@ -58,4 +58,7 @@ LANG_ENGLISHARABIC	"الجميع يحصل على غرفة معادلة الضغ�
 REFERENCE		OBJECTIVE_EXPLORE_LOBBY
 LANG_ENGLISHARABIC	"استكشاف ردهة سيفاستوبول."
 
+REFERENCE		UI_OBJECTIVE_REMINDER
+LANG_ENGLISHARABIC	"الهدف الحالي:"
+
 ENDMARKER
