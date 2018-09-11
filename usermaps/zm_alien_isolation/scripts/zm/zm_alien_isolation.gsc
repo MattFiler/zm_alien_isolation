@@ -177,7 +177,7 @@ function main()
 	level.takeobedlocation = 0;
 	level.signedInPlayerCount = 0;
 	level.currentlyOpenDoors = array();
-	level.playersWhoHavePickedUpWeapons = array();
+	level.torrensWeaponPickupCount = 0;
 	level.hasActivatedConsoleOne = false;
 	level.hasActivatedConsoleTwo = false;
 	

@@ -647,64 +647,56 @@ function BSP_TORRENS_SETUP_BRIDGE_WHEN_CANTEEN_ENTERED() {
 }
 
 //Wait for all players to pick up their weapons from the bridge
-//14/08/18: This isn't quite right, and needs looking at. After another player picks up a weapon, there's an opportunity to steal it off the remaining player(s).
 function BSP_TORRENS_ALL_PLAYERS_PICK_UP_WEAPONS() {
 	//Setup up all triggers
 	for (i=0; i<4;i++) {
 		bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol_"+(i+1), "targetname");
 		UPDATE_TRIGGER("Hold ^3[{+activate}]^7 to pick up weapon", bridge_weapon_trigger);
 		HIDE_TRIGGER(bridge_weapon_trigger, false);
-		if (i==0) {
-			SHOW_TRIGGER(bridge_weapon_trigger);
-		}
 	}
-	
-	//Count up our players
-	player_count = 0;
+
+	//Wait for all players to pick up a weapon 
+	trigger_id = 1;
 	foreach (player in level.players) {
-		player_count = player_count + 1;
-	}
-	WAIT_SERVER_FRAME;
-
-	//Wait for all players to trigger (pick up a weapon)
-	level.playersWhoHavePickedUpWeapons = array();
-	for (i=0;i<player_count;i++) {
-		//Get trigger and show to people that haven't triggered yet
-		bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol_"+(i+1), "targetname");
-		foreach (player in level.players) {
-			is_activated = false;
-			foreach (activatedPlayer in level.playersWhoHavePickedUpWeapons) {
-				if (player == activatedPlayer) {
-					is_activated = true;
-				}
-			}
-			if (!is_activated) {
-				bridge_weapon_trigger SetVisibleToPlayer(player);
-			}
-			else
-			{
-				bridge_weapon_trigger SetInvisibleToPlayer(player, true);
-			}
-		}
-		//Wait for it to be activated, and remember who did it
-		bridge_weapon_trigger waittill("trigger", player);
-		ArrayInsert(level.playersWhoHavePickedUpWeapons, player, level.playersWhoHavePickedUpWeapons.size);
-		IPrintLnBold(level.playersWhoHavePickedUpWeapons);
-		//Show view model, give weapon, hide trigger
-		player ShowViewModel();
-		player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
-		player DisableWeaponFire();
-		player SetWeaponAmmoClip(GetWeapon("pistol_standard"), 0);
-		player SetWeaponAmmoStock(GetWeapon("pistol_standard"), 0);
-		HIDE_TRIGGER(bridge_weapon_trigger);
+		thread BSP_TORRENS_SINGLE_WEAPON_PICKUP(player, trigger_id);
+		trigger_id += 1;
 	}
 
-	//Freeze and fade out to cutscene
+	//Progress when all weapons picked up
+	level waittill("torrens_all_weapons_collected");
 	wait(1);
 	foreach (player in level.players) {
 		player FreezeControls(true);
 	}
 	wait(0.5);
+}
+
+//Handle single player weapon pickup & triggers
+function BSP_TORRENS_SINGLE_WEAPON_PICKUP(player, trigger_id) {
+	//Handle trigger interaction & visibility
+	bridge_weapon_trigger = getEnt("trigger_torrens_transition_to_sevastopol_"+trigger_id, "targetname");
+	bridge_weapon_trigger SetVisibleToPlayer(player);
+	bridge_weapon_trigger waittill("trigger", player);
+	bridge_weapon_trigger SetInvisibleToPlayer(player, true);
+	level.torrensWeaponPickupCount += 1;
+
+	//Show view model, give weapon
+	player ShowViewModel();
+	player zm_weapons::weapon_give(GetWeapon("pistol_standard"), false, false, true, true);
+	player DisableWeaponFire();
+	player SetWeaponAmmoClip(GetWeapon("pistol_standard"), 0);
+	player SetWeaponAmmoStock(GetWeapon("pistol_standard"), 0);
+
+	//Freeze and fade out to cutscene if all have picked up
+	WAIT_SERVER_FRAME;
+	player_count = 0;
+	foreach (player in level.players) {
+		player_count += 1;
+	}
+	WAIT_SERVER_FRAME;
+	if (level.torrensWeaponPickupCount == player_count) {
+		level notify("torrens_all_weapons_collected");
+	}
 }
 
 //Transition over to the spaceflight terminal.
